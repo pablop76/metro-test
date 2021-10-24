@@ -1,0 +1,14 @@
+.bg-container {
+  background-image: url(./images/bg.svg), url(./images/overlay.svg), url(./images/stp.jpg);
+  background-repeat: no-repeat;
+  background-size: contain, cover, cover;
+  background-position: center bottom, center, bottom center;
+}
+
+.current {
+  background-color: #2c9f45;
+}
+
+.wrong {
+  background-color: #e73635;
+}
