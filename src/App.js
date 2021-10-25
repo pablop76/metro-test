@@ -72,16 +72,16 @@ function App() {
     window.location.reload(false);
   }
 
-  const colorSend = () => {
+  let colorSend = (() => {
     if (Math.round(correctAnswers / maxQuestions * 100) >= 60) {
-      return "green";
+      return "current";
     }
-    return "red";
-  }
+    return "wrong";
+  })();
 
   useEffect(() => getQuizData(), [])
   return (
-    <div className="bg-container container mx-auto min-h-screen">
+    <div className="bg-container container mx-auto min-h-screen pb-5">
       <div className="flex items-baseline justify-center bg-gray-900 text-white flex-wrap bg-overlay-top">
         <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} />
         <Header />
@@ -97,7 +97,7 @@ function App() {
       <div className="flex items-baseline justify-center text-3xl bg-white rounded-full max-w-xs mx-auto m-5">
         <span style={{ color: 'green' }}>{correctAnswers}:</span><span style={{ color: 'red' }}>{inCorrectAnswers}</span>
       </div>
-      <div className={`flex items-baseline justify-center text-4xl bg-${colorSend()}-600 text-white rounded-full max-w-xs mx-auto m-5`}>{maxQuestions ? Math.round(correctAnswers / maxQuestions * 100) : ""}%</div>
+      <div className={`flex items-baseline justify-center text-4xl ${colorSend} text-white rounded-full max-w-xs mx-auto m-5`}>{maxQuestions ? Math.round(correctAnswers / maxQuestions * 100) : ""}%</div>
     </div>
   );
 }
