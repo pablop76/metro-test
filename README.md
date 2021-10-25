@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App]("https://pablop76.github.io/metro-test").
+Test okresowy na stanowisku maszynista metra.
 
 ## Aktualizacja plików na gh-page
 -dodać "homepage": "https://pablop76.github.io/metro-test",
