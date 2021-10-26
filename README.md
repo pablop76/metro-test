@@ -1,5 +1,5 @@
 # Aplikacja "Quiz". Testy okresowe na stanowisku maszynista metra
-![template app](./quiz.png)
+![template app](./template.png)
 *Test okresowy na stanowisku maszynista metra. 
 *Testy odbywaja się co trzy lata. Warunkują utrzymanie przez pracownika "prawa kierowania"
 
