@@ -13,7 +13,7 @@ function App() {
 
   const [currentTest, setCurrentTest] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [maxQuestions, setMaxQuestions] = useState("10");
+  const [maxQuestions, setMaxQuestions] = useState("30");
   const [audio, setAudioOn] = useState(false);
   const [correctAnswers, setCorectAnswers] = useState(0);
   const [inCorrectAnswers, setInCorrectAnswers] = useState(0);
@@ -26,6 +26,7 @@ function App() {
     const response = await fetch('./questions.json');
     const data = await response.json();
     setCurrentTest(data.test[0].questions)
+    console.log(data.test[0].questions[0].length);
   }
   const answerChange = (answerUser, el) => {
     if (currentQuestion >= maxQuestions) return;
@@ -83,7 +84,7 @@ function App() {
   return (
     <div className="bg-container container mx-auto min-h-screen pb-5">
       <div className="flex items-baseline justify-center bg-gray-900 text-white flex-wrap bg-overlay-top">
-        <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} />
+        <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} />
         <Header />
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
         <Refresh refreshPage={refreshPage} />
