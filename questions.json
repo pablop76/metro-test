@@ -1,807 +1,803 @@
 {
-    "test": [
+    "questions": [
         {
-            "questions": [
-                {
-                    "question": "Ruchem pociągów na STP Kabaty kieruje:",
-                    "content": [
-                        "- z Centralnej Dyspozytorni w sytuacjach awaryjnych Dyspozytor Ruchu",
-                        "- Dyspozytor Elektrowozowni",
-                        "- Dyżurny Ruchu STP"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Podczas wyjazdu składu z torów odstawczych maszynista przestrzega:",
-                    "content": [
-                        "- poleceń zawartych w rozkazie „O” przy braku możliwości podania sygnału",
-                        "- tylko wskazań  na sygnalizatorze kabinowym",
-                        "- poleceń zawartych w rozkazie „S” przy braku możliwości podania sygnału"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Na jakiej podstawie przy sterowaniu miejscowym, można przejechać obok semafora wskazującego sygnał 'stój'",
-                    "content": [
-                        "- rozkazu „S” wydanego przez dyspozytora ruchu lub dyżurnego ruchu danego okręgu nastawczego",
-                        "- ustnego polecenia dyżurnego stacji",
-                        "- rozkazu „S” wydanego przez dyżurnego ruchu danego okręgu nastawczego"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Czy dyspozytor ruchu może przekazać sterowanie ruchem w okręgu nastawczym dyżurnemu ruchu:",
-                    "content": [
-                        "- tak na warunkach określonych regulaminem technicznym",
-                        "- nie",
-                        "- tak, ale musi uzyskać zgodę Szefa Służby Ruchu"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu doświadczalnego:",
-                    "content": [
-                        "- wynikającą z konstrukcji pojazdu",
-                        "- 80 km/h, przez stacje 40 km/h",
-                        "- 40 km/h"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W przypadku gdy pociąg z pasażerami przejedzie wskaźnik Wm4, i choćby tylko jedne drzwi znalazły się w części  technologicznej peronu:",
-                    "content": [
-                        "- maszynista  otwiera  drzwi",
-                        "- nie otwiera drzwi, a dalsze postępowanie uzgadnia z dyspozytorem ruchu",
-                        "- cofa skład, aby skrócić wydłużony czas postoju pociągu na stacji, następnie powiadamia dyspozytora ruchu"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy pociąg z pasażerami może być podzielony:",
-                    "content": [
-                        "- tak, gdy zachodzi taka potrzeba, ale trzeba uzyskać zgodę Dyspozytora Ruchu",
-                        "- nie może być podzielony",
-                        "- tak  może być podzielony"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Dźwiękowy sygnał zatrzymania taboru „stój” podawany przez maszynistę z drugiego pociągu to:",
-                    "content": [
-                        "- 3 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
-                        "- 2 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
-                        "- 1 długi ton, kilkakrotnie powtórzony"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza",
-                    "image": "./images/wskaznik.png",
-                    "content": [
-                        "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
-                        "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
-                        "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością."
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Pojedynczy, nie zajęty odcinek izolowany którego obwód torowy wykazuje zajętość, można przejechać na widoczność z prędkością nie przekraczającą:",
-                    "content": [
-                        "5 km/h,",
-                        "20 km/h,",
-                        "35 km/h,"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu:",
-                    "content": [
-                        "- do 35km/h po torze prostym",
-                        "- do 15km/h po torze prostym",
-                        "- do 15km/h na zwrotnicach"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W przypadku samoczynnego otwierania i zamykania drzwi (rytmiczne błyski lampek sygnalizacji drzwiowej ) należy",
-                    "content": [
-                        "- trzymać cały czas wciśnięty przycisk rezerwowego zamykania drzwi",
-                        "- dojechać do najbliższej stacji i otworzyć drzwi",
-                        "- uprzedzić pasażerów i po określeniu która strona drzwi próbuje się otworzyć podjąć stosowne procedury"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Na jakiej podstawie  i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania",
-                    "content": [
-                        "- na podstawie rozkazu 'O' z prędkością do 60 km/h jeżeli stacja jest zamknięta dla pasażerów, ale stacji nie opuścili ostatni pasażerowie",
-                        "- na podstawie rozkazu 'S' z prędkością do 40 km/h  jeżeli stacja jest otwarta bądź na peronie przebywają pasażerowie",
-                        "- na podstawie rozkazu 'O' z prędkością do 60 km/h jeżeli stacja jest zamknięta dla pasażerów i na peronie nie ma pasażerów"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W przypadku gdy nie gaśnie biała lampka sygnalizacji hamulca pneumatycznego należy",
-                    "content": [
-                        "- kontynuować jazdę do końcowej stacji",
-                        "- określić zahamowany wagon, na najbliższej stacji zahamować i odhamować pociąg, sprawdzić staczanie składu",
-                        "- za pomocą przycisku rezerwowego sterownia pracą sprężarki pompować powietrze do całkowitego wyluzowania składu"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy na STP Kabaty jest możliwe podanie sygnału zastępczego tzn. białe światło migające:",
-                    "content": [
-                        "- tylko na semaforach",
-                        "- nie ma takiej możliwości",
-                        "- tak na semaforach i tarczach manewrowych."
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Wskaźnik W8 ( zmniejszyć prędkość jazdy) zobowiązuje maszynistę do",
-                    "content": [
-                        "- zmniejszenia prędkości na rozjeździe do 5 km/h, stosowany w przypadkach szczególnych",
-                        "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 15 km/h,",
-                        "- zmniejszenia prędkości jazdy do 15 km/h na oznaczonym odcinku, dotyczy tylko STP Kabaty"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy po wezwaniu pociągu pogotowia można ruszyć składem z miejsca ?:",
-                    "content": [
-                        "- można dokonywać  prób ruszenia uszkodzonego pociągu do czasu przybycia pociągu pogotowia",
-                        "- można w przypadku gdy awaria zostanie usunięta w ciągu 5 min",
-                        "- nie można chyba, że uzyskaliśmy od dyspozytora ruchu inne polecenia"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W przypadku uszkodzenia urządzeń nagłaśniających, które  uniemożliwiają nadawanie ostrzeżeń o zamykaniu drzwi maszynista",
-                    "content": [
-                        "- wysadza pasażerów na najbliższe stacji",
-                        "- informuje o tym dyspozytora i doprowadza pociąg z pasażerami do stacji końcowej, ogłaszając komunikaty przez mikrofon",
-                        "- jeżeli awaria wystąpiła podczas dwóch ostatnich obiegów pociąg może pozostać  na linii w ruchu pasażerskim"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Podaj prawidłową kolejność zdejmowania uziemiacza:",
-                    "content": [
-                        "- z szyny prądowej, następnie z koła pociągu",
-                        "- z szyny jezdnej, następnie z szyny prądowej",
-                        "- z szyny prądowej, następnie z szyny jezdnej"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Dźwiękowy sygnał 'Do mnie' to:",
-                    "content": [
-                        "- jeden długi ton",
-                        "- jeden długi ton i trzy krótkie tony",
-                        "- dwa długie tony"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Po jakim czasie Dyspozytor Ruchu może wezwać pociąg pogotowia (pociąg zatrzymał się nie planowo i nie można nawiązać z nim łączności):",
-                    "content": [
-                        "- rano i wieczorem przy czasie następstwa powyżej 7 minut po upływie 10 minut",
-                        "- w godzinach szczytu po upływie 5 minut",
-                        "- w porze ruchu pasażerskiego po upływie 3 minut"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
-                    "content": [
-                        "- działanie hamulca postojowego tylko na wagonach czołowych",
-                        "- prawidłowe ustawienie tablic kierunku jazdy",
-                        "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Wskaźnik  W17 (słupek biało-czerwony):",
-                    "content": [
-                        "- wyznacza miejsce w terenie otwartym i tunelu, do którego wolno jeden z torów zająć taborem, aby umożliwić przejazd taboru po drugim torze",
-                        "- informuje, że na dany tor zabroniony jest wjazd taboru o skrajni PKP",
-                        "- stosowany tylko w terenie otwartym, oznacza miejsce przy zbiegających się torach, do którego wolno jeden z tych torów zająć taborem, aby zachować możliwość jazdy taboru po drugim torze"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Wskaźnik Wm8 (pomarańczowa tablica z czarną i białą obwódką ):",
-                    "content": [
-                        "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
-                        "- ustawia się w tunelu, informuje maszynistę, że za wskaźnikiem w odległości drogi hamowania znajduje się sygnalizator przytorowy",
-                        "- ustawia się w tunelu w miejscu gdzie została przekroczona skrajni budowli"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Zawór maszynisty znajdujący się w kabinie maszynisty posiada:",
-                    "content": [
-                        "- 8 pozycji, w tym 5 pozycji realizujących hamowanie",
-                        "- 7 pozycji, w tym 5 pozycji realizujących  hamowanie",
-                        "- 7 pozycji, w tym 4 pozycje realizujące hamownie"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 (w VII położeniu zaworu maszynisty) wynos:",
-                    "content": [
-                        "- 0,25 MPa",
-                        "- 0,0 MPa",
-                        "- 0,3 MPa"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Jaką funkcje w wagonie serii 81 pełni autoreżim:",
-                    "content": [
-                        "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
-                        "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i ciśnienie w cylindrach hamulcowych",
-                        "- współpracuje z zaworem zrywakowym"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
-                    "content": [
-                        "- białe i niebieskie",
-                        "- białe i czerwone",
-                        "- białe i pomarańczowe"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy w wagonie serii 81, w którym odłącznik główny nie został załączony:",
-                    "content": [
-                        "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie  awaryjne, brak jazdy ale pracuje sprężarka",
-                        "- pracuje przetwornica i sprężarka, brak jazdy",
-                        "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Co oznacza VR z kropką i VK 35 na wyświetlaczu SOP ?:",
-                    "content": [
-                        "- zanik transmisji na danym odcinku",
-                        "- uszkodzenie jednego z torów pomiaru prędkości",
-                        "- należy  się spodziewać że, następne wskazanie na wyświetlaczu  to  VK 20"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi:",
-                    "content": [
-                        "- 10,0 bara ± 10%",
-                        "- 11,5 bara ± 10%",
-                        "- 12,5 bara ± 10%"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Jak realizowane jest zamknięcie drzwi przez przycisk „ rezerwowe zamykanie drzwi” w wagonach serii 81:",
-                    "content": [
-                        "- poprzez podanie napięcia na cewkę zamykającą drzwiowego zaworu rozrządczego za pomocą rezerwowego przewodu nr.18",
-                        "- poprzez podanie napięcia na obie cewki otwierające drzwiowego zaworu rozrządczego",
-                        "- poprzez podanie napięcia na rezerwową cewkę zamykającą drzwiowego zaworu rozrządczego"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Spychanie uszkodzonego pociągu Metropolis odbywa się z ograniczeniem prędkości:",
-                    "content": [
-                        "- do 60 km/h",
-                        "- do 20 km/h",
-                        "- do 40 km/h."
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W skład wyposażenia pociągu typu Metropolis wchodzą",
-                    "content": [
-                        "- 4 tablice hamulca pneumatycznego",
-                        "- 4 skrzynki z przekształtnikiem ONIX",
-                        "- 24 silników napędowych"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga stopki szyny nie może być większa niż",
-                    "content": [
-                        "- 35 km/h",
-                        "- 15 km/h",
-                        "- 60 km/h"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Działanie zaworu bezpieczeństwa polega na",
-                    "content": [
-                        "- całkowitym opróżnieniu zbiornika głównego",
-                        "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknięciu się",
-                        "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,83 MPa i samoczynnym zamknięciu się"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione (!?)",
-                    "content": [
-                        "- w wózku wagonu M  dzięki 2 tarczom hamulcowym zamocowanym na każdej osi a w wózku wagonu Tc 1 tarczy hamulcowej zamocowanej na każdej osi",
-                        "- w wózku wagonu M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi a w wózku wagonu Tc 2 tarczom hamulcowym  zamocowanym na każdej osi",
-                        "- w wózku wagonu Tc i M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "W pociągach typu Metropolis zastosowano silnik trakcyjny",
-                    "content": [
-                        "- asynchroniczny, 3- fazowy, klatkowy",
-                        "- synchroniczny prądu zmiennego",
-                        "- szeregowy prądu stałego"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "W przypadku sterowania na jazdę bez 'WN' po naciśnięciu przycisku zabezpieczenia przetwornicy następuje:",
-                    "content": [
-                        "- zasilenie przekaźnika awaryjnego rozruchu –PRA-, który mostkuje przekaźnik zanikowo napięciowy – PZN",
-                        "- zasilenie przekaźnika obniżonej nastawy – PON -, który mostkuje przekaźnik zanikowo napięciowy – PZN",
-                        "- zamyka się dodatkowy styk przekaźnika kontroli nawrotnika – PKN -, który znajduje się w obwodzie 1 przewodu (jazda)."
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Drążek reakcyjny występuje",
-                    "content": [
-                        "- tylko na pociągu Metropolis",
-                        "- tylko na pociągu typu 81",
-                        "- na pociągu Metropolis i 81"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W pociągu serii 81 pomiędzy wagonami pośrednimi zastosowano sprzęg",
-                    "content": [
-                        "- automatyczny",
-                        "- stały",
-                        "- półautomatyczny"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W czasie hamowania elektrodynamicznego w wagonach serii 81 (!?)",
-                    "content": [
-                        "- wszystkie styczniki liniowe są zamknięte",
-                        "- wszystkie styczniki liniowe są otwarte",
-                        "- styczniki liniowe 1 i 5 są otwarte"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Wskaż prawidłowe określenie",
-                    "content": [
-                        "- nawrotnik jest przeznaczony do zmiany kierunku obrotu silnika wału kułakowego",
-                        "- odłącznik główny jest przeznaczony do rozłączenia obwodu głównego w stanie bezprądowym",
-                        "- przełącznik rodzaju pracy służy do zmiany kierunku jazdy"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Dlaczego styki główne wału kułakowego nie mają kominków ?:",
-                    "content": [
-                        "- bo znajdują się w dużej skrzyni zawieszonej na izolatorach, która stanowi zabezpieczenie przed porażeniem prądem i łukiem elektrycznym",
-                        "- styki wału kułakowego rozłączają się bez prądowo więc niema takiej potrzeby",
-                        "- w obwodach prądu stałego niskiego napięcia, a w takich warunkach pracuje wał kułakowy nie ma wymogu stosowania komór gasikowych"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Prąd hamowania w wagonie czołowym, w pozycji 'T-1' NJ przy prędkości powyżej 50km/h wynosi",
-                    "content": [
-                        "- około 180 A",
-                        "- około 350 A",
-                        "- około 450 A"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Zabrania się odblokowywania PA w przypadku",
-                    "content": [
-                        "- zadziałanie WA –56",
-                        "- zaniku wysokiego napięcia",
-                        "- jednokrotnego wybicia PA"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Brak sterowania na jazdę, przy sygnalizacji kontroli zamknięcia drzwi i prawidłowych wskazaniach woltomierza NN jest spowodowany",
-                    "content": [
-                        "- zadziałaniem zabezpieczenia przetwornicy",
-                        "- wybiciem WA-56 na wszystkich wagonach",
-                        "- wybiciem WA- 54"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W przypadku gdy nie zamykają się drzwi w całym pociągu należy",
-                    "content": [
-                        "- sprawdzić na ostatnim wagonie położenie WA-13",
-                        "- zamknąć drzwi za pomocą RPZD",
-                        "- sprawdzić położenie WA –53"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Jeżeli podczas jazdy z załączonymi silnikami trakcyjnymi w kabinie maszynisty pociągu serii 81 słyszalny jest donośny świst może to świadczyć o tym że",
-                    "content": [
-                        "- w tunelu szlakowym na którym obecnie znajduje się skład wystąpiła równoczesna awaria wentylatorni stacyjnej i szlakowej (obie tłoczą powietrze do tunelu)",
-                        "- jeden z silników pracuje bez obciążenia",
-                        "- na sąsiednim z torów w tunelu znajduje się pociąg Metropolis z uszkodzoną poduszką powietrzną zawieszenia"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Maszynista może rozłączyć stycznik obwodów pomocniczych",
-                    "content": [
-                        "- na wszystkich wagonach, wyłączając WA 53 na wagonie czołowym",
-                        "- na wszystkich wagonach, wyłączając WA 53 na każdym wagonie osobno",
-                        "- wyłączając odłącznik główny"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Obniżone ciśnienie w przewodzie zasilającym pociągu typu Metropolis poniżej 6,5 bara (załączone hamulce awaryjny i postojowy) może świadczy o",
-                    "content": [
-                        "- awarii jednej ze sprężarek",
-                        "- zadziałaniu zaworu zrywakowego",
-                        "- uszkodzeniu poduszki powietrznej na jednym z wagonów"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W przypadku powstania ucieczki z magistrali zasilającej  na jednym z wagonów należy między innymi",
-                    "content": [
-                        "- na niesprawnym wagonie podłożyć izolację pod styki stycznika sprężarki",
-                        "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
-                        "- zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza",
-                    "image": "./images/wskaznik-2.png",
-                    "content": [
-                        "- strzałka wskaźnikowa",
-                        "- semafor znajduje się po lewej stronie torów",
-                        "- wjazd na tor niewłaściwy"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza",
-                    "image": "./images/wskaznik-3.png",
-                    "content": [
-                        "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
-                        "- zakaz jazdy elektrycznych pojazdów trakcyjnych",
-                        "- wjazd na tor ze skrajnią PKP"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Zawracanie pociągu w miejscach, gdzie nie ma możliwości podania sygnałów na semaforach, odbywa się",
-                    "content": [
-                        "- na ustne polecenie dyżurnego ruchu,",
-                        "- na rozkaz szczególny 'O'",
-                        "- na rozkaz szczególny 'S'"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Po naciśnięciu przycisku rezerwowego sterowania sprężarki na wagonach serii 81",
-                    "content": [
-                        "- pracują wszystkie sprężarki",
-                        "- pracują sprężarki na wagonach pośrednich",
-                        "- pracują sprężarki na wagonach czołowych"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy wskaźnik W24 (wjazd na tor niewłaściwy) występuje  w tunelu",
-                    "content": [
-                        "- tak",
-                        "- nie",
-                        "- na stacjach na których możliwe jest zawracanie składów"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Wjazd pociągu  na tor częściowo zajęty jest dopuszczalny na podstawie rozkazu 'S' z zachowaniem  następujących ograniczeń prędkości",
-                    "content": [
-                        "- do 15 km/h, a podczas dojazdu do innego stojącego składu do 5 km/h",
-                        "- do 20 km/h, a podczas dojazdu do innego stojącego składu do 3 km/h",
-                        "- do 35 km/h, a podczas dojazdu do innego stojącego składu do 3 km/h"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Podkreśl zasadnicze kierunki określone w regulaminie technicznym dla każdego z torów znajdujących się na szlaku granicznym",
-                    "content": [
-                        "- tor nr.2  STP – Ky ; Ky – STP ; tor dwukierunkowy",
-                        "- tor nr.3  STP – Ky ; Ky – STP ; tor dwukierunkowy",
-                        "- tor nr.4  STP – Ky ; Ky – STP ; tor dwukierunkowy."
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Przekaźnik nadmiarowy służy do zabezpieczenia",
-                    "content": [
-                        "- silników trakcyjnych przed skutkami zwarć",
-                        "- silnika sprężarki przed przegrzaniem",
-                        "- silników trakcyjnych przed skutkami przeciążeń"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 7,5 bara oznacza",
-                    "content": [
-                        "- próg hamowania awaryjnego",
-                        "- próg podwójnej pracy",
-                        "- próg bezpieczeństwa"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Próg zadziałania zaworu bezpieczeństwa w pociągach serii 81 wynosi(!?):",
-                    "content": [
-                        "- 0,78 – 0,82 MPa",
-                        "- 0,95 – 1,20 MPa",
-                        "- 0,90 – 0,92 MPa"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Na jakiej podstawie  i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?:",
-                    "content": [
-                        "- na podstawie rozkazu 'O' z prędkością do 60 km/h",
-                        "- na podstawie rozkazu 'S' z prędkością do 40 km/h",
-                        "- na podstawie rozkazu 'O' z prędkością do 40 km/h"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W jaki sposób napędzany jest wał kułakowy",
-                    "content": [
-                        "- za pomocą elektrozaworów",
-                        "- za pomocą silnika prądu przemiennego",
-                        "- za pomocą silnika prądu stałego"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik zobowiązuje maszynistę do",
-                    "image": "./images/wskaznik-4.png",
-                    "content": [
-                        "- zmniejszenia prędkości na rozjeździe do 3 km/h, stosowany w przypadkach szczególnych",
-                        "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 30 km/h, dotyczy tylko STP Kabaty",
-                        "- zmniejszenia prędkości jazdy do 30 km/h na oznaczonym odcinku"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Dźwiękowy sygnał 'Ode mnie' to",
-                    "content": [
-                        "- jeden długi ton",
-                        "- jeden długi ton i trzy krótkie tony",
-                        "- jeden krótki ton"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Podaj prawidłową kolejność zakładania uziemiacza",
-                    "content": [
-                        "- koło pociągu, następnie szyna prądowa",
-                        "- szyna jezdna, następnie szyna prądowa",
-                        "- szyna prądowa, następnie szyna jezdna"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W ramach kontroli stanu technicznego pociągu serii 81przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić",
-                    "content": [
-                        "- działanie hamulca postojowego tylko na wagonach czołowych",
-                        "- prawidłowe połączenie skrzynek elektrycznych na sprzęgach",
-                        "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Ciśnienie w magistrali hamulcowej wagonów  serii 81 (w położeniu II zaworu maszynisty) wynosi",
-                    "content": [
-                        "- 0,8 MPa",
-                        "- 0,6 MPa",
-                        "- 0,5 MPa"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Jaką funkcje w wagonie serii 81 pełni PSR:",
-                    "content": [
-                        "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
-                        "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i rozruchu silników trakcyjnych",
-                        "- zabezpiecza silniki trakcyjne przed rozbieganiem, w przypadku pracy bez obciążenia"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Anulowanie hamulca trzymającego na pociągu Metropolis nastąpi po",
-                    "content": [
-                        "- odcięciu kurka B22 na 6 wagonach",
-                        "- przesunięciu dźwigni nastawnika na 'jazdę'",
-                        "- naciśnięciu przycisku 'luzowanie hamulca postojowego'"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Czy w wagonie (petersburskim) serii 81, w którym bezpiecznik główny został przepalony",
-                    "content": [
-                        "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie awaryjne, brak jazdy ale pracuje sprężarka",
-                        "- pracuje przetwornica i sprężarka, brak jazdy",
-                        "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Jakie jest ciśnienie w cylindrze hamulca postojowego pociągu serii 81",
-                    "content": [
-                        "- 0,50 – 0,52 MPa",
-                        "- 0,48 – 0,52 MPa",
-                        "- 0,63 – 0,82 MPa"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga do połowy szyjki szyny nie może być większa niż",
-                    "content": [
-                        "- 35 km/h",
-                        "- 15 km/h",
-                        "- 60 km/h"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Wagon pociągu typu Metropolis posiada",
-                    "content": [
-                        "- 3 stopnie zawieszenia",
-                        "- 1 stopień zawieszenia",
-                        "- 2 stopnie zawieszenia"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "Wskaźnik  Wm 17 (biało-czerwona belka):",
-                    "content": [
-                        "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
-                        "- informuje że w odległości drogi hamowania znajduje się niewidoczny sygnalizator przytorowy",
-                        "- stosowany tylko w tunelu wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W pociągach serii 81 zastosowano silnik trakcyjny",
-                    "content": [
-                        "- asynchroniczny, 3-fazowy, klatkowy,",
-                        "- szeregowy prądu stałego",
-                        "- bocznikowy prądu stałego"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Co wagonie serii 81 spełnia rolę urządzenia pociągowo-zderznego",
-                    "content": [
-                        "- drążek reakcyjny",
-                        "- zderzak",
-                        "- sprzęg"
-                    ],
-                    "correct": 2
-                },
-                {
-                    "question": "W pociągu typu Metropolis pomiędzy wagonami pośrednimi zastosowano sprzęg:",
-                    "content": [
-                        "- automatyczny",
-                        "- stały",
-                        "- półautomatyczny"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W przedziale pasażerskim wagonu czołowego serii 81 pod siedzeniami znajduje się między innymi",
-                    "content": [
-                        "- zabezpieczenie termiczne silnika sprężarki",
-                        "- regulator ciśnieniowy sprężarki",
-                        "- stycznik sprężarki"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "W przypadku powstania ucieczki z magistrali hamulcowej  na jednym z wagonów należy między innymi",
-                    "content": [
-                        "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
-                        "- odłączyć zawór rozrządczy na danym wagonie",
-                        "- zaniku oświetlenia w salonie pasażerskim"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Zabrania  się odblokowywania PA w przypadku",
-                    "content": [
-                        "- zadziałanie WA –56",
-                        "- po dwukrotnym zadziałaniu PA, następującym po sobie",
-                        "- zaniku oświetlenia w salonie pasażerskim"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Jaka prędkość obowiązuje podczas jazdy po torze niewłaściwym",
-                    "content": [
-                        "- do 35 km/h",
-                        "- do 40 km/h",
-                        "- do 58 km/h"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza: ",
-                    "image": "./images/wskaznik-5.png",
-                    "content": [
-                        "- strzałka wskaźnikowa",
-                        "- semafor znajduje się po prawej stronie toru",
-                        "- wjazd na tor niewłaściwy"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "W celu lokalizacji wezwania pasażer – maszynista, należy w przełączyć Comet w położenie ",
-                    "content": [
-                        "- 4 ekran",
-                        "- 3 ekran",
-                        "- 2 ekran"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza",
-                    "image": "./images/wskaznik-6.png",
-                    "content": [
-                        "- granica przetaczania",
-                        "- zakaz jazdy pojazdów elektrycznych",
-                        "- zakaz wjazdu taboru PKP"
-                    ],
-                    "correct": 0
-                },
-                {
-                    "question": "Przedstawiony poniżej wskaźnik oznacza",
-                    "image": "./images/wskaznik-7.png",
-                    "content": [
-                        "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
-                        "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
-                        "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością"
-                    ],
-                    "correct": 1
-                },
-                {
-                    "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
-                    "content": [
-                        "- po prawej stronie toru",
-                        "- po lewej stronie toru",
-                        "- w osi toru"
-                    ],
-                    "correct": 2
-                }
-            ]
+            "question": "Ruchem pociągów na STP Kabaty kieruje:",
+            "content": [
+                "- z Centralnej Dyspozytorni w sytuacjach awaryjnych Dyspozytor Ruchu",
+                "- Dyspozytor Elektrowozowni",
+                "- Dyżurny Ruchu STP"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas wyjazdu składu z torów odstawczych maszynista przestrzega:",
+            "content": [
+                "- poleceń zawartych w rozkazie „O” przy braku możliwości podania sygnału",
+                "- tylko wskazań  na sygnalizatorze kabinowym",
+                "- poleceń zawartych w rozkazie „S” przy braku możliwości podania sygnału"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na jakiej podstawie przy sterowaniu miejscowym, można przejechać obok semafora wskazującego sygnał 'stój'",
+            "content": [
+                "- rozkazu „S” wydanego przez dyspozytora ruchu lub dyżurnego ruchu danego okręgu nastawczego",
+                "- ustnego polecenia dyżurnego stacji",
+                "- rozkazu „S” wydanego przez dyżurnego ruchu danego okręgu nastawczego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy dyspozytor ruchu może przekazać sterowanie ruchem w okręgu nastawczym dyżurnemu ruchu:",
+            "content": [
+                "- tak na warunkach określonych regulaminem technicznym",
+                "- nie",
+                "- tak, ale musi uzyskać zgodę Szefa Służby Ruchu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu doświadczalnego:",
+            "content": [
+                "- wynikającą z konstrukcji pojazdu",
+                "- 80 km/h, przez stacje 40 km/h",
+                "- 40 km/h"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku gdy pociąg z pasażerami przejedzie wskaźnik Wm4, i choćby tylko jedne drzwi znalazły się w części  technologicznej peronu:",
+            "content": [
+                "- maszynista  otwiera  drzwi",
+                "- nie otwiera drzwi, a dalsze postępowanie uzgadnia z dyspozytorem ruchu",
+                "- cofa skład, aby skrócić wydłużony czas postoju pociągu na stacji, następnie powiadamia dyspozytora ruchu"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy pociąg z pasażerami może być podzielony:",
+            "content": [
+                "- tak, gdy zachodzi taka potrzeba, ale trzeba uzyskać zgodę Dyspozytora Ruchu",
+                "- nie może być podzielony",
+                "- tak  może być podzielony"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał zatrzymania taboru „stój” podawany przez maszynistę z drugiego pociągu to:",
+            "content": [
+                "- 3 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
+                "- 2 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
+                "- 1 długi ton, kilkakrotnie powtórzony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Pojedynczy, nie zajęty odcinek izolowany którego obwód torowy wykazuje zajętość, można przejechać na widoczność z prędkością nie przekraczającą:",
+            "content": [
+                "5 km/h,",
+                "20 km/h,",
+                "35 km/h,"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu:",
+            "content": [
+                "- do 35km/h po torze prostym",
+                "- do 15km/h po torze prostym",
+                "- do 15km/h na zwrotnicach"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku samoczynnego otwierania i zamykania drzwi (rytmiczne błyski lampek sygnalizacji drzwiowej ) należy",
+            "content": [
+                "- trzymać cały czas wciśnięty przycisk rezerwowego zamykania drzwi",
+                "- dojechać do najbliższej stacji i otworzyć drzwi",
+                "- uprzedzić pasażerów i po określeniu która strona drzwi próbuje się otworzyć podjąć stosowne procedury"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na jakiej podstawie  i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania",
+            "content": [
+                "- na podstawie rozkazu 'O' z prędkością do 60 km/h jeżeli stacja jest zamknięta dla pasażerów, ale stacji nie opuścili ostatni pasażerowie",
+                "- na podstawie rozkazu 'S' z prędkością do 40 km/h  jeżeli stacja jest otwarta bądź na peronie przebywają pasażerowie",
+                "- na podstawie rozkazu 'O' z prędkością do 60 km/h jeżeli stacja jest zamknięta dla pasażerów i na peronie nie ma pasażerów"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku gdy nie gaśnie biała lampka sygnalizacji hamulca pneumatycznego należy",
+            "content": [
+                "- kontynuować jazdę do końcowej stacji",
+                "- określić zahamowany wagon, na najbliższej stacji zahamować i odhamować pociąg, sprawdzić staczanie składu",
+                "- za pomocą przycisku rezerwowego sterownia pracą sprężarki pompować powietrze do całkowitego wyluzowania składu"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy na STP Kabaty jest możliwe podanie sygnału zastępczego tzn. białe światło migające:",
+            "content": [
+                "- tylko na semaforach",
+                "- nie ma takiej możliwości",
+                "- tak na semaforach i tarczach manewrowych."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wskaźnik W8 ( zmniejszyć prędkość jazdy) zobowiązuje maszynistę do",
+            "content": [
+                "- zmniejszenia prędkości na rozjeździe do 5 km/h, stosowany w przypadkach szczególnych",
+                "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 15 km/h,",
+                "- zmniejszenia prędkości jazdy do 15 km/h na oznaczonym odcinku, dotyczy tylko STP Kabaty"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy po wezwaniu pociągu pogotowia można ruszyć składem z miejsca ?:",
+            "content": [
+                "- można dokonywać  prób ruszenia uszkodzonego pociągu do czasu przybycia pociągu pogotowia",
+                "- można w przypadku gdy awaria zostanie usunięta w ciągu 5 min",
+                "- nie można chyba, że uzyskaliśmy od dyspozytora ruchu inne polecenia"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku uszkodzenia urządzeń nagłaśniających, które  uniemożliwiają nadawanie ostrzeżeń o zamykaniu drzwi maszynista",
+            "content": [
+                "- wysadza pasażerów na najbliższe stacji",
+                "- informuje o tym dyspozytora i doprowadza pociąg z pasażerami do stacji końcowej, ogłaszając komunikaty przez mikrofon",
+                "- jeżeli awaria wystąpiła podczas dwóch ostatnich obiegów pociąg może pozostać  na linii w ruchu pasażerskim"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj prawidłową kolejność zdejmowania uziemiacza:",
+            "content": [
+                "- z szyny prądowej, następnie z koła pociągu",
+                "- z szyny jezdnej, następnie z szyny prądowej",
+                "- z szyny prądowej, następnie z szyny jezdnej"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Do mnie' to:",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- dwa długie tony"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po jakim czasie Dyspozytor Ruchu może wezwać pociąg pogotowia (pociąg zatrzymał się nie planowo i nie można nawiązać z nim łączności):",
+            "content": [
+                "- rano i wieczorem przy czasie następstwa powyżej 7 minut po upływie 10 minut",
+                "- w godzinach szczytu po upływie 5 minut",
+                "- w porze ruchu pasażerskiego po upływie 3 minut"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
+            "content": [
+                "- działanie hamulca postojowego tylko na wagonach czołowych",
+                "- prawidłowe ustawienie tablic kierunku jazdy",
+                "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wskaźnik  W17 (słupek biało-czerwony):",
+            "content": [
+                "- wyznacza miejsce w terenie otwartym i tunelu, do którego wolno jeden z torów zająć taborem, aby umożliwić przejazd taboru po drugim torze",
+                "- informuje, że na dany tor zabroniony jest wjazd taboru o skrajni PKP",
+                "- stosowany tylko w terenie otwartym, oznacza miejsce przy zbiegających się torach, do którego wolno jeden z tych torów zająć taborem, aby zachować możliwość jazdy taboru po drugim torze"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaźnik Wm8 (pomarańczowa tablica z czarną i białą obwódką ):",
+            "content": [
+                "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
+                "- ustawia się w tunelu, informuje maszynistę, że za wskaźnikiem w odległości drogi hamowania znajduje się sygnalizator przytorowy",
+                "- ustawia się w tunelu w miejscu gdzie została przekroczona skrajni budowli"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Zawór maszynisty znajdujący się w kabinie maszynisty posiada:",
+            "content": [
+                "- 8 pozycji, w tym 5 pozycji realizujących hamowanie",
+                "- 7 pozycji, w tym 5 pozycji realizujących  hamowanie",
+                "- 7 pozycji, w tym 4 pozycje realizujące hamownie"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 (w VII położeniu zaworu maszynisty) wynos:",
+            "content": [
+                "- 0,25 MPa",
+                "- 0,0 MPa",
+                "- 0,3 MPa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jaką funkcje w wagonie serii 81 pełni autoreżim:",
+            "content": [
+                "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
+                "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i ciśnienie w cylindrach hamulcowych",
+                "- współpracuje z zaworem zrywakowym"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
+            "content": [
+                "- białe i niebieskie",
+                "- białe i czerwone",
+                "- białe i pomarańczowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy w wagonie serii 81, w którym odłącznik główny nie został załączony:",
+            "content": [
+                "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie  awaryjne, brak jazdy ale pracuje sprężarka",
+                "- pracuje przetwornica i sprężarka, brak jazdy",
+                "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co oznacza VR z kropką i VK 35 na wyświetlaczu SOP ?:",
+            "content": [
+                "- zanik transmisji na danym odcinku",
+                "- uszkodzenie jednego z torów pomiaru prędkości",
+                "- należy  się spodziewać że, następne wskazanie na wyświetlaczu  to  VK 20"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi:",
+            "content": [
+                "- 10,0 bara ± 10%",
+                "- 11,5 bara ± 10%",
+                "- 12,5 bara ± 10%"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jak realizowane jest zamknięcie drzwi przez przycisk „ rezerwowe zamykanie drzwi” w wagonach serii 81:",
+            "content": [
+                "- poprzez podanie napięcia na cewkę zamykającą drzwiowego zaworu rozrządczego za pomocą rezerwowego przewodu nr.18",
+                "- poprzez podanie napięcia na obie cewki otwierające drzwiowego zaworu rozrządczego",
+                "- poprzez podanie napięcia na rezerwową cewkę zamykającą drzwiowego zaworu rozrządczego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Spychanie uszkodzonego pociągu Metropolis odbywa się z ograniczeniem prędkości:",
+            "content": [
+                "- do 60 km/h",
+                "- do 20 km/h",
+                "- do 40 km/h."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W skład wyposażenia pociągu typu Metropolis wchodzą",
+            "content": [
+                "- 4 tablice hamulca pneumatycznego",
+                "- 4 skrzynki z przekształtnikiem ONIX",
+                "- 24 silników napędowych"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga stopki szyny nie może być większa niż",
+            "content": [
+                "- 35 km/h",
+                "- 15 km/h",
+                "- 60 km/h"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Działanie zaworu bezpieczeństwa polega na",
+            "content": [
+                "- całkowitym opróżnieniu zbiornika głównego",
+                "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknięciu się",
+                "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,83 MPa i samoczynnym zamknięciu się"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione (!?)",
+            "content": [
+                "- w wózku wagonu M  dzięki 2 tarczom hamulcowym zamocowanym na każdej osi a w wózku wagonu Tc 1 tarczy hamulcowej zamocowanej na każdej osi",
+                "- w wózku wagonu M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi a w wózku wagonu Tc 2 tarczom hamulcowym  zamocowanym na każdej osi",
+                "- w wózku wagonu Tc i M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W pociągach typu Metropolis zastosowano silnik trakcyjny",
+            "content": [
+                "- asynchroniczny, 3- fazowy, klatkowy",
+                "- synchroniczny prądu zmiennego",
+                "- szeregowy prądu stałego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku sterowania na jazdę bez 'WN' po naciśnięciu przycisku zabezpieczenia przetwornicy następuje:",
+            "content": [
+                "- zasilenie przekaźnika awaryjnego rozruchu –PRA-, który mostkuje przekaźnik zanikowo napięciowy – PZN",
+                "- zasilenie przekaźnika obniżonej nastawy – PON -, który mostkuje przekaźnik zanikowo napięciowy – PZN",
+                "- zamyka się dodatkowy styk przekaźnika kontroli nawrotnika – PKN -, który znajduje się w obwodzie 1 przewodu (jazda)."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Drążek reakcyjny występuje",
+            "content": [
+                "- tylko na pociągu Metropolis",
+                "- tylko na pociągu typu 81",
+                "- na pociągu Metropolis i 81"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W pociągu serii 81 pomiędzy wagonami pośrednimi zastosowano sprzęg",
+            "content": [
+                "- automatyczny",
+                "- stały",
+                "- półautomatyczny"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W czasie hamowania elektrodynamicznego w wagonach serii 81 (!?)",
+            "content": [
+                "- wszystkie styczniki liniowe są zamknięte",
+                "- wszystkie styczniki liniowe są otwarte",
+                "- styczniki liniowe 1 i 5 są otwarte"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaż prawidłowe określenie",
+            "content": [
+                "- nawrotnik jest przeznaczony do zmiany kierunku obrotu silnika wału kułakowego",
+                "- odłącznik główny jest przeznaczony do rozłączenia obwodu głównego w stanie bezprądowym",
+                "- przełącznik rodzaju pracy służy do zmiany kierunku jazdy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dlaczego styki główne wału kułakowego nie mają kominków ?:",
+            "content": [
+                "- bo znajdują się w dużej skrzyni zawieszonej na izolatorach, która stanowi zabezpieczenie przed porażeniem prądem i łukiem elektrycznym",
+                "- styki wału kułakowego rozłączają się bez prądowo więc niema takiej potrzeby",
+                "- w obwodach prądu stałego niskiego napięcia, a w takich warunkach pracuje wał kułakowy nie ma wymogu stosowania komór gasikowych"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Prąd hamowania w wagonie czołowym, w pozycji 'T-1' NJ przy prędkości powyżej 50km/h wynosi",
+            "content": [
+                "- około 180 A",
+                "- około 350 A",
+                "- około 450 A"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zabrania się odblokowywania PA w przypadku",
+            "content": [
+                "- zadziałanie WA –56",
+                "- zaniku wysokiego napięcia",
+                "- jednokrotnego wybicia PA"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Brak sterowania na jazdę, przy sygnalizacji kontroli zamknięcia drzwi i prawidłowych wskazaniach woltomierza NN jest spowodowany",
+            "content": [
+                "- zadziałaniem zabezpieczenia przetwornicy",
+                "- wybiciem WA-56 na wszystkich wagonach",
+                "- wybiciem WA- 54"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku gdy nie zamykają się drzwi w całym pociągu należy",
+            "content": [
+                "- sprawdzić na ostatnim wagonie położenie WA-13",
+                "- zamknąć drzwi za pomocą RPZD",
+                "- sprawdzić położenie WA –53"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jeżeli podczas jazdy z załączonymi silnikami trakcyjnymi w kabinie maszynisty pociągu serii 81 słyszalny jest donośny świst może to świadczyć o tym że",
+            "content": [
+                "- w tunelu szlakowym na którym obecnie znajduje się skład wystąpiła równoczesna awaria wentylatorni stacyjnej i szlakowej (obie tłoczą powietrze do tunelu)",
+                "- jeden z silników pracuje bez obciążenia",
+                "- na sąsiednim z torów w tunelu znajduje się pociąg Metropolis z uszkodzoną poduszką powietrzną zawieszenia"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Maszynista może rozłączyć stycznik obwodów pomocniczych",
+            "content": [
+                "- na wszystkich wagonach, wyłączając WA 53 na wagonie czołowym",
+                "- na wszystkich wagonach, wyłączając WA 53 na każdym wagonie osobno",
+                "- wyłączając odłącznik główny"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Obniżone ciśnienie w przewodzie zasilającym pociągu typu Metropolis poniżej 6,5 bara (załączone hamulce awaryjny i postojowy) może świadczy o",
+            "content": [
+                "- awarii jednej ze sprężarek",
+                "- zadziałaniu zaworu zrywakowego",
+                "- uszkodzeniu poduszki powietrznej na jednym z wagonów"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku powstania ucieczki z magistrali zasilającej  na jednym z wagonów należy między innymi",
+            "content": [
+                "- na niesprawnym wagonie podłożyć izolację pod styki stycznika sprężarki",
+                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
+                "- zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-2.png",
+            "content": [
+                "- strzałka wskaźnikowa",
+                "- semafor znajduje się po lewej stronie torów",
+                "- wjazd na tor niewłaściwy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-3.png",
+            "content": [
+                "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+                "- zakaz jazdy elektrycznych pojazdów trakcyjnych",
+                "- wjazd na tor ze skrajnią PKP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Zawracanie pociągu w miejscach, gdzie nie ma możliwości podania sygnałów na semaforach, odbywa się",
+            "content": [
+                "- na ustne polecenie dyżurnego ruchu,",
+                "- na rozkaz szczególny 'O'",
+                "- na rozkaz szczególny 'S'"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po naciśnięciu przycisku rezerwowego sterowania sprężarki na wagonach serii 81",
+            "content": [
+                "- pracują wszystkie sprężarki",
+                "- pracują sprężarki na wagonach pośrednich",
+                "- pracują sprężarki na wagonach czołowych"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy wskaźnik W24 (wjazd na tor niewłaściwy) występuje  w tunelu",
+            "content": [
+                "- tak",
+                "- nie",
+                "- na stacjach na których możliwe jest zawracanie składów"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wjazd pociągu  na tor częściowo zajęty jest dopuszczalny na podstawie rozkazu 'S' z zachowaniem  następujących ograniczeń prędkości",
+            "content": [
+                "- do 15 km/h, a podczas dojazdu do innego stojącego składu do 5 km/h",
+                "- do 20 km/h, a podczas dojazdu do innego stojącego składu do 3 km/h",
+                "- do 35 km/h, a podczas dojazdu do innego stojącego składu do 3 km/h"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podkreśl zasadnicze kierunki określone w regulaminie technicznym dla każdego z torów znajdujących się na szlaku granicznym",
+            "content": [
+                "- tor nr.2  STP – Ky ; Ky – STP ; tor dwukierunkowy",
+                "- tor nr.3  STP – Ky ; Ky – STP ; tor dwukierunkowy",
+                "- tor nr.4  STP – Ky ; Ky – STP ; tor dwukierunkowy."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przekaźnik nadmiarowy służy do zabezpieczenia",
+            "content": [
+                "- silników trakcyjnych przed skutkami zwarć",
+                "- silnika sprężarki przed przegrzaniem",
+                "- silników trakcyjnych przed skutkami przeciążeń"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 7,5 bara oznacza",
+            "content": [
+                "- próg hamowania awaryjnego",
+                "- próg podwójnej pracy",
+                "- próg bezpieczeństwa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągach serii 81 wynosi(!?):",
+            "content": [
+                "- 0,78 – 0,82 MPa",
+                "- 0,95 – 1,20 MPa",
+                "- 0,90 – 0,92 MPa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na jakiej podstawie  i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?:",
+            "content": [
+                "- na podstawie rozkazu 'O' z prędkością do 60 km/h",
+                "- na podstawie rozkazu 'S' z prędkością do 40 km/h",
+                "- na podstawie rozkazu 'O' z prędkością do 40 km/h"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W jaki sposób napędzany jest wał kułakowy",
+            "content": [
+                "- za pomocą elektrozaworów",
+                "- za pomocą silnika prądu przemiennego",
+                "- za pomocą silnika prądu stałego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik zobowiązuje maszynistę do",
+            "image": "./images/wskaznik-4.png",
+            "content": [
+                "- zmniejszenia prędkości na rozjeździe do 3 km/h, stosowany w przypadkach szczególnych",
+                "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 30 km/h, dotyczy tylko STP Kabaty",
+                "- zmniejszenia prędkości jazdy do 30 km/h na oznaczonym odcinku"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Ode mnie' to",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- jeden krótki ton"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podaj prawidłową kolejność zakładania uziemiacza",
+            "content": [
+                "- koło pociągu, następnie szyna prądowa",
+                "- szyna jezdna, następnie szyna prądowa",
+                "- szyna prądowa, następnie szyna jezdna"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu serii 81przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić",
+            "content": [
+                "- działanie hamulca postojowego tylko na wagonach czołowych",
+                "- prawidłowe połączenie skrzynek elektrycznych na sprzęgach",
+                "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Ciśnienie w magistrali hamulcowej wagonów  serii 81 (w położeniu II zaworu maszynisty) wynosi",
+            "content": [
+                "- 0,8 MPa",
+                "- 0,6 MPa",
+                "- 0,5 MPa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jaką funkcje w wagonie serii 81 pełni PSR:",
+            "content": [
+                "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
+                "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i rozruchu silników trakcyjnych",
+                "- zabezpiecza silniki trakcyjne przed rozbieganiem, w przypadku pracy bez obciążenia"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Anulowanie hamulca trzymającego na pociągu Metropolis nastąpi po",
+            "content": [
+                "- odcięciu kurka B22 na 6 wagonach",
+                "- przesunięciu dźwigni nastawnika na 'jazdę'",
+                "- naciśnięciu przycisku 'luzowanie hamulca postojowego'"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy w wagonie (petersburskim) serii 81, w którym bezpiecznik główny został przepalony",
+            "content": [
+                "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie awaryjne, brak jazdy ale pracuje sprężarka",
+                "- pracuje przetwornica i sprężarka, brak jazdy",
+                "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jakie jest ciśnienie w cylindrze hamulca postojowego pociągu serii 81",
+            "content": [
+                "- 0,50 – 0,52 MPa",
+                "- 0,48 – 0,52 MPa",
+                "- 0,63 – 0,82 MPa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga do połowy szyjki szyny nie może być większa niż",
+            "content": [
+                "- 35 km/h",
+                "- 15 km/h",
+                "- 60 km/h"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wagon pociągu typu Metropolis posiada",
+            "content": [
+                "- 3 stopnie zawieszenia",
+                "- 1 stopień zawieszenia",
+                "- 2 stopnie zawieszenia"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaźnik  Wm 17 (biało-czerwona belka):",
+            "content": [
+                "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
+                "- informuje że w odległości drogi hamowania znajduje się niewidoczny sygnalizator przytorowy",
+                "- stosowany tylko w tunelu wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W pociągach serii 81 zastosowano silnik trakcyjny",
+            "content": [
+                "- asynchroniczny, 3-fazowy, klatkowy,",
+                "- szeregowy prądu stałego",
+                "- bocznikowy prądu stałego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co wagonie serii 81 spełnia rolę urządzenia pociągowo-zderznego",
+            "content": [
+                "- drążek reakcyjny",
+                "- zderzak",
+                "- sprzęg"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W pociągu typu Metropolis pomiędzy wagonami pośrednimi zastosowano sprzęg:",
+            "content": [
+                "- automatyczny",
+                "- stały",
+                "- półautomatyczny"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przedziale pasażerskim wagonu czołowego serii 81 pod siedzeniami znajduje się między innymi",
+            "content": [
+                "- zabezpieczenie termiczne silnika sprężarki",
+                "- regulator ciśnieniowy sprężarki",
+                "- stycznik sprężarki"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku powstania ucieczki z magistrali hamulcowej  na jednym z wagonów należy między innymi",
+            "content": [
+                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
+                "- odłączyć zawór rozrządczy na danym wagonie",
+                "- zaniku oświetlenia w salonie pasażerskim"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Zabrania  się odblokowywania PA w przypadku",
+            "content": [
+                "- zadziałanie WA –56",
+                "- po dwukrotnym zadziałaniu PA, następującym po sobie",
+                "- zaniku oświetlenia w salonie pasażerskim"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jaka prędkość obowiązuje podczas jazdy po torze niewłaściwym",
+            "content": [
+                "- do 35 km/h",
+                "- do 40 km/h",
+                "- do 58 km/h"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza: ",
+            "image": "./images/wskaznik-5.png",
+            "content": [
+                "- strzałka wskaźnikowa",
+                "- semafor znajduje się po prawej stronie toru",
+                "- wjazd na tor niewłaściwy"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W celu lokalizacji wezwania pasażer – maszynista, należy w przełączyć Comet w położenie ",
+            "content": [
+                "- 4 ekran",
+                "- 3 ekran",
+                "- 2 ekran"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-6.png",
+            "content": [
+                "- granica przetaczania",
+                "- zakaz jazdy pojazdów elektrycznych",
+                "- zakaz wjazdu taboru PKP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-7.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
+            "content": [
+                "- po prawej stronie toru",
+                "- po lewej stronie toru",
+                "- w osi toru"
+            ],
+            "correct": 2
         }
     ]
 }
