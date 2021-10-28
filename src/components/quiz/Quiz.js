@@ -3,7 +3,7 @@ const Quiz = (props) => {
     const { currentTest, currentQuestion, isDisabled } = props;
     return (
         <>
-            <div className="p-6 text-2xl text-center bg-yellow-500 text-gray-800 rounded-full max-w-xl mx-auto m-5 font-bold">
+            <div className="p-8 text-2xl text-center bg-yellow-500 text-gray-800 rounded-full max-w-xl mx-auto m-5 font-bold">
                 {currentTest[currentQuestion]?.question}
                 {currentTest[currentQuestion]?.image ? <img src={`./${currentTest[currentQuestion]?.image}`} alt="" className="mx-auto" /> : ""}
             </div>

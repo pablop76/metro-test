@@ -1,8 +1,8 @@
 .bg-container {
-  background-image: url(./images/bg.svg), url(./images/overlay.svg), url(./images/stp.jpg);
+  background-image: url(./images/bg.svg), url(./images/bg-top.svg), url(./images/overlay.svg), url(./images/stp.jpg);
   background-repeat: no-repeat;
-  background-size: contain, cover, cover;
-  background-position: center bottom, center, bottom center;
+  background-size: contain, contain, cover, cover;
+  background-position: center bottom, top center, center, bottom center;
 }
 
 .current {
