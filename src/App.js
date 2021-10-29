@@ -60,6 +60,7 @@ function App() {
       }
     }
 
+
     setTimeout(() => {
       if (currentQuestion >= maxQuestions - 1) return;
       setCurrentQuestion(currentQuestion + 1);
@@ -67,6 +68,14 @@ function App() {
       setDangerAlert(false);
       setIsDisabled(false);
     }, 5000);
+
+  }
+
+  const nextQuestion = () => {
+    // setCurrentQuestion(currentQuestion + 1);
+    // answerDiv.classList.remove("current", "wrong");
+    // setDangerAlert(false);
+    // setIsDisabled(false);
   }
 
   const handleChangeLimit = event => {
@@ -113,7 +122,7 @@ function App() {
         <Refresh refreshPage={refreshPage} />
       </div>
       <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
-        {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} /> : ""}
+        {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
       </Quiz>
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
         odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
