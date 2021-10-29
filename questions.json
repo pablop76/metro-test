@@ -798,6 +798,288 @@
                 "- w osi toru"
             ],
             "correct": 2
+        },
+        {
+            "question": "Silnik trakcyjny w wagonach serii 81 zawieszony jest",
+            "content": [
+                "- na podłużnicach ramy wózka",
+                "- na osi (za nos)",
+                "- na poprzecznicach ramy wózka"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Brak sterowania na jazdę (kontrolka PA świeci tylko w poz. NJ „Jazda „), przy prawidłowo działającej sygnalizacji zamknięcia drzwi , lampka pierwszego przewodu nie świeci się może świadczyć o",
+            "content": [
+                "- niesprawny jest przycisk 'odblok PA'",
+                "- wybiło WA – 56 w wagonie czołowym",
+                "- brak kontaktu elektrycznego na stykach AWS."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik to:",
+            "image": "./images/wskaznik-8.png",
+            "content": [
+                "- zmniejszyć prędkość jazdy",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- obowiązująca, największa prędkość dozwolona"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza:",
+            "image": "./images/wskaznik-9.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+                "- zakaz jazdy elektrycznych pojazdów trakcyjnych"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-10.png",
+            "content": [
+                "- nakazuje podać sygnał 'baczność",
+                "- oznacza pierwszeństwo pojazdów drogowych",
+                "- oznacza miejsce na torze, poza które jazda manewrowa jest niedozwolona"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W skład wyposażenia pociągu typu Metropolis wchodzą",
+            "content": [
+                "- 6 skrzynek z przekształtnikiem ONIX",
+                "- 4 tablice hamulca pneumatycznego",
+                "- 8 wózków napędowych"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Rama wózka wagonu serii 81 składa się",
+            "content": [
+                "- dwóch podłużnic i trzech poprzecznic",
+                "- czterech podłużnic i czterech poprzecznic",
+                "- z dwóch podłużnic i dwóch poprzecznic"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Drążek reakcyjny w wagonie serii 81",
+            "content": [
+                "- jest jednym z elementów urządzenia pociągowo-zderznego",
+                "- jest jednym z elementów zawieszenia silnika trakcyjnego",
+                "- jest jednym z elementów zawieszenia przekładni"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Zawieszenie pierwszego stopnia w wagonach Metropolis realizowane jest ?",
+            "content": [
+                "- za pomocą dwóch 'sprężyn gumowych', zamocowanych na każdej maźnicy",
+                "- za pomocą dwóch poduszek pneumatycznych przypadających na jeden wózek",
+                "- za pomocą dwóch zestawów sprężyn śrubowych zamocowanych na każdej maźnicy."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Silnik trakcyjny pociągu Metropolis zasilany jest ?",
+            "content": [
+                "- napięciem sinusoidalnym o stałej wartości i stałej częstotliwości",
+                "- napięciem sinusoidalnym o zmiennej wartości i stałej częstotliwości",
+                "- napięciem sinusoidalnym o zmiennej wartości i zmiennej częstotliwości"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hamowanie cierne na każdym wózku tocznym wagonu Metropolis realizowane jest za pomocą ?",
+            "content": [
+                "- tarcz hamulcowych (po jednej tarczy na każdą oś)",
+                "- tarcz hamulcowych (po dwie tarcze na każdą oś)",
+                "- jednej tarcz hamulcowej umieszczonej na osi zewnętrznej wózka"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Napięcie znamionowe silnika sprężarki wagonu serii 81 wynosi ?",
+            "content": [
+                "- 80 V prądu stałego",
+                "- 750 V prądu stałego",
+                "- 220 V prądu przemiennego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Zawór zwrotny zapewnia ?",
+            "content": [
+                "- połączenie przewodu  hamulcowego z atmosferą",
+                "- ochronę zbiornika przed nadmiernym wzrostem ciśnienia",
+                "- utrzymanie sprężonego powietrza w zbiorniku przy niepracującej sprężarce, a także uruchomienie sprężarki nieobciążonej ciśnieniem"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hamulcowy zawór rozrządczy składa się z ?",
+            "content": [
+                "- zaworu sterującego, części komorowej i 3 zaworów elektropneumatycznych",
+                "- zaworu sterującego, zbiornika wyrównawczego  i 2 zaworów elektropneumatycznych",
+                "- zaworu sterującego, części komorowej i 2 zaworów elektropneumatycznych"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Ciśnienie w cylindrach hamulcowych nieobciążonego wagonu czołowego serii 81 (hamowanie pełne służbowe) zawiera się w przedziale:",
+            "content": [
+                "- 0,36 – 0,40 MPa",
+                "- 0,20 ± 0,01 MPa",
+                "- 0,25 – 0,27 MPa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Automatyczny wyłącznik hamowania (AWT) powinien wyłączyć hamulec elektrodynamiczny przy ciśnieniu ?",
+            "content": [
+                "- 0,35 ± 0,01 MPa",
+                "- 0,20 ± 0,01 MPa",
+                "- 0,51 ± 0,01 MPa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi",
+            "content": [
+                "- 10 ± 0,2 bara",
+                "- 8,5 ± 0,2 bara",
+                "- 12 barów ± 10%"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W celu lokalizacji Komunikaty specjalne, Comet należy w przełączyć w położenie ?",
+            "content": [
+                "- 2 ekran",
+                "- 1 ekran",
+                "- 3 ekran"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Do hamowania awaryjnego na pociągu Metropolis wykorzystywane jest ?",
+            "content": [
+                "- hamowanie mieszane",
+                "- hamowanie elektrodynamiczne",
+                "- hamowanie pneumatyczne"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Do zmiany kierunku obrotów silników trakcyjnych na wagonie serii 81 służy ?",
+            "content": [
+                "- nastawnik jazdy",
+                "- przekaźnik samoczynnego rozruchu",
+                "- nawrotnik"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przy hamowaniu elektrodynamicznym (prędkość w zakresie 90 do ok. 65 km/h) na pociągu serii 81",
+            "content": [
+                "- hamowanie realizowane jest przez zasilenie cewki zaworu elektropneumatycznego Nr 1",
+                "- hamowanie realizowane jest przez impulsową regulację wzbudzenia prądnic",
+                "- realizowane jest hamowanie oporowe"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Pozycja Rozruch I na pociągu serii 81 to ?",
+            "content": [
+                "- przekaźnika samoczynnego rozruchu",
+                "- przekaźnika kontroli prądu hamowania",
+                "- przekaźnika lokalizacji awarii"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Odłącznik główny na wagonie serii 81 przeznaczony jest do ?",
+            "content": [
+                "- załączania i rozłączania obwodu głównego w stanie bezprądowym, a także przy przeciążeniach i zwarciach",
+                "- zabezpieczenia zwarciowego",
+                "- rozłączenia obwodu głównego w stanie bezprądowym"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na pociągu Metropolis wysokie napięcie zasilające ?",
+            "content": [
+                "- jest przekazywane z wagonu M1 do Tc1 i M4 do Tc4 w celu zasilenia przekształtników trakcyjnych",
+                "- jest przekazywane między wagonami M1, M2, M3 i M4",
+                "- jest przekazywane  z wagonu M1 do Tc1 i M4 do Tc4 w celu zasilenia przetwornic statycznych"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W trakcie przyjęcia na elektrowozowni składu typu Metropolis, przełącznik zasilania na wagonie na który podane jest WN powinien znajdować się w pozycji ?:",
+            "content": [
+                "- neutralne",
+                "- odbierak",
+                "- warsztat"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na pociągu serii 81 do Styczników grupowych zalicza się m.in.",
+            "content": [
+                "- odłącznik główny",
+                "- nawrotnik",
+                "- rezystory osłabienia wzbudzenia"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jakie jest napięcie na silniku trakcyjnym przy połączeniu szeregowo-równoległym ?",
+            "content": [
+                "- ¼ napięcia szyny prądowej",
+                "- napięcie szyny prądowej",
+                "- ½ napięcia szyny prądowej"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zabrania się wyjazdu z elektrowozowni pociągowi serii 81 na którym ?",
+            "content": [
+                "- w wyposażeniu dodatkowym brakuje rękawic dielektrycznych",
+                "- w wyposażeniu dodatkowym brakuje drabinki awaryjnej",
+                "- kasety rejestratora zdarzeń są zapełnione w 70%"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przy działających urządzeniach SOP, jeżeli aktualna prędkość pociągu jest większa niż dopuszczalna+2km/h, system samoczynnego ograniczenia prędkości:",
+            "content": [
+                "- powoduje wyłączenie napędu (pojazd jest na wybiegu)",
+                "- powoduje załączenie hamowania awaryjnego",
+                "- powoduje załączenie pełnego hamowania służbowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku powstania ucieczki powietrza z magistrali hamulcowej  na jednym z wagonów należy między innymi",
+            "content": [
+                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA",
+                "- zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach",
+                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Na pociągu Metropolis kurek odcinający z odpowietrzeniem (poduszki powietrzne) oznaczony jest symbolem",
+            "content": [
+                "- B22",
+                "- L1",
+                "- B18"
+            ],
+            "correct": 1
         }
     ]
 }
