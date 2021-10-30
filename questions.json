@@ -1080,6 +1080,323 @@
                 "- B18"
             ],
             "correct": 1
+        },
+        {
+            "question": "Jeżeli w pociągu INSPIRO jadącym z prędkością 60km/h zostanie użyta dzwignia awaryjnego otwierania drzwi to",
+            "content": [
+                "drzwi otworzą się automatycznie",
+                "w pociągu załączy się hamowanie awaryjna",
+                "pojawi sie brak kontroli drzwi, pociąg zwolni do 40km/h i z taka prędkością pozwoli dojechać do stacji"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W celu sprawdzenia stanu hamulców w pociągu METROPOLIS należy przełaczyc COMET na",
+            "content": [
+                "ekran 4",
+                "ekran 5.2",
+                "ekran 6.1"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jakim napięciem zasilany jest system wentylacji salonu pasażerskiego",
+            "content": [
+                "110 V DC lub 80 V DC w zależności od typu pociągu",
+                "3 x 400 V AC bez względu na typ pociągu",
+                "napieciem trzeciej szyny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przełącznik pożar na pulpicie w kabinie INSPIRO",
+            "content": [
+                "uruchamia system gaszenia",
+                "odłącza wyłączniki szybkie w wagonach",
+                "odcina wentylacje w przedziale pasażerskim, należy go użyć podczas pożaru"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na zamkniętym torze szlakowym obowiązuje",
+            "content": [
+                "ruch dwukierunkowy",
+                "kierunek ruchu właściwy",
+                "nie obowiazuje żaden kierunek"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zasadniczym kierunkiem toru nr. 3 znajdującym się na szlaku granicznym jest",
+            "content": [
+                "tor dwukierunkowy",
+                "kierunek STP -> A1 Kabaty",
+                "kierunek A1 Kabaty -> STP"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W obwodzie wytwarzania spręzonego powietrza pociągu Metropolis, cisnienie 7,5 bara oznacza",
+            "content": [
+                "próg hamowania awaryjnego",
+                "próg podwójnej pracy",
+                "próg bezpieczeństwa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągu serii 81 wynosi",
+            "content": [
+                "0,78 - 0,82 MPa",
+                "0,95 - 1,20 MPa",
+                "0,90 - 0,92 MPa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W stanie błedu krytycznego ATO, nie jest możliwa jazda w trybach",
+            "content": [
+                "TA, TBN, DJA",
+                "TA, TR, TBN",
+                "TA, TBN, TR, TB"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W stanie błędu krytycznego ATP, jazda z aktywnym SOP-3",
+            "content": [
+                "jest możliwa tylko w trybie TA",
+                "jest możliwa tylko w trybie TR",
+                "nie jest możliwa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po przekroczeniu prędkości restrykcyjnej system pociągu załączy",
+            "content": [
+                "hamowanie awaryjne od CCU",
+                "hamowanie służbowe od ATP",
+                "hamowanie awaryjne od ATP"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po upływie jakiego czasu konieczne jest ponowne przeprowadzenie testu pokładowych urzadzeń SOP3",
+            "content": [
+                "po upływie 3 min",
+                "po 12 godzinach jazdy z aktywnym systemem SOP3",
+                "po 10 min. postoju pociągu z aktywnym systemem SOP3 w trybie TA,TR lub TB"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Stopień „0n”  (zero  nieprzełamywalne ) jest kodowany",
+            "content": [
+                "między innymi za semaforem i na końcach torów odstawczych , nie można go przejechać po wciśnięciu P-20",
+                "zawsze tam gdzie występuje zajętość i można go przejechać tylko w trybie TB",
+                "za semaforem i wszędzie gdzie występuje zajętość."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Kto decyduje o prędkości pociągu w przypadku kolejnego przejazdu na torze prób?",
+            "content": [
+                "kierownik pociągu",
+                "prowadzący pociąg",
+                "dyżurny Ruchu STP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Z jaką maksymalną prędkością można jeździć na torze prób?",
+            "content": [
+                "Maksymalnie do 85 km/h",
+                "Na torze prób pociąg może jeździć z maksymalną prędkością wynikającą z konstrukcji pojazdu, geometrii toru, harmonogramu jazd i ograniczeń wprowadzonych przez Dział Torowy",
+                "Wg wskazań urządzeń pokładowych AOP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku zaniku kontroli drzwi podczas jazdy w ruchu pasażerskim prowadzący pociąg:",
+            "content": [
+                "każdorazowo zatrzymuje pociąg w tunelu i zarządza ewakuację pasażerów",
+                "zmniejsza prędkość jazdy  do 20 km/h",
+                "w miarę możliwości doprowadza pociąg do najbliższej stacji"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Pominięcie semafora Km na 'stój' ,(umieszczonego na STP) podczas wjazdu do tunelu , możliwe   jest na",
+            "content": [
+                "polecenie dyżurnego ruchu STP",
+                "rozkaz szczególny „S” , wydany przez dyżurnego ruchu STP",
+                "żadna z odpowiedzi nie jest prawidłowa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Pominięcie semafora Mm na „stój” umieszczonego na STP w celu wykonania manewrów jest możliwe",
+            "content": [
+                "na polecenie dyżurnego ruchu STP",
+                "na rozkaz szczególny „S” ,wydany przez dyżurnego ruchu STP",
+                "na rozkaz „S” i rozkaz „O”, wydany przez dyżurnego ruchu STP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza migająca czerwona lampka Jazda na pulpicie SOP",
+            "content": [
+                "- zanik transmisji na danym odcinku",
+                "- załączone hamowanie awaryjne",
+                "- załączone hamowanie służbowe"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W skład wyposażenia pociągu typu Metropolis wchodzą",
+            "content": [
+                "- 6 skrzynek z przekształtnikiem ONIX",
+                "- 4 tablice hamulca pneumatycznego",
+                "- 8 wózków napędowych"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przedziale pasażerskim wagonu tocznego pociągu Inspiro",
+            "content": [
+                "- znajduje się zabezpieczenie termiczne silnika sprężarki",
+                "- znajduje się główny bezpiecznik ładowarki baterii akumulatorów",
+                "- znajduje się przycisk aktywacji przetwornicy pomocniczej"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Brak sterowania na jazdę (kontrolka PA świeci tylko w poz. NJ „Jazda „), przy prawidłowo działającej sygnalizacji zamknięcia drzwi, lampka pierwszego przewodu nie świeci się, może świadczyć o",
+            "content": [
+                "- niesprawny jest przycisk odblok PA",
+                "- wybiło WA – 56 w wagonie czołowym",
+                "- brak kontaktu elektrycznego na stykach PWS"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaż prawidłowe określenie",
+            "content": [
+                "- nawrotnik jest przeznaczony do zmiany kierunku obrotu silnika wału kułakowego",
+                "- przełącznik rodzaju pracy służy do zmiany kierunku jazdy",
+                "- wał kułakowy jest przeznaczony do przełączania sekcji rezystorów rozruchowych i osłabienia wzbudzenia w procesie rozruchu i hamowania"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W przypadku powstania ucieczki z magistrali hamulcowej  na jednym z wagonów należy między innymi",
+            "content": [
+                "- na niesprawnym wagonie odłączyć zawór rozrządczy, wyluzować wagon",
+                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
+                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zabrania  się odblokowywania PA w przypadku",
+            "content": [
+                "- Po dwukrotnym zadziałaniu PA, następujacym po sobie",
+                "- zadziałanie WA –56",
+                "- zaniku oświetlenia w salonie pasażerskim"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku braku sygnalizacji kontroli zamknięcia drzwi należy",
+            "content": [
+                "- sprawdzić  położenie WA-13 i WA-16",
+                "- sprawdzić położenie WA-56",
+                "- sprawdzić położenie WA-53"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas przejazdu próbnego",
+            "content": [
+                "- pociąg nie może przewozić pasażerów i pracowników metra",
+                "- w pociągu mogą przebywać pasażerowie i pracownicy metra",
+                "- dopuszcza się przewóz pracowników metra (w celu dojazdu do określonych miejsc pracy)"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przed przedstawionym poniżej wskaźnikiem należy ustawić",
+            "image": "./images/wskaznik-7.png",
+            "content": [
+                "- w odległości drogi hamowania wskaźnik W27 (obowiązująca, największa prędkość dozwolona)",
+                "- w odległości drogi hamowania wskaźnik W8 ( zmniejszyć prędkość jazdy)",
+                "- w odległości drogi hamowania sygnał DO"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku uszkodzenia sprężarek na pociągu Metropolis, po sprzęgnięciu",
+            "content": [
+                "- należy połączyć magistrale hamulcowe",
+                "- zabrania się łączenia magistrali zasilających",
+                "- należy połączyć magistrale zasilające, gdy pociągiem pogotowia jest pociąg typu 81 lub Metropolis"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu",
+            "content": [
+                "do 5km/h na zwrotnicach",
+                "do 15km/h na zwrotnicach",
+                "do 40km/h po torze prostym"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 10 bar oznacza(!?)",
+            "content": [
+                "- poziom wyłączenia",
+                "- poziom podwójnej pracy",
+                "- poziom bezpieczeństwa"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Ruch pociągów powinien być wstrzymany jeżeli widoczność sygnalizatorów i wskaźników na odcinku toru nie przekracza",
+            "content": [
+                "- 15 metrów",
+                "- 10 metrów",
+                "- 5 metrów"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W przypadku awarii urządzeń łączności prowadzący pociąg",
+            "content": [
+                "- wysadza pasażerów na najbliższe stacji",
+                "- telefonicznie informuje o tym dyspozytora ruchu i doprowadza pociąg z pasażerami do stacji końcowej",
+                "- jeżeli awaria wystąpiła podczas dwóch ostatnich obiegów pociąg może pozostać na linii w ruchu pasażerskim"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile wynosi dopuszczalna odchyłka dla odjazdu pociągu względem rozkładu jazdy w okresie obowiązywania następstwa czasowego równego 15 minut, np :  jazdy nocne",
+            "content": [
+                "przyśpieszenie o 3 minuty , opóźnienie o 3 minuty",
+                "przyspieszenie o 1 minutę , opóźnienie o 3 minuty",
+                "przyśpieszenie  o 59 sekund , opóźnienie o 2 minuty i 59 sekund"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Na rysunku tablicy hamulcowej zaznaczono zawory odcinające B14, B22, L1, B2 i B18, dopasuj do nich właściwy opis",
+            "image": "./images/tablica-pneumatyczna-metropolis.png",
+            "content": [
+                "B22 - zwolnienie zablokowanego hamulca postojowego,B14 - zwolnienie zablokowanego hamulca służbowego, L1 - kurek odcinający poduszki powietrzne",
+                "L1 - zwolnienie zablokowanego hamulca postojowego,B14 - zwolnienie zablokowanego hamulca służbowego, B22 - kurek odcinający poduszki powietrzne",
+                "B14 - zwolnienie zablokowanego hamulca postojowego,B22 - zwolnienie zablokowanego hamulca służbowego, L1 - kurek odcinający poduszki powietrzne"
+            ],
+            "correct": 0
         }
     ]
 }
