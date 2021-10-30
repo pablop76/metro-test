@@ -19,13 +19,13 @@ const DangerAlert = (props) => {
                         {answers[corectAnswer]}
                     </p>
                 </div>
-                {/* <div className="items-center px-4 py-3">
+                <div className="items-center px-4 py-3">
                     <button onClick={nextQuestion}
                         id="ok-btn"
-                        className="px-4 py-2 bg-green-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+                        className="px-4 py-2 bg-red-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300">
                         Następne
                     </button>
-                </div> */}
+                </div>
             </div>
         </div>
     );

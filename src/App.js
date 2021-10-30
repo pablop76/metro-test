@@ -1,6 +1,8 @@
 import Header from "./components/header/Header";
 import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
 import DangerAlert from "./components/alerts/DangerAlert";
+import SuccesAlert from "./components/alerts/SuccesAlert";
+import EndTestAlert from "./components/alerts/EndTestAlert";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import Quiz from "./components/quiz/Quiz.js";
@@ -14,10 +16,12 @@ function App() {
   const [currentTest, setCurrentTest] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [maxQuestions, setMaxQuestions] = useState(0);
+  const [endTest, setEndTest] = useState(false);
   const [audio, setAudioOn] = useState(false);
   const [correctAnswers, setCorectAnswers] = useState(0);
   const [inCorrectAnswers, setInCorrectAnswers] = useState(0);
   const [dangerAlert, setDangerAlert] = useState(false);
+  const [succesAlert, setSuccesAlert] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
 
   // Losowanie pytań od 0 do długość tablicy
@@ -42,14 +46,16 @@ function App() {
   const sound2 = new Audio(smiech);
 
   const answerChange = (answerUser, el) => {
-    if (currentQuestion >= maxQuestions) return;
+
+    if (currentQuestion >= maxQuestions + 1) return;
     setIsDisabled(true);
-    let answerDiv = el.currentTarget.firstChild;
+    let answerDiv = el.currentTarget;
 
     if (answerUser === currentTest[currentQuestion].correct) {
       if (audio) sound.play();
       setCorectAnswers(correctAnswers + 1);
       answerDiv.classList.add("current");
+      setSuccesAlert(true);
 
     } else {
       if (audio) sound2.play();
@@ -60,22 +66,21 @@ function App() {
       }
     }
 
-
-    setTimeout(() => {
-      if (currentQuestion >= maxQuestions - 1) return;
-      setCurrentQuestion(currentQuestion + 1);
-      answerDiv.classList.remove("current", "wrong");
-      setDangerAlert(false);
-      setIsDisabled(false);
-    }, 5000);
-
   }
 
   const nextQuestion = () => {
-    // setCurrentQuestion(currentQuestion + 1);
-    // answerDiv.classList.remove("current", "wrong");
-    // setDangerAlert(false);
-    // setIsDisabled(false);
+    if (currentQuestion + 1 === maxQuestions) {
+      setDangerAlert(false);
+      setSuccesAlert(false);
+      setEndTest(true);
+      return;
+    };
+    setCurrentQuestion(currentQuestion + 1);
+    document.querySelector(".wrong")?.classList.remove("wrong");
+    document.querySelector(".current")?.classList.remove("current");
+    setDangerAlert(false);
+    setSuccesAlert(false);
+    setIsDisabled(false);
   }
 
   const handleChangeLimit = event => {
@@ -96,10 +101,10 @@ function App() {
   }
 
   let colorSend = (() => {
-    if (Math.round(correctAnswers / maxQuestions * 100) >= 60) {
-      return "current";
+    if (Math.round(correctAnswers / maxQuestions * 100) >= 67) {
+      return "bg-green-700";
     }
-    return "wrong";
+    return "bg-red-600";
   })();
 
   useEffect(() => {
@@ -123,6 +128,8 @@ function App() {
       </div>
       <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
         {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
+        {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
+        {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend} /> : ""};
       </Quiz>
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
         odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
