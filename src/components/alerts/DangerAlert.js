@@ -3,17 +3,16 @@ const DangerAlert = (props) => {
 
     return (
         <div
-            className="relative top-20 mx-auto p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-80">
+            className="relative top-20 mx-auto p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-70">
             <div className="mt-3 text-center">
-                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-red-500">
-                    <svg className="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-white">
+                    <svg className="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5" />
                     </svg>
                 </div>
-                <h3 className="text-xl leading-6 font-medium text-gray-900 m-5">Błąd!</h3>
                 <div className="mt-2 px-7 py-3">
                     <p className=" text-white text-xl">
-                        Prawidłowa odpowiedź to {corectAnswer + 1}
+                        Prawidłową odpowiedźią jest nr. {corectAnswer + 1}
                     </p>
                     <p className=" text-green-400 text-xl font-bold">
                         {answers[corectAnswer]}
