@@ -2,7 +2,7 @@
 * [DEMO](https://pablop76.github.io/metro-test/)
 ## Template
 ![template app](./template.png)
-## Technologie uzyte w aplikcji
+## Technologie użyte w aplikcji
 * react, tailwind CSS
 ## Praca z projektem
 * Instalacja npm install
