@@ -1975,7 +1975,7 @@
                 "ruch po torach, obsługiwanych przez urządzenia srp",
                 "ruch po torach, po których pociągi mogą poruszać się tylko w jednym kierunku"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
