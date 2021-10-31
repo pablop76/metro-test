@@ -1,6 +1,6 @@
 # Aplikacja "Quiz". Testy okresowe na stanowisku maszynista metra
 * [DEMO](https://pablop76.github.io/metro-test/)
-# Template
+## Template
 ![template app](./template.png)
 ## Technologie uzyte w aplikcji
 * react, tailwind CSS
