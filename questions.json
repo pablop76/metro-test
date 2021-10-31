@@ -332,7 +332,7 @@
                 "- w wózku wagonu M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi a w wózku wagonu Tc 2 tarczom hamulcowym  zamocowanym na każdej osi",
                 "- w wózku wagonu Tc i M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "W pociągach typu Metropolis zastosowano silnik trakcyjny",
@@ -1335,13 +1335,13 @@
             "correct": 1
         },
         {
-            "question": "W przypadku uszkodzenia sprężarek na pociągu Metropolis, po sprzęgnięciu",
+            "question": "W przypadku uszkodzenia sprężarek na pociągu Metropolis",
             "content": [
-                "- należy połączyć magistrale hamulcowe",
-                "- zabrania się łączenia magistrali zasilających",
-                "- należy połączyć magistrale zasilające, gdy pociągiem pogotowia jest pociąg typu 81 lub Metropolis"
+                "- należy połączyć magistrale zasilające, tylko gdy pociągiem pogotowia jest pociąg Metropolis",
+                "- należy połączyć magistrale zasilające, a następnie odłączyć zawory B22",
+                "- należy połączyć magistrale zasilające niezależnie od typu pociągu pogotowia"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu",
@@ -1392,9 +1392,542 @@
             "question": "Na rysunku tablicy hamulcowej zaznaczono zawory odcinające B14, B22, L1, B2 i B18, dopasuj do nich właściwy opis",
             "image": "./images/tablica-pneumatyczna-metropolis.png",
             "content": [
-                "B22 - zwolnienie zablokowanego hamulca postojowego,B14 - zwolnienie zablokowanego hamulca służbowego, L1 - kurek odcinający poduszki powietrzne",
-                "L1 - zwolnienie zablokowanego hamulca postojowego,B14 - zwolnienie zablokowanego hamulca służbowego, B22 - kurek odcinający poduszki powietrzne",
-                "B14 - zwolnienie zablokowanego hamulca postojowego,B22 - zwolnienie zablokowanego hamulca służbowego, L1 - kurek odcinający poduszki powietrzne"
+                "B22 - zwolnienie zablokowanego hamulca postojowego. B14 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne",
+                "L1 - zwolnienie zablokowanego hamulca postojowego. B14 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. B22 - kurek odcinający poduszki powietrzne",
+                "B14 - zwolnienie zablokowanego hamulca postojowego. B22 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku powstania ucieczki z magistrali zasilającej na jednym z wagonów należy między innymi",
+            "content": [
+                "na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA",
+                "odłączyć zawór rozrządczy, wyluzować wagon",
+                "zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Czy wskaźnik W24 wjazd na tor niewłaściwy występuje w tunelu",
+            "content": [
+                "tak",
+                "nie",
+                "na stacjach na których możliwe jest zawracanie składów"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Ochrona przed skutkami szkodliwej nierównowagi prądów w gałęziach obwodu głównego wagonów serii 81 realizowana jest przez",
+            "content": [
+                "przekaźnik obniżonej nastawy",
+                "przekaźnik różnicowy",
+                "przekaźnik zabezpieczenia przetwornicy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał „Zwolnić” to",
+            "content": [
+                "jeden długi ton",
+                "kilka przeciągłych tonów,",
+                "jeden długi ton i dwa krótkie tony."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Po jakim czasie od wystąpienia awarii uniemożliwiającej podjęcie dalszej jazdy maszynista zgłasza potrzebę wezwania pociągu pogotowia",
+            "content": [
+                "rano i wieczorem przy czasie następstwa powyżej 8 minut po upływie 20 minut",
+                "w godzinach szczytu po upływie 3 minut",
+                "po stwierdzeniu awarii uniemożliwiającej podjęcie dalszej jazdy"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Burtowe lampki hamulca pneumatycznego zapalą się, gdy ciśnienie w cylindrach hamulcowych przekroczy",
+            "content": [
+                "0,05 MPa",
+                "0,03 MPa",
+                "0,3 MPa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Na rękawicach dielektrycznych (sprzęt ochronny zasadniczy) powinna być umieszczona",
+            "content": [
+                "data ostatniego badania",
+                "data następnego badania",
+                "data produkcji"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu serii 81przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
+            "content": [
+                "stan sanitarny i estetyczny wagonów",
+                "działanie hamulca postojowego tylko na wagonach czołowych",
+                "baterie pod obciążeniem załączając tylko na wagonach czołowych oświetlenie awaryjne i baterię"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Działanie zaworu bezpieczeństwa w wagonach serii 81 polega na(!?)",
+            "image": "",
+            "content": [
+                "zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknięciu się",
+                "całkowitym opróżnieniu zbiornika głównego",
+                "zmniejszeniu ciśnienia w zbiorniku głównym do 0,83 MPa i samoczynnym zamknięciu się"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W skład wyposażenia pociągu typu Metropolis wchodzi",
+            "content": [
+                "4 tablice hamulca pneumatycznego",
+                "8 falowników",
+                "24 silniki napędowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dopuszczalna prędkość jazdy przy poziomie wody powyżej główki szyny nie może być większa niż",
+            "content": [
+                "35 km/h",
+                "15 km/h",
+                "10 km/h"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Hamownie cierne na wagonie tocznym pociągu typu Metropolis jest zapewnione",
+            "content": [
+                "dzięki 2 tarczom hamulcowym zamocowanym na każdej osi",
+                "dzięki 1 tarczy hamulcowej zamocowanej na każdej osi",
+                "dzięki 3 tarczom hamulcowym zamocowanym na każdej osi"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Skrzynka przyłączy elektrycznych sprzęgu wagonów serii 81 napędzana jest",
+            "content": [
+                "elektrycznie",
+                "ręcznie",
+                "pneumatycznie"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przy nastawniku maszynisty ustawionym w poz. „0” obwód główny",
+            "content": [
+                "jest całkowicie wyłączony",
+                "jest skonfigurowany na hamowanie",
+                "jest skonfigurowany na jazdę"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-11.png",
+            "content": [
+                "wjazd na tor ślepy",
+                "wjazd na tor niewłaściwy",
+                "wjazd na tor ze skrajnią PKP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Oznaczenie pociągu technicznego w rozkazie szczególnym jest",
+            "content": [
+                "d",
+                "t",
+                "T"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Oznaczenie pociągu doświadczalnego w rozkazie szczególnym",
+            "content": [
+                "D",
+                "d",
+                "żądna odpowiedź nie jest prawidłowa"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Czerwona migająca  kontrolka „jazda” na pulpicie SOP-2W oznacza",
+            "content": [
+                "załączony hamulec służbowy od ATP",
+                "tryb nieaktywny",
+                "załączony hamulec awaryjny od ATP"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czerwona kontrolka „jazda” na panelu  SOP świecąca światłem ciągłym oznacza",
+            "content": [
+                "załączenie hamulca awaryjnego przez system",
+                "tryb nieaktywny",
+                "załączenie hamulca służbowego  przez system"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W tunelach szlakowych umieszczono telefony tunelowe umożliwiające bezpośrednią łączność z CD w odległości",
+            "content": [
+                "nie przekraczającej 150m",
+                "nie przekraczającej 100m",
+                "nie przekraczającej 50m"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas rozmowy pasażera z prowadzącym pociąg METROPOLIS przez system PECU, zainicjowanie zamknięcia drzwi pasażerskich spowoduje",
+            "content": [
+                "brak sygnału zamknięcia drzwi",
+                "nie spowoduje braku sygnalizacji zamknięcia drzwi",
+                "żadna odpowiedź nie jest prawidłowa"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jeżeli w wagonie METROPOLIS jeden odbierak jest zasilony z szyny prądowej to",
+            "content": [
+                "napięcie będzie tylko na odbieraku zasilonym",
+                "napięcie będzie na dwóch odbierakach (zasilonym i po przeciwnej stronie)",
+                "napięcie będzie na czterech odbierakach tego wagonu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W pociągu serii 81 (34-40) podczas rozmowy przez system  powiadomienia pasażerskiego (PECU) , zwolnienie przycisku „mikrofon” przez prowadzącego pociąg spowoduje",
+            "content": [
+                "zakończenie rozmowy i zakończenie połączenia",
+                "nie spowoduje zakończenia rozmowy",
+                "zakończenie rozmowy , ale nie spowoduje zakończenia rozłączenia"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W pociągu METROPOLIS przycisk ACU (wywołanie druga kabina) zainicjowany w kabinie maszynisty można z dezaktywować(!?)",
+            "content": [
+                "tylko w kabinie której został zainicjowany",
+                "w dowolnej kabinie",
+                "tylko w kabinie przeciwnej"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W pociągu METROPOLIS podczas użycia rozgłoszenia pasażerskiego w trakcie zamykania drzwi pasażerskich",
+            "content": [
+                "nie będzie słyszalny sygnał zamknięcia drzwi pasażerskich",
+                "nie zakłóci sygnału zamknięcia drzwi",
+                "rozgłoszenie pasażerskie nie będzie aktywne"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W pociągu INSPIRO sygnał zamknięcia drzwi i rozgłoszenie pasażerskie są",
+            "content": [
+                "niezależne",
+                "aktywne rozgłoszenie spowoduje brak sygnału zamknięcia drzwi",
+                "rozgłoszenie pasażerskie będzie aktywne po wyemitowaniu sygnału zamknięcia drzwi"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przełącznik „bocznikowanie hamulca awaryjnego”  w pociągu METROPOLIS bocznikuje między innymi(!?)",
+            "content": [
+                "załączony grzybek w kabinie aktywnej i nieaktywnej",
+                "załączony grzybek tylko w kabinie aktywnej",
+                "załączony  grzybek w kabinie nieaktywnej"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co powinno być między innymi zawarte w rozkazie „S”, na odcinku , na którym prowadzony jest ruch dwukierunkowy?",
+            "content": [
+                "nazwa semafora , lub semaforów wskazujących sygnał „STÓJ” w drodze przebiegu  i na  jakiej podstawie nastąpi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
+                "zawarta informacja ,że tor jest zamknięty",
+                "nie może występować taka organizacja ruchu w Metrze Warszawskim"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jeżeli sygnał akustyczny w pociągu METROPOLIS nie wyłącza się (uszkodzony elektrozawór syreny) należy",
+            "content": [
+                "na najbliższej stacji zamknąć zawór syreny pod wagonem i po dojechaniu do stacji końcowej, zjechać na STP",
+                "wyłączyć elektrozawór wyłącznikiem automatycznym i po dojechaniu do stacji końcowej, zjechać na STP",
+                "zamknąć zawór B27,wysadzić pasażerów i zjechać na STP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zaznacz prawidłową odpowiedź",
+            "content": [
+                "w pociągu INSPIRO po zadziałaniu autostopu w kabinie nieaktywnej, załączy się hamulec awaryjny od ATP",
+                "w pociągu INSPIRO po zadziałaniu autostopu w kabinie nieaktywnej, należy po zatrzymaniu zbocznikować przełącznikiem anulacji AUTOSTOP",
+                "w kabinie nieaktywnej w pociągu INSPIRO , autostop nie zadziała"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jakim napięciem jest zasilany układ sterowania wentylacji pasażerskiej w pociągu INSPIRO",
+            "content": [
+                "110 V DC",
+                "110 V AC",
+                "3x 400 V AC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakim napięciem  jest zasilone oświetlenie przestrzeni pasażerskiej w pociągu INSPIRO",
+            "content": [
+                "110 V DC",
+                "110 V AC",
+                "3x 400 V AC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakim napięciem są zasilone wentylatory kontenerów trakcyjnych w pociągach INSPIRO I METROPOLIS",
+            "content": [
+                "110 V DC",
+                "110 V AC",
+                "3x 400 V AC"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jakim napięciem zasilona jest sprężarka w pociągu INSPIRO I METROPOLIS",
+            "content": [
+                "3x400 V AC",
+                "750 V DC",
+                "110 V DC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakim napięciem zasilona jest ładowarka akumulatorów w pociągach INSPIRO i METROPOLIS",
+            "content": [
+                "110 V DC",
+                "3x400 V AC",
+                "750 V DC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakim napięciem zasilona jest przetwornica w pociągu INSPIRO I METROPOLIS",
+            "content": [
+                "3x400 V AC",
+                "110 V DC",
+                "750 V DC"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jakim napięciem zasilone są falowniki trakcyjne w pociągu INSPIRO i METROPOLIS",
+            "content": [
+                "750 V DC",
+                "3x400 V AC",
+                "110 V DC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przetwornice 24 V DC/DC zamontowane w każdym wagonie w pociągu INSPIRO, służą między innymi do zasilenia",
+            "content": [
+                "części oświetlenia kabiny, systemu wykrywania pożaru i radia",
+                "zasilenia pętli bezpieczeństwa",
+                "w pociągu INSPIRO nie ma przetwornic 24 V"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Załączenie hamowania służbowego od ATP po najechaniu na odcinek ze zmniejszoną prędkością , w momencie , kiedy  nastawnik jest w pozycji jazda, spowoduje",
+            "content": [
+                "wyhamowanie pociągu do zatrzymania",
+                "pod hamowanie  pociągu do ograniczonej prędkości",
+                "system załączy hamowanie awaryjne po pięciu sekundach"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zadziałanie funkcji rozłączenie napędu od ATP spowoduje że",
+            "content": [
+                "system nie zezwoli na ponowne załączenie napędu, gdy nastawnik nie jest w pozycji „zero”",
+                "system zezwoli na ponowne załączenie napędu po osiągnięciu odpowiedniej prędkości, nawet gdy nastawnik będzie w pozycji „jazda”",
+                "w przypadku, gdy nastawnik pozostanie w pozycji „jazda”, po pięciu sekundach załączy się hamowanie awaryjne od ATP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W którym kroku autotestu w pociągu INSPIRO testowane są drzwi?",
+            "content": [
+                "4",
+                "7",
+                "6"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jakim napięciem zasilone jest oświetlenie podstawowe w salonie pasażerskim w pociągu serii 81?",
+            "content": [
+                "80 V AC",
+                "110 V DC",
+                "3x 400 V AC"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakim napięciem zasilone jest oświetlenie awaryjne salonu pasażerskiego w pociągu serii 81?",
+            "content": [
+                "220 V AC",
+                "80 V DC",
+                "24 V DC  "
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jakie funkcje są testowane w trakcie testu SOP w kroku trzecim w pociągu METROPOLIS?",
+            "content": [
+                "hamowanie awaryjne",
+                "hamowanie służbowe",
+                "hamowanie postojowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy podczas jazdy w trybie TA można przełączyć wybierak w tryb TR? (!?)",
+            "content": [
+                "nie można",
+                "można",
+                "tylko i wyłącznie na postoju"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W jaki sposób napędzany jest mechanizm drzwi pasażerskich w pociągu INSPIRO?",
+            "content": [
+                "pneumatycznie",
+                "elektrycznie",
+                "elektropneumatycznie"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jak wygląda procedura wyluzowania składu po zadziałaniu hamulca awaryjnego od czuwaka w pociągu INSPIRO ?",
+            "content": [
+                "przez naciśnięcie przycisku luzowania hamulca awaryjnego na pulpicie w kabinie maszynisty",
+                "przez zbocznikowanie hamulca awaryjnego",
+                "przez naciśnięcie przycisku czuwaka w nastawniku jazdy i ewentualnie dodatkowo przycisku luzowania hamulca awaryjnego na pulpicie"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile par drzwi pasażerskich utraci kontrolę w pociągu serii 81 w wagonie pośrednim, po użyciu dźwigni awaryjnego otwierania drzwi?",
+            "content": [
+                "jedna para",
+                "para drzwi, przy których znajduje się dźwignia",
+                "wszystkie drzwi w tym wagonie, po stronie użytej dźwigni"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jak przebiega wyluzowanie hamulca awaryjnego na tablicy hamulcowej w pociągu MATROPOLIS?",
+            "content": [
+                "przekręcenie zaworu B-22 i odciągnięciu sprężyn linkami w cylindrach hamulcowych",
+                "przekręcenie zaworu B-14",
+                "przekręcenie zaworu B-22"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jak przebiega odcięcie i wyluzowanie hamulca postojowego na tablicy pneumatycznej pociągu METROPOLIS?",
+            "content": [
+                "przekręcenie zaworu B-22 i odciągnięciu sprężyn linkami w cylindrach hamulcowych",
+                "przekręcenie zaworu B-14 i odciągnięciu sprężyn linkami w cylindrach hamulcowych",
+                "przekręcenie zaworu B-14"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza wolno migająca na zielono kontrolka „transmisja” w systemie SOP-2W?",
+            "content": [
+                "włączenie SOP w torach niewyposażonych w pętle transmisyjne",
+                "włączenie SOP w torach wyposażonych w pętle transmisyjne",
+                "błędy w czasie testu"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co oznacza wolno migająca na zielono kontrolka „transmisja” w systemie SOP-2W?",
+            "content": [
+                "włączenie SOP w torach przewidzianych do zmiany kierunku jazdy",
+                "jazda przy użyciu P-20",
+                "błąd krytyczny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co stanie się, jeżeli po przełączeniu wyłącznika „bocznikowanie SOP” w pociągu METROPOLIS, przycisk „odjazd” zbyt długo będzie wciśnięty, przy sprawnym systemie SOP?",
+            "content": [
+                "po przełączeniu przełącznika „bocznikowanie”, a przycisk „odjazd” nie zastanie zwolniony do 6s, załączy się hamulec awaryjny i system przejdzie do błędu krytycznego",
+                "zbocznikowanie SOP nie wymaga wciśnięcia przycisku „odjazd” przy sprawnych urządzeniach SOP",
+                "nie ma znaczenia ile czasu będzie wciśnięty przycisk „odjazd”"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jak należy postąpić w przypadku stwierdzenia braku oznaczenia końca pociągu na linii?",
+            "content": [
+                "zgłosić dyspozytorowi ruchu, wysadzić pasażerów na najbliższej stacji, następnie pociąg musi wyjechać awaryjnie na STP",
+                "zgłosić dyspozytorowi ruchu, dokończyć  obieg, następnie pociąg musi  wyjechać awaryjnie na STP",
+                "po zgłoszeniu dyspozytorowi ruchu, pociąg może jeździć do zakończenia ruchu pasażerskiego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jak należy postąpić w przypadku braku oświetlenia czołowego pociągu na linii?",
+            "content": [
+                "zgłosić dyspozytorowi ruchu i przy załączonym oświetleniu tunelowym, kontynuuje jazdę bez pasażerów, następnie pociąg musi wyjechać awaryjnie ",
+                "zgłosić dyspozytorowi ruchu i przy załączonym oświetleniu tunelowym, kontynuuje jazdę z pasażerami do stacji końcowej, następnie pociąg musi wyjechać awaryjnie",
+                "zgłosić dyspozytorowi ruchu, wysadzić  pasażerów, następnie pociąg musi zjechać w najbliższe tory odstawcze"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Z jaką prędkością odbywa się jazda na widoczność?",
+            "content": [
+                "do 20 km/h",
+                "do 40 km/h",
+                "umożliwiającą zatrzymanie się pojazdu przed przeszkodą"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jak wygląda unieważniony semafor?",
+            "content": [
+                "zasłonięty jest pokrowcem",
+                "na sygnalizatorze umieszczony jest krzyż",
+                "zdjęta jest tabliczka z nazwą"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "",
+            "content": [
+                "",
+                "",
+                ""
+            ],
+            "correct": 0
+        },
+        {
+            "question": "",
+            "content": [
+                "",
+                "",
+                ""
             ],
             "correct": 0
         }
