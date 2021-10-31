@@ -2023,22 +2023,214 @@
             "correct": 0
         },
         {
-            "question": "",
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/awaria-A.png",
             "content": [
-                "",
-                "",
-                ""
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
+                "Awaria typu A. Można dojechać do stacji końcowej, ale w nastepnej kolejności należy zjechac na STP celem naprawy",
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
             ],
             "correct": 0
         },
         {
-            "question": "",
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/awaria-B.png",
             "content": [
-                "",
-                "",
-                ""
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
+                "Występują nieznaczne ograniczebnia w działaniu pojazdu (np. ograniczenie prędkości maksymalnej) i można nim dojechać tylko do stacji końcowej",
+                "Pasażerowie muszą opóścić pociąg na stacji końcowej. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/usterka-C.png",
+            "content": [
+                "Usterka typu C, nie ma poważnych konsekwencji w zakresie działania pojazdu, można jeździć do zakończenia dnia roboczego",
+                "Usterka typu C. Pasażerowie muszą opóścić pociąg na stacji końcowej. Skład należy zresetować",
+                "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/info-D.png",
+            "content": [
+                "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego poziomu utrzymania",
+                "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego zjazdu na STP",
+                "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
             ],
             "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/zasilanie-pomocnicze.png",
+            "content": [
+                "Zasilanie pomocnicze prądem AC/DC jest sprawne i włączone",
+                "Spężarki powietrza są załaczone, brak usterek",
+                "Ruch po petli torowej jest dozwolony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi.png",
+            "content": [
+                "Drzwi są otwarte przez ATO po lewej stronie",
+                "Drzwi są otwarte przez ATO po prawej stronie",
+                "Drzwi są otwarte awaryjnie po prawej stronie"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/naped.png",
+            "content": [
+                "Aktywne polecenie 'Hamulec służbowy' z ATO",
+                "Sprężarka wyłaczona, brak usterki",
+                "Aktywne polecenie 'Napęd' z ATO"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/hamulec.png",
+            "content": [
+                "Aktywne polecenie 'Hamulec służbowy' z ATO",
+                "Sprężarka wyłaczona, brak usterki",
+                "Aktywne polecenie 'Napęd' z ATO"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/usterka-hamulec.png",
+            "content": [
+                "Ostrzeżenie, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+                "Usterka, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+                "Normalny stan hamulca"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/postojowy.png",
+            "content": [
+                "Hamulec służbowy jest załączony",
+                "Hamulec postojowy jest załączony",
+                "Hamulec postojowy jest zluzowany"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/hamulec-2.png",
+            "content": [
+                "usterka sprężarki powietrza",
+                "usterka hamulca EP",
+                "odcięcie hamulca EP lub hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/sprezarka.png",
+            "content": [
+                "Sprężarka powietrza jest wyłączona, brak usterek",
+                "Sprężarka powietrza jest załączona, brak usterek",
+                "Przetwornica jest załączona, brak usterek"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/odciecie-trakcji.png",
+            "content": [
+                "Aktywne polecenie 'Odcięcie trakcji' z ATO",
+                "Aktywne polecenie 'Hamulec awaryjny' z ATO",
+                "Aktywne polecenie 'hamulec służbowy' z ATO"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/brak-transmisji.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/brak-adresowania.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/blad-transmisji.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem, ale nie przejechano jeszcze 25m",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/warsztat.png",
+            "content": [
+                "Przełącznik warsztatowy jest uszkodzony",
+                "Przełącznik warsztatowy w pozycji 'Warsztat'",
+                "Przełącznik warsztatowy jest nie przełaczony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/usterka-trakcji.png",
+            "content": [
+                "Trakcja gotowa do pracy z ostrzeżeniem",
+                "Aktywny autotest trakcji",
+                "Usterka trakcji"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-otwarte-wajcha.png",
+            "content": [
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+                "Drzwi są odizolowane",
+                "Usterka drzwi"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-odizolowane.png",
+            "content": [
+                "Drzwi wykryły przeszkodę",
+                "Drzwi są odizolowane",
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-przeszkoda.png",
+            "content": [
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+                "Drzwi są odizolowane",
+                "Drzwi wykryły przeszkodę"
+            ],
+            "correct": 2
         }
     ]
 }
