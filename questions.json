@@ -1914,6 +1914,115 @@
             "correct": 1
         },
         {
+            "question": "Co oznacza migająca na czerwono dioda „AUX ” w radiu pociągowym INSPIRO?",
+            "image": "./images/radio.png",
+            "content": [
+                "awarię radia",
+                "nadmiarowość",
+                "alarmowe powiadomienie dyspozytora"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co jest podstawą do prowadzenia ruchu w tunelu przy załączonych semaforach?",
+            "content": [
+                "wskazania sygnalizatorów przytorowych",
+                "urządzenia AOP",
+                "obie odpowiedzi są nieprawidłowe"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Do jakiego okręgu nastawczego należy tor szlaku granicznego miedzy I a II linią metra?",
+            "content": [
+                "do okręgu nastawczego stacji A-13",
+                "do okręgu nastawczego dyspozytora  II lini",
+                "do okręgu nastawczego dyspozytora I linii i dyżurnego stacji C-10"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Gdzie na panelu SOP-2w sygnalizowane są poszczególne kroki testu?",
+            "content": [
+                "na wyświetlaczu WSR",
+                "na wyświetlaczu „T”",
+                "na wyświetlaczu  „VR”"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza dźwiękowy sygnał Rp1 -  jeden długi ton",
+            "content": [
+                "pożar",
+                "baczność",
+                "alarm"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sygnał S3 – jedno światło pomarańczowe oznacza",
+            "content": [
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h",
+                "Sygnał S3, który zezwala na jazdę pociągu z największą dozwoloną prędkością, następny semafor może być ciemny",
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co to jest ruch zorganizowany?",
+            "content": [
+                "ruch po torach, których urządzenia srp nie obsługują",
+                "ruch po torach, obsługiwanych przez urządzenia srp",
+                "ruch po torach, po których pociągi mogą poruszać się tylko w jednym kierunku"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
+            "content": [
+                "gotowość pociągu do odjazdu",
+                "nie są spełnione warunki do odjazdu",
+                "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Co oznacza szybko migająca lampka  „autostart” w trybie  TA?",
+            "content": [
+                "gotowość pociągu do odjazdu",
+                "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
+                "nie są spełnione warunki do odjazdu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza wygaszona lampka „autostart” w trybie TA?",
+            "content": [
+                "nie są spełnione warunki do odjazdu pociągu",
+                "są spełnione warunki do odjazdu",
+                "obie odpowiedzi są nieprawidłowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jaka informacja będzie na HMI, gdy dyspozytor zablokuje odjazd pociągu(tryb TA)?",
+            "content": [
+                "załączy się funkcja hamulca awaryjnego od ATP",
+                "załączy się funkcja hamulca służbowego od ATP",
+                "nie pojawi się żadna informacja na HMI"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jaką funkcją jest hamowanie docelowe w pociągu INSPIRO na I linii?",
+            "content": [
+                "funkcją ATP",
+                "funkcją wydzieloną od ATP i jest od nich niezależna",
+                "funkcją ATO"
+            ],
+            "correct": 0
+        },
+        {
             "question": "",
             "content": [
                 "",
