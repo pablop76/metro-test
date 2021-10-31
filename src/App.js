@@ -101,7 +101,7 @@ function App() {
   }
 
   let colorSend = (() => {
-    if (Math.round(correctAnswers / maxQuestions * 100) >= 67) {
+    if (Math.round(correctAnswers / maxQuestions * 100) >= 75) {
       return "bg-green-700";
     }
     return "bg-red-600";

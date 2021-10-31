@@ -19,7 +19,7 @@ const EndTestAlert = (props) => {
                 <div className="mt-2 px-7 py-3">
                     <div className=" text-white text-xl">
                         <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
-                            odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
+                            {correctAnswers + inCorrectAnswers} / {maxQuestions}
                         </div>
                         <div className="flex items-baseline justify-center text-3xl bg-white rounded-full max-w-xs mx-auto m-5">
                             <span style={{ color: 'green' }}>{correctAnswers}:</span><span style={{ color: 'red' }}>{inCorrectAnswers}</span>
