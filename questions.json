@@ -146,7 +146,7 @@
             "correct": 1
         },
         {
-            "question": "Czy po wezwaniu pociągu pogotowia można ruszyć składem z miejsca ?:",
+            "question": "Czy po wezwaniu pociągu pogotowia można ruszyć składem z miejsca ?",
             "content": [
                 "- można dokonywać  prób ruszenia uszkodzonego pociągu do czasu przybycia pociągu pogotowia",
                 "- można w przypadku gdy awaria zostanie usunięta w ciągu 5 min",
@@ -245,7 +245,7 @@
             "correct": 1
         },
         {
-            "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
+            "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  Em, Fm  i Gm  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
             "content": [
                 "- białe i niebieskie",
                 "- białe i czerwone",
@@ -263,7 +263,7 @@
             "correct": 1
         },
         {
-            "question": "Co oznacza VR z kropką i VK 35 na wyświetlaczu SOP ?:",
+            "question": "Co oznacza VR z kropką i VK 35 na wyświetlaczu SOP ?",
             "content": [
                 "- zanik transmisji na danym odcinku",
                 "- uszkodzenie jednego z torów pomiaru prędkości",
@@ -281,7 +281,7 @@
             "correct": 1
         },
         {
-            "question": "Jak realizowane jest zamknięcie drzwi przez przycisk „ rezerwowe zamykanie drzwi” w wagonach serii 81:",
+            "question": "Jak realizowane jest zamknięcie drzwi przez przycisk „rezerwowe zamykanie drzwi” w wagonach serii 81:",
             "content": [
                 "- poprzez podanie napięcia na cewkę zamykającą drzwiowego zaworu rozrządczego za pomocą rezerwowego przewodu nr.18",
                 "- poprzez podanie napięcia na obie cewki otwierające drzwiowego zaworu rozrządczego",
@@ -326,7 +326,7 @@
             "correct": 2
         },
         {
-            "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione (!?)",
+            "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione:",
             "content": [
                 "- w wózku wagonu M  dzięki 2 tarczom hamulcowym zamocowanym na każdej osi a w wózku wagonu Tc 1 tarczy hamulcowej zamocowanej na każdej osi",
                 "- w wózku wagonu M  dzięki 1 tarczy hamulcowej zamocowanej na każdej osi a w wózku wagonu Tc 2 tarczom hamulcowym  zamocowanym na każdej osi",
@@ -517,7 +517,7 @@
             "correct": 1
         },
         {
-            "question": "Wjazd pociągu  na tor częściowo zajęty jest dopuszczalny na podstawie rozkazu 'S' z zachowaniem  następujących ograniczeń prędkości",
+            "question": "Wjazd pociągu na tor częściowo zajęty jest dopuszczalny na podstawie rozkazu 'S' z zachowaniem  następujących ograniczeń prędkości",
             "content": [
                 "- do 15 km/h, a podczas dojazdu do innego stojącego składu do 5 km/h",
                 "- do 20 km/h, a podczas dojazdu do innego stojącego składu do 3 km/h",
@@ -553,7 +553,7 @@
             "correct": 1
         },
         {
-            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągach serii 81 wynosi(!?):",
+            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągach serii 81 wynosi:",
             "content": [
                 "- 0,78 – 0,82 MPa",
                 "- 0,95 – 1,20 MPa",
@@ -562,7 +562,7 @@
             "correct": 2
         },
         {
-            "question": "Na jakiej podstawie  i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?:",
+            "question": "Na jakiej podstawie i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?",
             "content": [
                 "- na podstawie rozkazu 'O' z prędkością do 60 km/h",
                 "- na podstawie rozkazu 'S' z prędkością do 40 km/h",
@@ -608,7 +608,7 @@
             "correct": 1
         },
         {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić",
+            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić",
             "content": [
                 "- działanie hamulca postojowego tylko na wagonach czołowych",
                 "- prawidłowe połączenie skrzynek elektrycznych na sprzęgach",
@@ -617,7 +617,7 @@
             "correct": 1
         },
         {
-            "question": "Ciśnienie w magistrali hamulcowej wagonów  serii 81 (w położeniu II zaworu maszynisty) wynosi",
+            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 (w położeniu II zaworu maszynisty) wynosi",
             "content": [
                 "- 0,8 MPa",
                 "- 0,6 MPa",
@@ -684,7 +684,7 @@
             "content": [
                 "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
                 "- informuje że w odległości drogi hamowania znajduje się niewidoczny sygnalizator przytorowy",
-                "- stosowany tylko w tunelu wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
+                "- stosowany tylko w tunelu, wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
             ],
             "correct": 2
         },
@@ -698,7 +698,7 @@
             "correct": 1
         },
         {
-            "question": "Co wagonie serii 81 spełnia rolę urządzenia pociągowo-zderznego",
+            "question": "Co w wagonie serii 81 spełnia rolę urządzenia pociągowo-zderznego",
             "content": [
                 "- drążek reakcyjny",
                 "- zderzak",
@@ -841,7 +841,7 @@
             "question": "Przedstawiony poniżej wskaźnik oznacza",
             "image": "./images/wskaznik-10.png",
             "content": [
-                "- nakazuje podać sygnał 'baczność",
+                "- nakazuje podać sygnał baczność",
                 "- oznacza pierwszeństwo pojazdów drogowych",
                 "- oznacza miejsce na torze, poza które jazda manewrowa jest niedozwolona"
             ],
@@ -992,15 +992,6 @@
             "correct": 2
         },
         {
-            "question": "Pozycja Rozruch I na pociągu serii 81 to ?",
-            "content": [
-                "- przekaźnika samoczynnego rozruchu",
-                "- przekaźnika kontroli prądu hamowania",
-                "- przekaźnika lokalizacji awarii"
-            ],
-            "correct": 2
-        },
-        {
             "question": "Odłącznik główny na wagonie serii 81 przeznaczony jest do ?",
             "content": [
                 "- załączania i rozłączania obwodu głównego w stanie bezprądowym, a także przy przeciążeniach i zwarciach",
@@ -1085,7 +1076,7 @@
             "question": "Jeżeli w pociągu INSPIRO jadącym z prędkością 60km/h zostanie użyta dzwignia awaryjnego otwierania drzwi to",
             "content": [
                 "drzwi otworzą się automatycznie",
-                "w pociągu załączy się hamowanie awaryjna",
+                "w pociągu załączy się hamowanie awaryjne",
                 "pojawi sie brak kontroli drzwi, pociąg zwolni do 40km/h i z taka prędkością pozwoli dojechać do stacji"
             ],
             "correct": 2
@@ -1133,25 +1124,16 @@
                 "kierunek STP -> A1 Kabaty",
                 "kierunek A1 Kabaty -> STP"
             ],
-            "correct": 2
+            "correct": 1
         },
         {
-            "question": "W obwodzie wytwarzania spręzonego powietrza pociągu Metropolis, cisnienie 7,5 bara oznacza",
+            "question": "W obwodzie wytwarzania sprężonego powietrza pociągu Metropolis, cisnienie 7,5 bara oznacza",
             "content": [
                 "próg hamowania awaryjnego",
                 "próg podwójnej pracy",
                 "próg bezpieczeństwa"
             ],
             "correct": 1
-        },
-        {
-            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągu serii 81 wynosi",
-            "content": [
-                "0,78 - 0,82 MPa",
-                "0,95 - 1,20 MPa",
-                "0,90 - 0,92 MPa"
-            ],
-            "correct": 2
         },
         {
             "question": "W stanie błedu krytycznego ATO, nie jest możliwa jazda w trybach",
@@ -1353,7 +1335,7 @@
             "correct": 0
         },
         {
-            "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 10 bar oznacza(!?)",
+            "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 10 bar oznacza:",
             "content": [
                 "- poziom wyłączenia",
                 "- poziom podwójnej pracy",
@@ -1395,15 +1377,6 @@
                 "B22 - zwolnienie zablokowanego hamulca postojowego. B14 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne",
                 "L1 - zwolnienie zablokowanego hamulca postojowego. B14 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. B22 - kurek odcinający poduszki powietrzne",
                 "B14 - zwolnienie zablokowanego hamulca postojowego. B22 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "W przypadku powstania ucieczki z magistrali zasilającej na jednym z wagonów należy między innymi",
-            "content": [
-                "na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA",
-                "odłączyć zawór rozrządczy, wyluzować wagon",
-                "zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach"
             ],
             "correct": 0
         },
@@ -1462,21 +1435,11 @@
             "correct": 1
         },
         {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
+            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
             "content": [
                 "stan sanitarny i estetyczny wagonów",
                 "działanie hamulca postojowego tylko na wagonach czołowych",
                 "baterie pod obciążeniem załączając tylko na wagonach czołowych oświetlenie awaryjne i baterię"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Działanie zaworu bezpieczeństwa w wagonach serii 81 polega na(!?)",
-            "image": "",
-            "content": [
-                "zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknięciu się",
-                "całkowitym opróżnieniu zbiornika głównego",
-                "zmniejszeniu ciśnienia w zbiorniku głównym do 0,83 MPa i samoczynnym zamknięciu się"
             ],
             "correct": 0
         },
@@ -1567,7 +1530,7 @@
             "content": [
                 "załączenie hamulca awaryjnego przez system",
                 "tryb nieaktywny",
-                "załączenie hamulca służbowego  przez system"
+                "załączenie hamulca służbowego przez system"
             ],
             "correct": 2
         },
@@ -1797,7 +1760,7 @@
             "correct": 1
         },
         {
-            "question": "Czy podczas jazdy w trybie TA można przełączyć wybierak w tryb TR? (!?)",
+            "question": "Czy podczas jazdy w trybie TA można przełączyć wybierak w tryb TR ?",
             "content": [
                 "nie można",
                 "można",
@@ -1951,7 +1914,7 @@
             "correct": 0
         },
         {
-            "question": "Co oznacza dźwiękowy sygnał Rp1 -  jeden długi ton",
+            "question": "Co oznacza dźwiękowy sygnał Rp1 - jeden długi ton",
             "content": [
                 "pożar",
                 "baczność",
@@ -1962,9 +1925,9 @@
         {
             "question": "Sygnał S3 – jedno światło pomarańczowe oznacza",
             "content": [
-                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h",
-                "Sygnał S3, który zezwala na jazdę pociągu z największą dozwoloną prędkością, następny semafor może być ciemny",
-                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny",
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny",
+                "Sygnał S3, który zezwala na jazdę pociągu z najwyższą dozwoloną prędkością, następny semafor nie może być ciemny"
             ],
             "correct": 1
         },
@@ -1978,7 +1941,7 @@
             "correct": 1
         },
         {
-            "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
+            "question": "Co oznacza wolno migająca lampka „autostart” w trybie TA?",
             "content": [
                 "gotowość pociągu do odjazdu",
                 "nie są spełnione warunki do odjazdu",
@@ -1987,7 +1950,7 @@
             "correct": 2
         },
         {
-            "question": "Co oznacza szybko migająca lampka  „autostart” w trybie  TA?",
+            "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
             "content": [
                 "gotowość pociągu do odjazdu",
                 "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
@@ -2190,7 +2153,7 @@
                 "Przełącznik warsztatowy w pozycji 'Warsztat'",
                 "Przełącznik warsztatowy jest nie przełaczony"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Opisz symbole",
@@ -2447,7 +2410,7 @@
                 "Przełącznik warsztatowy w pozycji 'Warsztat'",
                 "Przełącznik warsztatowy jest nie przełaczony"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Opisz symbole",
