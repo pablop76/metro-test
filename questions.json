@@ -1,5 +1,5 @@
 {
-    "questions": [
+    "all": [
         {
             "question": "Ruchem pociągów na STP Kabaty kieruje:",
             "content": [
@@ -2231,6 +2231,547 @@
                 "Drzwi wykryły przeszkodę"
             ],
             "correct": 2
+        }
+    ],
+    "inspiro": [
+        {
+            "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
+            "content": [
+                "gotowość pociągu do odjazdu",
+                "nie są spełnione warunki do odjazdu",
+                "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Co oznacza szybko migająca lampka  „autostart” w trybie  TA?",
+            "content": [
+                "gotowość pociągu do odjazdu",
+                "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
+                "nie są spełnione warunki do odjazdu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Co oznacza wygaszona lampka „autostart” w trybie TA?",
+            "content": [
+                "nie są spełnione warunki do odjazdu pociągu",
+                "są spełnione warunki do odjazdu",
+                "obie odpowiedzi są nieprawidłowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jaka informacja będzie na HMI, gdy dyspozytor zablokuje odjazd pociągu(tryb TA)?",
+            "content": [
+                "załączy się funkcja hamulca awaryjnego od ATP",
+                "załączy się funkcja hamulca służbowego od ATP",
+                "nie pojawi się żadna informacja na HMI"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jaką funkcją jest hamowanie docelowe w pociągu INSPIRO na I linii?",
+            "content": [
+                "funkcją ATP",
+                "funkcją wydzieloną od ATP i jest od nich niezależna",
+                "funkcją ATO"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/awaria-A.png",
+            "content": [
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
+                "Awaria typu A. Można dojechać do stacji końcowej, ale w nastepnej kolejności należy zjechac na STP celem naprawy",
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/awaria-B.png",
+            "content": [
+                "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
+                "Występują nieznaczne ograniczebnia w działaniu pojazdu (np. ograniczenie prędkości maksymalnej) i można nim dojechać tylko do stacji końcowej",
+                "Pasażerowie muszą opóścić pociąg na stacji końcowej. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/usterka-C.png",
+            "content": [
+                "Usterka typu C, nie ma poważnych konsekwencji w zakresie działania pojazdu, można jeździć do zakończenia dnia roboczego",
+                "Usterka typu C. Pasażerowie muszą opóścić pociąg na stacji końcowej. Skład należy zresetować",
+                "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+            "image": "./images/info-D.png",
+            "content": [
+                "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego poziomu utrzymania",
+                "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego zjazdu na STP",
+                "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/zasilanie-pomocnicze.png",
+            "content": [
+                "Zasilanie pomocnicze prądem AC/DC jest sprawne i włączone",
+                "Spężarki powietrza są załaczone, brak usterek",
+                "Ruch po petli torowej jest dozwolony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi.png",
+            "content": [
+                "Drzwi są otwarte przez ATO po lewej stronie",
+                "Drzwi są otwarte przez ATO po prawej stronie",
+                "Drzwi są otwarte awaryjnie po prawej stronie"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/naped.png",
+            "content": [
+                "Aktywne polecenie 'Hamulec służbowy' z ATO",
+                "Sprężarka wyłaczona, brak usterki",
+                "Aktywne polecenie 'Napęd' z ATO"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/hamulec.png",
+            "content": [
+                "Aktywne polecenie 'Hamulec służbowy' z ATO",
+                "Sprężarka wyłaczona, brak usterki",
+                "Aktywne polecenie 'Napęd' z ATO"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/usterka-hamulec.png",
+            "content": [
+                "Ostrzeżenie, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+                "Usterka, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+                "Normalny stan hamulca"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/postojowy.png",
+            "content": [
+                "Hamulec służbowy jest załączony",
+                "Hamulec postojowy jest załączony",
+                "Hamulec postojowy jest zluzowany"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/hamulec-2.png",
+            "content": [
+                "usterka sprężarki powietrza",
+                "usterka hamulca EP",
+                "odcięcie hamulca EP lub hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/sprezarka.png",
+            "content": [
+                "Sprężarka powietrza jest wyłączona, brak usterek",
+                "Sprężarka powietrza jest załączona, brak usterek",
+                "Przetwornica jest załączona, brak usterek"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/odciecie-trakcji.png",
+            "content": [
+                "Aktywne polecenie 'Odcięcie trakcji' z ATO",
+                "Aktywne polecenie 'Hamulec awaryjny' z ATO",
+                "Aktywne polecenie 'hamulec służbowy' z ATO"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/brak-transmisji.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/brak-adresowania.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/blad-transmisji.png",
+            "content": [
+                "Bład transmisji danych pomiedzy torem a pociągiem, ale nie przejechano jeszcze 25m",
+                "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+                "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/warsztat.png",
+            "content": [
+                "Przełącznik warsztatowy jest uszkodzony",
+                "Przełącznik warsztatowy w pozycji 'Warsztat'",
+                "Przełącznik warsztatowy jest nie przełaczony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/usterka-trakcji.png",
+            "content": [
+                "Trakcja gotowa do pracy z ostrzeżeniem",
+                "Aktywny autotest trakcji",
+                "Usterka trakcji"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-otwarte-wajcha.png",
+            "content": [
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+                "Drzwi są odizolowane",
+                "Usterka drzwi"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-odizolowane.png",
+            "content": [
+                "Drzwi wykryły przeszkodę",
+                "Drzwi są odizolowane",
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Opisz symbole",
+            "image": "./images/drzwi-przeszkoda.png",
+            "content": [
+                "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+                "Drzwi są odizolowane",
+                "Drzwi wykryły przeszkodę"
+            ],
+            "correct": 2
+        }
+    ],
+    "sygnalizacja": [
+        {
+            "question": "Dźwiękowy sygnał zatrzymania taboru „stój” podawany przez maszynistę z drugiego pociągu to:",
+            "content": [
+                "- 3 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
+                "- 2 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
+                "- 1 długi ton, kilkakrotnie powtórzony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy na STP Kabaty jest możliwe podanie sygnału zastępczego tzn. białe światło migające:",
+            "content": [
+                "- tylko na semaforach",
+                "- nie ma takiej możliwości",
+                "- tak na semaforach i tarczach manewrowych."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wskaźnik W8 ( zmniejszyć prędkość jazdy) zobowiązuje maszynistę do",
+            "content": [
+                "- zmniejszenia prędkości na rozjeździe do 5 km/h, stosowany w przypadkach szczególnych",
+                "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 15 km/h,",
+                "- zmniejszenia prędkości jazdy do 15 km/h na oznaczonym odcinku, dotyczy tylko STP Kabaty"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Do mnie' to:",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- dwa długie tony"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaźnik  W17 (słupek biało-czerwony):",
+            "content": [
+                "- wyznacza miejsce w terenie otwartym i tunelu, do którego wolno jeden z torów zająć taborem, aby umożliwić przejazd taboru po drugim torze",
+                "- informuje, że na dany tor zabroniony jest wjazd taboru o skrajni PKP",
+                "- stosowany tylko w terenie otwartym, oznacza miejsce przy zbiegających się torach, do którego wolno jeden z tych torów zająć taborem, aby zachować możliwość jazdy taboru po drugim torze"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskaźnik Wm8 (pomarańczowa tablica z czarną i białą obwódką ):",
+            "content": [
+                "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
+                "- ustawia się w tunelu, informuje maszynistę, że za wskaźnikiem w odległości drogi hamowania znajduje się sygnalizator przytorowy",
+                "- ustawia się w tunelu w miejscu gdzie została przekroczona skrajni budowli"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
+            "content": [
+                "- białe i niebieskie",
+                "- białe i czerwone",
+                "- białe i pomarańczowe"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-2.png",
+            "content": [
+                "- strzałka wskaźnikowa",
+                "- semafor znajduje się po lewej stronie torów",
+                "- wjazd na tor niewłaściwy"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-3.png",
+            "content": [
+                "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+                "- zakaz jazdy elektrycznych pojazdów trakcyjnych",
+                "- wjazd na tor ze skrajnią PKP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy wskaźnik W24 (wjazd na tor niewłaściwy) występuje  w tunelu",
+            "content": [
+                "- tak",
+                "- nie",
+                "- na stacjach na których możliwe jest zawracanie składów"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik zobowiązuje maszynistę do",
+            "image": "./images/wskaznik-4.png",
+            "content": [
+                "- zmniejszenia prędkości na rozjeździe do 3 km/h, stosowany w przypadkach szczególnych",
+                "- zmniejszenia prędkości jazdy na oznaczonym odcinku do 30 km/h, dotyczy tylko STP Kabaty",
+                "- zmniejszenia prędkości jazdy do 30 km/h na oznaczonym odcinku"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Ode mnie' to",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- jeden krótki ton"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wskaźnik  Wm 17 (biało-czerwona belka):",
+            "content": [
+                "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
+                "- informuje że w odległości drogi hamowania znajduje się niewidoczny sygnalizator przytorowy",
+                "- stosowany tylko w tunelu wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza: ",
+            "image": "./images/wskaznik-5.png",
+            "content": [
+                "- strzałka wskaźnikowa",
+                "- semafor znajduje się po prawej stronie toru",
+                "- wjazd na tor niewłaściwy"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-6.png",
+            "content": [
+                "- granica przetaczania",
+                "- zakaz jazdy pojazdów elektrycznych",
+                "- zakaz wjazdu taboru PKP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-7.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
+            "content": [
+                "- po prawej stronie toru",
+                "- po lewej stronie toru",
+                "- w osi toru"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik to:",
+            "image": "./images/wskaznik-8.png",
+            "content": [
+                "- zmniejszyć prędkość jazdy",
+                "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+                "- obowiązująca, największa prędkość dozwolona"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza:",
+            "image": "./images/wskaznik-9.png",
+            "content": [
+                "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+                "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+                "- zakaz jazdy elektrycznych pojazdów trakcyjnych"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-10.png",
+            "content": [
+                "- nakazuje podać sygnał 'baczność",
+                "- oznacza pierwszeństwo pojazdów drogowych",
+                "- oznacza miejsce na torze, poza które jazda manewrowa jest niedozwolona"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Pominięcie semafora Km na 'stój' ,(umieszczonego na STP) podczas wjazdu do tunelu , możliwe   jest na",
+            "content": [
+                "polecenie dyżurnego ruchu STP",
+                "rozkaz szczególny „S” , wydany przez dyżurnego ruchu STP",
+                "żadna z odpowiedzi nie jest prawidłowa"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Pominięcie semafora Mm na „stój” umieszczonego na STP w celu wykonania manewrów jest możliwe",
+            "content": [
+                "na polecenie dyżurnego ruchu STP",
+                "na rozkaz szczególny „S” ,wydany przez dyżurnego ruchu STP",
+                "na rozkaz „S” i rozkaz „O”, wydany przez dyżurnego ruchu STP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Przed przedstawionym poniżej wskaźnikiem należy ustawić",
+            "image": "./images/wskaznik-7.png",
+            "content": [
+                "- w odległości drogi hamowania wskaźnik W27 (obowiązująca, największa prędkość dozwolona)",
+                "- w odległości drogi hamowania wskaźnik W8 ( zmniejszyć prędkość jazdy)",
+                "- w odległości drogi hamowania sygnał DO"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Czy wskaźnik W24 wjazd na tor niewłaściwy występuje w tunelu",
+            "content": [
+                "tak",
+                "nie",
+                "na stacjach na których możliwe jest zawracanie składów"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał „Zwolnić” to",
+            "content": [
+                "jeden długi ton",
+                "kilka przeciągłych tonów,",
+                "jeden długi ton i dwa krótkie tony."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przedstawiony poniżej wskaźnik oznacza",
+            "image": "./images/wskaznik-11.png",
+            "content": [
+                "wjazd na tor ślepy",
+                "wjazd na tor niewłaściwy",
+                "wjazd na tor ze skrajnią PKP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Jak wygląda unieważniony semafor?",
+            "content": [
+                "zasłonięty jest pokrowcem",
+                "na sygnalizatorze umieszczony jest krzyż",
+                "zdjęta jest tabliczka z nazwą"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Co oznacza dźwiękowy sygnał Rp1 -  jeden długi ton",
+            "content": [
+                "pożar",
+                "baczność",
+                "alarm"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sygnał S3 – jedno światło pomarańczowe oznacza",
+            "content": [
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h",
+                "Sygnał S3, który zezwala na jazdę pociągu z największą dozwoloną prędkością, następny semafor może być ciemny",
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
+            ],
+            "correct": 1
         }
     ]
 }
