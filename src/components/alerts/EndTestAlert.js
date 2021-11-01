@@ -28,6 +28,9 @@ const EndTestAlert = (props) => {
                     </div>
                 </div>
             </div>
+            <div className="flex justify-center">
+                {props.children}
+            </div>
         </div>
     );
 }

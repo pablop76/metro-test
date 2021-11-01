@@ -158,7 +158,7 @@ function App() {
       <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
         {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
         {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
-        {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend} /> : ""};
+        {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}><Refresh refreshPage={refreshPage} /></EndTestAlert> : ""};
       </Quiz>
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
         odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
