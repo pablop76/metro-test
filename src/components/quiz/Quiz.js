@@ -16,10 +16,10 @@ const Quiz = (props) => {
                         onClick={(el) => answerChange(index, el)}
                         disabled={isDisabled}
                     >
-                        <div className="rounded-full h-10 w-10 flex items-center justify-center bg-blue-500 text-white font-bold p-4">
+                        <div className="rounded-full h-10 w-10 flex items-center justify-center bg-blue-500 text-white p-4">
                             {index + 1}
                         </div>
-                        <div className="py-2 px-4 text-white font-semibold text-left">
+                        <div className="py-2 px-4 text-white text-left">
                             {answer}
                         </div>
                     </button>

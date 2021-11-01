@@ -6,6 +6,7 @@ import EndTestAlert from "./components/alerts/EndTestAlert";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import Quiz from "./components/quiz/Quiz.js";
+import ChoiceTest from "./components/choiceTest/ChoiceTest";
 import { useEffect, useState } from 'react';
 import './App.css';
 import oklaski from './sound/oklaski.mp3';
@@ -23,9 +24,13 @@ function App() {
   const [dangerAlert, setDangerAlert] = useState(false);
   const [succesAlert, setSuccesAlert] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
+  const [test, setTest] = useState("all");
+  // ustawienie tematu testu
+  const handleTest = (e) => {
+    setTest(e.target.value);
+  }
 
   // Losowanie pytań od 0 do długość tablicy
-
   const draw = (arr, counter) => {
     const arr2 = [...arr];
     const arr3 = [];
@@ -108,20 +113,44 @@ function App() {
   })();
 
   useEffect(() => {
-    const getQuizData = async () => {
+    const getQuizData = async (expr) => {
+
       const response = await fetch('./questions.json');
       const data = await response.json();
-      const drawData = draw(data.questions, data.questions.length);
-      setCurrentTest(drawData);
-      setMaxQuestions(data.questions.length);
+      let drawData = [];
+      switch (expr) {
+        case 'inspiro':
+          drawData = draw(data.inspiro, data.inspiro.length);
+          setCurrentTest(drawData);
+          setMaxQuestions(data.inspiro.length);
+          setCorectAnswers(0);
+          setInCorrectAnswers(0);
+          break;
+        case 'sygnalizacja':
+          drawData = draw(data.sygnalizacja, data.sygnalizacja.length);
+          setCurrentTest(drawData);
+          setMaxQuestions(data.sygnalizacja.length);
+          setCorectAnswers(0);
+          setInCorrectAnswers(0);
+          break;
+        default:
+          drawData = draw(data.all, data.all.length);
+          setCurrentTest(drawData);
+          setMaxQuestions(data.all.length);
+          setCorectAnswers(0);
+          setInCorrectAnswers(0);
+      }
+
     }
-    getQuizData();
-  }, []);
+    getQuizData(test);
+  }, [test]);
 
   return (
     <div className="bg-container container mx-auto min-h-screen pb-5">
       <div className="flex items-baseline justify-center text-white flex-wrap bg-overlay-top">
-        <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} />
+        <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
+          <ChoiceTest handleTest={handleTest} test={test} />
+        </LimitOfquestions>
         <Header />
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
         <Refresh refreshPage={refreshPage} />

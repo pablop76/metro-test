@@ -3,7 +3,7 @@ const EndTestAlert = (props) => {
 
     return (
         <div
-            className="fixed left-1/2 top-1/2 top-20 mx-auto p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-80" style={{ transform: "translate(-50%,-50%)" }}>
+            className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-80" style={{ transform: "translate(-50%,-50%)" }}>
             <div className="mt-3 text-center">
                 <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-white">
                     {(Math.round(correctAnswers / maxQuestions * 100) >= 75) ?
