@@ -2735,6 +2735,56 @@
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
             ],
             "correct": 1
+        },
+        {
+            "question": "Sygnał Z1wk oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
+            "image": "./images/wykolejnica-na-torze.png",
+            "content": [
+                "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do wykolejnicy.",
+                "Wykolejnica zdjeta z toru, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica sa dozwolone.",
+                "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Sygnał Z1wk oznacza (czarna pionowa linia na tle białej okrągłej tarczy)",
+            "image": "./images/wykolejnica-zdjeta.png",
+            "content": [
+                "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do wykolejnicy.",
+                "Wykolejnica zdjeta z toru, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica sa dozwolone.",
+                "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Sygnał Z1 oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
+            "image": "./images/wykolejnica-na-torze.png",
+            "content": [
+                "Stój - koniec toru, stosowany jest wyłacznie na terenie otwartym, poza tunelem i stacjami metra",
+                "Wykolejnica zdjeta z toru, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica sa dozwolone.",
+                "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Sygnał nadawany przez sygnalistę (zataczanie okręgów dostepnym przyborem sygnalizacyjnym)",
+            "image": "./images/stoj-recznie.png",
+            "content": [
+                "Sygnał D2 Stój podaje się w przypadku nagłej konieczności zatrzymania pociągu lub jadącego taboru wobec zagrożenia bezpieczeństwa ruchu",
+                "Sygnał Rm3 Zwolnić oznacza, że należy zmiejszyć prędkość jazdy taboru manewrowego",
+                "Sygnał Rm1 Do mnie oznacza, że należy jechać do dajacego sygnał"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wskaźnik Wm5 Miejsce zatrzymania czoła pociągu",
+            "image": "./images/wm5.png",
+            "content": [
+                "Oznacza miejsce, od którego należy rozpocząć hamowanie pociągo zatrzymującego sie w peronie.",
+                "Służy do oznaczania miejsca, do którego ma dojechać czoło pociągu zatrzymującego się w peronie.",
+                "Służy do oznaczania miejsca, do którego ma dojechać czoło zatrzymującego się pociągu."
+            ],
+            "correct": 2
         }
     ]
 }
