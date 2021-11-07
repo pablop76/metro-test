@@ -7,6 +7,7 @@ import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import Quiz from "./components/quiz/Quiz.js";
 import ChoiceTest from "./components/choiceTest/ChoiceTest";
+import Footer from "./components/footer/Footer";
 import { useEffect, useState } from 'react';
 import './App.css';
 import oklaski from './sound/oklaski.mp3';
@@ -112,7 +113,15 @@ function App() {
     return "bg-red-600";
   })();
 
+
   useEffect(() => {
+    const startApp = (data, drawData, expr) => {
+      drawData = draw(data[expr], data[expr].length);
+      setCurrentTest(drawData);
+      setMaxQuestions(data[expr].length);
+      setCorectAnswers(0);
+      setInCorrectAnswers(0);
+    }
     const getQuizData = async (expr) => {
 
       const response = await fetch('./questions.json');
@@ -120,25 +129,13 @@ function App() {
       let drawData = [];
       switch (expr) {
         case 'inspiro':
-          drawData = draw(data.inspiro, data.inspiro.length);
-          setCurrentTest(drawData);
-          setMaxQuestions(data.inspiro.length);
-          setCorectAnswers(0);
-          setInCorrectAnswers(0);
+          startApp(data, drawData, expr);
           break;
         case 'sygnalizacja':
-          drawData = draw(data.sygnalizacja, data.sygnalizacja.length);
-          setCurrentTest(drawData);
-          setMaxQuestions(data.sygnalizacja.length);
-          setCorectAnswers(0);
-          setInCorrectAnswers(0);
+          startApp(data, drawData, expr);
           break;
         default:
-          drawData = draw(data.all, data.all.length);
-          setCurrentTest(drawData);
-          setMaxQuestions(data.all.length);
-          setCorectAnswers(0);
-          setInCorrectAnswers(0);
+          startApp(data, drawData, expr);
       }
 
     }
@@ -146,14 +143,20 @@ function App() {
   }, [test]);
 
   return (
-    <div className="bg-container container mx-auto min-h-screen pb-5">
-      <div className="flex items-baseline justify-center text-white flex-wrap bg-overlay-top">
-        <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
-          <ChoiceTest handleTest={handleTest} test={test} />
-        </LimitOfquestions>
-        <Header />
-        <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
-        <Refresh refreshPage={refreshPage} />
+    <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center">
+      <div className="flex items-baseline justify-center text-white flex-wrap bg-overlay-top flex-grow">
+        <div className="flex-1 text-center">
+          <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
+            <ChoiceTest handleTest={handleTest} test={test} />
+          </LimitOfquestions>
+        </div>
+        <div className="flex-initial">
+          <Header />
+        </div>
+        <div className="flex flex-1 m-auto justify-center">
+          <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
+          <Refresh refreshPage={refreshPage} />
+        </div>
       </div>
       <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
         {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
@@ -163,10 +166,11 @@ function App() {
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
         odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
       </div>
-      <div className="flex items-baseline justify-center text-3xl bg-white rounded-full max-w-xs mx-auto m-5">
+      <div className="flex items-baseline justify-center text-3xl bg-white rounded-full w-32 m-5 mx-auto">
         <span style={{ color: 'green' }}>{correctAnswers}:</span><span style={{ color: 'red' }}>{inCorrectAnswers}</span>
       </div>
-      <div className={`flex items-baseline justify-center text-4xl ${colorSend} text-white rounded-full max-w-xs mx-auto m-5`}>{maxQuestions ? Math.round(correctAnswers / maxQuestions * 100) : ""}%</div>
+      <div className={`flex items-baseline justify-center text-4xl ${colorSend} text-white rounded-full w-32 m-5 mx-auto`}>{maxQuestions ? Math.round(correctAnswers / maxQuestions * 100) : ""}%</div>
+      <Footer />
     </div>
   );
 }

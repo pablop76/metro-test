@@ -1,9 +1,14 @@
+import Confetti from 'react-confetti';
 const AcceptAlert = (props) => {
     const { nextQuestion } = props;
 
     return (
         <div
             className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-90" style={{ transform: "translate(-50%,-50%)" }}>
+            <Confetti
+                width={300}
+                height={200}
+            />
             <div className="mt-3 text-center">
                 <div className="relative mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-white animateBounce">
                     <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -3,7 +3,7 @@ const DangerAlert = (props) => {
 
     return (
         <div
-            className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-90" style={{ transform: "translate(-50%,-50%)" }}>
+            className="danger fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-90" style={{ transform: "translate(-50%,-50%)" }}>
             <div className="mt-3 text-center">
                 <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-white animateBounce">
                     <svg className="h-8 w-8 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,7 +12,7 @@ const DangerAlert = (props) => {
                 </div>
                 <div className="mt-2 px-7 py-3">
                     <p className=" text-white text-xl">
-                        Prawidłową odpowiedźią jest nr. {corectAnswer + 1}
+                        Odp. prawidłowa nr. {corectAnswer + 1}
                     </p>
                     <p className=" text-green-400 text-xl font-bold">
                         {answers[corectAnswer]}

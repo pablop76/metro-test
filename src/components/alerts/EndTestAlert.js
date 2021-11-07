@@ -1,3 +1,4 @@
+import Confetti from 'react-confetti';
 const EndTestAlert = (props) => {
     const { correctAnswers, inCorrectAnswers, maxQuestions, colorSend } = props;
 
@@ -5,6 +6,7 @@ const EndTestAlert = (props) => {
         <div
             className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-80" style={{ transform: "translate(-50%,-50%)" }}>
             <div className="mt-3 text-center">
+                {(Math.round(correctAnswers / maxQuestions * 100) >= 75) ? <Confetti width="300" /> : ""}
                 <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-white">
                     {(Math.round(correctAnswers / maxQuestions * 100) >= 75) ?
                         <svg className="h-8 w-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
