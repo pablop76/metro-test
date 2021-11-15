@@ -2576,15 +2576,6 @@
             "correct": 0
         },
         {
-            "question": "Wskaźnik  Wm 17 (biało-czerwona belka):",
-            "content": [
-                "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
-                "- informuje że w odległości drogi hamowania znajduje się niewidoczny sygnalizator przytorowy",
-                "- stosowany tylko w tunelu wyznacza miejsce przy dwu zbiegających się torach, do którego wolno jeden z nich zająć taborem, aby zachować możliwość przejazdu taboru po drugim torze"
-            ],
-            "correct": 2
-        },
-        {
             "question": "Przedstawiony poniżej wskaźnik oznacza: ",
             "image": "./images/wskaznik-5.png",
             "content": [
@@ -2713,7 +2704,7 @@
             "question": "Jak wygląda unieważniony semafor?",
             "content": [
                 "zasłonięty jest pokrowcem",
-                "na sygnalizatorze umieszczony jest krzyż",
+                "na sygnalizatorze umieszczony jest biały ukośny krzyż z czarną obwódką.",
                 "zdjęta jest tabliczka z nazwą"
             ],
             "correct": 1
