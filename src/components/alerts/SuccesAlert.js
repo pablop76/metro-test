@@ -4,7 +4,7 @@ const AcceptAlert = (props) => {
 
     return (
         <div
-            className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-90" style={{ transform: "translate(-50%,-50%)" }}>
+            className="fixed left-1/2 top-1/2 p-5 border w-80 shadow-lg rounded-md bg-blue-500 bg-opacity-90 overflow-hidden" style={{ transform: "translate(-50%,-50%)" }}>
             <Confetti
                 width={300}
                 height={200}
