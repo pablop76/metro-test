@@ -8,6 +8,7 @@ import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import Quiz from "./components/quiz/Quiz.js";
 import ChoiceTest from "./components/choiceTest/ChoiceTest";
 import Footer from "./components/footer/Footer";
+import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import { useEffect, useState } from 'react';
 import './App.css';
 import oklaski from './sound/oklaski.mp3';
@@ -30,6 +31,9 @@ function App() {
   const [allLimit, setAllLimit] = useState(0);
   const [inspiroLimit, setInspiroLimit] = useState(0);
   const [sygnalizacjaLimit, setSygnalizacjaLimit] = useState(0);
+  // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
+  const [wrongAnswers, setWrongAnswers] = useState([]);
+  const [showWrongAnswers, setShowWrongAnswers] = useState(false);
   // ustawienie tematu testu
   const handleTest = (e) => {
     setTest(e.target.value);
@@ -51,7 +55,6 @@ function App() {
     }
     return arr3;
   }
-
   const sound = new Audio(oklaski);
   const sound2 = new Audio(smiech);
 
@@ -76,6 +79,7 @@ function App() {
         // zbieranie niepoprawnych odpowiedzi
         setSaveInCorrectAnswers([...saveInCorrectAnswers, currentTest[currentQuestion]]);
       }
+      setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]])
     }
 
   }
@@ -167,12 +171,18 @@ function App() {
           <Refresh refreshPage={refreshPage} />
         </div>
       </div>
-      <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
-        {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
-        {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
-        {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}><Refresh refreshPage={refreshPage} />
-        </EndTestAlert> : ""};
-      </Quiz>
+      {showWrongAnswers ? <WrongAnswers wrongAnswers={wrongAnswers} /> :
+        <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled}>
+          {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
+          {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
+          {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}>
+            <Refresh refreshPage={refreshPage} />
+            <button className={"bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"} onClick={() => {
+              setShowWrongAnswers(true);
+              setEndTest(false)
+            }}>Pokaż moje błędy</button>
+          </EndTestAlert> : ""};
+        </Quiz>}
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
         odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
       </div>

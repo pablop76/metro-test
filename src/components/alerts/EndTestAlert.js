@@ -30,7 +30,7 @@ const EndTestAlert = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex flex-col">
                 {props.children}
             </div>
         </div>
