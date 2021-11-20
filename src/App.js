@@ -156,17 +156,15 @@ function App() {
   }, [test]);
 
   return (
-    <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center">
-      <div className="flex items-baseline justify-center text-white flex-wrap bg-overlay-top flex-grow">
-        <div className="flex-1 text-center">
+    <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50">
+      <Header />
+      <div className="flex justify-center text-white flex-wrap bg-overlay-top flex-grow">
+        <div className="text-center">
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
             <ChoiceTest handleTest={handleTest} test={test} questionslimit={[allLimit, inspiroLimit, sygnalizacjaLimit]} />
           </LimitOfquestions>
         </div>
-        <div className="flex-initial">
-          <Header />
-        </div>
-        <div className="flex flex-1 m-auto justify-center">
+        <div className="flex justify-center p-10">
           <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
           <Refresh refreshPage={refreshPage} />
         </div>
@@ -176,11 +174,13 @@ function App() {
           {dangerAlert ? <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} /> : ""}
           {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
           {endTest ? <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}>
-            <Refresh refreshPage={refreshPage} />
+            <div className={"mx-auto"}>
+              <Refresh refreshPage={refreshPage} />
+            </div>
             <button className={"bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"} onClick={() => {
               setShowWrongAnswers(true);
               setEndTest(false)
-            }}>Pokaż moje błędy</button>
+            }}>Pokaż błędne odpowiedzi</button>
           </EndTestAlert> : ""};
         </Quiz>}
       <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
