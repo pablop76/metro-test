@@ -1,5 +1,6 @@
 const ChoiceTest = (props) => {
     const { handleTest, test, questionslimit } = props;
+    console.log(questionslimit);
     return (
         <form className="mt-4">
             <span className="text-yellow-400 text-xl">Wybór zakresu pytań:</span>
@@ -15,6 +16,10 @@ const ChoiceTest = (props) => {
                 <label className="inline-flex items-center ml-3">
                     <input type="radio" className="form-radio" name="choiceTest" value="sygnalizacja" checked={test === "sygnalizacja"} onChange={handleTest} />
                     <span className="ml-2">Sygnalizacja ({questionslimit[2]})</span>
+                </label>
+                <label className="inline-flex items-center ml-3">
+                    <input type="radio" className="form-radio" name="choiceTest" value="najnowsze" checked={test === "najnowsze"} onChange={handleTest} />
+                    <span className="ml-2">Najnowsze ({questionslimit[3]})</span>
                 </label>
             </div>
         </form>

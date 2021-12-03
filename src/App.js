@@ -31,6 +31,7 @@ function App() {
   const [allLimit, setAllLimit] = useState(0);
   const [inspiroLimit, setInspiroLimit] = useState(0);
   const [sygnalizacjaLimit, setSygnalizacjaLimit] = useState(0);
+  const [najnowszeLimit, setNajnowszeLimit] = useState(0);
   // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
@@ -139,12 +140,17 @@ function App() {
       setAllLimit(data.all.length);
       setInspiroLimit(data.inspiro.length);
       setSygnalizacjaLimit(data.sygnalizacja.length);
+      setNajnowszeLimit(data.najnowsze.length);
+
       let drawData = [];
       switch (expr) {
         case 'inspiro':
           startApp(data, drawData, expr);
           break;
         case 'sygnalizacja':
+          startApp(data, drawData, expr);
+          break;
+        case 'najnowsze':
           startApp(data, drawData, expr);
           break;
         default:
@@ -161,7 +167,7 @@ function App() {
       <div className="flex justify-center text-white flex-wrap bg-overlay-top flex-grow">
         <div className="text-center">
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
-            <ChoiceTest handleTest={handleTest} test={test} questionslimit={[allLimit, inspiroLimit, sygnalizacjaLimit]} />
+            <ChoiceTest handleTest={handleTest} test={test} questionslimit={[allLimit, inspiroLimit, sygnalizacjaLimit, najnowszeLimit]} />
           </LimitOfquestions>
         </div>
         <div className="flex justify-center p-10">

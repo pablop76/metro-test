@@ -729,7 +729,7 @@
             "content": [
                 "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
                 "- odłączyć zawór rozrządczy na danym wagonie",
-                "- zaniku oświetlenia w salonie pasażerskim"
+                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA"
             ],
             "correct": 1
         },
@@ -2774,6 +2774,178 @@
                 "Oznacza miejsce, od którego należy rozpocząć hamowanie pociągo zatrzymującego sie w peronie.",
                 "Służy do oznaczania miejsca, do którego ma dojechać czoło pociągu zatrzymującego się w peronie.",
                 "Służy do oznaczania miejsca, do którego ma dojechać czoło zatrzymującego się pociągu."
+            ],
+            "correct": 2
+        }
+    ],
+    "najnowsze": [
+        {
+            "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
+            "image": "./images/docisnac.png",
+            "content": [
+                "Nakazuje zmniejszyć predkość taboru menewrującego",
+                "Należy docisnąć manewrujący tabor w celu sprzęgniecia lub rozsprzęgnięcia",
+                "miejsce, do którego należy doojechać manewrującym taborem"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
+            "image": "./images/od.png",
+            "content": [
+                "nalezy jechać w kierunku od dającego sygnał",
+                "miejsce, do którego należy doojechać manewrującym taborem",
+                "nie wolno ruszać taborem dopóki podawany jest ten sygnał"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Sygnał podawany na sygnalizatorze przedstawionym na rysunku",
+            "image": "./images/semafor-c.png",
+            "content": [
+                "manewrujący tabor może przejechać poza semafor wskazujące sygnał S1 'stój' którego oznaczenie zawiera mała literę 'm' jeżeli pozwolenie na minięcie sygnału S1 'Stój' zostanie przekazane przez pracownika obsługującego ten semafor za pomocą sygnału Rm1 'Do mnie' lub Rm2 'Ode mnie' albo przez radiotelefon",
+                "sygnał S1 'Stój' można pominąc na ustne polecenie Dyżurnego Ruchu STP tylko przy czynnych urządzebniach aop w pociągu",
+                "sygnał S1 'Stój' nie dotyczy przejazdu pociągu z elektrowozowni do tunelu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wyświetlony piktogram (pomarańczowy) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
+            "image": "./images/wsr.png",
+            "content": [
+                "prędkość kontrolowana przez SOP3 w pętli jest równa 0km/h (tylko przed segmentem czrwonym)",
+                "brak akceptacji sygnałów przez część pojazdową SOP3",
+                "oznacza, że na danym odcinku aop prędkość kontrolowana przez system wynosi 35km/h"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wyświetlony piktogram (czerwony) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
+            "image": "./images/wsr-c.png",
+            "content": [
+                "ocinek zajęty przez poprzedząjący pociąg lub osłonięty przez semafor zabraniający jazdy (następne pola napewno również są wyświetlane na czerwono)",
+                "tylko odcinki za semaforem wskazujący Sygnał S1 'Stój'",
+                "całkowity brak transmisji sygnałów aop"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
+            "image": "",
+            "content": [
+                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
+                "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
+                "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wskazanie na wyświetlaczu (dwie kreski) 'prędkości kontrolowanej' pulpitu SOP-2W wystepuje między innymi",
+            "image": "./images/brak-transmisji-sop2.png",
+            "content": [
+                "uszkodzenie jednego z torów prędkości",
+                "brak transmisji na danym odcinku",
+                "wystąpienie błędu krytycznego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
+            "image": "",
+            "content": [
+                "w przypadku, gdy nastawnik pozostanie w pozycji 'jazda' po pięciu sekundach załączy się hamowanie awaryjne od ATO",
+                "system zezwoli na ponowne załączenie napędu po osiągnięciu odpowiedniej prędkości, nawet gdy nastawnik będzie pozostawać w pozycji 'jazda'",
+                "system nie zezwoli na ponowne załączenie napędu dopóki nastawnik nie zostanie przestawiony do pozycji 'zero'"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czym skutkuje nie nacisnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
+            "image": "",
+            "content": [
+                "po 10 sekundach załączy się hamowanie awaryjne od ATO",
+                "po 5 sekundach załaczy się hamowanie awaryjne od ATP",
+                "załączy się hamowanie służbowe od ATP"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wskazania na wyświetlaczu 'prędkości kontrolowanej' pulpitu SOP 2W występuje w przypadku",
+            "image": "./images/blad-krytyczny.png",
+            "content": [
+                "brak transmisji na danym odcinku",
+                "dezaktywacji SOP-2W",
+                "wystąpienia błedu krytycznego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony poniżej sygnał nadawany przez sygnalistę",
+            "image": "./images/zmiejszyc-predkosc.png",
+            "content": [
+                "nakazuje zatrzymac pociąg",
+                "informuje maszynistę pociągu o wprowadzeniu ograniczenia prędkości oznaczonego wskaźnikami na gruncie",
+                "nakazuje zmniejszyc prędkość taboru manewrującego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przedstawiony wskaźnik Wm18",
+            "image": "./images/wm-18.png",
+            "content": [
+                "ustawia się w tunelu ale dotyczy tylko maszynistów pojazdów pomocniczych",
+                "ustawia sie w tunelu w miejscu gdzie została przekroczona skrajnia budowli",
+                "ustawia się w tunelu, informuje maszyniste, że za wskaxnikiem w odległości drogi hamowania znajduje sie sygnalizator przytorowy"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
+            "image": "./images/atp-uszkodzone.png",
+            "content": [
+                "ATP uszkodzone lub brak komunikacji z ATP",
+                "urządzenia pokładowe SOP3 są wyłączone",
+                "brak transmisji sygnałów aop"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wyświetlony piktogram na monitorze HMI pociągu INSPIRO (wyświetlacz wsr) oznacza",
+            "image": "./images/wsr-z.png",
+            "content": [
+                "oznacza, że najbliższy w kierunku jazdy sygnalizator przytorowy wskazuje Sygnał S2 'wolna droga'",
+                "prędkośc dozwolona przez SOP-3 w pętli jest wieksza od 0 km/h",
+                "prędkość dozwolona przez SOP-3 w pętli wynosi 90 km/h"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
+            "image": "./images/awaryjny-sop.png",
+            "content": [
+                "załączone hamowanie awaryjne przez system SOP3",
+                "awarie hamulca elektrodynamicznego",
+                "klasyfikacje stanu pociągu (występuje nieznaczne ograniczenie w działaniu pojazdu, można dojechać do stacji końcowej z pasażerami)"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
+            "image": "./images/ato-uszkodzone.png",
+            "content": [
+                "urządzenia pokładowe SOP3 są wyłączone",
+                "AOP uszkodzone lub brak komunikacji z AOP",
+                "brak transmisji sygnałów aop"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "",
+            "image": "./images/",
+            "content": [
+                "",
+                "",
+                ""
             ],
             "correct": 2
         }
