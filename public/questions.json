@@ -182,15 +182,6 @@
             "correct": 2
         },
         {
-            "question": "Po jakim czasie Dyspozytor Ruchu może wezwać pociąg pogotowia (pociąg zatrzymał się nie planowo i nie można nawiązać z nim łączności):",
-            "content": [
-                "- rano i wieczorem przy czasie następstwa powyżej 7 minut po upływie 10 minut",
-                "- w godzinach szczytu po upływie 5 minut",
-                "- w porze ruchu pasażerskiego po upływie 3 minut"
-            ],
-            "correct": 2
-        },
-        {
             "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
             "content": [
                 "- działanie hamulca postojowego tylko na wagonach czołowych",
@@ -1406,15 +1397,6 @@
                 "jeden długi ton i dwa krótkie tony."
             ],
             "correct": 1
-        },
-        {
-            "question": "Po jakim czasie od wystąpienia awarii uniemożliwiającej podjęcie dalszej jazdy maszynista zgłasza potrzebę wezwania pociągu pogotowia",
-            "content": [
-                "rano i wieczorem przy czasie następstwa powyżej 8 minut po upływie 20 minut",
-                "w godzinach szczytu po upływie 3 minut",
-                "po stwierdzeniu awarii uniemożliwiającej podjęcie dalszej jazdy"
-            ],
-            "correct": 2
         },
         {
             "question": "Burtowe lampki hamulca pneumatycznego zapalą się, gdy ciśnienie w cylindrach hamulcowych przekroczy",

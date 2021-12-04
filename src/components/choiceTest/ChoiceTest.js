@@ -1,6 +1,5 @@
 const ChoiceTest = (props) => {
     const { handleTest, test, questionslimit } = props;
-    console.log(questionslimit);
     return (
         <form className="mt-4">
             <span className="text-yellow-400 text-xl">Wybór zakresu pytań:</span>
