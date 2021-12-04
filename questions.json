@@ -2494,6 +2494,106 @@
                 "błedy w czasie testu"
             ],
             "correct": 0
+        },
+        {
+            "question": "Czy jest wymagane podczas bocznikowania w systemie SOP-2W wciśnięcie przycisku 'odjazd', gdy wystąpił błąd krytyczny?",
+            "image": "",
+            "content": [
+                "jest wymagane",
+                "nie jest wymagane",
+                "jest wymagane tylko w pociągach serii 81"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Załączenie hamowana służbowego od ATP po przekroczeniu prędkości kontrolowanej  z jednoczesnym pozostawieniem nastawnika w pozycji jazda, spowoduje",
+            "image": "",
+            "content": [
+                "wyhamowanie pociągu do zatrzymania",
+                "zhamuje pociąg do ograniczonej prędkości",
+                "załaczenie hamowania awaryjnego przez system"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Kropka przy wyświetlanej prędkości rzeczywistej na panelu SOP-2W, oznacza",
+            "image": "",
+            "content": [
+                "awarie jednego z tachometrów (pomiar prędkości)",
+                "krótkotrwały zanik transmisji sygnałów aop",
+                "załączone hamowanie awaryjne przez system SOP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Czym skutkuje nie naciśnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
+            "image": "",
+            "content": [
+                "Po upływie 5 sekund system załączy hamulec awaryjny",
+                "wyświetlona pozostaje prędkość kontrolowana 0 km/h do momentu wciśnięcia przycisku P-20",
+                "wyświetlona pozostaje aktualna predkość kontrolowana na danym odcinku aop do momentu wciśnięcia przycisku P-20"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jakie są wskazania na ekranie HMI gdy system ATO jest niezorientowany",
+            "image": "",
+            "content": [
+                "brak prędkości kontrolowanej Vk",
+                "brak sytuacji ruchowej na linijce WSR",
+                "brak mapy ATO"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czerwona migajaca lampka 'Jazda' na pulpicie SOP-2W oznacza",
+            "image": "",
+            "content": [
+                "załączenie hamowania awaryjnego od aop",
+                "zanik transmisji na danym odcinku aop",
+                "dezaktywowany SOP"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Czerwona lampka 'Jazda świecąca ciągłym światłem na pulpicie SOP-2W oznacza",
+            "image": "",
+            "content": [
+                "załączone hamowanie służbowe od aop",
+                "załączone hamowanie awaryjne od aop",
+                "zanik transmisji na danym odcinku"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Wygaszona lampka 'Jazda' na pulpicie SOP-2W w pociągu serii 81, moze oznaczać",
+            "image": "",
+            "content": [
+                "zamkniety kran odcinajacy zawór EPK",
+                "sygnał 'S1-stój' podany na semaforze przed którym zatrzymał sie pociąg",
+                "załączone hamowanie docelowe od SOP podczas wjazdu na stację"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Stopień 'On' ('zero nieprzełamywalne') na liniii M2 jest kodowany",
+            "image": "",
+            "content": [
+                "między innymi za semaforem wskazującum sygnał 'Stój' i na końcach torów odstawczych",
+                "przed kazdym semaforem podajacym sygnał 'Stój'",
+                "zawsze tam gdzie wystepuje zajetość, mozna go przejechać w każdym trybie po wcisnięciu P-20"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Jaki warunek musi być spełniony na M2, żeby SOP-3 zezwolił dojechać do semafora wskazującego sygnał 'S1-stój', za którym znajduje się rozjazd, z prędkością Vk>0?",
+            "image": "",
+            "content": [
+                "droga przebiegu za semaforem ułozona w tor do zmiany kierunku",
+                "droga przebiegu utwierdzona na wprost i jeden odcinek aop za semaforem wolny",
+                "droga przebiegu utwierdzona na wprost i dwa odcinki aop za semaforem wolne"
+            ],
+            "correct": 2
         }
     ],
     "inspiro": [
@@ -3080,304 +3180,14 @@
     ],
     "najnowsze": [
         {
-            "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
-            "image": "./images/docisnac.png",
+            "question": "Nic tu nie ma. Wybierz inny zakres pytań.",
+            "image": "",
             "content": [
-                "Nakazuje zmniejszyć predkość taboru menewrującego",
-                "Należy docisnąć manewrujący tabor w celu sprzęgniecia lub rozsprzęgnięcia",
-                "miejsce, do którego należy doojechać manewrującym taborem"
+                "",
+                "",
+                ""
             ],
             "correct": 1
-        },
-        {
-            "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
-            "image": "./images/od.png",
-            "content": [
-                "nalezy jechać w kierunku od dającego sygnał",
-                "miejsce, do którego należy doojechać manewrującym taborem",
-                "nie wolno ruszać taborem dopóki podawany jest ten sygnał"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Sygnał podawany na sygnalizatorze przedstawionym na rysunku",
-            "image": "./images/semafor-c.png",
-            "content": [
-                "manewrujący tabor może przejechać poza semafor wskazujące sygnał S1 'stój' którego oznaczenie zawiera mała literę 'm' jeżeli pozwolenie na minięcie sygnału S1 'Stój' zostanie przekazane przez pracownika obsługującego ten semafor za pomocą sygnału Rm1 'Do mnie' lub Rm2 'Ode mnie' albo przez radiotelefon",
-                "sygnał S1 'Stój' można pominąc na ustne polecenie Dyżurnego Ruchu STP tylko przy czynnych urządzebniach aop w pociągu",
-                "sygnał S1 'Stój' nie dotyczy przejazdu pociągu z elektrowozowni do tunelu"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Wyświetlony piktogram (pomarańczowy) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
-            "image": "./images/wsr.png",
-            "content": [
-                "prędkość kontrolowana przez SOP3 w pętli jest równa 0km/h (tylko przed segmentem czrwonym)",
-                "brak akceptacji sygnałów przez część pojazdową SOP3",
-                "oznacza, że na danym odcinku aop prędkość kontrolowana przez system wynosi 35km/h"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Wyświetlony piktogram (czerwony) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
-            "image": "./images/wsr-c.png",
-            "content": [
-                "ocinek zajęty przez poprzedząjący pociąg lub osłonięty przez semafor zabraniający jazdy (następne pola napewno również są wyświetlane na czerwono)",
-                "tylko odcinki za semaforem wskazujący Sygnał S1 'Stój'",
-                "całkowity brak transmisji sygnałów aop"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
-            "image": "",
-            "content": [
-                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
-                "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
-                "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Wskazanie na wyświetlaczu (dwie kreski) 'prędkości kontrolowanej' pulpitu SOP-2W wystepuje między innymi",
-            "image": "./images/brak-transmisji-sop2.png",
-            "content": [
-                "uszkodzenie jednego z torów prędkości",
-                "brak transmisji na danym odcinku",
-                "wystąpienie błędu krytycznego"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
-            "image": "",
-            "content": [
-                "w przypadku, gdy nastawnik pozostanie w pozycji 'jazda' po pięciu sekundach załączy się hamowanie awaryjne od ATO",
-                "system zezwoli na ponowne załączenie napędu po osiągnięciu odpowiedniej prędkości, nawet gdy nastawnik będzie pozostawać w pozycji 'jazda'",
-                "system nie zezwoli na ponowne załączenie napędu dopóki nastawnik nie zostanie przestawiony do pozycji 'zero'"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Czym skutkuje nie nacisnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
-            "image": "",
-            "content": [
-                "po 10 sekundach załączy się hamowanie awaryjne od ATO",
-                "po 5 sekundach załaczy się hamowanie awaryjne od ATP",
-                "załączy się hamowanie służbowe od ATP"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Wskazania na wyświetlaczu 'prędkości kontrolowanej' pulpitu SOP 2W występuje w przypadku",
-            "image": "./images/blad-krytyczny.png",
-            "content": [
-                "brak transmisji na danym odcinku",
-                "dezaktywacji SOP-2W",
-                "wystąpienia błedu krytycznego"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Przedstawiony poniżej sygnał nadawany przez sygnalistę",
-            "image": "./images/zmiejszyc-predkosc.png",
-            "content": [
-                "nakazuje zatrzymac pociąg",
-                "informuje maszynistę pociągu o wprowadzeniu ograniczenia prędkości oznaczonego wskaźnikami na gruncie",
-                "nakazuje zmniejszyc prędkość taboru manewrującego"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Przedstawiony wskaźnik Wm18",
-            "image": "./images/wm-18.png",
-            "content": [
-                "ustawia się w tunelu ale dotyczy tylko maszynistów pojazdów pomocniczych",
-                "ustawia sie w tunelu w miejscu gdzie została przekroczona skrajnia budowli",
-                "ustawia się w tunelu, informuje maszyniste, że za wskaxnikiem w odległości drogi hamowania znajduje sie sygnalizator przytorowy"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
-            "image": "./images/atp-uszkodzone.png",
-            "content": [
-                "ATP uszkodzone lub brak komunikacji z ATP",
-                "urządzenia pokładowe SOP3 są wyłączone",
-                "brak transmisji sygnałów aop"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Wyświetlony piktogram na monitorze HMI pociągu INSPIRO (wyświetlacz wsr) oznacza",
-            "image": "./images/wsr-z.png",
-            "content": [
-                "oznacza, że najbliższy w kierunku jazdy sygnalizator przytorowy wskazuje Sygnał S2 'wolna droga'",
-                "prędkośc dozwolona przez SOP-3 w pętli jest wieksza od 0 km/h",
-                "prędkość dozwolona przez SOP-3 w pętli wynosi 90 km/h"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
-            "image": "./images/awaryjny-sop.png",
-            "content": [
-                "załączone hamowanie awaryjne przez system SOP3",
-                "awarie hamulca elektrodynamicznego",
-                "klasyfikacje stanu pociągu (występuje nieznaczne ograniczenie w działaniu pojazdu, można dojechać do stacji końcowej z pasażerami)"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
-            "image": "./images/ato-uszkodzone.png",
-            "content": [
-                "urządzenia pokładowe SOP3 są wyłączone",
-                "AOP uszkodzone lub brak komunikacji z AOP",
-                "brak transmisji sygnałów aop"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Jakie są wskazania na ekranie HMI gdy system ATO jest nizorientowany?",
-            "image": "",
-            "content": [
-                "brak predkości kontrolowanej Vk",
-                "brak sytuacji ruchowej na linijce WSR",
-                "brak mapy ATO"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załaczenie napędu przez maszynistę?",
-            "image": "",
-            "content": [
-                "nie jest możliwe",
-                "jest możliwe tylko w trybie TA",
-                "jest możliwe"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "System SOP-2W oddziałuje na pociąg za pomocą sygnałów umożliwiających",
-            "image": "",
-            "content": [
-                "załaczenie hamowania awaryjnego",
-                "sterowanie rozruchem podczas ruszania pociągiem",
-                "sterowanie otwarciem drzwi"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Który z wymienionych trybów pracy nie występuje w systemie SOP-2W?",
-            "image": "",
-            "content": [
-                "tryb aktywny - w tym trybie SOP-2W przekazuje informacje maszyniście i steruje pociągiem",
-                "tryb nieaktywny - w tym trybie SOP-2W przekazuje niektóre informacje maszyniście i nie steruje pociągiem",
-                "tryb jazdy automatycznej w tym trybie SOP-2W steruje jazdą i hamowaniem oraz nadzoruje otwieranie drzwi na stacjach"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Która z podanych prędkości nie jest kodowana jako prędkość kontrolowana (stopnie prędkości wyświetlane na wskaźniku Vk) na lini metra M1?",
-            "image": "",
-            "content": [
-                "80 km/h",
-                "58 km/h",
-                "20 km/h"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Jaki warunek musi być spełniony na M2, żeby SOP-3 zezwolił dojechać do semafora wskazującego sygnał 'S1-stój' za którym znajduje się rozjazd, z prędkością Vk > 0?",
-            "image": "",
-            "content": [
-                "droga przebiegu za semaforem ułożona w tor do zmiany kierunku",
-                "droga przebiegu utwierdzona na wprost i jeden odcinek aop za semaforem wolny",
-                "droga przebiegu utwierdzona na wprost i dwa odcinki aop za semaforem wolne"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Po załączeniu hamowania awaryjnego przez układ ATP (SOP-3) w pociągu INSPIRO należy",
-            "image": "",
-            "content": [
-                "przestawić przełacznik PRP w tryb TN, ponownie w tryb TR i wykonać test urządzeń SOP",
-                "ustawić nastawnik jazdy w położeniu hamowanie i nacisnąć przycisk 'luzowanie hamulca awaryjnego'",
-                "ustawić nastawnik jazdy w położenie hamowanie nacisnąć przycisk P-20 i trzymać aż ikona hamowanie przestanie wskazywać stan hamulca awaryjnego ATP"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Tryb TB (linia metra M2) służy do",
-            "image": "",
-            "content": [
-                "wykonania bezobsługowego nawrotu",
-                "jazdy z niesprawnymi pociągowymi urządzeniami aop",
-                "przejazdu przez odcinek aop, na którym kodowana jest prędkość 'zero nieprzełamywalne'"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "W trakcie testu SOP-2W w tyrzecim kroku sprawdzane jest działanie",
-            "image": "",
-            "content": [
-                "hamowanie awaryjne",
-                "hamowanie służbowe",
-                "działanie systemu SLP"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Po wystąpieniu błędu krytycznego układu ATO, możliwa jest jazda",
-            "image": "",
-            "content": [
-                "w trybie TA",
-                "w trybie TBN",
-                "w trybie TR"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Przełączenie podczas jazdy pociągu z trybu TA do trybu TR na lini M2",
-            "image": "",
-            "content": [
-                "spowoduje załączenie hamowania awaryjnego",
-                "system SOP-3 zezwala na przełączenie trybu TA do TR podczas jazdy na linii M2",
-                "system SOP-3 zmieni tryb pracy po zatrzymaniu pociągu"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Po upływie jakiego czasu konieczne jest ponowne przeprowadzenie testu pokładowych urządzeń SOP-3?",
-            "image": "",
-            "content": [
-                "po 12 godzinach jazdy z aktywnym systemem SOP-3",
-                "po 10 minutach postoju pociągu z aktywnym systemem SOP-3 pracującym w trybie TA, Tr lub TB",
-                "po upływie 3 minut"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu INSPIRO anulujemy",
-            "image": "",
-            "content": [
-                "przez ustawienie nastawnika jazdy w położenie hamowanie, naciśnięcie przycisku P-20 i trzymania, az ikona hamowanie przestanie wskazywać stan hamulca awaryjnego ATP",
-                "przez ustawienie nastawnika jazdy w położenie hamowanie i naciśnięcie przycisku luzowanie hamulca awaryjnego",
-                "przez przestawienie wybieraka w tryb TR i przetestowanie SOP"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Co oznacza wolno migająca na zielono kontrolka 'transmisja' w systemie SOP-2W?",
-            "image": "",
-            "content": [
-                "włączenie SOP w torach wyposażonych w pętle transmisyjne",
-                "właczenie SOP w torach niewyposażonych w petle transmisyjne",
-                "błedy w czasie testu"
-            ],
-            "correct": 0
         }
     ]
 }
