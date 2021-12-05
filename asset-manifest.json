@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/metro-test/static/css/main.20f877b8.chunk.css",
-    "main.js": "/metro-test/static/js/main.cc60ed39.chunk.js",
-    "main.js.map": "/metro-test/static/js/main.cc60ed39.chunk.js.map",
+    "main.css": "/metro-test/static/css/main.3eb8f0fa.chunk.css",
+    "main.js": "/metro-test/static/js/main.e425f886.chunk.js",
+    "main.js.map": "/metro-test/static/js/main.e425f886.chunk.js.map",
     "runtime-main.js": "/metro-test/static/js/runtime-main.cfadb5b5.js",
     "runtime-main.js.map": "/metro-test/static/js/runtime-main.cfadb5b5.js.map",
     "static/js/2.f20f56a6.chunk.js": "/metro-test/static/js/2.f20f56a6.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.4b30fb56.chunk.js": "/metro-test/static/js/3.4b30fb56.chunk.js",
     "static/js/3.4b30fb56.chunk.js.map": "/metro-test/static/js/3.4b30fb56.chunk.js.map",
     "index.html": "/metro-test/index.html",
-    "static/css/main.20f877b8.chunk.css.map": "/metro-test/static/css/main.20f877b8.chunk.css.map",
+    "static/css/main.3eb8f0fa.chunk.css.map": "/metro-test/static/css/main.3eb8f0fa.chunk.css.map",
     "static/js/2.f20f56a6.chunk.js.LICENSE.txt": "/metro-test/static/js/2.f20f56a6.chunk.js.LICENSE.txt",
     "static/media/App.css": "/metro-test/static/media/stp.79671a06.jpg",
     "static/media/oklaski.a169772f.mp3": "/metro-test/static/media/oklaski.a169772f.mp3",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.cfadb5b5.js",
     "static/js/2.f20f56a6.chunk.js",
-    "static/css/main.20f877b8.chunk.css",
-    "static/js/main.cc60ed39.chunk.js"
+    "static/css/main.3eb8f0fa.chunk.css",
+    "static/js/main.e425f886.chunk.js"
   ]
 }
