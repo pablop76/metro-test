@@ -17,8 +17,8 @@ const ChoiceTest = (props) => {
                     <span className="ml-2">Sygnalizacja ({questionslimit[2]})</span>
                 </label>
                 <label className="inline-flex items-center ml-3">
-                    <input type="radio" className="form-radio" name="choiceTest" value="najnowsze" checked={test === "najnowsze"} onChange={handleTest} />
-                    <span className="ml-2">Najnowsze ({questionslimit[3]})</span>
+                    <input type="radio" className="form-radio" name="choiceTest" value="linia2" checked={test === "linia2"} onChange={handleTest} />
+                    <span className="ml-2">Linia nr 2 ({questionslimit[3]})</span>
                 </label>
             </div>
         </form>

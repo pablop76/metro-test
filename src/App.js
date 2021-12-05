@@ -140,7 +140,7 @@ function App() {
       setAllLimit(data.all.length);
       setInspiroLimit(data.inspiro.length);
       setSygnalizacjaLimit(data.sygnalizacja.length);
-      setNajnowszeLimit(data.najnowsze.length);
+      setNajnowszeLimit(data.linia2.length);
 
       let drawData = [];
       switch (expr) {
@@ -150,7 +150,7 @@ function App() {
         case 'sygnalizacja':
           startApp(data, drawData, expr);
           break;
-        case 'najnowsze':
+        case 'linia2':
           startApp(data, drawData, expr);
           break;
         default:
@@ -164,15 +164,15 @@ function App() {
   return (
     <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50">
       <Header />
+      <div className="flex justify-center">
+        <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
+        <Refresh refreshPage={refreshPage} />
+      </div>
       <div className="flex justify-center text-white flex-wrap bg-overlay-top flex-grow">
         <div className="text-center">
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} >
             <ChoiceTest handleTest={handleTest} test={test} questionslimit={[allLimit, inspiroLimit, sygnalizacjaLimit, najnowszeLimit]} />
           </LimitOfquestions>
-        </div>
-        <div className="flex justify-center p-10">
-          <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
-          <Refresh refreshPage={refreshPage} />
         </div>
       </div>
       {showWrongAnswers ? <WrongAnswers wrongAnswers={wrongAnswers} /> :
