@@ -13,6 +13,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import oklaski from './sound/oklaski.mp3';
 import smiech from './sound/smiech.mp3';
+import StartModal from "./components/alerts/StartModal";
 
 function App() {
 
@@ -35,9 +36,14 @@ function App() {
   // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
+  const [open, setModal] = useState("block");
   // ustawienie tematu testu
   const handleTest = (e) => {
     setTest(e.target.value);
+  }
+
+  const handleModal = () => {
+    setModal("none");
   }
 
   // Losowanie pytań od 0 do długość tablicy
@@ -163,6 +169,7 @@ function App() {
 
   return (
     <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50">
+      <StartModal handleModal={handleModal} open={open} />
       <Header />
       <div className="flex justify-center">
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
