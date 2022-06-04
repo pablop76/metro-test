@@ -1330,11 +1330,7 @@
             "category": "instrukcja"
         },
         {
-<<<<<<< HEAD
             "question": "Pominięcie semafora Km na 'stój', (umieszczonego na STP) podczas wjazdu do tunelu, możliwe jest na",
-=======
-            "question": "Pominięcie semafora Km na 'stój' ,(umieszczonego na STP) podczas wjazdu do tunelu, możliwe jest na",
->>>>>>> f1ad6fdc2d6e60ea1f20fbaa8b392dd51c3c461c
             "content": [
                 "polecenie dyżurnego ruchu STP",
                 "rozkaz szczególny „S” , wydany przez dyżurnego ruchu STP",
@@ -1350,12 +1346,8 @@
                 "na rozkaz szczególny „S” ,wydany przez dyżurnego ruchu STP",
                 "na rozkaz „S” i rozkaz „O”, wydany przez dyżurnego ruchu STP"
             ],
-<<<<<<< HEAD
-            "correct": 0,
+            "correct": 1,
             "category": "instrukcja"
-=======
-            "correct": 1
->>>>>>> f1ad6fdc2d6e60ea1f20fbaa8b392dd51c3c461c
         },
         {
             "question": "Co oznacza migająca czerwona lampka Jazda na pulpicie SOP",
