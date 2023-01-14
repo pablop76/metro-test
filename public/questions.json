@@ -1982,7 +1982,7 @@
                 "zgłosić dyspozytorowi ruchu i przy załączonym oświetleniu tunelowym, kontynuuje jazdę z pasażerami do stacji końcowej, następnie pociąg musi wyjechać awaryjnie",
                 "zgłosić dyspozytorowi ruchu, wysadzić  pasażerów, następnie pociąg musi zjechać w najbliższe tory odstawcze"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Z jaką prędkością odbywa się jazda na widoczność?",

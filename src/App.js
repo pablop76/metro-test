@@ -164,7 +164,6 @@ function App() {
       }
 
     }
-    console.log(getQuizData(test));
     getQuizData(test);
   }, [test]);
 
