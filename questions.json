@@ -1982,7 +1982,7 @@
                 "zgłosić dyspozytorowi ruchu i przy załączonym oświetleniu tunelowym, kontynuuje jazdę z pasażerami do stacji końcowej, następnie pociąg musi wyjechać awaryjnie",
                 "zgłosić dyspozytorowi ruchu, wysadzić  pasażerów, następnie pociąg musi zjechać w najbliższe tory odstawcze"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Z jaką prędkością odbywa się jazda na widoczność?",
@@ -2073,7 +2073,7 @@
                 "nie są spełnione warunki do odjazdu",
                 "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
@@ -2082,7 +2082,7 @@
                 "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
                 "nie są spełnione warunki do odjazdu"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Co oznacza wygaszona lampka „autostart” w trybie TA?",
@@ -4204,6 +4204,17 @@
                 "droga przebiegu za semaforem ułozona w tor do zmiany kierunku",
                 "droga przebiegu utwierdzona na wprost i jeden odcinek aop za semaforem wolny",
                 "droga przebiegu utwierdzona na wprost i dwa odcinki aop za semaforem wolne"
+            ],
+            "correct": 2
+        }
+    ],
+    "skoda": [
+        {
+            "question": "Skoda, model na torach metra",
+            "content": [
+                "Enyaq",
+                "Kodiaq",
+                "Varsovia"
             ],
             "correct": 2
         }
