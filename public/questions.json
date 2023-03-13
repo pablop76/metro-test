@@ -1356,7 +1356,7 @@
                 "- załączone hamowanie awaryjne",
                 "- załączone hamowanie służbowe"
             ],
-            "correct": 2,
+            "correct": 1,
             "category": "SOP"
         },
         {
@@ -1476,7 +1476,7 @@
                 "- poziom podwójnej pracy",
                 "- poziom bezpieczeństwa"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Ruch pociągów powinien być wstrzymany jeżeli widoczność sygnalizatorów i wskaźników na odcinku toru nie przekracza",
@@ -1631,7 +1631,7 @@
                 "t",
                 "T"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Oznaczenie pociągu doświadczalnego w rozkazie szczególnym",
@@ -1910,7 +1910,7 @@
                 "przez zbocznikowanie hamulca awaryjnego",
                 "przez naciśnięcie przycisku czuwaka w nastawniku jazdy i ewentualnie dodatkowo przycisku luzowania hamulca awaryjnego na pulpicie"
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Ile par drzwi pasażerskich utraci kontrolę w pociągu serii 81 w wagonie pośrednim, po użyciu dźwigni awaryjnego otwierania drzwi?",
@@ -2010,7 +2010,7 @@
                 "nadmiarowość",
                 "alarmowe powiadomienie dyspozytora"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Co jest podstawą do prowadzenia ruchu w tunelu przy załączonych semaforach?",
@@ -2859,7 +2859,7 @@
                 "stacji C-11 Świetkorzyska",
                 "stacji A-13 Centrum"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Podczs przejazdu próbnego (pierwszy przejazd po przerwie w ruchu pasażerskim)",
