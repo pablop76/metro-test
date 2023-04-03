@@ -41,7 +41,7 @@
             "category": "instrukcja"
         },
         {
-            "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu doświadczalnego:",
+            "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu próbnego, po przerwie w ruchu pasażerskim:",
             "content": [
                 "- wynikającą z konstrukcji pojazdu",
                 "- 80 km/h, przez stacje 40 km/h",
@@ -1356,7 +1356,7 @@
                 "- załączone hamowanie awaryjne",
                 "- załączone hamowanie służbowe"
             ],
-            "correct": 2,
+            "correct": 1,
             "category": "SOP"
         },
         {
@@ -1436,7 +1436,7 @@
                 "- w pociągu mogą przebywać pasażerowie i pracownicy metra",
                 "- dopuszcza się przewóz pracowników metra (w celu dojazdu do określonych miejsc pracy)"
             ],
-            "correct": 0,
+            "correct": 2,
             "category": "instrukcja"
         },
         {
@@ -1476,7 +1476,7 @@
                 "- poziom podwójnej pracy",
                 "- poziom bezpieczeństwa"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Ruch pociągów powinien być wstrzymany jeżeli widoczność sygnalizatorów i wskaźników na odcinku toru nie przekracza",
@@ -1631,7 +1631,7 @@
                 "t",
                 "T"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Oznaczenie pociągu doświadczalnego w rozkazie szczególnym",
@@ -1729,15 +1729,6 @@
                 "załączony grzybek w kabinie aktywnej i nieaktywnej",
                 "załączony grzybek tylko w kabinie aktywnej",
                 "załączony  grzybek w kabinie nieaktywnej"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Co powinno być między innymi zawarte w rozkazie „S”, na odcinku , na którym prowadzony jest ruch dwukierunkowy?",
-            "content": [
-                "nazwa semafora , lub semaforów wskazujących sygnał „STÓJ” w drodze przebiegu  i na  jakiej podstawie nastąpi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
-                "zawarta informacja ,że tor jest zamknięty",
-                "nie może występować taka organizacja ruchu w Metrze Warszawskim"
             ],
             "correct": 1
         },
@@ -1910,7 +1901,7 @@
                 "przez zbocznikowanie hamulca awaryjnego",
                 "przez naciśnięcie przycisku czuwaka w nastawniku jazdy i ewentualnie dodatkowo przycisku luzowania hamulca awaryjnego na pulpicie"
             ],
-            "correct": 0
+            "correct": 2
         },
         {
             "question": "Ile par drzwi pasażerskich utraci kontrolę w pociągu serii 81 w wagonie pośrednim, po użyciu dźwigni awaryjnego otwierania drzwi?",
@@ -2010,7 +2001,7 @@
                 "nadmiarowość",
                 "alarmowe powiadomienie dyspozytora"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Co jest podstawą do prowadzenia ruchu w tunelu przy załączonych semaforach?",
@@ -2018,15 +2009,6 @@
                 "wskazania sygnalizatorów przytorowych",
                 "urządzenia AOP",
                 "obie odpowiedzi są nieprawidłowe"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Do jakiego okręgu nastawczego należy tor szlaku granicznego miedzy I a II linią metra?",
-            "content": [
-                "do okręgu nastawczego stacji A-13",
-                "do okręgu nastawczego dyspozytora  II lini",
-                "do okręgu nastawczego dyspozytora I linii i dyżurnego stacji C-10"
             ],
             "correct": 0
         },
@@ -2372,14 +2354,14 @@
             "correct": 0
         },
         {
-            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
+            "question": "W przypadku wystąpienia błędu krytycznego ATP należy:",
             "image": "",
             "content": [
-                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
+                "kontynuować jazdę bez pasażerów z wyłaczonym SOP3 na podstawie wskazań semaforów, oraz rozkazu szczególnego",
                 "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
                 "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Wskazanie na wyświetlaczu (dwie kreski) 'prędkości kontrolowanej' pulpitu SOP-2W wystepuje między innymi",
@@ -2837,7 +2819,7 @@
             "content": [
                 "nazwa semafora, lub semaforów wskazujacych sygnał 'STÓJ' w drodze przebiegu i na jakiej podstawie nastapi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
                 "zawarta informacja, że tor jest zamknięty",
-                "nie moze występowac taka organizacja ruchu w Metrze Warszawskim"
+                "nie może występować taka organizacja ruchu w Metrze Warszawskim"
             ],
             "correct": 0
         },
@@ -2859,7 +2841,7 @@
                 "stacji C-11 Świetkorzyska",
                 "stacji A-13 Centrum"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Podczs przejazdu próbnego (pierwszy przejazd po przerwie w ruchu pasażerskim)",
@@ -3016,10 +2998,10 @@
             "image": "",
             "content": [
                 "polecenia wydanego przez Dyżurnego Ruchu STP",
-                "rozkazu szczególnego 'O' wydanego przez dyżurnego ruchu STP",
-                "rozkazu szczególnego 'S' wydanego przez Dyspozytora Ruchu"
+                "rozkazu szczególnego 'S' wydanego przez dyżurnego ruchu STP",
+                "rozkazu szczególnego 'O' wydanego przez Dyspozytora Ruchu"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Za pomoca rozkazu szczególnego 'S' wydaje sie prowadzącemu pojazd",
@@ -3039,7 +3021,7 @@
                 "zgłosić Dyspozytorowi Ruchu i przy załączonym oświetleniu tunelowym, kontynuje jazdę z pasażerami, następnie pociąg musi wyjechać awaryjnie",
                 "zgłosić Dyspozytorowi Ruchu wysadzić pasażerów, następnie pociąg musi zjechac w najbliższe tory odstawcze"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Postępowanie w przypadku awarii systemu lokazlizacji peronu (SLP)",
@@ -4086,16 +4068,6 @@
                 "nie pojawi się żadna informacja na HMI"
             ],
             "correct": 0
-        },
-        {
-            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
-            "image": "",
-            "content": [
-                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
-                "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
-                "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
-            ],
-            "correct": 2
         },
         {
             "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
