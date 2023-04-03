@@ -2013,15 +2013,6 @@
             "correct": 0
         },
         {
-            "question": "Do jakiego okręgu nastawczego należy tor szlaku granicznego miedzy I a II linią metra?",
-            "content": [
-                "do okręgu nastawczego stacji A-13",
-                "do okręgu nastawczego dyspozytora  II lini",
-                "do okręgu nastawczego dyspozytora I linii i dyżurnego stacji C-10"
-            ],
-            "correct": 0
-        },
-        {
             "question": "Gdzie na panelu SOP-2w sygnalizowane są poszczególne kroki testu?",
             "content": [
                 "na wyświetlaczu WSR",
