@@ -2363,14 +2363,14 @@
             "correct": 0
         },
         {
-            "question": "W przypadku wystąpienia błędu krytycznego ATO należy",
+            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
             "image": "",
             "content": [
-                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
+                "kontynuować jazdę bez pasażerów z wyłaczonym SOP3 na podstawie wskazań semaforów, oraz rozkazu szczególnego",
                 "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
                 "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Wskazanie na wyświetlaczu (dwie kreski) 'prędkości kontrolowanej' pulpitu SOP-2W wystepuje między innymi",
@@ -2828,7 +2828,7 @@
             "content": [
                 "nazwa semafora, lub semaforów wskazujacych sygnał 'STÓJ' w drodze przebiegu i na jakiej podstawie nastapi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
                 "zawarta informacja, że tor jest zamknięty",
-                "nie moze występowac taka organizacja ruchu w Metrze Warszawskim"
+                "nie może występować taka organizacja ruchu w Metrze Warszawskim"
             ],
             "correct": 0
         },
@@ -3030,7 +3030,7 @@
                 "zgłosić Dyspozytorowi Ruchu i przy załączonym oświetleniu tunelowym, kontynuje jazdę z pasażerami, następnie pociąg musi wyjechać awaryjnie",
                 "zgłosić Dyspozytorowi Ruchu wysadzić pasażerów, następnie pociąg musi zjechac w najbliższe tory odstawcze"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Postępowanie w przypadku awarii systemu lokazlizacji peronu (SLP)",
@@ -4077,16 +4077,6 @@
                 "nie pojawi się żadna informacja na HMI"
             ],
             "correct": 0
-        },
-        {
-            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
-            "image": "",
-            "content": [
-                "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
-                "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
-                "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
-            ],
-            "correct": 2
         },
         {
             "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
