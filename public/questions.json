@@ -41,7 +41,7 @@
             "category": "instrukcja"
         },
         {
-            "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu doświadczalnego:",
+            "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu próbnego, po przerwie w ruchu pasażerskim:",
             "content": [
                 "- wynikającą z konstrukcji pojazdu",
                 "- 80 km/h, przez stacje 40 km/h",
@@ -1436,7 +1436,7 @@
                 "- w pociągu mogą przebywać pasażerowie i pracownicy metra",
                 "- dopuszcza się przewóz pracowników metra (w celu dojazdu do określonych miejsc pracy)"
             ],
-            "correct": 0,
+            "correct": 2,
             "category": "instrukcja"
         },
         {
@@ -2372,7 +2372,7 @@
             "correct": 0
         },
         {
-            "question": "W przypadku wystąpienia błędu krytycznego ATP należy",
+            "question": "W przypadku wystąpienia błędu krytycznego ATO należy",
             "image": "",
             "content": [
                 "kontynuować jazdę z pasażerami z wyłaczonym SOP3 na podstawie wskazań semaforów",
