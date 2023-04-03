@@ -1733,15 +1733,6 @@
             "correct": 1
         },
         {
-            "question": "Co powinno być między innymi zawarte w rozkazie „S”, na odcinku , na którym prowadzony jest ruch dwukierunkowy?",
-            "content": [
-                "nazwa semafora , lub semaforów wskazujących sygnał „STÓJ” w drodze przebiegu  i na  jakiej podstawie nastąpi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
-                "zawarta informacja ,że tor jest zamknięty",
-                "nie może występować taka organizacja ruchu w Metrze Warszawskim"
-            ],
-            "correct": 1
-        },
-        {
             "question": "Jeżeli sygnał akustyczny w pociągu METROPOLIS nie wyłącza się (uszkodzony elektrozawór syreny) należy",
             "content": [
                 "na najbliższej stacji zamknąć zawór syreny pod wagonem i po dojechaniu do stacji końcowej, zjechać na STP",
@@ -3016,10 +3007,10 @@
             "image": "",
             "content": [
                 "polecenia wydanego przez Dyżurnego Ruchu STP",
-                "rozkazu szczególnego 'O' wydanego przez dyżurnego ruchu STP",
-                "rozkazu szczególnego 'S' wydanego przez Dyspozytora Ruchu"
+                "rozkazu szczególnego 'S' wydanego przez dyżurnego ruchu STP",
+                "rozkazu szczególnego 'O' wydanego przez Dyspozytora Ruchu"
             ],
-            "correct": 0
+            "correct": 1
         },
         {
             "question": "Za pomoca rozkazu szczególnego 'S' wydaje sie prowadzącemu pojazd",
