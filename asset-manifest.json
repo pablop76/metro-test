@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.f315435a.chunk.css",
-    "main.js": "/static/js/main.ab39e049.chunk.js",
-    "main.js.map": "/static/js/main.ab39e049.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.41a10d0d.js",
-    "runtime-main.js.map": "/static/js/runtime-main.41a10d0d.js.map",
-    "static/js/2.f20f56a6.chunk.js": "/static/js/2.f20f56a6.chunk.js",
-    "static/js/2.f20f56a6.chunk.js.map": "/static/js/2.f20f56a6.chunk.js.map",
-    "static/js/3.4b30fb56.chunk.js": "/static/js/3.4b30fb56.chunk.js",
-    "static/js/3.4b30fb56.chunk.js.map": "/static/js/3.4b30fb56.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.f315435a.chunk.css.map": "/static/css/main.f315435a.chunk.css.map",
-    "static/js/2.f20f56a6.chunk.js.LICENSE.txt": "/static/js/2.f20f56a6.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/stp.79671a06.jpg",
-    "static/media/oklaski.a169772f.mp3": "/static/media/oklaski.a169772f.mp3",
-    "static/media/smiech.474fb074.mp3": "/static/media/smiech.474fb074.mp3"
+    "main.css": "/metro-test/static/css/main.32c5e6a7.chunk.css",
+    "main.js": "/metro-test/static/js/main.ab39e049.chunk.js",
+    "main.js.map": "/metro-test/static/js/main.ab39e049.chunk.js.map",
+    "runtime-main.js": "/metro-test/static/js/runtime-main.cfadb5b5.js",
+    "runtime-main.js.map": "/metro-test/static/js/runtime-main.cfadb5b5.js.map",
+    "static/js/2.f20f56a6.chunk.js": "/metro-test/static/js/2.f20f56a6.chunk.js",
+    "static/js/2.f20f56a6.chunk.js.map": "/metro-test/static/js/2.f20f56a6.chunk.js.map",
+    "static/js/3.4b30fb56.chunk.js": "/metro-test/static/js/3.4b30fb56.chunk.js",
+    "static/js/3.4b30fb56.chunk.js.map": "/metro-test/static/js/3.4b30fb56.chunk.js.map",
+    "index.html": "/metro-test/index.html",
+    "static/css/main.32c5e6a7.chunk.css.map": "/metro-test/static/css/main.32c5e6a7.chunk.css.map",
+    "static/js/2.f20f56a6.chunk.js.LICENSE.txt": "/metro-test/static/js/2.f20f56a6.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/metro-test/static/media/stp.79671a06.jpg",
+    "static/media/oklaski.a169772f.mp3": "/metro-test/static/media/oklaski.a169772f.mp3",
+    "static/media/smiech.474fb074.mp3": "/metro-test/static/media/smiech.474fb074.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.41a10d0d.js",
+    "static/js/runtime-main.cfadb5b5.js",
     "static/js/2.f20f56a6.chunk.js",
-    "static/css/main.f315435a.chunk.css",
+    "static/css/main.32c5e6a7.chunk.css",
     "static/js/main.ab39e049.chunk.js"
   ]
 }
