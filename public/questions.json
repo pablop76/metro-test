@@ -2060,11 +2060,11 @@
         {
             "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
             "content": [
-                "gotowość pociągu do odjazdu",
+                "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy ",
                 "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
                 "nie są spełnione warunki do odjazdu"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "Co oznacza wygaszona lampka „autostart” w trybie TA?",
@@ -3422,12 +3422,12 @@
                 "nie są spełnione warunki do odjazdu",
                 "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
             ],
-            "correct": 2
+            "correct": 0
         },
         {
-            "question": "Co oznacza szybko migająca lampka  „autostart” w trybie  TA?",
+            "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
             "content": [
-                "gotowość pociągu do odjazdu",
+                "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy ",
                 "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
                 "nie są spełnione warunki do odjazdu"
             ],
@@ -4040,12 +4040,12 @@
                 "nie są spełnione warunki do odjazdu",
                 "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
             "content": [
-                "gotowość pociągu do odjazdu",
+                "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy ",
                 "maszynista może zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka)",
                 "nie są spełnione warunki do odjazdu"
             ],
