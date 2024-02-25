@@ -1,6 +1,338 @@
 {
     "all": [
         {
+            "question": "Czerwona lampka Jazda świecąca ciągłym światłem na pulpicie SOP 2W oznacza:",
+            "image": "./images/jazda-sop-2w.png",
+            "content": [
+                "zanik transmisji na danym odcinku aop",
+                "załaczone hamowanie awaryjne od SOP 2W",
+                "załaczone hamowanie służbowe os SOP 2W"
+            ],
+            "correct": 2,
+            "category": "SOP-2W"
+        },
+        {
+            "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
+            "content": [
+                "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
+                "przez ustawnie nastawnika jazdy w położenie hamowania i naciśnięcie przycisku luzowania hamulca awaryjnego",
+                "przez ustawnienie wybieraka w tryb TN, ponownie w tryb TR i przetestowanie SOP"
+            ],
+            "correct": 0,
+            "category": "inspiro"
+        },
+        {
+            "question": "W przypadku gdy pociąg z pasażerami przejedzie wskaźnik Wm4 (miejsce zatrzymania czoła pociągu) i choćby tylko jedne drzwi znalazły się w części technologicznej peronu",
+            "content": [
+                "maszynista informuje pasażerów, nie otwira drzwi i kontynuuje jazdę do nastepnej stacji",
+                "nie otwiera drzwi, a dalsze postepowanie uzgadnia z Dyspozytorem Ruchu",
+                "cofa skład, aby skrócić czas postoju pociągu na stacji, a nastepnie powiadamia dyspozytora ruchu"
+            ],
+            "correct": 1,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Po wystąpieniu błędu krytycznego układu ATO (nie dotyczy usterki taborowej wpływającej na działanie urządzeń aop) możliwa jest jazda w trybach",
+            "content": [
+                "TA,TBN",
+                "TA,DJA",
+                "TR, TN"
+            ],
+            "correct": 2,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Dzwiekowy sygnał 'Ode mnie' to",
+            "content": [
+                "jeden długi ton",
+                "jeden długi ton i trzy krótkie tony",
+                "trzy krótkie tony"
+            ],
+            "correct": 0,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Po wystapieniu błedu krytycznego układu ATP jazda z aktywnymi urządzeniami aop",
+            "content": [
+                "jazda możliwa tylko na linii metra M1",
+                "jazda możliwa tylko w trybie TR",
+                "nie jest możliwa"
+            ],
+            "correct": 2,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Po jakim czasie wyłączy się pociąg typu VARSOVIA jeżeli w czytniku karty nie będzie karty?",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załaczy sie hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie możliwe dalsze rozpedzenie pociągu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
+            "content": [
+                "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świciła",
+                "lampka od braku wysokiego napięcia w kabinie czołowej nie bedzie się świeciła",
+                "lampka od braku wysokiego napięcia nie bedzie sie świeciła, ale ze względu, że napięcie jest tylko na jednym odbieraku pociąg nie ruszy"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych Jm, Km,Lm i Mm istnieje mozliwość wyświetlenia następujących sygnałów świetlnych",
+            "content": [
+                "światło białe i niebieskie",
+                "światło białe i czerwone",
+                "światło białe, pomarańczowe i czerwone"
+            ],
+            "correct": 2,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
+            "content": [
+                "3 stopinie zawieszenia",
+                "1 stopień zawieszenia",
+                "2 stopnie zawieszenia"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbirakami pradu S570 na pozycje II w pociągu typu VARSOVIA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Anulowanie hamulca trzymającego na pociągu typu METROPOLIS nastapi po",
+            "content": [
+                "odcięciu kurka B22 na 6 wagonach",
+                "przesunieciu dzwigni nastawnikana 'jazdę'",
+                "nacisnieciu przycisku 'luzowanie hamulca postojowego'"
+            ],
+            "correct": 1,
+            "category": "metropolis"
+        },
+        {
+            "question": "Wyjazd pociągu typu METROPOLIS, INSPIRO i VARSOVIA z toru 12 w elektrowozowni",
+            "content": [
+                "jest dozwolony w kierunku głowicy zachodniej",
+                "jest dozwolony w obu kierunkach",
+                "jest dozwolony w kierunku głowicy wschodniej"
+            ],
+            "correct": 2,
+            "category": "instrukcja"
+        },
+        {
+            "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
+            "content": [
+                "wcisnięcie zielonego przycisku S900 uruchamiajacego pociąg",
+                "wcisnięcie czerwonego przycisku S910 wyłaczającego pociąg",
+                "wcisnięcie żółtego przycisku S530 (test autostopu)"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Zamknięcie zaworu B18 w szafie +89 w pociągu typu VARSOVIA spowoduje",
+            "content": [
+                "odcięcie i odpowietrzenie hamulca postojowego",
+                "odcięcie i wyluzowanie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy awaryjnej w pociągu ŚKODA bocznikuje",
+            "content": [
+                "hamowanie awaryjne od grzybka",
+                "hamowanie awaryjne od nastawnika maszynisty",
+                "hamowanie awaryjne od pedału czuwaka"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję I w pociągu ŚKODA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję II w pociągu ŚKODA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Jeżeli podczas przyjęcia pociągu ŚKODA w elektrowozowni maszynista zauważy, że automat od trybu serwisowego jest załączony to należy",
+            "content": [
+                "skonsultować tę sytuację z Instruktorem Maszynistą i jak on wyrazi zgodę to można wyjechać takim pociągiem",
+                "wyjechać na linię z załączonym trybem serwisowym gdyż jest to zgodne z obowiązującą instrukcją",
+                "powiadomic dyspozytora elektrowozowni, w celu wezwania serwisu, aby wyłączył i zaplombował ten automat"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przechodząc na jazdę awaryjną w pociągu ŚKODA należy",
+            "content": [
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna) i kontynuować jazdę z nastawnika podstawowego",
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna), przełączyć przełącznik PRP do TN, połozyć lewą nogę na czuwak i kontynuować jazdę z nastawnika podstawowego",
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna), przełączyć przełącznik PRP na TN, położyć lewą nogę na czuwak i kontynuować jazdę poprzez nacikanie czerwonego podświetlonego przycisku S240 a hamować poprzez czarny przycisk S540 powyżej przycisku jazdy"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "W jaki sposów w jeździe awaryjnej w pociągu ŚKODA otworzyć drzwi?",
+            "content": [
+                "wystarczy ustawić przełacznik strony drzwi S340 na odpowiednią stronę",
+                "przestawić kierunek jazdy na 0 a nastepnie przełacznikiem strony drzwi S340 wybrać stronę otwarcia drzwi",
+                "należy przejść z jazdy awaryjnej na jazdę z nastawnika podstawowego a nastepnie prtzełacznikiem strony drzwi S340 wybrać stronę otwarcia drzwi"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Podaj jakie czujki pożarowe znajdują się w pociągu ŚKODA",
+            "content": [
+                "na całym składzie są tylko czujniki kombinowane temperatury i dymu",
+                "na składzie są czujniki kombinowane temperatury i dymu oraz łatwo topliwe przewody LHD",
+                "na całym składzie są tylko łatwo topliwe przewody LHD"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Którym zaworem z podtorza spuszcza się powietrze z poduszek powietrznych w pociągu ŚKODA?",
+            "content": [
+                "zawór A13",
+                "zawór L13",
+                "zawr U01"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Czy wartość ciśnienia w poduszkach pneumatycznych ( w zależności od obciążenia wagonu) w pociągu ŚKODA ma znaczenie przy hamowaniu elektrodynamicznym i elektropneumatycznym",
+            "content": [
+                "nie, nie ma znaczenia",
+                "ma znaczenie",
+                "ma znaczenie ale w niewielkim stopniu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wybierz prawidłową procedure zluzowania hamulca postojowego w pociągu ŚKODA",
+            "content": [
+                "w szafie +89 na końcu wagonu odciąć zawr B16",
+                "w szafie +89 na końcu wagonu odciąc zawór B16 a nastepnie z podtorza na każdym wózku uszkodzonego wagonu wyluzować hamulec poprzez cięgła C01",
+                "w szafie +89 na końcu wagonu odciąć zawór B18 a nastepnie z podtorza na każdym wózku wyluzować hamulec poprzez cięgła C01"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Co oznacza jeżeli na pulpicie maszynisty w pociągu ŚKODA czerwona lampka S505 od hamulca postojowego miga?",
+            "content": [
+                "system sam załączył hamulec postojowy",
+                "system zgłasza awarię całego układu hamulcowego tj. hamulca elektropneumatycznego i postojowego",
+                "system zgłasza usterkę hamulca postojowego tj. hamulec postojowy na jakimś wagonie nie został wyłaczony lub załączony"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "content": [
+                "wskazanie stanu lub sytuacji eksploatacyjnej",
+                "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
+                "wskazanie, ze jest aktywny komunikat związany z bezpieczeństwem, maszynista powinien podjąć określone czynności w celu zapewnienia bezpieczeństwa pasażerom"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Świecąca się kontrolka po lewej stronie monitora DDU (zdjecie) w pociągu ŚKODA oznacza",
+            "content": [
+                "poprawną pracę systemu SLP",
+                "usterkę SLP lub jego wyłączenie",
+                "usterke czujnika wykrywania peronu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Po przekroczeniu prędkości restrykcyjnej (linia M2) system SOP-3 załączy",
+            "content": [
+                "hamowanie awaryjne od CCU",
+                "hamowanie awaryjne od ATO",
+                "hamowanie awaryjne od ATP"
+            ],
+            "correct": 2,
+            "category": ""
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy sie hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
+            "image":"./images/hamulec-postojowy-skoda.png",
+            "content": [
+                "hamulca postojowego",
+                "hamulca elektropneumatycznego (tj. trzymającego, słuzbowego, awaryjnego)",
+                "hamulca tylko służbowego"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy z nastawnika podstawowego w pociągu ŚKODA bocznikuje",
+            "content": [
+                "hamoanie awaryjne od grzybka",
+                "hamowanie awaryjne od nastawnika maszynisty",
+                "hamowanie awaryjne od zaworu zrywakowego"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
             "question": "Ruchem pociągów na STP Kabaty kieruje:",
             "content": [
                 "- z Centralnej Dyspozytorni w sytuacjach awaryjnych Dyspozytor Ruchu",
@@ -3416,6 +3748,26 @@
     ],
     "inspiro": [
         {
+            "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
+            "content": [
+                "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
+                "przez ustawnie nastawnika jazdy w położenie hamowania i naciśnięcie przycisku luzowania hamulca awaryjnego",
+                "przez ustawnienie wybieraka w tryb TN, ponownie w tryb TR i przetestowanie SOP"
+            ],
+            "correct": 0,
+            "category": "inspiro"
+        },
+        {
+            "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
+            "content": [
+                "3 stopinie zawieszenia",
+                "1 stopień zawieszenia",
+                "2 stopnie zawieszenia"
+            ],
+            "correct": 2,
+            "category": "INSPIRO"
+        },
+        {
             "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
             "content": [
                 "gotowość pociągu do odjazdu",
@@ -4182,13 +4534,235 @@
     ],
     "skoda": [
         {
-            "question": "Skoda, model na torach metra",
+            "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
+            "image":"./images/hamulec-postojowy-skoda.png",
             "content": [
-                "Enyaq",
-                "Kodiaq",
-                "Varsovia"
+                "hamulca postojowego",
+                "hamulca elektropneumatycznego (tj. trzymającego, słuzbowego, awaryjnego)",
+                "hamulca tylko służbowego"
             ],
-            "correct": 2
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy sie hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Czy wartość ciśnienia w poduszkach pneumatycznych ( w zależności od obciążenia wagonu) w pociągu ŚKODA ma znaczenie przy hamowaniu elektrodynamicznym i elektropneumatycznym",
+            "content": [
+                "nie, nie ma znaczenia",
+                "ma znaczenie",
+                "ma znaczenie ale w niewielkim stopniu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wybierz prawidłową procedure zluzowania hamulca postojowego w pociągu ŚKODA",
+            "content": [
+                "w szafie +89 na końcu wagonu odciąć zawr B16",
+                "w szafie +89 na końcu wagonu odciąc zawór B16 a nastepnie z podtorza na każdym wózku uszkodzonego wagonu wyluzować hamulec poprzez cięgła C01",
+                "w szafie +89 na końcu wagonu odciąć zawór B18 a nastepnie z podtorza na każdym wózku wyluzować hamulec poprzez cięgła C01"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Co oznacza jeżeli na pulpicie maszynisty w pociągu ŚKODA czerwona lampka S505 od hamulca postojowego miga?",
+            "content": [
+                "system sam załączył hamulec postojowy",
+                "system zgłasza awarię całego układu hamulcowego tj. hamulca elektropneumatycznego i postojowego",
+                "system zgłasza usterkę hamulca postojowego tj. hamulec postojowy na jakimś wagonie nie został wyłaczony lub załączony"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "content": [
+                "wskazanie stanu lub sytuacji eksploatacyjnej",
+                "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
+                "wskazanie, ze jest aktywny komunikat związany z bezpieczeństwem, maszynista powinien podjąć określone czynności w celu zapewnienia bezpieczeństwa pasażerom"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Świecąca się kontrolka po lewej stronie monitora DDU (zdjecie) w pociągu ŚKODA oznacza",
+            "content": [
+                "poprawną pracę systemu SLP",
+                "usterkę SLP lub jego wyłączenie",
+                "usterke czujnika wykrywania peronu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Którym zaworem z podtorza spuszcza się powietrze z poduszek powietrznych w pociągu ŚKODA?",
+            "content": [
+                "zawór A13",
+                "zawór L13",
+                "zawr U01"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Podaj jakie czujki pożarowe znajdują się w pociągu ŚKODA",
+            "content": [
+                "na całym składzie są tylko czujniki kombinowane temperatury i dymu",
+                "na składzie są czujniki kombinowane temperatury i dymu oraz łatwo topliwe przewody LHD",
+                "na całym składzie są tylko łatwo topliwe przewody LHD"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "W jaki sposów w jeździe awaryjnej w pociągu ŚKODA otworzyć drzwi?",
+            "content": [
+                "wystarczy ustawić przełacznik strony drzwi S340 na odpowiednią stronę",
+                "przestawić kierunek jazdy na 0 a nastepnie przełacznikiem strony drzwi S340 wybrać stronę otwarcia drzwi",
+                "należy przejść z jazdy awaryjnej na jazdę z nastawnika podstawowego a nastepnie prtzełacznikiem strony drzwi S340 wybrać stronę otwarcia drzwi"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przechodząc na jazdę awaryjną w pociągu ŚKODA należy",
+            "content": [
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna) i kontynuować jazdę z nastawnika podstawowego",
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna), przełączyć przełącznik PRP do TN, połozyć lewą nogę na czuwak i kontynuować jazdę z nastawnika podstawowego",
+                "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna), przełączyć przełącznik PRP na TN, położyć lewą nogę na czuwak i kontynuować jazdę poprzez nacikanie czerwonego podświetlonego przycisku S240 a hamować poprzez czarny przycisk S540 powyżej przycisku jazdy"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Jeżeli podczas przyjęcia pociągu ŚKODA w elektrowozowni maszynista zauważy, że automat od trybu serwisowego jest załączony to należy",
+            "content": [
+                "skonsultować tę sytuację z Instruktorem Maszynistą i jak on wyrazi zgodę to można wyjechać takim pociągiem",
+                "wyjechać na linię z załączonym trybem serwisowym gdyż jest to zgodne z obowiązującą instrukcją",
+                "powiadomic dyspozytora elektrowozowni, w celu wezwania serwisu, aby wyłączył i zaplombował ten automat"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję II w pociągu ŚKODA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję I w pociągu ŚKODA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy awaryjnej w pociągu ŚKODA bocznikuje",
+            "content": [
+                "hamowanie awaryjne od grzybka",
+                "hamowanie awaryjne od nastawnika maszynisty",
+                "hamowanie awaryjne od pedału czuwaka"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy z nastawnika podstawowego w pociągu ŚKODA bocznikuje",
+            "content": [
+                "hamoanie awaryjne od grzybka",
+                "hamowanie awaryjne od nastawnika maszynisty",
+                "hamowanie awaryjne od zaworu zrywakowego"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Zamknięcie zaworu B18 w szafie +89 w pociągu typu VARSOVIA spowoduje",
+            "content": [
+                "odcięcie i odpowietrzenie hamulca postojowego",
+                "odcięcie i wyluzowanie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Przestawienie plombowanego przełącznika sterowania odbirakami pradu S570 na pozycje II w pociągu typu VARSOVIA spowoduje",
+            "content": [
+                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
+                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
+            "content": [
+                "wcisnięcie zielonego przycisku S900 uruchamiajacego pociąg",
+                "wcisnięcie czerwonego przycisku S910 wyłaczającego pociąg",
+                "wcisnięcie żółtego przycisku S530 (test autostopu)"
+            ],
+            "correct": 0,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Po jakim czasie wyłączy się pociąg typu VARSOVIA jeżeli w czytniku karty nie będzie karty?",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załaczy sie hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie możliwe dalsze rozpedzenie pociągu"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
+            "content": [
+                "3 stopinie zawieszenia",
+                "1 stopień zawieszenia",
+                "2 stopnie zawieszenia"
+            ],
+            "correct": 2,
+            "category": "ŚKODA"
+        },
+        {
+            "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
+            "content": [
+                "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świciła",
+                "lampka od braku wysokiego napięcia w kabinie czołowej nie bedzie się świeciła",
+                "lampka od braku wysokiego napięcia nie bedzie sie świeciła, ale ze względu, że napięcie jest tylko na jednym odbieraku pociąg nie ruszy"
+            ],
+            "correct": 1,
+            "category": "ŚKODA"
         }
     ]
 }
