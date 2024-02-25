@@ -73,7 +73,7 @@
         },
         {
             "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
-            "image":"./image/komunikat-diagnostyczny-d.png",
+            "image":"./images/komunikat-diagnostyczny-d.png",
             "content": [
                 "załączy się hamulec służbowy",
                 "załaczy sie hamulec awaryjny",
