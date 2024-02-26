@@ -274,6 +274,7 @@
         },
         {
             "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "image":"./images/ddu-piktogram.png",
             "content": [
                 "wskazanie stanu lub sytuacji eksploatacyjnej",
                 "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
