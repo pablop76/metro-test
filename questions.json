@@ -4588,6 +4588,7 @@
         },
         {
             "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "image":"./images/ddu-piktogram.png",
             "content": [
                 "wskazanie stanu lub sytuacji eksploatacyjnej",
                 "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
@@ -4705,16 +4706,6 @@
                 "wyluzowanie hamulca postojowego"
             ],
             "correct": 1,
-            "category": "ŚKODA"
-        },
-        {
-            "question": "Przestawienie plombowanego przełącznika sterowania odbirakami pradu S570 na pozycje II w pociągu typu VARSOVIA spowoduje",
-            "content": [
-                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
-                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
-                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
-            ],
-            "correct": 0,
             "category": "ŚKODA"
         },
         {
