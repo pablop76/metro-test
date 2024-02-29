@@ -4548,16 +4548,6 @@
             "category": "ŚKODA"
         },
         {
-            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
-            "content": [
-                "załączy się hamulec służbowy",
-                "załączy sie hamulec awaryjny",
-                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie mozliwe dalsze rozpędzenie pociągu"
-            ],
-            "correct": 1,
-            "category": "ŚKODA"
-        },
-        {
             "question": "Czy wartość ciśnienia w poduszkach pneumatycznych ( w zależności od obciążenia wagonu) w pociągu ŚKODA ma znaczenie przy hamowaniu elektrodynamicznym i elektropneumatycznym",
             "content": [
                 "nie, nie ma znaczenia",
