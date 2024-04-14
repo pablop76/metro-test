@@ -22,6 +22,16 @@
             "correct": 0,
         },
         {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 2,
+        },
+        {
             "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
             "content": [
                 "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
@@ -4749,6 +4759,16 @@
             ],
             "correct": 1,
             "category": "ŚKODA"
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 2,
         },
         {
             "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
