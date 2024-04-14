@@ -12,6 +12,16 @@
             "category": "SOP-2W"
         },
         {
+            "question": "Przekaźnik blokowania kabiny na pociągu ŚKODA powoduje:",
+            "image": "",
+            "content": [
+                "zablokowanie w nieaktywnej kabinie urzdzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: dłoniowego przycisku hamulca awaryjnego",
+                "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
+                "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
+            ],
+            "correct": 0,
+        },
+        {
             "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
             "content": [
                 "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
@@ -4536,6 +4546,16 @@
         }
     ],
     "skoda": [
+        {
+            "question": "Przekaźnik blokowania kabiny na pociągu ŚKODA powoduje:",
+            "image": "",
+            "content": [
+                "zablokowanie w nieaktywnej kabinie urzdzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: dłoniowego przycisku hamulca awaryjnego",
+                "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
+                "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
+            ],
+            "correct": 0,
+        },
         {
             "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
             "image":"./images/hamulec-postojowy-skoda.png",
