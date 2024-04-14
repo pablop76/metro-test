@@ -19,7 +19,7 @@
                 "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
                 "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
             ],
-            "correct": 0,
+            "correct": 0
         },
         {
             "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
@@ -29,7 +29,7 @@
                 "załaczy się hamulec awaryjny",
                 "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
             ],
-            "correct": 2,
+            "correct": 2
         },
         {
             "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
@@ -4564,7 +4564,7 @@
                 "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
                 "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
             ],
-            "correct": 0,
+            "correct": 0
         },
         {
             "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
@@ -4768,7 +4768,7 @@
                 "załaczy się hamulec awaryjny",
                 "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
             ],
-            "correct": 2,
+            "correct": 2
         },
         {
             "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
