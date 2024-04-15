@@ -1,6 +1,36 @@
 {
     "all": [
         {
+            "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "tylko przez kartę SKD",
+                "poprzez kartę SKD oraz bocznikowanie czytnika karty S780",
+                "poprzez kartę SKD , bocznikowanie czytnika karty S780 oraz poprzez przejście na jazdę awaryjną bocznikiem S220"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po jakim czasie wyłaczy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
+            "image": "",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Spychanie uszkodzonego pociągu ŚKODA poprzez inny pociąg ŚKODY, odbywa się z ograniczeniem prędkości:",
+            "image": "",
+            "content": [
+                "do 60 km/h",
+                "do 40 km/h",
+                "do 20 km/h"
+            ],
+            "correct": 1
+        },
+        {
             "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
             "image": "",
             "content": [
@@ -4857,6 +4887,36 @@
                 "działanie miernika napięcia",
                 "ustawienie trzpieni sterujących mechanizmem otwarcia drzwi z zewnątrz (powinien byc ustawiony na 'RESETUJ')",
                 "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "tylko przez kartę SKD",
+                "poprzez kartę SKD oraz bocznikowanie czytnika karty S780",
+                "poprzez kartę SKD , bocznikowanie czytnika karty S780 oraz poprzez przejście na jazdę awaryjną bocznikiem S220"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po jakim czasie wyłaczy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
+            "image": "",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Spychanie uszkodzonego pociągu ŚKODA poprzez inny pociąg ŚKODY, odbywa się z ograniczeniem prędkości:",
+            "image": "",
+            "content": [
+                "do 60 km/h",
+                "do 40 km/h",
+                "do 20 km/h"
             ],
             "correct": 1
         },
