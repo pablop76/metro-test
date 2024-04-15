@@ -1,6 +1,46 @@
 {
     "all": [
         {
+            "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "załączyć hamulec postojowy (w trybie TN lub TR) a następnie w testach nacisnąć przycisk 'DRZWI PLATWORMY'",
+                "załączyć hamulec postojowy (w trybie TA) a następnie w testach nacisnąć przycisk 'DRZWI PLATFORMY'",
+                "zbocznikować system SLP i przeprowadzić test drzwi i platform"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podaj pozycję 'ODCIĘCIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj pozycję 'ZASPRZĘGLENIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 0
+        },
+        {
             "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
             "image": "",
             "content": [
@@ -4979,6 +5019,46 @@
                 "nacisnąć niebieski guzik na tablicy za plecami maszynisty w sektorze +15"
             ],
             "correct": 2
+        },
+        {
+            "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "załączyć hamulec postojowy (w trybie TN lub TR) a następnie w testach nacisnąć przycisk 'DRZWI PLATWORMY'",
+                "załączyć hamulec postojowy (w trybie TA) a następnie w testach nacisnąć przycisk 'DRZWI PLATFORMY'",
+                "zbocznikować system SLP i przeprowadzić test drzwi i platform"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podaj pozycję 'ODCIĘCIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj pozycję 'ZASPRZĘGLENIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 0
         },
         {
             "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
