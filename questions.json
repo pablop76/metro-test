@@ -1,6 +1,36 @@
 {
     "all": [
         {
+            "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
+            "image": "",
+            "content": [
+                "70 V DC",
+                "80 V DC",
+                "90 V DC"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W razie potrzeby naładowania akumulatorów w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nacisnąć zielony guzik S900 na tablicy za plecami maszynisty w sektorze +15 i dłuzej go przytrzymać",
+                "nacisnąc czerwony guzik S910 na tablicy za plecami maszynisty w sektorze +15 i dłużej go przytrzymać",
+                "nacisnąć niebieski guzik na tablicy za plecami maszynisty w sektorze +15"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
+            "image": "",
+            "content": [
+                "działa sprężarka tylko na wagonie 3",
+                "działa sprężarka tylko na wagonie 4",
+                "działa sprężarka na wagonie 3 i 4"
+            ],
+            "correct": 2
+        },
+        {
             "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
             "image": "",
             "content": [
@@ -4929,7 +4959,36 @@
             ],
             "correct": 1,
             "category": "ŚKODA"
-        }
-        
+        },
+        {
+            "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
+            "image": "",
+            "content": [
+                "70 V DC",
+                "80 V DC",
+                "90 V DC"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W razie potrzeby naładowania akumulatorów w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nacisnąć zielony guzik S900 na tablicy za plecami maszynisty w sektorze +15 i dłuzej go przytrzymać",
+                "nacisnąc czerwony guzik S910 na tablicy za plecami maszynisty w sektorze +15 i dłużej go przytrzymać",
+                "nacisnąć niebieski guzik na tablicy za plecami maszynisty w sektorze +15"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
+            "image": "",
+            "content": [
+                "działa sprężarka tylko na wagonie 3",
+                "działa sprężarka tylko na wagonie 4",
+                "działa sprężarka na wagonie 3 i 4"
+            ],
+            "correct": 2
+        } 
     ]
 }
