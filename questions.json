@@ -42,6 +42,16 @@
             "correct": 1
         },
         {
+            "question": "W trakcie przyjęcia na elektrowozowni składu typu ŚKODA, przełacznik zasilania na wagonie, na który podane jest WN powinien znajdowac się w pozycji:",
+            "image": "",
+            "content": [
+                "neutralne",
+                "odbierak",
+                "warsztat"
+            ],
+            "correct": 2
+        },
+        {
             "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
             "content": [
                 "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
@@ -4738,6 +4748,16 @@
             ],
             "correct": 1,
             "category": "ŚKODA"
+        },
+        {
+            "question": "W trakcie przyjęcia na elektrowozowni składu typu ŚKODA, przełacznik zasilania na wagonie, na który podane jest WN powinien znajdowac się w pozycji:",
+            "image": "",
+            "content": [
+                "neutralne",
+                "odbierak",
+                "warsztat"
+            ],
+            "correct": 2
         },
         {
             "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
