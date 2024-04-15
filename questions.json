@@ -1,6 +1,26 @@
 {
     "all": [
         {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "wartość cisnienia w cylindrach hamulcowych sprawdzonych w 'TESTY SERWISOWE-OSPRZĘT PNEUMATYCZNY'",
+                "działanie autostopu z zewnątrz pociągu",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "działanie miernika napięcia",
+                "ustawienie trzpieni sterujących mechanizmem otwarcia drzwi z zewnątrz (powinien byc ustawiony na 'RESETUJ')",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Czerwona lampka Jazda świecąca ciągłym światłem na pulpicie SOP 2W oznacza:",
             "image": "./images/jazda-sop-2w.png",
             "content": [
@@ -4821,6 +4841,26 @@
             "category": "ŚKODA"
         },
         {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "wartość cisnienia w cylindrach hamulcowych sprawdzonych w 'TESTY SERWISOWE-OSPRZĘT PNEUMATYCZNY'",
+                "działanie autostopu z zewnątrz pociągu",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "działanie miernika napięcia",
+                "ustawienie trzpieni sterujących mechanizmem otwarcia drzwi z zewnątrz (powinien byc ustawiony na 'RESETUJ')",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
             "content": [
                 "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świciła",
@@ -4830,5 +4870,6 @@
             "correct": 1,
             "category": "ŚKODA"
         }
+        
     ]
 }
