@@ -1,5 +1,35 @@
 {
     "all": [
+        {
+            "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odciecie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas jazdy pociagiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na liniii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 1
+        },
          {
             "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
             "image": "",
@@ -5079,6 +5109,36 @@
                 "II"
             ],
             "correct": 2
+        },
+        {
+            "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odciecie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas jazdy pociagiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na liniii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 1
         },
         {
             "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
