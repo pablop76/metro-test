@@ -1,5 +1,35 @@
 {
     "all": [
+         {
+            "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nie podejmowac żadnych czynności a po dokończeniu obiegu zjechać na STP",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć tylko zawór B16",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć zawór B16 i z podtorza wyluzować postojówki poprzez cięgła C01 na obu wózkach uszkodzonego wagonu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zamknięcie zaworu B16 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zamknięcie zaworu B18 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1
+        },
         {
             "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
             "image": "",
@@ -5059,6 +5089,36 @@
                 "II"
             ],
             "correct": 0
+        },
+        {
+            "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nie podejmowac żadnych czynności a po dokończeniu obiegu zjechać na STP",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć tylko zawór B16",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć zawór B16 i z podtorza wyluzować postojówki poprzez cięgła C01 na obu wózkach uszkodzonego wagonu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zamknięcie zaworu B16 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zamknięcie zaworu B18 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1
         },
         {
             "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
