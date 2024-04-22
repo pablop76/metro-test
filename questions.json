@@ -4612,6 +4612,16 @@
             "correct": 2
         },
         {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
             "question": "Po przekroczeniu prędkości restrykcyjnej system pociągu załączy",
             "content": [
                 "hamowanie awaryjne od CCU",
