@@ -1,6 +1,36 @@
 {
     "all": [
         {
+            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
+            "image": "",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
+                "na wyświetlaczu DDU będzie cały czs tryb TR"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile jest czasu na wymiane karty w pociągu ŚKODA, aby test SOP zachował swoją ważność?",
+            "image": "",
+            "content": [
+                "do 20 sekund",
+                "do 30 sekund",
+                "do 1 minuty"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
             "image": "",
             "content": [
@@ -5189,6 +5219,36 @@
                 "działa sprężarka na wagonie 3 i 4"
             ],
             "correct": 2
-        } 
+        },
+        {
+            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
+            "image": "",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
+                "na wyświetlaczu DDU będzie cały czs tryb TR"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile jest czasu na wymiane karty w pociągu ŚKODA, aby test SOP zachował swoją ważność?",
+            "image": "",
+            "content": [
+                "do 20 sekund",
+                "do 30 sekund",
+                "do 1 minuty"
+            ],
+            "correct": 1
+        }
     ]
 }
