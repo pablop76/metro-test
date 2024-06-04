@@ -1,6 +1,216 @@
 {
     "all": [
         {
+            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
+            "image": "",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
+                "na wyświetlaczu DDU będzie cały czs tryb TR"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile jest czasu na wymiane karty w pociągu ŚKODA, aby test SOP zachował swoją ważność?",
+            "image": "",
+            "content": [
+                "do 20 sekund",
+                "do 30 sekund",
+                "do 1 minuty"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odciecie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas jazdy pociagiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na liniii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 1
+        },
+         {
+            "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nie podejmowac żadnych czynności a po dokończeniu obiegu zjechać na STP",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć tylko zawór B16",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć zawór B16 i z podtorza wyluzować postojówki poprzez cięgła C01 na obu wózkach uszkodzonego wagonu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zamknięcie zaworu B16 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zamknięcie zaworu B18 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "załączyć hamulec postojowy (w trybie TN lub TR) a następnie w testach nacisnąć przycisk 'DRZWI PLATWORMY'",
+                "załączyć hamulec postojowy (w trybie TA) a następnie w testach nacisnąć przycisk 'DRZWI PLATFORMY'",
+                "zbocznikować system SLP i przeprowadzić test drzwi i platform"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podaj pozycję 'ODCIĘCIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj pozycję 'ZASPRZĘGLENIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
+            "image": "",
+            "content": [
+                "70 V DC",
+                "80 V DC",
+                "90 V DC"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W razie potrzeby naładowania akumulatorów w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nacisnąć zielony guzik S900 na tablicy za plecami maszynisty w sektorze +15 i dłuzej go przytrzymać",
+                "nacisnąc czerwony guzik S910 na tablicy za plecami maszynisty w sektorze +15 i dłużej go przytrzymać",
+                "nacisnąć niebieski guzik na tablicy za plecami maszynisty w sektorze +15"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
+            "image": "",
+            "content": [
+                "działa sprężarka tylko na wagonie 3",
+                "działa sprężarka tylko na wagonie 4",
+                "działa sprężarka na wagonie 3 i 4"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "tylko przez kartę SKD",
+                "poprzez kartę SKD oraz bocznikowanie czytnika karty S780",
+                "poprzez kartę SKD , bocznikowanie czytnika karty S780 oraz poprzez przejście na jazdę awaryjną bocznikiem S220"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po jakim czasie wyłaczy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
+            "image": "",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Spychanie uszkodzonego pociągu ŚKODA poprzez inny pociąg ŚKODY, odbywa się z ograniczeniem prędkości:",
+            "image": "",
+            "content": [
+                "do 60 km/h",
+                "do 40 km/h",
+                "do 20 km/h"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "wartość cisnienia w cylindrach hamulcowych sprawdzonych w 'TESTY SERWISOWE-OSPRZĘT PNEUMATYCZNY'",
+                "działanie autostopu z zewnątrz pociągu",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "działanie miernika napięcia",
+                "ustawienie trzpieni sterujących mechanizmem otwarcia drzwi z zewnątrz (powinien byc ustawiony na 'RESETUJ')",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Czerwona lampka Jazda świecąca ciągłym światłem na pulpicie SOP 2W oznacza:",
             "image": "./images/jazda-sop-2w.png",
             "content": [
@@ -10,6 +220,46 @@
             ],
             "correct": 2,
             "category": "SOP-2W"
+        },
+        {
+            "question": "Przekaźnik blokowania kabiny na pociągu ŚKODA powoduje:",
+            "image": "",
+            "content": [
+                "zablokowanie w nieaktywnej kabinie urzdzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: dłoniowego przycisku hamulca awaryjnego",
+                "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
+                "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR < 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W trakcie przyjęcia na elektrowozowni składu typu ŚKODA, przełacznik zasilania na wagonie, na który podane jest WN powinien znajdowac się w pozycji:",
+            "image": "",
+            "content": [
+                "neutralne",
+                "odbierak",
+                "warsztat"
+            ],
+            "correct": 2
         },
         {
             "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
@@ -73,6 +323,7 @@
         },
         {
             "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "image":"./images/komunikat-diagnostyczny-d.png",
             "content": [
                 "załączy się hamulec służbowy",
                 "załaczy sie hamulec awaryjny",
@@ -273,6 +524,7 @@
         },
         {
             "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "image":"./images/ddu-piktogram.png",
             "content": [
                 "wskazanie stanu lub sytuacji eksploatacyjnej",
                 "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
@@ -283,6 +535,7 @@
         },
         {
             "question": "Świecąca się kontrolka po lewej stronie monitora DDU (zdjecie) w pociągu ŚKODA oznacza",
+            "image":"./images/brak-slp.png",
             "content": [
                 "poprawną pracę systemu SLP",
                 "usterkę SLP lub jego wyłączenie",
@@ -4359,6 +4612,16 @@
             "correct": 2
         },
         {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
             "question": "Po przekroczeniu prędkości restrykcyjnej system pociągu załączy",
             "content": [
                 "hamowanie awaryjne od CCU",
@@ -4534,6 +4797,16 @@
     ],
     "skoda": [
         {
+            "question": "Przekaźnik blokowania kabiny na pociągu ŚKODA powoduje:",
+            "image": "",
+            "content": [
+                "zablokowanie w nieaktywnej kabinie urzdzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: dłoniowego przycisku hamulca awaryjnego",
+                "zablokowanie w nieaktywnej kabinie wszystkich urządzeń sterujących",
+                "zablokowanie w nieaktywnej kabinie urządzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: przycisku hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
             "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
             "image":"./images/hamulec-postojowy-skoda.png",
             "content": [
@@ -4542,16 +4815,6 @@
                 "hamulca tylko służbowego"
             ],
             "correct": 0,
-            "category": "ŚKODA"
-        },
-        {
-            "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
-            "content": [
-                "załączy się hamulec służbowy",
-                "załączy sie hamulec awaryjny",
-                "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie mozliwe dalsze rozpędzenie pociągu"
-            ],
-            "correct": 1,
             "category": "ŚKODA"
         },
         {
@@ -4586,6 +4849,7 @@
         },
         {
             "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
+            "image":"./images/ddu-piktogram.png",
             "content": [
                 "wskazanie stanu lub sytuacji eksploatacyjnej",
                 "wskazanie, że wystąpiła usterka kategorii A i należy na najblizszej stacji wysadzić pasażerów",
@@ -4596,6 +4860,7 @@
         },
         {
             "question": "Świecąca się kontrolka po lewej stronie monitora DDU (zdjecie) w pociągu ŚKODA oznacza",
+            "image":"./images/brak-slp.png",
             "content": [
                 "poprawną pracę systemu SLP",
                 "usterkę SLP lub jego wyłączenie",
@@ -4705,14 +4970,14 @@
             "category": "ŚKODA"
         },
         {
-            "question": "Przestawienie plombowanego przełącznika sterowania odbirakami pradu S570 na pozycje II w pociągu typu VARSOVIA spowoduje",
+            "question": "W trakcie przyjęcia na elektrowozowni składu typu ŚKODA, przełacznik zasilania na wagonie, na który podane jest WN powinien znajdowac się w pozycji:",
+            "image": "",
             "content": [
-                "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
-                "opuszczenie odbieraków prądu w 5 i 6 wagonie patrząc od kabiny aktywnej",
-                "opuszczenie odbieraków prądu w 1,2,5 i 6 wagonie"
+                "neutralne",
+                "odbierak",
+                "warsztat"
             ],
-            "correct": 0,
-            "category": "ŚKODA"
+            "correct": 2
         },
         {
             "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
@@ -4736,6 +5001,7 @@
         },
         {
             "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+            "image":"./images/komunikat-diagnostyczny-d.png",
             "content": [
                 "załączy się hamulec służbowy",
                 "załaczy sie hamulec awaryjny",
@@ -4743,6 +5009,26 @@
             ],
             "correct": 1,
             "category": "ŚKODA"
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR < 5km/h):",
+            "image": "",
+            "content": [
+                "załaczy się hamulec służbowy",
+                "załaczy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+            ],
+            "correct": 1
         },
         {
             "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
@@ -4755,6 +5041,56 @@
             "category": "ŚKODA"
         },
         {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "wartość cisnienia w cylindrach hamulcowych sprawdzonych w 'TESTY SERWISOWE-OSPRZĘT PNEUMATYCZNY'",
+                "działanie autostopu z zewnątrz pociągu",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
+            "image": "",
+            "content": [
+                "działanie miernika napięcia",
+                "ustawienie trzpieni sterujących mechanizmem otwarcia drzwi z zewnątrz (powinien byc ustawiony na 'RESETUJ')",
+                "działanie hamulca postojowego tylko z jednej kabiny"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "tylko przez kartę SKD",
+                "poprzez kartę SKD oraz bocznikowanie czytnika karty S780",
+                "poprzez kartę SKD , bocznikowanie czytnika karty S780 oraz poprzez przejście na jazdę awaryjną bocznikiem S220"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Po jakim czasie wyłaczy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
+            "image": "",
+            "content": [
+                "po 10 min",
+                "po 20 min",
+                "po 30 min"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Spychanie uszkodzonego pociągu ŚKODA poprzez inny pociąg ŚKODY, odbywa się z ograniczeniem prędkości:",
+            "image": "",
+            "content": [
+                "do 60 km/h",
+                "do 40 km/h",
+                "do 20 km/h"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
             "content": [
                 "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świciła",
@@ -4763,6 +5099,166 @@
             ],
             "correct": 1,
             "category": "ŚKODA"
+        },
+        {
+            "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
+            "image": "",
+            "content": [
+                "70 V DC",
+                "80 V DC",
+                "90 V DC"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "W razie potrzeby naładowania akumulatorów w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nacisnąć zielony guzik S900 na tablicy za plecami maszynisty w sektorze +15 i dłuzej go przytrzymać",
+                "nacisnąc czerwony guzik S910 na tablicy za plecami maszynisty w sektorze +15 i dłużej go przytrzymać",
+                "nacisnąć niebieski guzik na tablicy za plecami maszynisty w sektorze +15"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "załączyć hamulec postojowy (w trybie TN lub TR) a następnie w testach nacisnąć przycisk 'DRZWI PLATWORMY'",
+                "załączyć hamulec postojowy (w trybie TA) a następnie w testach nacisnąć przycisk 'DRZWI PLATFORMY'",
+                "zbocznikować system SLP i przeprowadzić test drzwi i platform"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podaj pozycję 'ODCIĘCIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj pozycję 'ZASPRZĘGLENIA' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odciecie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Podczas jazdy pociagiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na liniii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
+            "image": "",
+            "content": [
+                "TRASA",
+                "KURS",
+                "Nie trzeba nic wybierać, gdyż system sam ustawi trasę w pętli"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
+            "image": "",
+            "content": [
+                "0",
+                "I",
+                "II"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
+            "image": "",
+            "content": [
+                "nie podejmowac żadnych czynności a po dokończeniu obiegu zjechać na STP",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć tylko zawór B16",
+                "na uszkodzonym wagonie spróbować ręcznie wyluzować hamulec postojowy poprzez zawór B12, a jak to nie pomoże odciąć zawór B16 i z podtorza wyluzować postojówki poprzez cięgła C01 na obu wózkach uszkodzonego wagonu"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Zamknięcie zaworu B16 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Zamknięcie zaworu B18 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
+            "image": "",
+            "content": [
+                "odciecie hamulca postojowego",
+                "odcięcie hamulca elektropneumatycznego",
+                "wyluzowanie hamulca postojowego"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
+            "image": "",
+            "content": [
+                "działa sprężarka tylko na wagonie 3",
+                "działa sprężarka tylko na wagonie 4",
+                "działa sprężarka na wagonie 3 i 4"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
+            "image": "",
+            "content": [
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
+                "na wyświetlaczu DDU będzie cały czs tryb TR"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
+            "image": "",
+            "content": [
+                "jest dozwolone",
+                "nie jest dozwolone",
+                "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Ile jest czasu na wymiane karty w pociągu ŚKODA, aby test SOP zachował swoją ważność?",
+            "image": "",
+            "content": [
+                "do 20 sekund",
+                "do 30 sekund",
+                "do 1 minuty"
+            ],
+            "correct": 1
         }
     ]
 }
