@@ -1,6 +1,36 @@
 {
     "all": [
         {
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "image": "",
+            "content": [
+                "TRYB SIP JAZDY,",
+                "TRYB SIP SERWISOWY,",
+                "TRB SIP TECHNICZNY."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
+            "image": "",
+            "content": [
+                "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP,",
+                "jest to przełacznik, który słuzy do wyłaczania terybu awaryjnego,",
+                "jest to przełącznik uruchamiajacy jazdę pociągu do tyłu."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku użycia przycisku awaryjnego powiadomienia maszynisty przez pasażera, maszynista w pociągu ŚKODA musi:",
+            "image": "",
+            "content": [
+                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc górny przycisk na panelu,",
+                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc dolny przycisk na panelu,",
+                "należy tylko podnieść słuchawkę (bez naciskania guzików) i przeprowadzic rozmowę"
+            ],
+            "correct": 2
+        },
+        {
             "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
             "image": "",
             "content": [
@@ -4011,6 +4041,16 @@
             "category": "inspiro"
         },
         {
+            "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
+            "image": "",
+            "content": [
+                "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP,",
+                "jest to przełacznik, który słuzy do wyłaczania terybu awaryjnego,",
+                "jest to przełącznik uruchamiajacy jazdę pociągu do tyłu."
+            ],
+            "correct": 0
+        },
+        {
             "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
             "content": [
                 "3 stopinie zawieszenia",
@@ -5247,6 +5287,36 @@
                 "jest dozwolone",
                 "nie jest dozwolone",
                 "jest dozwolone tylko i wyłącznie podczas postoju pociągu"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "W przypadku użycia przycisku awaryjnego powiadomienia maszynisty przez pasażera, maszynista w pociągu ŚKODA musi:",
+            "image": "",
+            "content": [
+                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc górny przycisk na panelu,",
+                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc dolny przycisk na panelu,",
+                "należy tylko podnieść słuchawkę (bez naciskania guzików) i przeprowadzic rozmowę"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "image": "",
+            "content": [
+                "TRYB SIP JAZDY,",
+                "TRYB SIP SERWISOWY,",
+                "TRB SIP TECHNICZNY."
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
+            "image": "",
+            "content": [
+                "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP,",
+                "jest to przełacznik, który słuzy do wyłaczania terybu awaryjnego,",
+                "jest to przełącznik uruchamiajacy jazdę pociągu do tyłu."
             ],
             "correct": 0
         },
