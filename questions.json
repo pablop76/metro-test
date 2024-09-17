@@ -2318,7 +2318,7 @@
                 "w dowolnej kabinie",
                 "tylko w kabinie przeciwnej"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "W pociągu METROPOLIS podczas użycia rozgłoszenia pasażerskiego w trakcie zamykania drzwi pasażerskich",
@@ -4586,9 +4586,9 @@
             "content": [
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h",
                 "Sygnał S3, który zezwala na jazdę pociągu z największą dozwoloną prędkością, następny semafor może być ciemny",
-                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny"
             ],
-            "correct": 1
+            "correct": 2
         },
         {
             "question": "Sygnał Z1wk oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
