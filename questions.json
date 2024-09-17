@@ -2650,9 +2650,9 @@
             "content": [
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny",
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny",
-                "Sygnał S3, który zezwala na jazdę pociągu z najwyższą dozwoloną prędkością, następny semafor nie może być ciemny"
+                "Sygnał S3, który zezwala na jazdę pociągu z najwyższą dozwoloną prędkością, następny semafor może być ciemny"
             ],
-            "correct": 1
+            "correct": 2
         },
         {
             "question": "Co to jest ruch zorganizowany?",
