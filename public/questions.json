@@ -2318,7 +2318,7 @@
                 "w dowolnej kabinie",
                 "tylko w kabinie przeciwnej"
             ],
-            "correct": 1
+            "correct": 0
         },
         {
             "question": "W pociągu METROPOLIS podczas użycia rozgłoszenia pasażerskiego w trakcie zamykania drzwi pasażerskich",
