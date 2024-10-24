@@ -20,6 +20,15 @@
             "correct": 2
         },
         {
+            "question": "Dźwiękowy sygnał 'Alarm o skarzeniach:",
+            "content": [
+                "- jeden długi ton",
+                "- modulowane dzwieki syreny trwające 10 sekund powtarzane co 3 minuty, czas trwania pomiedzy dzwiekami powinien wynosić 25 - 30 sekund",
+                "- modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)"
+            ],
+            "correct": 1
+        },
+        {
             "question": "Dźwiękowy sygnał A1 „Alarm” to",
             "content": [
                 "jeden długi ton",
@@ -4361,6 +4370,15 @@
                 "- 1 długi ton, kilkakrotnie powtórzony"
             ],
             "correct": 0
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Alarm o skarzeniach:",
+            "content": [
+                "- jeden długi ton",
+                "- modulowane dzwieki syreny trwające 10 sekund powtarzane co 3 minuty, czas trwania pomiedzy dzwiekami powinien wynosić 25 - 30 sekund",
+                "- modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)"
+            ],
+            "correct": 1
         },
         {
             "question": "Dźwiękowy sygnał A1 „Alarm” to",
