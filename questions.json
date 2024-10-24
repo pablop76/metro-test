@@ -11,6 +11,15 @@
             "correct": 2
         },
         {
+            "question": "Dźwiękowy sygnał 'Docisnąć:",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- dwa któtkie tony"
+            ],
+            "correct": 2
+        },
+        {
             "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
             "image": "",
             "content": [
@@ -4360,6 +4369,15 @@
                 "- jeden długi ton",
                 "- jeden długi ton i trzy krótkie tony",
                 "- dwa długie tony"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Dźwiękowy sygnał 'Docisnąć:",
+            "content": [
+                "- jeden długi ton",
+                "- jeden długi ton i trzy krótkie tony",
+                "- dwa któtkie tony"
             ],
             "correct": 2
         },
