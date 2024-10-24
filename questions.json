@@ -20,6 +20,33 @@
             "correct": 2
         },
         {
+            "question": "Dźwiękowy sygnał A1 „Alarm” to",
+            "content": [
+                "jeden długi ton",
+                "kilka przeciągłych tonów,",
+                "jeden długi i trzy krótkie tony."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał A2 „Pożar” to",
+            "content": [
+                "jeden długi ton",
+                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
+                "kilka przeciągłych tonów,"
+            ],
+            "correct": 1
+        },
+                {
+            "question": "Dźwiękowy sygnał „Alarm powietrzny” to",
+            "content": [
+                "modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)",
+                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
+                "kilka przeciągłych tonów,"
+            ],
+            "correct": 0
+        },
+        {
             "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
             "image": "",
             "content": [
@@ -4332,6 +4359,33 @@
                 "- 3 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
                 "- 2 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
                 "- 1 długi ton, kilkakrotnie powtórzony"
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Dźwiękowy sygnał A1 „Alarm” to",
+            "content": [
+                "jeden długi ton",
+                "kilka przeciągłych tonów,",
+                "jeden długi i trzy krótkie tony."
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Dźwiękowy sygnał A2 „Pożar” to",
+            "content": [
+                "jeden długi ton",
+                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
+                "kilka przeciągłych tonów,"
+            ],
+            "correct": 1
+        },
+                {
+            "question": "Dźwiękowy sygnał „Alarm powietrzny” to",
+            "content": [
+                "modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)",
+                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
+                "kilka przeciągłych tonów,"
             ],
             "correct": 0
         },
