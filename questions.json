@@ -1,7 +1,7 @@
 {
     "all": [
         {
-            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
             "image": "",
             "content": [
                 "TRYB SIP JAZDY,",
@@ -9,51 +9,6 @@
                 "TRB SIP TECHNICZNY."
             ],
             "correct": 2
-        },
-        {
-            "question": "Dźwiękowy sygnał 'Docisnąć:",
-            "content": [
-                "- jeden długi ton",
-                "- jeden długi ton i trzy krótkie tony",
-                "- dwa któtkie tony"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Dźwiękowy sygnał 'Alarm o skarzeniach:",
-            "content": [
-                "- jeden długi ton",
-                "- modulowane dzwieki syreny trwające 10 sekund powtarzane co 3 minuty, czas trwania pomiedzy dzwiekami powinien wynosić 25 - 30 sekund",
-                "- modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Dźwiękowy sygnał A1 „Alarm” to",
-            "content": [
-                "jeden długi ton",
-                "kilka przeciągłych tonów,",
-                "jeden długi i trzy krótkie tony."
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Dźwiękowy sygnał A2 „Pożar” to",
-            "content": [
-                "jeden długi ton",
-                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
-                "kilka przeciągłych tonów,"
-            ],
-            "correct": 1
-        },
-                {
-            "question": "Dźwiękowy sygnał „Alarm powietrzny” to",
-            "content": [
-                "modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)",
-                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
-                "kilka przeciągłych tonów,"
-            ],
-            "correct": 0
         },
         {
             "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
@@ -861,16 +816,6 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
-            "content": [
-                "- działanie hamulca postojowego tylko na wagonach czołowych",
-                "- prawidłowe ustawienie tablic kierunku jazdy",
-                "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
-            ],
-            "correct": 1,
-            "category": "instrukcja"
-        },
-        {
             "question": "Wskaźnik  W17 (słupek biało-czerwony):",
             "content": [
                 "- wyznacza miejsce w terenie otwartym i tunelu, do którego wolno jeden z torów zająć taborem, aby umożliwić przejazd taboru po drugim torze",
@@ -891,36 +836,6 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "Zawór maszynisty znajdujący się w kabinie maszynisty posiada:",
-            "content": [
-                "- 8 pozycji, w tym 5 pozycji realizujących hamowanie",
-                "- 7 pozycji, w tym 5 pozycji realizujących  hamowanie",
-                "- 7 pozycji, w tym 4 pozycje realizujące hamownie"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 (w VII położeniu zaworu maszynisty) wynos:",
-            "content": [
-                "- 0,25 MPa",
-                "- 0,0 MPa",
-                "- 0,3 MPa"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Jaką funkcje w wagonie serii 81 pełni autoreżim:",
-            "content": [
-                "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
-                "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i ciśnienie w cylindrach hamulcowych",
-                "- współpracuje z zaworem zrywakowym"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  Em, Fm  i Gm  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
             "content": [
                 "- białe i niebieskie",
@@ -931,26 +846,6 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "Czy w wagonie serii 81, w którym odłącznik główny nie został załączony:",
-            "content": [
-                "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie  awaryjne, brak jazdy ale pracuje sprężarka",
-                "- pracuje przetwornica i sprężarka, brak jazdy",
-                "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Co oznacza VR z kropką i VK 35 na wyświetlaczu SOP?",
-            "content": [
-                "- zanik transmisji na danym odcinku",
-                "- uszkodzenie jednego z torów pomiaru prędkości",
-                "- należy  się spodziewać że, następne wskazanie na wyświetlaczu  to  VK 20"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi:",
             "content": [
                 "- 10,0 bara ± 10%",
@@ -959,16 +854,6 @@
             ],
             "correct": 1,
             "category": "metropolis"
-        },
-        {
-            "question": "Jak realizowane jest zamknięcie drzwi przez przycisk „rezerwowe zamykanie drzwi” w wagonach serii 81:",
-            "content": [
-                "- poprzez podanie napięcia na cewkę zamykającą drzwiowego zaworu rozrządczego za pomocą rezerwowego przewodu nr.18",
-                "- poprzez podanie napięcia na obie cewki otwierające drzwiowego zaworu rozrządczego",
-                "- poprzez podanie napięcia na rezerwową cewkę zamykającą drzwiowego zaworu rozrządczego"
-            ],
-            "correct": 1,
-            "category": "81"
         },
         {
             "question": "Spychanie uszkodzonego pociągu Metropolis odbywa się z ograniczeniem prędkości:",
@@ -1001,16 +886,6 @@
             "category": "instrukcja"
         },
         {
-            "question": "Działanie zaworu bezpieczeństwa polega na",
-            "content": [
-                "- całkowitym opróżnieniu zbiornika głównego",
-                "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknięciu się",
-                "- zmniejszeniu ciśnienia w zbiorniku głównym do 0,83 MPa i samoczynnym zamknięciu się"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
             "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione:",
             "content": [
                 "- w wózku wagonu M  dzięki 2 tarczom hamulcowym zamocowanym na każdej osi a w wózku wagonu Tc 1 tarczy hamulcowej zamocowanej na każdej osi",
@@ -1031,126 +906,6 @@
             "category": "metropolis"
         },
         {
-            "question": "W przypadku sterowania na jazdę bez 'WN' po naciśnięciu przycisku zabezpieczenia przetwornicy następuje:",
-            "content": [
-                "- zasilenie przekaźnika awaryjnego rozruchu –PRA-, który mostkuje przekaźnik zanikowo napięciowy – PZN",
-                "- zasilenie przekaźnika obniżonej nastawy – PON -, który mostkuje przekaźnik zanikowo napięciowy – PZN",
-                "- zamyka się dodatkowy styk przekaźnika kontroli nawrotnika – PKN -, który znajduje się w obwodzie 1 przewodu (jazda)."
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Drążek reakcyjny występuje",
-            "content": [
-                "- tylko na pociągu Metropolis",
-                "- tylko na pociągu typu 81",
-                "- na pociągu Metropolis i 81"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "W pociągu serii 81 pomiędzy wagonami pośrednimi zastosowano sprzęg",
-            "content": [
-                "- automatyczny",
-                "- stały",
-                "- półautomatyczny"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "W czasie hamowania elektrodynamicznego w wagonach serii 81 (!?)",
-            "content": [
-                "- wszystkie styczniki liniowe są zamknięte",
-                "- wszystkie styczniki liniowe są otwarte",
-                "- styczniki liniowe 1 i 5 są otwarte"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Wskaż prawidłowe określenie",
-            "content": [
-                "- nawrotnik jest przeznaczony do zmiany kierunku obrotu silnika wału kułakowego",
-                "- odłącznik główny jest przeznaczony do rozłączenia obwodu głównego w stanie bezprądowym",
-                "- przełącznik rodzaju pracy służy do zmiany kierunku jazdy"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Dlaczego styki główne wału kułakowego nie mają kominków ?:",
-            "content": [
-                "- bo znajdują się w dużej skrzyni zawieszonej na izolatorach, która stanowi zabezpieczenie przed porażeniem prądem i łukiem elektrycznym",
-                "- styki wału kułakowego rozłączają się bez prądowo więc niema takiej potrzeby",
-                "- w obwodach prądu stałego niskiego napięcia, a w takich warunkach pracuje wał kułakowy nie ma wymogu stosowania komór gasikowych"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Prąd hamowania w wagonie czołowym, w pozycji 'T-1' NJ przy prędkości powyżej 50km/h wynosi",
-            "content": [
-                "- około 180 A",
-                "- około 350 A",
-                "- około 450 A"
-            ],
-            "correct": 0,
-            "category": "81"
-        },
-        {
-            "question": "Zabrania się odblokowywania PA w przypadku",
-            "content": [
-                "- zadziałanie WA –56",
-                "- zaniku wysokiego napięcia",
-                "- jednokrotnego wybicia PA"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Brak sterowania na jazdę, przy sygnalizacji kontroli zamknięcia drzwi i prawidłowych wskazaniach woltomierza NN jest spowodowany",
-            "content": [
-                "- zadziałaniem zabezpieczenia przetwornicy",
-                "- wybiciem WA-56 na wszystkich wagonach",
-                "- wybiciem WA- 54"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "W przypadku gdy nie zamykają się drzwi w całym pociągu należy",
-            "content": [
-                "- sprawdzić na ostatnim wagonie położenie WA-13",
-                "- zamknąć drzwi za pomocą RPZD",
-                "- sprawdzić położenie WA –53"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Jeżeli podczas jazdy z załączonymi silnikami trakcyjnymi w kabinie maszynisty pociągu serii 81 słyszalny jest donośny świst może to świadczyć o tym że",
-            "content": [
-                "- w tunelu szlakowym na którym obecnie znajduje się skład wystąpiła równoczesna awaria wentylatorni stacyjnej i szlakowej (obie tłoczą powietrze do tunelu)",
-                "- jeden z silników pracuje bez obciążenia",
-                "- na sąsiednim z torów w tunelu znajduje się pociąg Metropolis z uszkodzoną poduszką powietrzną zawieszenia"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Maszynista może rozłączyć stycznik obwodów pomocniczych",
-            "content": [
-                "- na wszystkich wagonach, wyłączając WA 53 na wagonie czołowym",
-                "- na wszystkich wagonach, wyłączając WA 53 na każdym wagonie osobno",
-                "- wyłączając odłącznik główny"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Obniżone ciśnienie w przewodzie zasilającym pociągu typu Metropolis poniżej 6,5 bara (załączone hamulce awaryjny i postojowy) może świadczy o",
             "content": [
                 "- awarii jednej ze sprężarek",
@@ -1159,16 +914,6 @@
             ],
             "correct": 2,
             "category": "metropolis"
-        },
-        {
-            "question": "W przypadku powstania ucieczki z magistrali zasilającej  na jednym z wagonów należy między innymi",
-            "content": [
-                "- na niesprawnym wagonie podłożyć izolację pod styki stycznika sprężarki",
-                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
-                "- zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach"
-            ],
-            "correct": 1,
-            "category": "81"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik oznacza",
@@ -1203,16 +948,6 @@
             "category": "instrukcja"
         },
         {
-            "question": "Po naciśnięciu przycisku rezerwowego sterowania sprężarki na wagonach serii 81",
-            "content": [
-                "- pracują wszystkie sprężarki",
-                "- pracują sprężarki na wagonach pośrednich",
-                "- pracują sprężarki na wagonach czołowych"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Czy wskaźnik W24 (wjazd na tor niewłaściwy) występuje  w tunelu",
             "content": [
                 "- tak",
@@ -1243,16 +978,6 @@
             "category": "instrukcja"
         },
         {
-            "question": "Przekaźnik nadmiarowy służy do zabezpieczenia",
-            "content": [
-                "- silników trakcyjnych przed skutkami zwarć",
-                "- silnika sprężarki przed przegrzaniem",
-                "- silników trakcyjnych przed skutkami przeciążeń"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 7,5 bara oznacza",
             "content": [
                 "- próg hamowania awaryjnego",
@@ -1263,16 +988,6 @@
             "category": "metropolis"
         },
         {
-            "question": "Próg zadziałania zaworu bezpieczeństwa w pociągach serii 81 wynosi:",
-            "content": [
-                "- 0,78 – 0,82 MPa",
-                "- 0,95 – 1,20 MPa",
-                "- 0,90 – 0,92 MPa"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
             "question": "Na jakiej podstawie i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?",
             "content": [
                 "- na podstawie rozkazu 'O' z prędkością do 60 km/h",
@@ -1281,16 +996,6 @@
             ],
             "correct": 2,
             "category": "instrukcja"
-        },
-        {
-            "question": "W jaki sposób napędzany jest wał kułakowy",
-            "content": [
-                "- za pomocą elektrozaworów",
-                "- za pomocą silnika prądu przemiennego",
-                "- za pomocą silnika prądu stałego"
-            ],
-            "correct": 2,
-            "category": "81"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik zobowiązuje maszynistę do",
@@ -1324,36 +1029,6 @@
             "category": "instrukcja"
         },
         {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić",
-            "content": [
-                "- działanie hamulca postojowego tylko na wagonach czołowych",
-                "- prawidłowe połączenie skrzynek elektrycznych na sprzęgach",
-                "- baterie pod obciążeniem załączając tylko na wagonach  czołowych  oświetlenie awaryjne i baterię"
-            ],
-            "correct": 1,
-            "category": "instrukcja"
-        },
-        {
-            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 (w położeniu II zaworu maszynisty) wynosi",
-            "content": [
-                "- 0,8 MPa",
-                "- 0,6 MPa",
-                "- 0,5 MPa"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Jaką funkcje w wagonie serii 81 pełni PSR:",
-            "content": [
-                "- zapobiega jednoczesnemu zadziałaniu hamulca elektrycznego i pneumatycznego",
-                "- współpracuje z urządzeniami odpowiedzialnymi za prądy hamowania i rozruchu silników trakcyjnych",
-                "- zabezpiecza silniki trakcyjne przed rozbieganiem, w przypadku pracy bez obciążenia"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Anulowanie hamulca trzymającego na pociągu Metropolis nastąpi po",
             "content": [
                 "- odcięciu kurka B22 na 6 wagonach",
@@ -1362,26 +1037,6 @@
             ],
             "correct": 1,
             "category": "metroplis"
-        },
-        {
-            "question": "Czy w wagonie (petersburskim) serii 81, w którym bezpiecznik główny został przepalony",
-            "content": [
-                "- nie pracuje przetwornica, w salonie pasażerskim świeci się tylko oświetlenie awaryjne, brak jazdy ale pracuje sprężarka",
-                "- pracuje przetwornica i sprężarka, brak jazdy",
-                "- nie pracuje sprężarka, pracuje przetwornica jest oświetlenie w salonie pasażerskim, brak jazdy"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Jakie jest ciśnienie w cylindrze hamulca postojowego pociągu serii 81",
-            "content": [
-                "- 0,50 – 0,52 MPa",
-                "- 0,48 – 0,52 MPa",
-                "- 0,63 – 0,82 MPa"
-            ],
-            "correct": 2,
-            "category": "81"
         },
         {
             "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga do połowy szyjki szyny nie może być większa niż",
@@ -1414,26 +1069,6 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "W pociągach serii 81 zastosowano silnik trakcyjny",
-            "content": [
-                "- asynchroniczny, 3-fazowy, klatkowy,",
-                "- szeregowy prądu stałego",
-                "- bocznikowy prądu stałego"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Co w wagonie serii 81 spełnia rolę urządzenia pociągowo-zderznego",
-            "content": [
-                "- drążek reakcyjny",
-                "- zderzak",
-                "- sprzęg"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
             "question": "W pociągu typu Metropolis pomiędzy wagonami pośrednimi zastosowano sprzęg:",
             "content": [
                 "- automatyczny",
@@ -1442,36 +1077,6 @@
             ],
             "correct": 1,
             "category": "metropolis"
-        },
-        {
-            "question": "W przedziale pasażerskim wagonu czołowego serii 81 pod siedzeniami znajduje się między innymi",
-            "content": [
-                "- zabezpieczenie termiczne silnika sprężarki",
-                "- regulator ciśnieniowy sprężarki",
-                "- stycznik sprężarki"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "W przypadku powstania ucieczki z magistrali hamulcowej  na jednym z wagonów należy między innymi",
-            "content": [
-                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
-                "- odłączyć zawór rozrządczy na danym wagonie",
-                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Zabrania  się odblokowywania PA w przypadku",
-            "content": [
-                "- zadziałanie WA –56",
-                "- po dwukrotnym zadziałaniu PA, następującym po sobie",
-                "- zaniku oświetlenia w salonie pasażerskim"
-            ],
-            "correct": 1,
-            "category": "81"
         },
         {
             "question": "Jaka prędkość obowiązuje podczas jazdy po torze niewłaściwym",
@@ -1537,26 +1142,6 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "Silnik trakcyjny w wagonach serii 81 zawieszony jest",
-            "content": [
-                "- na podłużnicach ramy wózka",
-                "- na osi (za nos)",
-                "- na poprzecznicach ramy wózka"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Brak sterowania na jazdę (kontrolka PA świeci tylko w poz. NJ „Jazda „), przy prawidłowo działającej sygnalizacji zamknięcia drzwi , lampka pierwszego przewodu nie świeci się może świadczyć o",
-            "content": [
-                "- niesprawny jest przycisk 'odblok PA'",
-                "- wybiło WA – 56 w wagonie czołowym",
-                "- brak kontaktu elektrycznego na stykach AWS."
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
             "question": "Przedstawiony poniżej wskaźnik to:",
             "image": "./images/wskaznik-8.png",
             "content": [
@@ -1600,26 +1185,6 @@
             "category": "metropolis"
         },
         {
-            "question": "Rama wózka wagonu serii 81 składa się",
-            "content": [
-                "- dwóch podłużnic i trzech poprzecznic",
-                "- czterech podłużnic i czterech poprzecznic",
-                "- z dwóch podłużnic i dwóch poprzecznic"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Drążek reakcyjny w wagonie serii 81",
-            "content": [
-                "- jest jednym z elementów urządzenia pociągowo-zderznego",
-                "- jest jednym z elementów zawieszenia silnika trakcyjnego",
-                "- jest jednym z elementów zawieszenia przekładni"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
             "question": "Zawieszenie pierwszego stopnia w wagonach Metropolis realizowane jest ?",
             "content": [
                 "- za pomocą dwóch 'sprężyn gumowych', zamocowanych na każdej maźnicy",
@@ -1648,56 +1213,6 @@
             ],
             "correct": 1,
             "category": "metropolis"
-        },
-        {
-            "question": "Napięcie znamionowe silnika sprężarki wagonu serii 81 wynosi ?",
-            "content": [
-                "- 80 V prądu stałego",
-                "- 750 V prądu stałego",
-                "- 220 V prądu przemiennego"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Zawór zwrotny zapewnia ?",
-            "content": [
-                "- połączenie przewodu  hamulcowego z atmosferą",
-                "- ochronę zbiornika przed nadmiernym wzrostem ciśnienia",
-                "- utrzymanie sprężonego powietrza w zbiorniku przy niepracującej sprężarce, a także uruchomienie sprężarki nieobciążonej ciśnieniem"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Hamulcowy zawór rozrządczy składa się z ?",
-            "content": [
-                "- zaworu sterującego, części komorowej i 3 zaworów elektropneumatycznych",
-                "- zaworu sterującego, zbiornika wyrównawczego  i 2 zaworów elektropneumatycznych",
-                "- zaworu sterującego, części komorowej i 2 zaworów elektropneumatycznych"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Ciśnienie w cylindrach hamulcowych nieobciążonego wagonu czołowego serii 81 (hamowanie pełne służbowe) zawiera się w przedziale:",
-            "content": [
-                "- 0,36 – 0,40 MPa",
-                "- 0,20 ± 0,01 MPa",
-                "- 0,25 – 0,27 MPa"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Automatyczny wyłącznik hamowania (AWT) powinien wyłączyć hamulec elektrodynamiczny przy ciśnieniu ?",
-            "content": [
-                "- 0,35 ± 0,01 MPa",
-                "- 0,20 ± 0,01 MPa",
-                "- 0,51 ± 0,01 MPa"
-            ],
-            "correct": 1,
-            "category": "81"
         },
         {
             "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi",
@@ -1730,36 +1245,6 @@
             "category": "metropolis"
         },
         {
-            "question": "Do zmiany kierunku obrotów silników trakcyjnych na wagonie serii 81 służy ?",
-            "content": [
-                "- nastawnik jazdy",
-                "- przekaźnik samoczynnego rozruchu",
-                "- nawrotnik"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Przy hamowaniu elektrodynamicznym (prędkość w zakresie 90 do ok. 65 km/h) na pociągu serii 81",
-            "content": [
-                "- hamowanie realizowane jest przez zasilenie cewki zaworu elektropneumatycznego Nr 1",
-                "- hamowanie realizowane jest przez impulsową regulację wzbudzenia prądnic",
-                "- realizowane jest hamowanie oporowe"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Odłącznik główny na wagonie serii 81 przeznaczony jest do ?",
-            "content": [
-                "- załączania i rozłączania obwodu głównego w stanie bezprądowym, a także przy przeciążeniach i zwarciach",
-                "- zabezpieczenia zwarciowego",
-                "- rozłączenia obwodu głównego w stanie bezprądowym"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
             "question": "Na pociągu Metropolis wysokie napięcie zasilające ?",
             "content": [
                 "- jest przekazywane z wagonu M1 do Tc1 i M4 do Tc4 w celu zasilenia przekształtników trakcyjnych",
@@ -1780,36 +1265,6 @@
             "category": "metropolis"
         },
         {
-            "question": "Na pociągu serii 81 do Styczników grupowych zalicza się m.in.",
-            "content": [
-                "- odłącznik główny",
-                "- nawrotnik",
-                "- rezystory osłabienia wzbudzenia"
-            ],
-            "correct": 1,
-            "category": "81"
-        },
-        {
-            "question": "Jakie jest napięcie na silniku trakcyjnym przy połączeniu szeregowo-równoległym ?",
-            "content": [
-                "- ¼ napięcia szyny prądowej",
-                "- napięcie szyny prądowej",
-                "- ½ napięcia szyny prądowej"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Zabrania się wyjazdu z elektrowozowni pociągowi serii 81 na którym ?",
-            "content": [
-                "- w wyposażeniu dodatkowym brakuje rękawic dielektrycznych",
-                "- w wyposażeniu dodatkowym brakuje drabinki awaryjnej",
-                "- kasety rejestratora zdarzeń są zapełnione w 70%"
-            ],
-            "correct": 0,
-            "category": "instrukcja"
-        },
-        {
             "question": "Przy działających urządzeniach SOP, jeżeli aktualna prędkość pociągu jest większa niż dopuszczalna+2km/h, system samoczynnego ograniczenia prędkości",
             "content": [
                 "- powoduje wyłączenie napędu (pojazd jest na wybiegu)",
@@ -1818,16 +1273,6 @@
             ],
             "correct": 2,
             "category": "SOP"
-        },
-        {
-            "question": "W przypadku powstania ucieczki powietrza z magistrali hamulcowej na jednym z wagonów należy między innymi",
-            "content": [
-                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA",
-                "- zamknąć zawory końcowe magistrali hamulcowej na sąsiednich sprawnych wagonach",
-                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie"
-            ],
-            "correct": 1,
-            "category": "81"
         },
         {
             "question": "Na pociągu Metropolis kurek odcinający z odpowietrzeniem (poduszki powietrzne) oznaczony jest symbolem",
@@ -2040,36 +1485,6 @@
             "category": "inspiro"
         },
         {
-            "question": "Brak sterowania na jazdę (kontrolka PA świeci tylko w poz. NJ „Jazda „), przy prawidłowo działającej sygnalizacji zamknięcia drzwi, lampka pierwszego przewodu nie świeci się, może świadczyć o",
-            "content": [
-                "- niesprawny jest przycisk odblok PA",
-                "- wybiło WA – 56 w wagonie czołowym",
-                "- brak kontaktu elektrycznego na stykach PWS"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "Wskaż prawidłowe określenie",
-            "content": [
-                "- nawrotnik jest przeznaczony do zmiany kierunku obrotu silnika wału kułakowego",
-                "- przełącznik rodzaju pracy służy do zmiany kierunku jazdy",
-                "- wał kułakowy jest przeznaczony do przełączania sekcji rezystorów rozruchowych i osłabienia wzbudzenia w procesie rozruchu i hamowania"
-            ],
-            "correct": 2,
-            "category": "81"
-        },
-        {
-            "question": "W przypadku powstania ucieczki z magistrali hamulcowej  na jednym z wagonów należy między innymi",
-            "content": [
-                "- na niesprawnym wagonie odłączyć zawór rozrządczy, wyluzować wagon",
-                "- odłączyć hamulce postojowe (odkręcić) na danym wagonie",
-                "- na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA"
-            ],
-            "correct": 0,
-            "category": "81"
-        },
-        {
             "question": "Zabrania  się odblokowywania PA w przypadku",
             "content": [
                 "- Po dwukrotnym zadziałaniu PA, następujacym po sobie",
@@ -2185,15 +1600,6 @@
             "correct": 1
         },
         {
-            "question": "Ochrona przed skutkami szkodliwej nierównowagi prądów w gałęziach obwodu głównego wagonów serii 81 realizowana jest przez",
-            "content": [
-                "przekaźnik obniżonej nastawy",
-                "przekaźnik różnicowy",
-                "przekaźnik zabezpieczenia przetwornicy"
-            ],
-            "correct": 1
-        },
-        {
             "question": "Dźwiękowy sygnał „Zwolnić” to",
             "content": [
                 "jeden długi ton",
@@ -2221,15 +1627,6 @@
             "correct": 1
         },
         {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzanej na STP Kabaty maszynista powinien między innymi sprawdzić:",
-            "content": [
-                "stan sanitarny i estetyczny wagonów",
-                "działanie hamulca postojowego tylko na wagonach czołowych",
-                "baterie pod obciążeniem załączając tylko na wagonach czołowych oświetlenie awaryjne i baterię"
-            ],
-            "correct": 0
-        },
-        {
             "question": "W skład wyposażenia pociągu typu Metropolis wchodzi",
             "content": [
                 "4 tablice hamulca pneumatycznego",
@@ -2255,15 +1652,6 @@
                 "dzięki 3 tarczom hamulcowym zamocowanym na każdej osi"
             ],
             "correct": 0
-        },
-        {
-            "question": "Skrzynka przyłączy elektrycznych sprzęgu wagonów serii 81 napędzana jest",
-            "content": [
-                "elektrycznie",
-                "ręcznie",
-                "pneumatycznie"
-            ],
-            "correct": 2
         },
         {
             "question": "Przy nastawniku maszynisty ustawionym w poz. „0” obwód główny",
@@ -2346,15 +1734,6 @@
                 "napięcie będzie na czterech odbierakach tego wagonu"
             ],
             "correct": 2
-        },
-        {
-            "question": "W pociągu serii 81 (34-40) podczas rozmowy przez system  powiadomienia pasażerskiego (PECU) , zwolnienie przycisku „mikrofon” przez prowadzącego pociąg spowoduje",
-            "content": [
-                "zakończenie rozmowy i zakończenie połączenia",
-                "nie spowoduje zakończenia rozmowy",
-                "zakończenie rozmowy , ale nie spowoduje zakończenia rozłączenia"
-            ],
-            "correct": 0
         },
         {
             "question": "W pociągu METROPOLIS przycisk ACU (wywołanie druga kabina) zainicjowany w kabinie maszynisty można z dezaktywować(!?)",
@@ -2510,24 +1889,6 @@
             "correct": 1
         },
         {
-            "question": "Jakim napięciem zasilone jest oświetlenie podstawowe w salonie pasażerskim w pociągu serii 81?",
-            "content": [
-                "80 V AC",
-                "110 V DC",
-                "3x 400 V AC"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Jakim napięciem zasilone jest oświetlenie awaryjne salonu pasażerskiego w pociągu serii 81?",
-            "content": [
-                "220 V AC",
-                "80 V DC",
-                "24 V DC  "
-            ],
-            "correct": 2
-        },
-        {
             "question": "Jakie funkcje są testowane w trakcie testu SOP w kroku trzecim w pociągu METROPOLIS?",
             "content": [
                 "hamowanie awaryjne",
@@ -2560,15 +1921,6 @@
                 "przez naciśnięcie przycisku luzowania hamulca awaryjnego na pulpicie w kabinie maszynisty",
                 "przez zbocznikowanie hamulca awaryjnego",
                 "przez naciśnięcie przycisku czuwaka w nastawniku jazdy i ewentualnie dodatkowo przycisku luzowania hamulca awaryjnego na pulpicie"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Ile par drzwi pasażerskich utraci kontrolę w pociągu serii 81 w wagonie pośrednim, po użyciu dźwigni awaryjnego otwierania drzwi?",
-            "content": [
-                "jedna para",
-                "para drzwi, przy których znajduje się dźwignia",
-                "wszystkie drzwi w tym wagonie, po stronie użytej dźwigni"
             ],
             "correct": 2
         },
@@ -2695,9 +2047,9 @@
             "content": [
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny",
                 "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny",
-                "Sygnał S3, który zezwala na jazdę pociągu z najwyższą dozwoloną prędkością, następny semafor może być ciemny"
+                "Sygnał S3, który zezwala na jazdę pociągu z najwyższą dozwoloną prędkością, następny semafor nie może być ciemny"
             ],
-            "correct": 2
+            "correct": 1
         },
         {
             "question": "Co to jest ruch zorganizowany?",
@@ -3264,16 +2616,6 @@
             "correct": 0
         },
         {
-            "question": "Czy jest wymagane podczas bocznikowania w systemie SOP-2W wciśnięcie przycisku 'odjazd', gdy wystąpił błąd krytyczny?",
-            "image": "",
-            "content": [
-                "jest wymagane",
-                "nie jest wymagane",
-                "jest wymagane tylko w pociągach serii 81"
-            ],
-            "correct": 1
-        },
-        {
             "question": "Załączenie hamowana służbowego od ATP po przekroczeniu prędkości kontrolowanej z jednoczesnym pozostawieniem nastawnika w pozycji jazda, spowoduje",
             "image": "",
             "content": [
@@ -3330,16 +2672,6 @@
                 "załączone hamowanie służbowe od aop",
                 "załączone hamowanie awaryjne od aop",
                 "zanik transmisji na danym odcinku"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Wygaszona lampka 'Jazda' na pulpicie SOP-2W w pociągu serii 81, moze oznaczać",
-            "image": "",
-            "content": [
-                "zamkniety kran odcinajacy zawór EPK",
-                "sygnał 'S1-stój' podany na semaforze przed którym zatrzymał sie pociąg",
-                "załączone hamowanie docelowe od SOP podczas wjazdu na stację"
             ],
             "correct": 0
         },
@@ -3704,16 +3036,6 @@
             "correct": 2
         },
         {
-            "question": "Ile ważny jest przegląd PK dla pociągu serii 81?",
-            "image": "",
-            "content": [
-                "20 godzin w tunelu lub 24 godziny w elektrowozowni",
-                "20 godzin w tunelu lub 48 godzin w elektrowozowni",
-                "20 godzin w tunelu i w elektrowozowni"
-            ],
-            "correct": 1
-        },
-        {
             "question": "wyjazd pociągu typu INSPIRO oraz METROPOLIS z 12ego toru w elektrowozowni jest dozwolony",
             "image": "",
             "content": [
@@ -3724,26 +3046,6 @@
             "correct": 2
         },
         {
-            "question": "W przypadku powstania ucieczki powietrza z magistrali zasilającej na jednym z wagonów pociągu serii 81 należy miedzy innymi",
-            "image": "",
-            "content": [
-                "na niesprawnym wagonie wyłączyć sprężarkę za pomocą WA 22 (sprężarka)",
-                "odłączyć zawór rozrządczy i odluxniaczem opróznić cylindry hamulcowe",
-                "zamknąc zawory końcowe magistrali zasilającej tylko w uszkodzonym wagonie"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Podczas jazdy pociągiem serii 81 z użyciem 'nastawnika rezerwowego' maszynista ma mozliwość",
-            "image": "",
-            "content": [
-                "hamowania pneumatycznego zaworem maszynisty oraz hamowania elektrodynamicznego",
-                "hamowania pneumatycznego zaworem maszynisty",
-                "hamowania elektrodynamicznego oraz hamowania elektropneumatycznego zaworami Nr 1 i Nr 2"
-            ],
-            "correct": 1
-        },
-        {
             "question": "Zasilenie wysokim napieciem motorowego wagonu konieczny jest kontakt z szyną prądową",
             "image": "",
             "content": [
@@ -3752,56 +3054,6 @@
                 "co najmniej jednego odbieraka w wagonie"
             ],
             "correct": 2
-        },
-        {
-            "question": "Jakie ma zadanie automatyczny wyłącznik hamowania (AWT) w pociągu serii 81",
-            "image": "",
-            "content": [
-                "wyłączyć hamulec elektrodynamiczny przy ciśnieniu powietrza w magistrali zasilającej poniżej 0,35 MPa",
-                "wyłączyć hamulec elektrodynamiczny przy ciśnieniu w cylindrach hamulcowych 0,17-0,19 MPa",
-                "wyłączyć hamulec elektrodynamiczny przy ciśnieniu powietrza w magistrali hamulcowej 0,30 MPa"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Jakie ma zadanie automatyczny wyłącznik sterowania (PWS) w pociągu serii 81",
-            "image": "",
-            "content": [
-                "odłączenie sterowania pociągiem przy niskim ciśnieniu powietrza w magistrali hamulcowej (poniżej 0,3 MPa)",
-                "odłączenie sterowania pociągiem przy niskim ciśnieniu powietrza w magistrali zasilającej (poniżej 0,5 MPa)",
-                "rozłączenie hamowania elektrodynamicznego w przypadku jednoczesnego użycia hamulca pneumatycznego"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 w II położeniu zaworu maszynisty wynosi",
-            "image": "",
-            "content": [
-                "0,00 MPa",
-                "0,51 MPa",
-                "0,81 MPa"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Ciśnienie w magistrali hamulcowej wagonów serii 81 w VII położeniu zaworu maszynisty wynosi",
-            "image": "",
-            "content": [
-                "0,30 MPa",
-                "0,00 MPa",
-                "0,51 MPa"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "W wagonie czołowym serii 81 układ lokalizacji i zadziałania zabezpieczeń obwodu głównego posiada",
-            "image": "",
-            "content": [
-                "tylko dwie lampki na burtach wagonu koloru zielonego",
-                "dwie lampki na burtach wagonu koloru zielonego i lampkę koloru czerwonego na pulpicie maszynisty",
-                "tylko lamkę koloru czerwonego na pulpicie maszynisty"
-            ],
-            "correct": 1
         },
         {
             "question": "przełącznik 'bocznikowanie hamulca awaryjnego' w pociągu METROPOLIS bocznikuje między innymi",
@@ -3864,36 +3116,6 @@
             "correct": 0
         },
         {
-            "question": "Przycisk rezerwowego sterowania sprężarkami (na pulpicie) w wagonach serii 81",
-            "image": "",
-            "content": [
-                "uruchamia sprężarki na wagonach pośrednich",
-                "włącza sprężarki we wszystkich wagonach",
-                "uruchamia sprężarki na wagonach czołowych"
-            ],
-            "correct": 0
-        },
-        {
-            "question": "Ciśnienie w cylindrach hamulcowych nieobciążonego wagonu czołowego serii 81 (hamowanie pełne służbowe) zawiera się w przedziale",
-            "image": "",
-            "content": [
-                "0,36 - 0,40 MPa",
-                "0,16 - 0,18 MPa",
-                "0,25 - 0,27 MPa"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "W ramach kontroli stanu technicznego pociągu serii 81 przeprowadzonej na STP Kabaty maszynista powinien między innymi sprawdzić",
-            "image": "",
-            "content": [
-                "wartość ciśnienia w cylindrach hamulcowych tylko na wagonach czołowych",
-                "działanie zaworów zrywakowych",
-                "stan sanitarny i estetyczny wagonów"
-            ],
-            "correct": 2
-        },
-        {
             "question": "Jakie jest prawidłowe postępowanie w przypadku awarii systemu dostępu maszynisty do kabiny maszynisty?",
             "image": "",
             "content": [
@@ -3912,16 +3134,6 @@
                 "służy do odcięcia i zluzowania hamulca postojowego w wagonie"
             ],
             "correct": 0
-        },
-        {
-            "question": "Współpraca układu hamulca pneumatycznego z torowymi urządzeniami zrp w pociągu serii 81 realizowana jest przez",
-            "image": "",
-            "content": [
-                "zawór zwrotny",
-                "zawór zrywakowy",
-                "zawór bezpieczeństwa"
-            ],
-            "correct": 1
         },
         {
             "question": "Hamowanie oporowe na pociągu METROPOLIS",
@@ -3992,26 +3204,6 @@
                 "ograniczenie prędkości jazdy do 3 km/h"
             ],
             "correct": 0
-        },
-        {
-            "question": "Działanie zaworu bezpieczeństwa pociągu serii 81 (poc.01 do 15) polega na",
-            "image": "",
-            "content": [
-                "całkowitym opróżnieniu zbiornika głównego",
-                "zmniejszeniu ciśnienia w zbiorniku głównym do 0,55 MPa i samoczynnym zamknieciu sie zaworu",
-                "wyłaczeniu sprężarek powietrza w pociągu"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "W którym z wymienionych przypadków, ciśnienie powietrza w cylindrach hamulcowych w pociągu serii 81, osiąga wartość 0 MPa?",
-            "image": "",
-            "content": [
-                "po ustawieniu dźwigni zaworu maszynisty w pozycji VII",
-                "podczas przeprowadzania testu urządzeń pokładowych SOP-2W",
-                "po wciśnięciu przycisku odjazd na panelu SOP-2W przy jednoczesnym ustawieniu nastawnika jazdy w pozycji '0'"
-            ],
-            "correct": 2
         },
         {
             "question": "Przełącznik trybów pracy PRP w pociągu",
@@ -4372,42 +3564,6 @@
             "correct": 0
         },
         {
-            "question": "Dźwiękowy sygnał 'Alarm o skarzeniach:",
-            "content": [
-                "- jeden długi ton",
-                "- modulowane dzwieki syreny trwające 10 sekund powtarzane co 3 minuty, czas trwania pomiedzy dzwiekami powinien wynosić 25 - 30 sekund",
-                "- modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)"
-            ],
-            "correct": 1
-        },
-        {
-            "question": "Dźwiękowy sygnał A1 „Alarm” to",
-            "content": [
-                "jeden długi ton",
-                "kilka przeciągłych tonów,",
-                "jeden długi i trzy krótkie tony."
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Dźwiękowy sygnał A2 „Pożar” to",
-            "content": [
-                "jeden długi ton",
-                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
-                "kilka przeciągłych tonów,"
-            ],
-            "correct": 1
-        },
-                {
-            "question": "Dźwiękowy sygnał „Alarm powietrzny” to",
-            "content": [
-                "modulowany ton syreny lub krótko przerywany ton sygnału pojazdu trakcyjnego (10 sek. ton, 1 sek. przerwa trawjący 2-3 minuty)",
-                "jeden długi i dwa krótkie tony powtarzana kilkukrotnie.",
-                "kilka przeciągłych tonów,"
-            ],
-            "correct": 0
-        },
-        {
             "question": "Przedstawiony poniżej wskaźnik oznacza",
             "image": "./images/wskaznik.png",
             "content": [
@@ -4441,15 +3597,6 @@
                 "- jeden długi ton",
                 "- jeden długi ton i trzy krótkie tony",
                 "- dwa długie tony"
-            ],
-            "correct": 2
-        },
-        {
-            "question": "Dźwiękowy sygnał 'Docisnąć:",
-            "content": [
-                "- jeden długi ton",
-                "- jeden długi ton i trzy krótkie tony",
-                "- dwa któtkie tony"
             ],
             "correct": 2
         },
@@ -4674,11 +3821,11 @@
         {
             "question": "Sygnał S3 – jedno światło pomarańczowe oznacza",
             "content": [
-                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h",
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny",
                 "Sygnał S3, który zezwala na jazdę pociągu z największą dozwoloną prędkością, następny semafor może być ciemny",
-                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor może być ciemny"
+                "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny"
             ],
-            "correct": 2
+            "correct": 0
         },
         {
             "question": "Sygnał Z1wk oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
@@ -5391,7 +4538,7 @@
             "correct": 2
         },
         {
-            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
             "image": "",
             "content": [
                 "TRYB SIP JAZDY,",
