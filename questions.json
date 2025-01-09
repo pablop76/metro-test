@@ -826,7 +826,7 @@
             "category": "sygnalizacja"
         },
         {
-            "question": "Wskaźnik Wm8 (pomarańczowa tablica z czarną i białą obwódką ):",
+            "question": "Wskaźnik Wm18 (pomarańczowa tablica z czarną i białą obwódką ):",
             "content": [
                 "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
                 "- ustawia się w tunelu, informuje maszynistę, że za wskaźnikiem w odległości drogi hamowania znajduje się sygnalizator przytorowy",
@@ -3610,7 +3610,7 @@
             "correct": 2
         },
         {
-            "question": "Wskaźnik Wm8 (pomarańczowa tablica z czarną i białą obwódką ):",
+            "question": "Wskaźnik Wm18 (pomarańczowa tablica z czarną i białą obwódką ):",
             "content": [
                 "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
                 "- ustawia się w tunelu, informuje maszynistę, że za wskaźnikiem w odległości drogi hamowania znajduje się sygnalizator przytorowy",
