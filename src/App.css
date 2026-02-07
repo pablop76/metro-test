@@ -1,0 +1,111 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.startModal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  width: 100%;
+  max-width: 640px;
+  min-height: 300px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding:10px;
+  border-radius: 20px;
+  background-image: url(./images/nowy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.startModal:before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  background: rgb(10,57,114);
+  background: linear-gradient(90deg, rgba(10,57,114,1) 45%, rgba(29, 150, 249, 0.6) 91%);
+  border-radius: 20px;
+  z-index: -1;
+}
+.startModal button{
+  display: block;
+  color: #fff;
+}
+.startModal a{
+  color:#e73635;
+  text-decoration: underline;
+}
+.startModal a svg{
+  display: inline-block;
+}
+.bg-container {
+  background-image: url(./images/bg.svg), url(./images/bg-top.svg), url(./images/overlay.svg), url(./images/stp.jpg);
+  background-repeat: no-repeat;
+  background-size: contain, contain, cover, cover;
+  background-position: center bottom, top center, center, bottom center;
+}
+
+.current {
+  background-color: #2c9f45;
+}
+
+.wrong {
+  background-color: #e73635;
+}
+
+.animateBounce {
+  animation: myAnimBounce 2s ease 0s 1 normal forwards;
+}
+
+
+@keyframes myAnimBounce {
+  0% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+    transform: translateY(-45px);
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  40% {
+    animation-timing-function: ease-in;
+    transform: translateY(-24px);
+  }
+
+  65% {
+    animation-timing-function: ease-in;
+    transform: translateY(-12px);
+  }
+
+  82% {
+    animation-timing-function: ease-in;
+    transform: translateY(-6px);
+  }
+
+  93% {
+    animation-timing-function: ease-in;
+    transform: translateY(-4px);
+  }
+
+  25%,
+  55%,
+  75%,
+  87% {
+    animation-timing-function: ease-out;
+    transform: translateY(0px);
+  }
+
+  100% {
+    animation-timing-function: ease-out;
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
