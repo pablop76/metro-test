@@ -4200,7 +4200,8 @@
             "correct": 2,
             "category": [
                 "instrukcja"
-            ]
+            ],
+            "image": "./images/predkosc-restrykcyjna.png"
         }
     ]
 }
