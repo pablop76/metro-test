@@ -1,11 +1,11 @@
 {
     "questions": [
         {
-            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
             "content": [
-                "TRYB SIP JAZDY,",
-                "TRYB SIP SERWISOWY,",
-                "TRB SIP TECHNICZNY."
+                "TRYB SIP JAZDY",
+                "TRYB SIP SERWISOWY",
+                "TRB SIP TECHNICZNY"
             ],
             "correct": 2,
             "category": [
@@ -29,8 +29,8 @@
         {
             "question": "W przypadku użycia przycisku awaryjnego powiadomienia maszynisty przez pasażera, maszynista w pociągu ŚKODA musi:",
             "content": [
-                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc górny przycisk na panelu,",
-                "podnieść słuchawkę telefonu MCT a nastepnie nacisnąc dolny przycisk na panelu,",
+                "podnieść słuchawkę telefonu MCT a następnie nacisnąc górny przycisk na panelu,",
+                "podnieść słuchawkę telefonu MCT a następnie nacisnąc dolny przycisk na panelu,",
                 "należy tylko podnieść słuchawkę (bez naciskania guzików) i przeprowadzic rozmowę"
             ],
             "correct": 2,
@@ -39,7 +39,7 @@
             ]
         },
         {
-            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełaczać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
+            "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełączać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
             "content": [
                 "załączy się hamulec służbowy",
                 "załączy się hamulec awaryjny",
@@ -92,7 +92,7 @@
             ]
         },
         {
-            "question": "Podczas jazdy pociagiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
+            "question": "Podczas jazdy pociągiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
             "content": [
                 "TRASA",
                 "KURS",
@@ -104,7 +104,7 @@
             ]
         },
         {
-            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na liniii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
+            "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na linii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
             "content": [
                 "TRASA",
                 "KURS",
@@ -248,7 +248,7 @@
             ]
         },
         {
-            "question": "Po jakim czasie wyłaczy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
+            "question": "Po jakim czasie wyłączy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
             "content": [
                 "po 10 min",
                 "po 20 min",
@@ -287,8 +287,8 @@
             "question": "Czerwona lampka Jazda świecąca ciągłym światłem na pulpicie SOP 2W oznacza:",
             "content": [
                 "zanik transmisji na danym odcinku aop",
-                "załaczone hamowanie awaryjne od SOP 2W",
-                "załaczone hamowanie służbowe os SOP 2W"
+                "załączone hamowanie awaryjne od SOP 2W",
+                "załączone hamowanie służbowe os SOP 2W"
             ],
             "correct": 2,
             "category": [
@@ -311,9 +311,9 @@
         {
             "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
             "content": [
-                "załaczy się hamulec służbowy",
-                "załaczy się hamulec awaryjny",
-                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
+                "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie możliwe dalsze rozpędzenie pociągu"
             ],
             "correct": 2,
             "category": [
@@ -323,8 +323,8 @@
         {
             "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR < 5km/h):",
             "content": [
-                "załaczy się hamulec służbowy",
-                "załaczy się hamulec awaryjny",
+                "załączy się hamulec służbowy",
+                "załączy się hamulec awaryjny",
                 "będzie jazda wybiegiem wraz z czerwonym komunikatem kat. D a po potwierdzeniu tego komunikatu będzie mozliwe dalsze rozpędzenie pociągu"
             ],
             "correct": 1,
@@ -362,7 +362,7 @@
             "content": [
                 "maszynista informuje pasażerów, nie otwira drzwi i kontynuuje jazdę do nastepnej stacji",
                 "nie otwiera drzwi, a dalsze postepowanie uzgadnia z Dyspozytorem Ruchu",
-                "cofa skład, aby skrócić czas postoju pociągu na stacji, a nastepnie powiadamia dyspozytora ruchu"
+                "cofa skład, aby skrócić czas postoju pociągu na stacji, a następnie powiadamia dyspozytora ruchu"
             ],
             "correct": 1,
             "category": [
@@ -424,7 +424,7 @@
             "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
             "content": [
                 "załączy się hamulec służbowy",
-                "załaczy sie hamulec awaryjny",
+                "załączy sie hamulec awaryjny",
                 "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie możliwe dalsze rozpedzenie pociągu"
             ],
             "correct": 1,
@@ -436,9 +436,9 @@
         {
             "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
             "content": [
-                "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świciła",
-                "lampka od braku wysokiego napięcia w kabinie czołowej nie bedzie się świeciła",
-                "lampka od braku wysokiego napięcia nie bedzie sie świeciła, ale ze względu, że napięcie jest tylko na jednym odbieraku pociąg nie ruszy"
+                "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świeciła",
+                "lampka od braku wysokiego napięcia w kabinie czołowej nie będzie się świeciła",
+                "lampka od braku wysokiego napięcia nie będzie sie świeciła, ale ze względu, że napięcie jest tylko na jednym odbieraku pociąg nie ruszy"
             ],
             "correct": 1,
             "category": [
@@ -488,7 +488,7 @@
             "content": [
                 "odcięciu kurka B22 na 6 wagonach",
                 "przesunieciu dzwigni nastawnikana 'jazdę'",
-                "nacisnieciu przycisku 'luzowanie hamulca postojowego'"
+                "naciśnięciu przycisku 'luzowanie hamulca postojowego'"
             ],
             "correct": 1,
             "category": [
@@ -514,7 +514,7 @@
             "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
             "content": [
                 "wcisnięcie zielonego przycisku S900 uruchamiajacego pociąg",
-                "wcisnięcie czerwonego przycisku S910 wyłaczającego pociąg",
+                "wcisnięcie czerwonego przycisku S910 wyłączającego pociąg",
                 "wcisnięcie żółtego przycisku S530 (test autostopu)"
             ],
             "correct": 0,
@@ -623,7 +623,7 @@
             "content": [
                 "zawór A13",
                 "zawór L13",
-                "zawr U01"
+                "zawór U01"
             ],
             "correct": 1,
             "category": [
@@ -645,7 +645,7 @@
         {
             "question": "Wybierz prawidłową procedure zluzowania hamulca postojowego w pociągu ŚKODA",
             "content": [
-                "w szafie +89 na końcu wagonu odciąć zawr B16",
+                "w szafie +89 na końcu wagonu odciąć zawór B16",
                 "w szafie +89 na końcu wagonu odciąc zawór B16 a nastepnie z podtorza na każdym wózku uszkodzonego wagonu wyluzować hamulec poprzez cięgła C01",
                 "w szafie +89 na końcu wagonu odciąć zawór B18 a nastepnie z podtorza na każdym wózku wyluzować hamulec poprzez cięgła C01"
             ],
@@ -659,7 +659,7 @@
             "content": [
                 "system sam załączył hamulec postojowy",
                 "system zgłasza awarię całego układu hamulcowego tj. hamulca elektropneumatycznego i postojowego",
-                "system zgłasza usterkę hamulca postojowego tj. hamulec postojowy na jakimś wagonie nie został wyłaczony lub załączony"
+                "system zgłasza usterkę hamulca postojowego tj. hamulec postojowy na jakimś wagonie nie został wyłączony lub załączony"
             ],
             "correct": 2,
             "category": [
@@ -2640,7 +2640,7 @@
             "question": "Opisz symbole",
             "content": [
                 "Zasilanie pomocnicze prądem AC/DC jest sprawne i włączone",
-                "Spężarki powietrza są załaczone, brak usterek",
+                "Spężarki powietrza są załączone, brak usterek",
                 "Ruch po petli torowej jest dozwolony"
             ],
             "correct": 0,
@@ -2666,7 +2666,7 @@
             "question": "Opisz symbole",
             "content": [
                 "Aktywne polecenie 'Hamulec służbowy' z ATO",
-                "Sprężarka wyłaczona, brak usterki",
+                "Sprężarka wyłączona, brak usterki",
                 "Aktywne polecenie 'Napęd' z ATO"
             ],
             "correct": 2,
@@ -2679,7 +2679,7 @@
             "question": "Opisz symbole",
             "content": [
                 "Aktywne polecenie 'Hamulec służbowy' z ATO",
-                "Sprężarka wyłaczona, brak usterki",
+                "Sprężarka wyłączona, brak usterki",
                 "Aktywne polecenie 'Napęd' z ATO"
             ],
             "correct": 0,
@@ -2925,7 +2925,7 @@
         {
             "question": "W przypadku wystąpienia błędu krytycznego ATP należy:",
             "content": [
-                "kontynuować jazdę bez pasażerów z wyłaczonym SOP3 na podstawie wskazań semaforów, oraz rozkazu szczególnego",
+                "kontynuować jazdę bez pasażerów z wyłączonym SOP3 na podstawie wskazań semaforów, oraz rozkazu szczególnego",
                 "zresetowac na najbliższej stacji SOP3 wyłącznikiem automatycznym w szafie na przedziale pasażerskim",
                 "poinformować dyspozytora ruchu i kontynuować jazdę w trybie ręcznym TR"
             ],
@@ -2964,7 +2964,7 @@
             "question": "Czym skutkuje nie nacisnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
             "content": [
                 "po 10 sekundach załączy się hamowanie awaryjne od ATO",
-                "po 5 sekundach załaczy się hamowanie awaryjne od ATP",
+                "po 5 sekundach załączy się hamowanie awaryjne od ATP",
                 "załączy się hamowanie służbowe od ATP"
             ],
             "correct": 1,
@@ -3077,7 +3077,7 @@
             ]
         },
         {
-            "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załaczenie napędu przez maszynistę?",
+            "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załączenie napędu przez maszynistę?",
             "content": [
                 "nie jest możliwe",
                 "jest możliwe tylko w trybie TA",
@@ -3092,7 +3092,7 @@
         {
             "question": "System SOP-2W oddziałuje na pociąg za pomocą sygnałów umożliwiających",
             "content": [
-                "załaczenie hamowania awaryjnego",
+                "załączenie hamowania awaryjnego",
                 "sterowanie rozruchem podczas ruszania pociągiem",
                 "sterowanie otwarciem drzwi"
             ],
@@ -3246,7 +3246,7 @@
             "content": [
                 "wyhamowanie pociągu do zatrzymania",
                 "zhamuje pociąg do ograniczonej prędkości",
-                "załaczenie hamowania awaryjnego przez system"
+                "załączenie hamowania awaryjnego przez system"
             ],
             "correct": 0,
             "category": [
@@ -3315,7 +3315,7 @@
             ]
         },
         {
-            "question": "Stopień 'On' ('zero nieprzełamywalne') na liniii M2 jest kodowany",
+            "question": "Stopień 'On' ('zero nieprzełamywalne') na linii M2 jest kodowany",
             "content": [
                 "między innymi za semaforem wskazującum sygnał 'Stój' i na końcach torów odstawczych",
                 "przed kazdym semaforem podajacym sygnał 'Stój'",
@@ -3355,8 +3355,8 @@
         {
             "question": "Podstawowo dla prowadzenia ruchu pociągów pasażerskich stosuje się urzadzenia aop lub app",
             "content": [
-                "przy wyłaczonych semaforach na obu liniach metra",
-                "tylko na linii metra M1, zarówno przy wyłaczonych semaforach jak i załączonych semaforach",
+                "przy wyłączonych semaforach na obu liniach metra",
+                "tylko na linii metra M1, zarówno przy wyłączonych semaforach jak i załączonych semaforach",
                 "tylko przy załączonych semaforach na linii M2"
             ],
             "correct": 0,
@@ -3440,7 +3440,7 @@
             "question": "W przypadku wystąpienia błędu krytycznego ATO należy",
             "content": [
                 "kontynuowac jazde z pasażerami z wyłączonym SOP3 na podstawie wskazań semaforów",
-                "zresetować na najbliższej stacji SOP3 wyłacznikiem automatycznym w szafie na przedziale pasażerskim",
+                "zresetować na najbliższej stacji SOP3 ącznikiem automatycznym w szafie na przedziale pasażerskim",
                 "poinformowac Dyspozytora Ruchu i kontynuowac jazdę w trybie TR"
             ],
             "correct": 2,
@@ -3717,8 +3717,8 @@
             "question": "Postępowanie w przypadku awarii systemu lokazlizacji peronu (SLP)",
             "content": [
                 "otworzyć drzwi za pomocą dzwigni awaryjnego otwierania i zjechać awaryjnie na STP",
-                "zgłosić awarię Dyspozytorowi Ruchu, wyłaczyć system wyłącznikiem i po dokończeniu obiegu wyjechac na STP",
-                "zgłosić awarię Dyspozytorowi Ruchu, wyłaczyć system bezpiecznikiem i zjechac awaryjnie bez pasażerów na STP"
+                "zgłosić awarię Dyspozytorowi Ruchu, wyłączyć system wyłącznikiem i po dokończeniu obiegu wyjechac na STP",
+                "zgłosić awarię Dyspozytorowi Ruchu, wyłączyć system bezpiecznikiem i zjechac awaryjnie bez pasażerów na STP"
             ],
             "correct": 1,
             "category": [
@@ -3933,7 +3933,7 @@
             ]
         },
         {
-            "question": "Załaczenie w pociągu typu INSPIRO, za pomocą ustawień na monitorze HMI, trybu JM2 spowoduje",
+            "question": "Załączenie w pociągu typu INSPIRO, za pomocą ustawień na monitorze HMI, trybu JM2 spowoduje",
             "content": [
                 "na wyświetlaczu HMI pojawi sie informacja TRYB AWARYJNY i zostanie wprowadzone ograniczenie prędkości jazdy do 40 km/h",
                 "brak możliwości jazdy pod nadzorem SOP3",
@@ -3984,7 +3984,7 @@
             "question": "Na pociągu iNSPIRO każdy odbierak prądu",
             "content": [
                 "posiada bezpiecznik zabezpiecząjący przed zwarciami występującymi pomiędzy włącznikiem szybkim a adbierakiem",
-                "posiada wyłacznik samoczynny zabezpieczający przed zwarciami występującymi w obwodzie głównym",
+                "posiada wyłącznik samoczynny zabezpieczający przed zwarciami występującymi w obwodzie głównym",
                 "posiada ogranicznik napięcia zabezpieczający przed przepięciami"
             ],
             "correct": 0,
@@ -4094,7 +4094,7 @@
         {
             "question": "Sygnał Z1 oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
             "content": [
-                "Stój - koniec toru, stosowany jest wyłacznie na terenie otwartym, poza tunelem i stacjami metra",
+                "Stój - koniec toru, stosowany jest wyłącznie na terenie otwartym, poza tunelem i stacjami metra",
                 "Wykolejnica zdjeta z toru, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica sa dozwolone.",
                 "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
             ],
@@ -4202,6 +4202,55 @@
                 "instrukcja"
             ],
             "image": "./images/predkosc-restrykcyjna.png"
+        },
+        {
+            "question": "Rozkaz szczególny 'S' jest wydawany gdy pociag:",
+            "content": [
+                "Wykonuje pracę pociagu doświadczalnego",
+                "Powienien minać tarczę manewrową wskazującą sygnał 'STÓJ' lub sygnał wątpliwy",
+                "Powienien minać semafor wskazujący sygnał 'STÓJ' lub sygnał wątpliwy"
+            ],
+            "correct": 2,
+            "category": [
+                "instrukcja",
+                "sygnalizacja"
+            ]
+        },
+        {
+            "question": "Przejazd pociągów bez zatrzymania przy peronie bez konieczności powiadamiania prowadzących pociągi metra rozkazem szczególnym 'O' jest mozliwe:",
+            "content": [
+                "Na polecenie ustne wydane przez dyżurnego stacji na której nie zatrzymuje się pociąg",
+                "po zakończeniu przewozów pasażerskich i zamknięciu stacji",
+                "w dni świąteczne ze względu na mały ruch na linii"
+            ],
+            "correct": 1,
+            "category": [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "W przypadku pozyskania informacji o próbie wtargnięcia lub wtargnięciu osoby nieuprawnionej do kabiny pociągu, gdy pociag znajduje się w ruchu na szlaku należy:",
+            "content": [
+                "powiadomić dyspozytora ruchu o zdarzeniu i kontynuować jazdę do najbliższej stacji. Następnie sprawdzić kabine i uzgodnić z dyspozytorem ruchu dalsze postepowanie",
+                "powiadomic maszynistę instruktora o zdarzeniui kontynuowac jazde do najbliższej stacji. Nastepnie sprawdzić kabine i uzgodnic z instruktorem dalsze postępowanie",
+                "powiadomic przez rozgłoszenie osobę próbującą wtargnąc do kabiny lub osobe która jest w kabinie o powiadomieniu odpowiednich służb w celu przestraszenia i zniechęcenia przez niego podjetych czynności"
+            ],
+            "correct": 0,
+            "category": [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "Dopuszczalna prędkość jazdy na zalanym odcinku powinna być określona przez prowadzącego pociąg i nie może byc większa niż:",
+            "content": [
+                "15 km/h - gdy poziom wody sięga stopki szyny",
+                "35 km/h - gdy poziom wody sięga stopki szyny",
+                "35 km/h - gdy poziom wody sięga szyjki szyny"
+            ],
+            "correct": 1,
+            "category": [
+                "instrukcja"
+            ]
         }
     ]
 }
