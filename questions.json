@@ -2908,7 +2908,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr.png"
+            "image": "./images/wsr-s3.png"
         },
         {
             "question": "Wyświetlony piktogram (czerwony) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
@@ -2921,7 +2921,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr-c.png"
+            "image": "./images/wsr-s1.png"
         },
         {
             "question": "W przypadku wystąpienia błędu krytycznego ATP należy:",
@@ -3036,7 +3036,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr-z.png"
+            "image": "./images/wsr-s2.png"
         },
         {
             "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
@@ -4077,10 +4077,10 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wykolejnica-na-torze.png"
+            "image": "./images/wsk-Z1wk.png"
         },
         {
-            "question": "Sygnał Z1wk oznacza (czarna pionowa linia na tle białej okrągłej tarczy)",
+            "question": "Sygnał Z2wk oznacza (czarna pionowa linia na tle białej okrągłej tarczy)",
             "content": [
                 "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do wykolejnicy.",
                 "Wykolejnica zdjeta z toru, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica sa dozwolone.",
@@ -4090,7 +4090,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wykolejnica-zdjeta.png"
+            "image": "./images/wsk-Z2wk.png"
         },
         {
             "question": "Sygnał Z1 oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
@@ -4103,7 +4103,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wykolejnica-na-torze.png"
+            "image": "./images/wsk-Z1wk.png"
         },
         {
             "question": "Sygnał nadawany przez sygnalistę (zataczanie okręgów dostepnym przyborem sygnalizacyjnym)",
