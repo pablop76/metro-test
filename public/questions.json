@@ -1,11 +1,11 @@
 {
     "questions": [
         {
-            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trtzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
+            "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
             "content": [
-                "TRYB SIP JAZDY,",
-                "TRYB SIP SERWISOWY,",
-                "TRB SIP TECHNICZNY."
+                "TRYB SIP JAZDY",
+                "TRYB SIP SERWISOWY",
+                "TRB SIP TECHNICZNY"
             ],
             "correct": 2,
             "category": [
@@ -15,9 +15,9 @@
         {
             "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
             "content": [
-                "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP,",
-                "jest to przełacznik, który słuzy do wyłaczania terybu awaryjnego,",
-                "jest to przełącznik uruchamiajacy jazdę pociągu do tyłu."
+                "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP",
+                "jest to przełacznik, który słuzy do wyłaczania trybu awaryjnego",
+                "jest to przełącznik uruchamiajacy jazdę pociągu do tyłu"
             ],
             "correct": 0,
             "category": [
@@ -3429,7 +3429,7 @@
             "content": [
                 "podczas pierwszego przejazdu w obu kierunkach do 20 km/h",
                 "do 60 km/h w czasie opadów atmosferycznych",
-                "do 40 km/h przy jaddach z wyłączonymi urządzeniami aop"
+                "do 40 km/h przy jazdach z wyłączonymi urządzeniami aop"
             ],
             "correct": 0,
             "category": [
@@ -4129,6 +4129,91 @@
                 "sygnalizacja"
             ],
             "image": "./images/wm5.png"
+        },
+        {
+            "question": "Pierwszy przejazd po torze prób powinien:",
+            "content": 
+            [
+                "Odbywac się z predkością do 10 km/h w jednym kierunku",
+                "Odbywać się w obu kierunkach z prędkością do 20km/h",
+                "Odbywać się w obu kierunkach z prędkością do 30km/h"
+            ],
+            "correct": 1,
+            "category": 
+            [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "Tory szlaku granicznego pomiedzy linią metra a STP Kabaty należą do okregu nastawczego stacji:",
+            "content": 
+            [
+                "STP",
+                "A1 Kabaty",
+                "STP lub A1 Kabaty w zależności kto steruje ruchem na szlaku"
+            ],
+            "correct": 1,
+            "category": 
+            [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "Pociąg pogotowia jest to pociag uruchamiany:",
+            "content": 
+            [
+                "W celu realizacji potrzeb poszczególnych pionów eksploatacyjnych",
+                "W celu naprawy bieżącej infrastruktury metra",
+                "w sytuacji gdy prowadzący pociąg jest niezdatny do dalszej jazdy, a w kabinie nie ma drugiej osoby posiadającej uprawnienia do prowadzenia pociągow metra, a dyspozytor ruchu nie może wykorzystać urządzeń app do automatycznego doprowadzenia pociągu do najbliższej stacji"
+            ],
+            "correct": 2,
+            "category": 
+            [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "W przypadku powstania pożaru w jadącym pociągu prowadzący pociąg powinien:",
+            "content": 
+            [
+                "Zatrzymać się i jak najszybciej prosić o wyłączenie wysokiego napięcia a po otrzymaniu potwierdzenia oraz po zdalnym uszynieniu powiadomić pasażerów o kierunku ewakuacji",
+                "Zatrzymać się  i jak najszybciej prosić o wyłączenie wysokiego napiecia a po otrzymaniu potwierdzenia oraz po zdalnym uszynieniu oczekiwać na przybycie dyżurnego najbliższej stacji w celu szybkiego i sprawnego ewakuowania pasażerów z pociągu",
+                "dojechać do najbliższej stacji, jeśli tylko jest to możliwe, powiadomic o tym dyspozytora ruchu, wykorzystując system rozgłoszeniowych powiadomić pasażerów o zdarzeniu i przygotowaniu się do ewakuacji po dojechaniu na stację, a po dojeździe do peronu otworzyc drzwi i nakazać pasażerom natychmiast opuścić pociag "
+            ],
+            "correct": 2,
+            "category": 
+            [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "W przypadku braku sygnałów końca pociągu:",
+            "content": 
+            [
+                "należy kontynować jazdę i po zakończeni  dnia roboczegozjechać na stp w celu naprawy",
+                "pociąg należy wycofać z ruchu pasażerskiego na najbliższej stacji gdy prowadzący się o tym dowiedział/zobaczył",
+                "pociąg należy wycofać z ruchu pasażerskiego po dojechaniu do stacji końcowej"
+            ],
+            "correct": 2,
+            "category":
+            [
+                "instrukcja"
+            ]
+        },
+        {
+            "question": "Poniższe wskazania na panelu HMI lub DDU oznaczają:",
+            "content": 
+            [
+                "Prędkości restrykcyjne, po przekroczeniu których załączy sie hamulec służbowy od systemu ATO",
+                "Prędkości restrykcyjne, po przekroczeniu których załączy sie hamulec awaryjny od systemu ATO",
+                "Prędkości restrykcyjne, po przekroczeniu których załączy sie hamulec awaryjny od systemu ATP"
+            ],
+            "correct": 2,
+            "category": 
+            [
+                "instrukcja"
+            ]
         }
+
     ]
 }
