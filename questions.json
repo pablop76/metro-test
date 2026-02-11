@@ -850,7 +850,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik.png"
+            "image": "./images/wskazniki/wskaznik.png"
         },
         {
             "question": "Pojedynczy, nie zajęty odcinek izolowany którego obwód torowy wykazuje zajętość, można przejechać na widoczność z prędkością nie przekraczającą:",
@@ -1007,7 +1007,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image" :"./images/wsk-Wm18.png"
+            "image" :"./images/wskazniki/wsk-Wm18.png"
         },
         {
             "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  Em, Fm  i Gm  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
@@ -1116,7 +1116,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-W15.png"
+            "image": "./images/wskazniki/wsk-W15.png"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik oznacza",
@@ -1129,7 +1129,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-3.png"
+            "image": "./images/wskazniki/wskaznik-3.png"
         },
         {
             "question": "Zawracanie pociągu w miejscach, gdzie nie ma możliwości podania sygnałów na semaforach, odbywa się",
@@ -1215,7 +1215,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-4.png"
+            "image": "./images/wskazniki/wskaznik-4.png"
         },
         {
             "question": "Dźwiękowy sygnał 'Ode mnie' to",
@@ -1324,7 +1324,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-5.png"
+            "image": "./images/wskazniki/wskaznik-5.png"
         },
         {
             "question": "W celu lokalizacji wezwania pasażer – maszynista, należy w przełączyć Comet w położenie ",
@@ -1349,7 +1349,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-W5.png"
+            "image": "./images/wskazniki/wsk-W5.png"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik oznacza",
@@ -1362,7 +1362,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-7.png"
+            "image": "./images/wskazniki/wskaznik-7.png"
         },
         {
             "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
@@ -1387,7 +1387,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-8.png"
+            "image": "./images/wskazniki/wskaznik-8.png"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik oznacza:",
@@ -1400,7 +1400,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-9.png"
+            "image": "./images/wskazniki/wskaznik-9.png"
         },
         {
             "question": "Przedstawiony poniżej wskaźnik oznacza",
@@ -1413,7 +1413,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-10.png"
+            "image": "./images/wskazniki/wskaznik-10.png"
         },
         {
             "question": "Zawieszenie pierwszego stopnia w wagonach Metropolis realizowane jest ?",
@@ -1815,7 +1815,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-7.png"
+            "image": "./images/wskazniki/wskaznik-7.png"
         },
         {
             "question": "W przypadku uszkodzenia sprężarek na pociągu Metropolis",
@@ -2009,7 +2009,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wskaznik-11.png"
+            "image": "./images/wskazniki/wskaznik-11.png"
         },
         {
             "question": "Oznaczenie pociągu technicznego w rozkazie szczególnym jest",
@@ -2596,7 +2596,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/awaria-A.png"
+            "image": "./images/ikony-hmi-ddu/awaria-A.png"
         },
         {
             "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
@@ -2609,7 +2609,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/awaria-B.png"
+            "image": "./images/ikony-hmi-ddu/awaria-B.png"
         },
         {
             "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
@@ -2622,7 +2622,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/usterka-C.png"
+            "image": "./images/ikony-hmi-ddu/usterka-C.png"
         },
         {
             "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
@@ -2635,7 +2635,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/info-D.png"
+            "image": "./images/ikony-hmi-ddu/info-D.png"
         },
         {
             "question": "Opisz symbole",
@@ -2765,7 +2765,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/brak-transmisji.png"
+            "image": "./images/sop/brak-transmisji.png"
         },
         {
             "question": "Opisz symbole",
@@ -2778,7 +2778,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/brak-adresowania.png"
+            "image": "./images/sop/brak-adresowania.png"
         },
         {
             "question": "Opisz symbole",
@@ -2791,7 +2791,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/blad-transmisji.png"
+            "image": "./images/sop/blad-transmisji.png"
         },
         {
             "question": "Opisz symbole",
@@ -2817,7 +2817,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/usterka-trakcji.png"
+            "image": "./images/ikony-hmi-ddu/trakcja-usterka.png"
         },
         {
             "question": "Opisz symbole",
@@ -2830,7 +2830,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/drzwi-otwarte-wajcha.png"
+            "image": "./images/ikony-hmi-ddu/drzwi-otwarte-wajcha.png"
         },
         {
             "question": "Opisz symbole",
@@ -2908,7 +2908,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr-s3.png"
+            "image": "./images/sop/wsr-s3.png"
         },
         {
             "question": "Wyświetlony piktogram (czerwony) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
@@ -2921,7 +2921,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr-s1.png"
+            "image": "./images/sop/wsr-s1.png"
         },
         {
             "question": "W przypadku wystąpienia błędu krytycznego ATP należy:",
@@ -2946,7 +2946,7 @@
             "category": [
                 "sop"
             ],
-            "image": "./images/brak-transmisji-sop2.png"
+            "image": "./images/sop/brak-transmisji-sop2.png"
         },
         {
             "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
@@ -2984,7 +2984,7 @@
             "category": [
                 "sop"
             ],
-            "image": "./images/blad-krytyczny.png"
+            "image": "./images/sop/blad-krytyczny.png"
         },
         {
             "question": "Przedstawiony poniżej sygnał nadawany przez sygnalistę",
@@ -3023,7 +3023,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/atp-uszkodzone.png"
+            "image": "./images/sop/atp-uszkodzone.png"
         },
         {
             "question": "Wyświetlony piktogram na monitorze HMI pociągu INSPIRO (wyświetlacz wsr) oznacza",
@@ -3036,7 +3036,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/wsr-s2.png"
+            "image": "./images/sop/wsr-s2.png"
         },
         {
             "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
@@ -3049,7 +3049,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/awaryjny-sop.png"
+            "image": "./images/sop/awaryjny-sop.png"
         },
         {
             "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
@@ -3062,20 +3062,7 @@
             "category": [
                 "inspiro"
             ],
-            "image": "./images/ato-uszkodzone.png"
-        },
-        {
-            "question": "Jakie są wskazania na ekranie HMI gdy system ATO jest nizorientowany?",
-            "content": [
-                "brak predkości kontrolowanej Vk",
-                "brak sytuacji ruchowej na linijce WSR",
-                "brak mapy ATO"
-            ],
-            "correct": 2,
-            "category": [
-                "linia2",
-                "sop"
-            ]
+            "image": "./images/sop/ato-uszkodzone.png"
         },
         {
             "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załączenie napędu przez maszynistę?",
@@ -3326,22 +3313,7 @@
             "category": [
                 "linia2"
             ]
-        },
-        {
-            "question": "Jaki warunek musi być spełniony na M2, żeby SOP-3 zezwolił dojechać do semafora wskazującego sygnał 'S1-stój', za którym znajduje się rozjazd, z prędkością Vk>0?",
-            "content": [
-                "droga przebiegu za semaforem ułozona w tor do zmiany kierunku",
-                "droga przebiegu utwierdzona na wprost i jeden odcinek aop za semaforem wolny",
-                "droga przebiegu utwierdzona na wprost i dwa odcinki aop za semaforem wolne"
-            ],
-            "correct": 2,
-            "category": [
-                "linia2",
-                "sop",
-                "sygnalizacja"
-            ]
-        },
-        {
+        },{
             "question": "Przejazd pociągu przez stacje bez zatrzymania bez roskazu szczególnego 'O' może odbywac się",
             "content": [
                 "zawsze, bez wyjątku odbywa się na podstawie rozkazu szczególnego 'O'",
@@ -3628,7 +3600,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-Wm30.png"
+            "image": "./images/wskazniki/wsk-Wm30.png"
         },
         {
             "question": "jaki sygnał lub wskazanie semafora uznajemy za sygnał wątpliwy?",
@@ -4077,7 +4049,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-Z1wk.png"
+            "image": "./images/wskazniki/wsk-Z1wk.png"
         },
         {
             "question": "Sygnał Z2wk oznacza (czarna pionowa linia na tle białej okrągłej tarczy)",
@@ -4090,7 +4062,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-Z2wk.png"
+            "image": "./images/wskazniki/wsk-Z2wk.png"
         },
         {
             "question": "Sygnał Z1 oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
@@ -4103,7 +4075,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-Z1wk.png"
+            "image": "./images/wskazniki/wsk-Z1wk.png"
         },
         {
             "question": "Sygnał nadawany przez sygnalistę (zataczanie okręgów dostepnym przyborem sygnalizacyjnym)",
@@ -4129,7 +4101,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image": "./images/wsk-Wm5.png"
+            "image": "./images/wskazniki/wsk-Wm5.png"
         },
         {
             "question": "Pierwszy przejazd po torze prób powinien:",
