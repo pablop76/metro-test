@@ -2292,7 +2292,8 @@
             "correct": 0,
             "category": [
                 "sop"
-            ]
+            ],
+            "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png"
         },
         {
             "question": "W którym kroku autotestu w pociągu INSPIRO testowane są drzwi?",
