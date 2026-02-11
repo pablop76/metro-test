@@ -2959,7 +2959,8 @@
             "category": [
                 "linia2",
                 "sop"
-            ]
+            ],
+            "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png"
         },
         {
             "question": "Czym skutkuje nie nacisnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
