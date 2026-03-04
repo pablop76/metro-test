@@ -14,7 +14,7 @@ Każde pytanie ma postać (przykład):
   "content": ["Odpowiedź A", "Odpowiedź B", "Odpowiedź C"],
   "correct": 0,
   "image": "./images/przyklad.png",
-  "category": ["inspiro", "sop"]
+  "category": ["inspiro", "skoda", "metropolis", "sop", "sygnalizacja", "instrukcja", "linia2", "81"]
 }
 ```
 
