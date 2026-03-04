@@ -1,18 +1,12 @@
 # Aplikacja "Quiz" — Testy okresowe na stanowisku maszynisty metra
 
-* [DEMO](https://pablop76.github.io/metro-test/)
+Demo: https://pablop76.github.io/metro-test/
 
-## Template
-
-![template app](./template.png)
-
-## Technologie
-
-* React, Tailwind CSS, Craco
+## Krótko
+Projekt to prosty quiz w React (Create React App + Craco) z Tailwind CSS. Pytania znajdują się w `public/questions.json`.
 
 ## Struktura danych
-
-Pytania przechowywane są w pliku `public/questions.json` w jednej tablicy `questions`. Każde pytanie ma strukturę:
+Każde pytanie ma postać (przykład):
 
 ```json
 {
@@ -24,44 +18,64 @@ Pytania przechowywane są w pliku `public/questions.json` w jednej tablicy `ques
 }
 ```
 
-| Pole | Opis |
-|------|------|
-| `question` | Treść pytania |
-| `content` | Tablica 3 odpowiedzi |
-| `correct` | Indeks poprawnej odpowiedzi (0, 1 lub 2) |
-| `image` | Ścieżka do obrazka (opcjonalne) |
-| `category` | **Tablica kategorii** — pytanie może należeć do wielu kategorii |
+- `question`: treść pytania
+- `content`: tablica odpowiedzi
+- `correct`: indeks poprawnej odpowiedzi (0|1|2)
+- `image`: opcjonalna ścieżka do obrazka
+- `category`: tablica kluczy kategorii (pytanie może mieć wiele kategorii)
 
-### Kategorie
+## Kategorie i liczby (stan na teraz)
+- `all` (wszystkie): 343
+- `inspiro`: 74
+- `skoda`: 51
+- `metropolis`: 57
+- `sop`: 45
+- `sygnalizacja`: 61
+- `instrukcja`: 90
+- `linia2`: 14
 
-| Klucz | Opis | Pytania |
-|-------|------|---------|
-| `inspiro` | Pociągi Inspiro | 74 |
-| `skoda` | Pociągi Śkoda / Varsovia | 51 |
-| `metropolis` | Pociągi Metropolis | 57 |
-| `sop` | System SOP (ATP/ATO) | 46 |
-| `sygnalizacja` | Semafory, wskaźniki, sygnały | 61 |
-| `instrukcja` | Przepisy, procedury, rozkazy | 80 |
-| `linia2` | Specyfika linii M2 | 16 |
+UWAGA: istnieje specjalna, bonusowa kategoria o kluczu `81` — `"Bonus - seria 81"`. Pytania oznaczone `81` są traktowane oddzielnie i domyślnie nie wchodzą do puli `all`.
 
-Łącznie **335 unikalnych pytań**. Pytanie może należeć do wielu kategorii jednocześnie (np. pytanie o SOP-3 w pociągu Inspiro → `["inspiro", "sop"]`).
+## Multi-wybór kategorii
+Interfejs pozwala zaznaczać wiele kategorii jednocześnie (checkbox). Aplikacja przy wyborze wielu kategorii korzysta z unii pytań (unikalnych), aby uniknąć duplikatów — czyli wyświetlany licznik pokazuje liczbę unikalnych pytań dla zaznaczonych kategorii.
 
-### Dodawanie nowej kategorii
+Jeśli chcesz policzyć sumę limitów kategorii z duplikatami (np. zsumować wszystkie liczniki kategorii bez usuwania powtórzeń), użyj skryptu poniżej.
 
-1. Dodaj klucz do `CATEGORIES` w `src/App.js`
-2. Dodaj pytania z nową kategorią w tablicy `category` w `questions.json`
+## Narzędzie do liczenia kategorii
+W repo znajduje się prosty skrypt `scripts/count_categories.js`, który wypisuje liczniki dla każdej kategorii oraz sumy. Uruchom:
 
-## Praca z projektem
+```bash
+node scripts/count_categories.js
+```
+
+## Uruchomienie lokalne
 
 ```bash
 npm install
 npm start
 ```
 
-## Deploy
+Jeśli port 3000 jest zajęty, CRA zaproponuje inny port.
+
+## Deploy na GitHub Pages
+
+Projekt korzysta z pakietu `gh-pages`. Aby zbudować i opublikować stronę:
 
 ```bash
+npm run build
 npm run deploy
 ```
 
-Wymaga w `package.json`: `"homepage": "https://pablop76.github.io/metro-test"`
+W `package.json` powinna być ustawiona właściwość `homepage` na `https://pablop76.github.io/metro-test`.
+
+## Git — commit i push
+Po edycji `README.md` lub innych plików:
+
+```bash
+git add README.md
+git commit -m "Update README: usage, deploy, categories"
+git push origin main
+```
+
+---
+Jeśli chcesz, dopiszę krótką sekcję z listą zmian (changelog) dotyczącą ostatnich modyfikacji: multi-wybór kategorii oraz obsługa kategorii bonusowej `81`.
