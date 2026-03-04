@@ -206,7 +206,22 @@ function App() {
       return cats.includes(test);
     });
 
-    if (filtered.length === 0) return;
+    if (filtered.length === 0) {
+      // If no questions match the selected categories, clear the current test
+      // so we don't keep showing the previous question pool.
+      setCurrentTest([]);
+      setMaxQuestions(0);
+      setCorectAnswers(0);
+      setInCorrectAnswers(0);
+      setCurrentQuestion(0);
+      setEndTest(false);
+      setDangerAlert(false);
+      setSuccesAlert(false);
+      setIsDisabled(false);
+      setWrongAnswers([]);
+      setShowWrongAnswers(false);
+      return;
+    }
 
     const drawData = draw(filtered, filtered.length);
     if (drawData) {
