@@ -39,16 +39,6 @@ Wszystkie dostępne klucze kategorii (przykładowy opis):
 | `81` | Bonus — "Bonus - seria 81" (oddzielna kategoria, nie domyślnie w `all`) |
 
 
-## Kategorie i liczby (stan na teraz)
-- `all` (wszystkie): 343
-- `inspiro`: 74
-- `skoda`: 51
-- `metropolis`: 57
-- `sop`: 45
-- `sygnalizacja`: 61
-- `instrukcja`: 90
-- `linia2`: 14
-
 UWAGA: istnieje specjalna, bonusowa kategoria o kluczu `81` — `"Bonus - seria 81"`. Pytania oznaczone `81` są traktowane oddzielnie i domyślnie nie wchodzą do puli `all`.
 
 ## Multi-wybór kategorii
