@@ -24,6 +24,21 @@ Każde pytanie ma postać (przykład):
 - `image`: opcjonalna ścieżka do obrazka
 - `category`: tablica kluczy kategorii (pytanie może mieć wiele kategorii)
 
+Wszystkie dostępne klucze kategorii (przykładowy opis):
+
+| Klucz | Opis |
+|-------|------|
+| `all` | Wszystkie pytania (domyślna pula; nie zawiera pytań oznaczonych `81`) |
+| `inspiro` | Pytania dotyczące pociągów Inspiro |
+| `skoda` | Pytania dotyczące pociągów Škoda / Varsovia |
+| `metropolis` | Pytania dotyczące pociągów Metropolis |
+| `sop` | Systemy SOP / ATP / ATO, bezpieczeństwo ruchu |
+| `sygnalizacja` | Semafory, wskaźniki, sygnały i schematy sygnalizacji |
+| `instrukcja` | Przepisy, procedury i instrukcje obsługi |
+| `linia2` | Specyfika i zasady dla linii M2 |
+| `81` | Bonus — "Bonus - seria 81" (oddzielna kategoria, nie domyślnie w `all`) |
+
+
 ## Kategorie i liczby (stan na teraz)
 - `all` (wszystkie): 343
 - `inspiro`: 74
