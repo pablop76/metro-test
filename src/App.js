@@ -158,12 +158,19 @@ function App() {
         const data = await response.json();
         const questions = data.questions || [];
         if (questions.length === 0) return;
-        setAllQuestions(questions);
+
+        // Normalizuj kategorie: wszystkie klucze jako stringi
+        const normalized = questions.map((q) => {
+          const cats = Array.isArray(q.category) ? q.category : [q.category];
+          return { ...q, category: cats.map((c) => String(c)) };
+        });
+
+        setAllQuestions(normalized);
 
         // Oblicz limity dla każdej kategorii
         // Pytania oznaczone kategorią '81' liczymy tylko w tej kategorii
         const limits = { all: 0 };
-        questions.forEach((q) => {
+        normalized.forEach((q) => {
           const cats = Array.isArray(q.category) ? q.category : [q.category];
           if (cats.includes("81")) {
             limits["81"] = (limits["81"] || 0) + 1;
