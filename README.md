@@ -71,7 +71,13 @@ npm run build
 npm run deploy
 ```
 
-W `package.json` powinna być ustawiona właściwość `homepage` na `https://pablop76.github.io/metro-test`.
+**WAŻNE:** aby `gh-pages` poprawnie opublikowało aplikację i aby ścieżki do zasobów działały, w `package.json` musi być ustawione pole:
+
+```json
+"homepage": "https://pablop76.github.io/metro-test"
+```
+
+Bez tego opublikowana strona może mieć błędne odnośniki do plików CSS/JS i nie działać spod ścieżki `/metro-test/`.
 
 ## Git — commit i push
 Po edycji `README.md` lub innych plików:
