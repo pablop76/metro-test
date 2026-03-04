@@ -1007,7 +1007,7 @@
             "category": [
                 "sygnalizacja"
             ],
-            "image" :"./images/wskazniki/wsk-Wm18.png"
+            "image": "./images/wskazniki/wsk-Wm18.png"
         },
         {
             "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  Em, Fm  i Gm  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
@@ -3315,7 +3315,8 @@
             "category": [
                 "linia2"
             ]
-        },{
+        },
+        {
             "question": "Przejazd pociągu przez stacje bez zatrzymania bez roskazu szczególnego 'O' może odbywac się",
             "content": [
                 "zawsze, bez wyjątku odbywa się na podstawie rozkazu szczególnego 'O'",
@@ -4161,7 +4162,7 @@
                 "pociąg należy wycofać z ruchu pasażerskiego po dojechaniu do stacji końcowej"
             ],
             "correct": 2,
-            "category":[
+            "category": [
                 "instrukcja"
             ]
         },
