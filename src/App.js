@@ -1,19 +1,19 @@
-import Header from "./components/header/Header";
-import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
+import { useEffect, useRef, useState } from "react";
+import "./App.css";
 import DangerAlert from "./components/alerts/DangerAlert";
-import SuccesAlert from "./components/alerts/SuccesAlert";
 import EndTestAlert from "./components/alerts/EndTestAlert";
-import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
-import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
-import Quiz from "./components/quiz/Quiz.js";
+import StartModal from "./components/alerts/StartModal";
+import SuccesAlert from "./components/alerts/SuccesAlert";
 import ChoiceTest from "./components/choiceTest/ChoiceTest";
 import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
+import Quiz from "./components/quiz/Quiz.js";
+import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
+import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
-import { useEffect, useState } from "react";
-import "./App.css";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
-import StartModal from "./components/alerts/StartModal";
 
 // Losowanie pytań od 0 do długość tablicy
 const draw = (arr, counter) => {
@@ -63,7 +63,13 @@ function App() {
   // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
-  const [open, setModal] = useState("block");
+  const [modal, setModal] = useState("start");
+  
+  const [isManualLimit, setIsManualLimit] = useState(false);
+  const [fullFilteredLength, setFullFilteredLength] = useState(0);
+  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
+  const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
+
   // ustawienie tematu testu (wielokrotny wybór)
   const handleTest = (e) => {
     const value = e.target.value;
@@ -82,22 +88,28 @@ function App() {
     setModal("none");
   };
 
-  const sound = new Audio(oklaski);
-  const sound2 = new Audio(smiech);
+  const sound = useRef(typeof Audio !== "undefined" ? new Audio(oklaski) : null);
+  const sound2 = useRef(typeof Audio !== "undefined" ? new Audio(smiech) : null);
 
-  const answerChange = (answerUser, el) => {
+  const answerChange = (answerUser) => {
     if (currentQuestion >= maxQuestions + 1) return;
     setIsDisabled(true);
-    let answerDiv = el.currentTarget;
+    setSelectedAnswerIndex(answerUser);
 
     if (answerUser === currentTest[currentQuestion].correct) {
-      if (audio) sound.play();
+      if (audio && sound.current) {
+        sound.current.currentTime = 0;
+        sound.current.play();
+      }
       setCorectAnswers(correctAnswers + 1);
-      answerDiv.classList.add("current");
+      setIsAnswerCorrect(true);
       setSuccesAlert(true);
     } else {
-      if (audio) sound2.play();
-      answerDiv.classList.add("wrong");
+      if (audio && sound2.current) {
+        sound2.current.currentTime = 0;
+        sound2.current.play();
+      }
+      setIsAnswerCorrect(false);
       setDangerAlert(true);
       if (inCorrectAnswers + correctAnswers < maxQuestions) {
         setInCorrectAnswers(inCorrectAnswers + 1);
@@ -119,15 +131,17 @@ function App() {
       return;
     }
     setCurrentQuestion(currentQuestion + 1);
-    document.querySelector(".wrong")?.classList.remove("wrong");
-    document.querySelector(".current")?.classList.remove("current");
+    setSelectedAnswerIndex(null);
+    setIsAnswerCorrect(null);
     setDangerAlert(false);
     setSuccesAlert(false);
     setIsDisabled(false);
   };
 
   const handleChangeLimit = (event) => {
+    setIsManualLimit(true);
     let { value, min, max } = event.target;
+    // max bazuje teraz poprawnie na limitach wewn. eventu (tzn. input limitowany do max poolSize w LimitOfquestions)
     value = Math.max(Number(min), Math.min(Number(max), Number(value)));
     if (value === 0) {
       setMaxQuestions("");
@@ -223,15 +237,18 @@ function App() {
       return;
     }
 
-    // Respect user-set `maxQuestions` when drawing the test pool.
+    // Always reset to the full filtered pool when categories change.
     const poolSize = filtered.length;
-    let requested = Number(maxQuestions);
-    if (!requested || requested <= 0 || isNaN(requested)) requested = poolSize;
-    if (requested > poolSize) requested = poolSize;
-    const drawData = draw(filtered, requested);
+    setFullFilteredLength(poolSize);
+    const drawData = draw(filtered, poolSize);
     if (drawData) {
       setCurrentTest(drawData);
-      setMaxQuestions(requested);
+      setMaxQuestions(prev => {
+        if (isManualLimit && prev !== "" && prev !== null) {
+          return Math.min(prev, poolSize);
+        }
+        return poolSize;
+      });
       setCorectAnswers(0);
       setInCorrectAnswers(0);
       setCurrentQuestion(0);
@@ -246,18 +263,19 @@ function App() {
 
   return (
     <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50">
-      <StartModal handleModal={handleModal} open={open} />
+      <StartModal handleModal={handleModal} open={modal} />
       <Header />
       <div className="flex justify-center">
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
         <Refresh refreshPage={refreshPage} />
       </div>
-      <div className="flex justify-center text-white flex-wrap bg-overlay-top flex-grow">
-        <div className="text-center">
+      <div className="flex justify-center flex-grow p-4">
+        <div className="glass-card w-full max-w-2xl p-6 text-center">
           <LimitOfquestions
             handleChangeLimit={handleChangeLimit}
             maxQuestions={maxQuestions}
             currentTest={currentTest}
+            poolSize={fullFilteredLength}
           >
             <ChoiceTest
               handleTest={handleTest}
@@ -276,86 +294,106 @@ function App() {
           currentQuestion={currentQuestion}
           answerChange={answerChange}
           isDisabled={isDisabled}
+          selectedAnswerIndex={selectedAnswerIndex}
+          isAnswerCorrect={isAnswerCorrect}
         >
-          {dangerAlert ? (
+          {dangerAlert && (
             <DangerAlert
               answers={currentTest[currentQuestion].content}
               corectAnswer={currentTest[currentQuestion].correct}
               nextQuestion={nextQuestion}
             />
-          ) : (
-            ""
           )}
-          {succesAlert ? <SuccesAlert nextQuestion={nextQuestion} /> : ""}
-          {endTest ? (
+          {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
+          {endTest && (
             <EndTestAlert
               correctAnswers={correctAnswers}
               inCorrectAnswers={inCorrectAnswers}
               maxQuestions={maxQuestions}
               colorSend={colorSend}
             >
-              <div className={"mx-auto"}>
-                <Refresh refreshPage={refreshPage} />
+              <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
+                <button
+                  style={{
+                    padding: "10px 16px",
+                    background: "rgba(255,255,255,0.1)",
+                    border: "1px solid rgba(255,255,255,0.2)",
+                    borderRadius: "12px",
+                    color: "white",
+                    fontWeight: 600,
+                    cursor: "pointer"
+                  }}
+                  onClick={refreshPage}
+                >
+                  Spróbuj ponownie
+                </button>
+                <button
+                  style={{
+                    padding: "10px 16px",
+                    background: "linear-gradient(135deg, #3b82f6, #2563eb)",
+                    border: "none",
+                    borderRadius: "12px",
+                    color: "white",
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    whiteSpace: "nowrap"
+                  }}
+                  onClick={() => {
+                    setShowWrongAnswers(true);
+                    setEndTest(false);
+                  }}
+                >
+                  Pokaż błędy
+                </button>
               </div>
-              <button
-                className={
-                  "bg-blue-700 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded"
-                }
-                onClick={() => {
-                  setShowWrongAnswers(true);
-                  setEndTest(false);
-                }}
-              >
-                Pokaż błędne odpowiedzi
-              </button>
             </EndTestAlert>
-          ) : (
-            ""
+          )}
+
+          {/* Progress Bar & Stats */}
+          {!endTest && maxQuestions > 0 && !showWrongAnswers && (
+            <>
+              <div className="progress-container w-full max-w-md mx-auto px-4 mt-6">
+                <div className="progress-bar-bg">
+                  <div 
+                    className="progress-bar-fill" 
+                    style={{ width: `${((correctAnswers + inCorrectAnswers) / maxQuestions) * 100}%` }}
+                  ></div>
+                </div>
+                <div className="flex justify-between items-center mt-2 text-sm text-gray-300 font-medium">
+                  <span>Pytanie {Math.min(correctAnswers + inCorrectAnswers + 1, maxQuestions)} z {maxQuestions}</span>
+                  <span>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</span>
+                </div>
+              </div>
+
+              <div className="stats-row text-white glass-card">
+                <div className="stat-item stat-correct" title="Poprawne">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  {correctAnswers}
+                </div>
+                <div className="w-px h-8 bg-gray-500 opacity-50"></div>
+                <div className="donut-chart" style={{ width: '60px', height: '60px', margin: '0' }}>
+                  <svg width="60" height="60" viewBox="0 0 60 60">
+                    <circle cx="30" cy="30" r="24" stroke="rgba(255,255,255,0.15)" strokeWidth="6" fill="none" />
+                    <circle 
+                      cx="30" cy="30" r="24" 
+                      stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : (correctAnswers > 0 ? "#f59e0b" : "transparent")} 
+                      strokeWidth="6" fill="none" strokeLinecap="round" 
+                      strokeDasharray={`${(Math.round((correctAnswers / maxQuestions) * 100) / 100) * 150} 150`}
+                    />
+                  </svg>
+                  <div className="donut-label" style={{ fontSize: '14px' }}>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</div>
+                </div>
+                <div className="w-px h-8 bg-gray-500 opacity-50"></div>
+                <div className="stat-item stat-incorrect" title="Błędne">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  {inCorrectAnswers}
+                </div>
+              </div>
+            </>
           )}
         </Quiz>
       )}
-      <div className="flex justify-center p-5 text-2xl bg-blue-800 text-white rounded-full max-w-xs mx-auto m-5">
-        odpowiedzi {correctAnswers + inCorrectAnswers} / {maxQuestions}
-      </div>
-      <div className="flex items-center justify-center text-3xl bg-white rounded-full w-auto p-2 m-5 mx-auto">
-        <span style={{ color: "green", display: "flex", alignItems: "center" }}>
-          <svg
-            className="h-8 w-8 text-green-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"
-            />
-          </svg>
-          {correctAnswers}:
-        </span>
-        <span style={{ color: "red", display: "flex", alignItems: "center" }}>
-          {inCorrectAnswers}
-          <svg
-            className="h-8 w-8 text-red-500"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M10 14H5.236a2 2 0 01-1.789-2.894l3.5-7A2 2 0 018.736 3h4.018a2 2 0 01.485.06l3.76.94m-7 10v5a2 2 0 002 2h.096c.5 0 .905-.405.905-.904 0-.715.211-1.413.608-2.008L17 13V4m-7 10h2m5-10h2a2 2 0 012 2v6a2 2 0 01-2 2h-2.5"
-            />
-          </svg>
-        </span>
-      </div>
-      <div
-        className={`flex items-baseline justify-center text-4xl ${colorSend} text-white rounded-full w-32 m-5 mx-auto p-2`}
-      >
-        {maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : ""}%
-      </div>
+      {/* Usunięto stare liczniki, zostały zastąpione przez Progress Bar wyżej */}
       <Footer />
     </div>
   );

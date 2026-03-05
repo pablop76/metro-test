@@ -1,9 +1,9 @@
 const ChoiceTest = (props) => {
   const { handleTest, test, categories, categoryLimits } = props;
   return (
-    <form className="mt-4">
-      <span className="text-yellow-400 text-xl">Wybór zakresu pytań:</span>
-      <div className="mt-2 flex flex-wrap justify-center gap-2">
+    <div className="mt-5">
+      <p className="text-yellow-400 text-lg font-semibold mb-3">Wybór zakresu pytań:</p>
+      <div className="flex flex-wrap justify-center gap-2">
         {Object.entries(categories)
           .sort(([aKey], [bKey]) => {
             if (aKey === "81") return 1;
@@ -12,26 +12,27 @@ const ChoiceTest = (props) => {
           })
           .map(([key, label]) => {
             const is81 = key === "81";
-            const labelClass = is81 ? "inline-flex items-center ml-3 text-gray-300" : "inline-flex items-center ml-3";
-            const inputClass = is81 ? "form-checkbox text-gray-300" : "form-checkbox";
+            const isActive = Array.isArray(test) ? test.includes(key) : test === key;
+            let pillClass = "category-pill";
+            if (isActive) {
+              pillClass += is81 ? " active-bonus" : " active";
+            }
             return (
-              <label key={key} className={labelClass}>
+              <label key={key} className={pillClass}>
                 <input
                   type="checkbox"
-                  className={inputClass}
                   name="choiceTest"
                   value={key}
-                  checked={Array.isArray(test) ? test.includes(key) : test === key}
+                  checked={isActive}
                   onChange={handleTest}
                 />
-                <span className="ml-2">
-                  {label} ({categoryLimits[key] || 0})
-                </span>
+                {label}
+                <span className="pill-count">{categoryLimits[key] || 0}</span>
               </label>
             );
           })}
       </div>
-    </form>
+    </div>
   );
 };
 

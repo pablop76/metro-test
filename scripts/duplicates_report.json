@@ -1,0 +1,109 @@
+{
+  "totalQuestions": 343,
+  "duplicateGroups": 10,
+  "groups": [
+    {
+      "text": "po utracie kontroli drzwi w pociągu typu varsovia (podczas rozruchu vr < 5 km/h)",
+      "count": 2,
+      "indices": [
+        34,
+        57
+      ]
+    },
+    {
+      "text": "przedstawiony poniżej wskaźnik oznacza",
+      "count": 7,
+      "indices": [
+        68,
+        90,
+        91,
+        109,
+        110,
+        114,
+        163
+      ]
+    },
+    {
+      "text": "przedstawiony poniżej wskaźnik oznacza:",
+      "count": 2,
+      "indices": [
+        107,
+        113
+      ]
+    },
+    {
+      "text": "przełącznik pożar na pulpicie w kabinie inspiro",
+      "count": 2,
+      "indices": [
+        128,
+        304
+      ]
+    },
+    {
+      "text": "co oznacza dźwiękowy sygnał rp1 - jeden długi ton",
+      "count": 2,
+      "indices": [
+        203,
+        327
+      ]
+    },
+    {
+      "text": "co oznacza wolno migająca lampka „autostart” w trybie ta?",
+      "count": 2,
+      "indices": [
+        206,
+        324
+      ]
+    },
+    {
+      "text": "opisz zakresową klasyfikację błedów pociągi inspiro",
+      "count": 4,
+      "indices": [
+        211,
+        212,
+        213,
+        214
+      ]
+    },
+    {
+      "text": "opisz symbole",
+      "count": 17,
+      "indices": [
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231
+      ]
+    },
+    {
+      "text": "nadawany przez sygnalistę sygnał ręczny oznacza",
+      "count": 2,
+      "indices": [
+        232,
+        233
+      ]
+    },
+    {
+      "text": "wyświetlany piktogram na monitorze hmi pociągu inspiro oznacza",
+      "count": 3,
+      "indices": [
+        244,
+        246,
+        247
+      ]
+    }
+  ]
+}
