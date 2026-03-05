@@ -223,10 +223,15 @@ function App() {
       return;
     }
 
-    const drawData = draw(filtered, filtered.length);
+    // Respect user-set `maxQuestions` when drawing the test pool.
+    const poolSize = filtered.length;
+    let requested = Number(maxQuestions);
+    if (!requested || requested <= 0 || isNaN(requested)) requested = poolSize;
+    if (requested > poolSize) requested = poolSize;
+    const drawData = draw(filtered, requested);
     if (drawData) {
       setCurrentTest(drawData);
-      setMaxQuestions(drawData.length);
+      setMaxQuestions(requested);
       setCorectAnswers(0);
       setInCorrectAnswers(0);
       setCurrentQuestion(0);
