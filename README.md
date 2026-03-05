@@ -1,9 +1,11 @@
 # Aplikacja "Quiz" — Testy okresowe na stanowisku maszynisty metra
 
-Demo: https://pablop76.github.io/metro-test/
+Demo online: https://pablop76.github.io/metro-test/
+
+![Ostatnia aktualizacja (Glassmorphism)](./public/demo.png)
 
 ## Krótko
-Projekt to prosty quiz w React (Create React App + Craco) z Tailwind CSS. Pytania znajdują się w `public/questions.json`.
+Projekt to aplikacja quizowa w React (Create React App + Craco). Ostatnia wersja wprowadza unikalny design typu **Glassmorphism**, wsparcie paska postępów gradientowych i w pełni dynamicznych odznak wyboru. Treść pytań bazuje na `public/questions.json`.
 
 ## Struktura danych
 Każde pytanie ma postać (przykład):
