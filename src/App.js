@@ -168,6 +168,32 @@ function App() {
     window.location.reload(false);
   };
 
+  const startMistakesReview = () => {
+    if (wrongAnswers.length === 0) return;
+    
+    // Create a new pool from wrong answers
+    const pool = [...wrongAnswers];
+    const poolSize = pool.length;
+    
+    setFullFilteredLength(poolSize);
+    const drawData = draw(pool, poolSize); // Or just use pool if we want to keep original order, but draw is safer/consistent
+    
+    if (drawData) {
+      setCurrentTest(drawData);
+      setMaxQuestions(poolSize);
+      setCorectAnswers(0);
+      setInCorrectAnswers(0);
+      setCurrentQuestion(0);
+      setEndTest(false);
+      setDangerAlert(false);
+      setSuccesAlert(false);
+      setIsDisabled(false);
+      setWrongAnswers([]); // Reset wrong answers for the new "mistakes review" session
+      setShowWrongAnswers(false);
+    }
+  };
+
+
   let colorSend = (() => {
     if (Math.round((correctAnswers / maxQuestions) * 100) >= 75) {
       return "bg-green-700";
@@ -298,7 +324,7 @@ function App() {
         </div>
       </div>
       {showWrongAnswers ? (
-        <WrongAnswers wrongAnswers={wrongAnswers} />
+        <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : (
         <>
           <Quiz
@@ -324,8 +350,9 @@ function App() {
               maxQuestions={maxQuestions}
               colorSend={colorSend}
             >
-              <div style={{ display: "flex", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
+              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
                 <button
+                  className="results-btn retry"
                   style={{
                     padding: "10px 16px",
                     background: "rgba(255,255,255,0.1)",
@@ -340,6 +367,7 @@ function App() {
                   Spróbuj ponownie
                 </button>
                 <button
+                  className="results-btn mistakes"
                   style={{
                     padding: "10px 16px",
                     background: "linear-gradient(135deg, #3b82f6, #2563eb)",
@@ -357,6 +385,24 @@ function App() {
                 >
                   Pokaż błędy
                 </button>
+                {wrongAnswers.length > 0 && (
+                  <button
+                    className="results-btn review-mistakes"
+                    style={{
+                      padding: "10px 16px",
+                      background: "linear-gradient(135deg, #f59e0b, #d97706)",
+                      border: "none",
+                      borderRadius: "12px",
+                      color: "white",
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      whiteSpace: "nowrap"
+                    }}
+                    onClick={startMistakesReview}
+                  >
+                    Powtórz tylko błędy
+                  </button>
+                )}
               </div>
             </EndTestAlert>
           )}
@@ -411,5 +457,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

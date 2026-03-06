@@ -26,15 +26,35 @@ const WrongAnswers = (props) => {
 
   return (
     <div className="wrong-answers-container">
-      {wrongAnswers.length ? (
-        <h2 style={{ fontSize: '22px', color: '#f87171', fontWeight: 700, marginBottom: '16px' }}>
-          ✗ Błędne odpowiedzi
-        </h2>
-      ) : (
-        <h2 style={{ fontSize: '22px', color: '#4ade80', fontWeight: 700, marginBottom: '16px' }}>
-          ✓ Wszystkie odpowiedzi prawidłowe. GRATULACJE!!!
-        </h2>
-      )}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
+        {wrongAnswers.length ? (
+          <h2 style={{ fontSize: '22px', color: '#f87171', fontWeight: 700, margin: 0 }}>
+            ✗ Błędne odpowiedzi
+          </h2>
+        ) : (
+          <h2 style={{ fontSize: '22px', color: '#4ade80', fontWeight: 700, margin: 0 }}>
+            ✓ Wszystkie odpowiedzi prawidłowe
+          </h2>
+        )}
+        
+        {wrongAnswers.length > 0 && (
+          <button
+            onClick={props.startMistakesReview}
+            style={{
+              padding: "10px 20px",
+              background: "linear-gradient(135deg, #f59e0b, #d97706)",
+              border: "none",
+              borderRadius: "12px",
+              color: "white",
+              fontWeight: 600,
+              cursor: "pointer",
+              boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+            }}
+          >
+            Powtórz tylko te błędy
+          </button>
+        )}
+      </div>
       <ol style={{ listStyle: 'none', padding: 0 }}>{items}</ol>
     </div>
   );
