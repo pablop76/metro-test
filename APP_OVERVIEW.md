@@ -121,12 +121,19 @@ npm run build      # buduje paczkę produkcyjną pod /build
 
 Ta dokumentacja powinna pomóc w orientacji w strukturze aplikacji i jej działaniu. W razie zmiany kontekstu odwołuj się do tego pliku przy modyfikacjach lub refaktoryzacji.
 
-Deploy na GitHub Pages
-Projekt korzysta z pakietu gh-pages. Aby zbudować i opublikować stronę:
+## Deploy na GitHub Pages
 
+Projekt korzysta z pakietu `gh-pages`. Aby zbudować i opublikować stronę:
+
+```bash
 npm run build
 npm run deploy
-WAŻNE: aby gh-pages poprawnie opublikowało aplikację i aby ścieżki do zasobów działały, w package.json musi być ustawione pole:
+```
 
+Wazne: aby `gh-pages` poprawnie opublikowalo aplikacje i aby sciezki do zasobow dzialaly, w `package.json` musi byc ustawione pole:
+
+```json
 "homepage": "https://pablop76.github.io/metro-test"
-Bez tego opublikowana strona może mieć błędne odnośniki do plików CSS/JS i nie działać spod ścieżki /metro-test/.
+```
+
+Bez tego opublikowana strona moze miec bledne odnosniki do plikow CSS/JS i nie dzialac spod sciezki `/metro-test/`.
