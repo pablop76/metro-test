@@ -1,24 +1,30 @@
+import { useEffect, useState } from "react";
+
 const Quiz = (props) => {
   const { currentTest, currentQuestion, isDisabled, answerChange } = props;
+  const [imageLoadError, setImageLoadError] = useState(false);
+
+  useEffect(() => {
+    setImageLoadError(false);
+  }, [currentQuestion, currentTest]);
+
+  const currentImage = currentTest[currentQuestion]?.image;
+  const imgPath = currentImage ? currentImage.replace(/^\.\//, "") : "";
+  const imgSrc = imgPath ? `${process.env.PUBLIC_URL}/${imgPath}` : "";
+
   return (
     <>
       <div className="question-card" key={currentQuestion}>
         <h2>{currentTest[currentQuestion]?.question}</h2>
-        {currentTest[currentQuestion]?.image && (
+        {currentImage && (
           <div className="my-4">
-            <img
-              src={`${process.env.PUBLIC_URL}/${currentTest[currentQuestion]?.image.replace(/^\.\//, "")}`}
-              alt=""
-              className="mx-auto rounded-lg"
-              style={{ maxHeight: "200px" }}
-              onError={(e) => {
-                e.target.style.display = "none";
-                e.target.insertAdjacentHTML(
-                  "afterend",
-                  '<p style="color:#6b7280;font-style:italic;font-size:14px">[Brak grafiki]</p>'
-                );
-              }}
-            />
+            {!imageLoadError && <img src={imgSrc} alt="" className="mx-auto rounded-lg" style={{ maxHeight: "200px" }} onError={() => setImageLoadError(true)} />}
+            {imageLoadError && (
+              <>
+                <p style={{ color: "#6b7280", fontStyle: "italic", fontSize: "14px" }}>[Brak grafiki]</p>
+                <div style={{ marginTop: 6, fontSize: 12, color: "#6b7280" }}>Źródło obrazka: {imgSrc}</div>
+              </>
+            )}
           </div>
         )}
       </div>
@@ -30,12 +36,7 @@ const Quiz = (props) => {
             btnClass += props.isAnswerCorrect ? " current" : " wrong";
           }
           return (
-            <button
-              key={index}
-              className={btnClass}
-              onClick={() => answerChange(index)}
-              disabled={isDisabled}
-            >
+            <button key={index} className={btnClass} onClick={() => answerChange(index)} disabled={isDisabled}>
               <div className="answer-number">{index + 1}</div>
               <div className="answer-text">{answer}</div>
             </button>

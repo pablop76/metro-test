@@ -19,13 +19,7 @@ const ChoiceTest = (props) => {
             }
             return (
               <label key={key} className={pillClass}>
-                <input
-                  type="checkbox"
-                  name="choiceTest"
-                  value={key}
-                  checked={isActive}
-                  onChange={handleTest}
-                />
+                <input type="checkbox" name="choiceTest" value={key} checked={isActive} onChange={handleTest} />
                 {label}
                 <span className="pill-count">{categoryLimits[key] || 0}</span>
               </label>

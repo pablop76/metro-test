@@ -10,6 +10,7 @@ import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
 import Quiz from "./components/quiz/Quiz.js";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
+import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import oklaski from "./sound/oklaski.mp3";
@@ -45,6 +46,8 @@ const CATEGORIES = {
   81: "Bonus - seria 81",
 };
 
+const VISUAL_STYLES = ["default", "industrial", "retro"];
+
 function App() {
   const [allQuestions, setAllQuestions] = useState([]); // pełna baza pytań
   const [currentTest, setCurrentTest] = useState([]);
@@ -63,7 +66,7 @@ function App() {
   // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
-  
+
   const [isManualLimit, setIsManualLimit] = useState(false);
   const [fullFilteredLength, setFullFilteredLength] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
@@ -73,16 +76,31 @@ function App() {
   const [theme, setTheme] = useState(() => {
     return localStorage.getItem("app-theme") || "dark";
   });
+  const [visualStyle, setVisualStyle] = useState(() => {
+    return localStorage.getItem("app-visual-style") || "default";
+  });
 
   // Zapisywanie motywu przy jego zmianie i aktualizacja atrybutu w dokumencie dla globalnych stylów
   useEffect(() => {
     localStorage.setItem("app-theme", theme);
-    // Dodawanie/usuwanie klasy z elementu body pozwala na nadpisanie zmiennych globalnych w przyszłości, 
+    // Dodawanie/usuwanie klasy z elementu body pozwala na nadpisanie zmiennych globalnych w przyszłości,
     // ale główny switch robimy na samej nakładce (divie) w return.
   }, [theme]);
 
+  useEffect(() => {
+    localStorage.setItem("app-visual-style", visualStyle);
+  }, [visualStyle]);
+
   const toggleTheme = () => {
-    setTheme(prev => prev === "light" ? "dark" : "light");
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
+  const toggleVisualStyle = () => {
+    setVisualStyle((prev) => {
+      const currentIndex = VISUAL_STYLES.indexOf(prev);
+      const nextIndex = currentIndex === -1 ? 0 : (currentIndex + 1) % VISUAL_STYLES.length;
+      return VISUAL_STYLES[nextIndex];
+    });
   };
 
   // ustawienie tematu testu (wielokrotny wybór)
@@ -125,10 +143,7 @@ function App() {
       if (inCorrectAnswers + correctAnswers < maxQuestions) {
         setInCorrectAnswers(inCorrectAnswers + 1);
         // zbieranie niepoprawnych odpowiedzi
-        setSaveInCorrectAnswers([
-          ...saveInCorrectAnswers,
-          currentTest[currentQuestion],
-        ]);
+        setSaveInCorrectAnswers([...saveInCorrectAnswers, currentTest[currentQuestion]]);
       }
       setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]]);
     }
@@ -170,14 +185,14 @@ function App() {
 
   const startMistakesReview = () => {
     if (wrongAnswers.length === 0) return;
-    
+
     // Create a new pool from wrong answers
     const pool = [...wrongAnswers];
     const poolSize = pool.length;
-    
+
     setFullFilteredLength(poolSize);
     const drawData = draw(pool, poolSize); // Or just use pool if we want to keep original order, but draw is safer/consistent
-    
+
     if (drawData) {
       setCurrentTest(drawData);
       setMaxQuestions(poolSize);
@@ -192,7 +207,6 @@ function App() {
       setShowWrongAnswers(false);
     }
   };
-
 
   let colorSend = (() => {
     if (Math.round((correctAnswers / maxQuestions) * 100) >= 75) {
@@ -280,7 +294,7 @@ function App() {
     const drawData = draw(filtered, poolSize);
     if (drawData) {
       setCurrentTest(drawData);
-      setMaxQuestions(prev => {
+      setMaxQuestions((prev) => {
         if (isManualLimit && prev !== "" && prev !== null) {
           return Math.min(prev, poolSize);
         }
@@ -299,27 +313,18 @@ function App() {
   }, [test, allQuestions]);
 
   return (
-    <div className={`bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === 'light' ? 'light-mode' : ''}`}>
+    <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
       <Header />
-      <div className="flex justify-center items-center gap-2">
+      <div className="top-controls flex justify-center items-center gap-2">
+        <StyleToggle visualStyle={visualStyle} toggleVisualStyle={toggleVisualStyle} />
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
         <Refresh refreshPage={refreshPage} />
       </div>
       <div className="flex justify-center flex-grow p-4">
-        <div className="glass-card w-full max-w-2xl p-6 text-center">
-          <LimitOfquestions
-            handleChangeLimit={handleChangeLimit}
-            maxQuestions={maxQuestions}
-            currentTest={currentTest}
-            poolSize={fullFilteredLength}
-          >
-            <ChoiceTest
-              handleTest={handleTest}
-              test={test}
-              categories={CATEGORIES}
-              categoryLimits={categoryLimits}
-            />
+        <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
+          <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength}>
+            <ChoiceTest handleTest={handleTest} test={test} categories={CATEGORIES} categoryLimits={categoryLimits} />
           </LimitOfquestions>
         </div>
       </div>
@@ -327,87 +332,69 @@ function App() {
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : (
         <>
-          <Quiz
-          currentTest={currentTest}
-          currentQuestion={currentQuestion}
-          answerChange={answerChange}
-          isDisabled={isDisabled}
-          selectedAnswerIndex={selectedAnswerIndex}
-          isAnswerCorrect={isAnswerCorrect}
-        >
-          {dangerAlert && (
-            <DangerAlert
-              answers={currentTest[currentQuestion].content}
-              corectAnswer={currentTest[currentQuestion].correct}
-              nextQuestion={nextQuestion}
-            />
-          )}
-          {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
-          {endTest && (
-            <EndTestAlert
-              correctAnswers={correctAnswers}
-              inCorrectAnswers={inCorrectAnswers}
-              maxQuestions={maxQuestions}
-              colorSend={colorSend}
-            >
-              <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
-                <button
-                  className="results-btn retry"
-                  style={{
-                    padding: "10px 16px",
-                    background: "rgba(255,255,255,0.1)",
-                    border: "1px solid rgba(255,255,255,0.2)",
-                    borderRadius: "12px",
-                    color: "white",
-                    fontWeight: 600,
-                    cursor: "pointer"
-                  }}
-                  onClick={refreshPage}
-                >
-                  Spróbuj ponownie
-                </button>
-                {wrongAnswers.length > 0 && (
+          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect}>
+            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
+            {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
+            {endTest && (
+              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}>
+                <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
                   <button
-                    className="results-btn mistakes"
+                    className="results-btn retry"
                     style={{
                       padding: "10px 16px",
-                      background: "linear-gradient(135deg, #3b82f6, #2563eb)",
-                      border: "none",
+                      background: "rgba(255,255,255,0.1)",
+                      border: "1px solid rgba(255,255,255,0.2)",
                       borderRadius: "12px",
                       color: "white",
                       fontWeight: 600,
                       cursor: "pointer",
-                      whiteSpace: "nowrap"
                     }}
-                    onClick={() => {
-                      setShowWrongAnswers(true);
-                      setEndTest(false);
-                    }}
+                    onClick={refreshPage}
                   >
-                    Pokaż błędy
+                    Spróbuj ponownie
                   </button>
-                )}
-                {wrongAnswers.length > 0 && (
-                  <button
-                    className="results-btn review-mistakes"
-                    style={{
-                      padding: "10px 16px",
-                      background: "linear-gradient(135deg, #f59e0b, #d97706)",
-                      border: "none",
-                      borderRadius: "12px",
-                      color: "white",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                      whiteSpace: "nowrap"
-                    }}
-                    onClick={startMistakesReview}
-                  >
-                    Powtórz tylko błędy
-                  </button>
-                )}
-              </div>
-            </EndTestAlert>
-          )}
+                  {wrongAnswers.length > 0 && (
+                    <button
+                      className="results-btn mistakes"
+                      style={{
+                        padding: "10px 16px",
+                        background: "linear-gradient(135deg, #3b82f6, #2563eb)",
+                        border: "none",
+                        borderRadius: "12px",
+                        color: "white",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        whiteSpace: "nowrap",
+                      }}
+                      onClick={() => {
+                        setShowWrongAnswers(true);
+                        setEndTest(false);
+                      }}
+                    >
+                      Pokaż błędy
+                    </button>
+                  )}
+                  {wrongAnswers.length > 0 && (
+                    <button
+                      className="results-btn review-mistakes"
+                      style={{
+                        padding: "10px 16px",
+                        background: "linear-gradient(135deg, #f59e0b, #d97706)",
+                        border: "none",
+                        borderRadius: "12px",
+                        color: "white",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                        whiteSpace: "nowrap",
+                      }}
+                      onClick={startMistakesReview}
+                    >
+                      Powtórz tylko błędy
+                    </button>
+                  )}
+                </div>
+              </EndTestAlert>
+            )}
           </Quiz>
 
           {/* Progress Bar & Stats */}
@@ -415,39 +402,38 @@ function App() {
             <>
               <div className="progress-container w-full max-w-md mx-auto px-4 mt-6">
                 <div className="progress-bar-bg">
-                  <div 
-                    className="progress-bar-fill" 
-                    style={{ width: `${((correctAnswers + inCorrectAnswers) / maxQuestions) * 100}%` }}
-                  ></div>
+                  <div className="progress-bar-fill" style={{ width: `${((correctAnswers + inCorrectAnswers) / maxQuestions) * 100}%` }}></div>
                 </div>
                 <div className="flex justify-between items-center mt-2 text-sm progress-label">
-                  <span>Pytanie {Math.min(correctAnswers + inCorrectAnswers + 1, maxQuestions)} z {maxQuestions}</span>
+                  <span>
+                    Pytanie {Math.min(correctAnswers + inCorrectAnswers + 1, maxQuestions)} z {maxQuestions}
+                  </span>
                   <span>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</span>
                 </div>
               </div>
 
               <div className="stats-row text-white glass-card">
                 <div className="stat-item stat-correct" title="Poprawne">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path></svg>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
+                  </svg>
                   {correctAnswers}
                 </div>
                 <div className="w-px h-8 bg-gray-500 opacity-50"></div>
-                <div className="donut-chart" style={{ width: '60px', height: '60px', margin: '0' }}>
+                <div className="donut-chart" style={{ width: "60px", height: "60px", margin: "0" }}>
                   <svg width="60" height="60" viewBox="0 0 60 60">
                     <circle cx="30" cy="30" r="24" stroke="rgba(255,255,255,0.15)" strokeWidth="6" fill="none" className="donut-bg-circle" />
-                    <circle 
-                      cx="30" cy="30" r="24" 
-                      stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : (correctAnswers > 0 ? "#ea580c" : "transparent")} 
-                      strokeWidth="6" fill="none" strokeLinecap="round" 
-                      strokeDasharray={`${(Math.round((correctAnswers / maxQuestions) * 100) / 100) * 150} 150`}
-                      className="donut-fill-circle"
-                    />
+                    <circle cx="30" cy="30" r="24" stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : correctAnswers > 0 ? "#ea580c" : "transparent"} strokeWidth="6" fill="none" strokeLinecap="round" strokeDasharray={`${(Math.round((correctAnswers / maxQuestions) * 100) / 100) * 150} 150`} className="donut-fill-circle" />
                   </svg>
-                  <div className="donut-label" style={{ fontSize: '14px' }}>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</div>
+                  <div className="donut-label" style={{ fontSize: "14px" }}>
+                    {maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%
+                  </div>
                 </div>
                 <div className="w-px h-8 bg-gray-500 opacity-50"></div>
                 <div className="stat-item stat-incorrect" title="Błędne">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12"></path></svg>
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
                   {inCorrectAnswers}
                 </div>
               </div>
@@ -459,6 +445,5 @@ function App() {
     </div>
   );
 }
-
 
 export default App;

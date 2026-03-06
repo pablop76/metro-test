@@ -706,6 +706,18 @@
       ]
     },
     {
+      "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
+      "content": [
+        "załączy się hamulec służbowy",
+        "załączy sie hamulec awaryjny",
+        "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie mozliwe dalsze rozpędzenie pociągu"
+      ],
+      "correct": 1,
+      "category": [
+        "skoda"
+      ]
+    },
+    {
       "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
       "content": [
         "hamulca postojowego",
@@ -1094,6 +1106,32 @@
       ]
     },
     {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "- strzałka wskaźnikowa",
+        "- semafor znajduje się po lewej stronie torów",
+        "- wjazd na tor niewłaściwy"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wsk-W15.png"
+    },
+    {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+        "- zakaz jazdy elektrycznych pojazdów trakcyjnych",
+        "- wjazd na tor ze skrajnią PKP"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wskaznik-3.png"
+    },
+    {
       "question": "Zawracanie pociągu w miejscach, gdzie nie ma możliwości podania sygnałów na semaforach, odbywa się",
       "content": [
         "- na ustne polecenie dyżurnego ruchu,",
@@ -1301,6 +1339,32 @@
       ]
     },
     {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "- granica przetaczania",
+        "- zakaz jazdy pojazdów elektrycznych",
+        "- zakaz wjazdu taboru PKP"
+      ],
+      "correct": 0,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wsk-W5.png"
+    },
+    {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+        "- początek odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością",
+        "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wskaznik-7.png"
+    },
+    {
       "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
       "content": [
         "- po prawej stronie toru",
@@ -1324,6 +1388,32 @@
         "sygnalizacja"
       ],
       "image": "./images/wskazniki/wskaznik-8.png"
+    },
+    {
+      "question": "Przedstawiony poniżej wskaźnik oznacza:",
+      "content": [
+        "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
+        "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
+        "- zakaz jazdy elektrycznych pojazdów trakcyjnych"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wskaznik-9.png"
+    },
+    {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "- nakazuje podać sygnał baczność",
+        "- oznacza pierwszeństwo pojazdów drogowych",
+        "- oznacza miejsce na torze, poza które jazda manewrowa jest niedozwolona"
+      ],
+      "correct": 0,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wskaznik-10.png"
     },
     {
       "question": "Zawieszenie pierwszego stopnia w wagonach Metropolis realizowane jest ?",
@@ -1909,6 +1999,19 @@
       ]
     },
     {
+      "question": "Przedstawiony poniżej wskaźnik oznacza",
+      "content": [
+        "wjazd na tor ślepy",
+        "wjazd na tor niewłaściwy",
+        "wjazd na tor ze skrajnią PKP"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/wskazniki/wskaznik-11.png"
+    },
+    {
       "question": "Oznaczenie pociągu technicznego w rozkazie szczególnym jest",
       "content": [
         "d",
@@ -2432,8 +2535,7 @@
       ],
       "correct": 0,
       "category": [
-        "linia2",
-        "inspiro"
+        "linia2"
       ]
     },
     {
@@ -2498,6 +2600,45 @@
       "image": "./images/ikony-hmi-ddu/awaria-A.png"
     },
     {
+      "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+      "content": [
+        "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
+        "Występują nieznaczne ograniczebnia w działaniu pojazdu (np. ograniczenie prędkości maksymalnej) i można nim dojechać tylko do stacji końcowej",
+        "Pasażerowie muszą opóścić pociąg na stacji końcowej. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/ikony-hmi-ddu/awaria-B.png"
+    },
+    {
+      "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+      "content": [
+        "Usterka typu C, nie ma poważnych konsekwencji w zakresie działania pojazdu, można jeździć do zakończenia dnia roboczego",
+        "Usterka typu C. Pasażerowie muszą opóścić pociąg na stacji końcowej. Skład należy zresetować",
+        "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/ikony-hmi-ddu/usterka-C.png"
+    },
+    {
+      "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
+      "content": [
+        "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego poziomu utrzymania",
+        "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego zjazdu na STP",
+        "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/ikony-hmi-ddu/info-D.png"
+    },
+    {
       "question": "Opisz symbole",
       "content": [
         "Zasilanie pomocnicze prądem AC/DC jest sprawne i włączone",
@@ -2511,6 +2652,214 @@
       "image": "./images/zasilanie-pomocnicze.png"
     },
     {
+      "question": "Opisz symbole",
+      "content": [
+        "Drzwi są otwarte przez ATO po lewej stronie",
+        "Drzwi są otwarte przez ATO po prawej stronie",
+        "Drzwi są otwarte awaryjnie po prawej stronie"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/drzwi.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Aktywne polecenie 'Hamulec służbowy' z ATO",
+        "Sprężarka wyłączona, brak usterki",
+        "Aktywne polecenie 'Napęd' z ATO"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/naped.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Aktywne polecenie 'Hamulec służbowy' z ATO",
+        "Sprężarka wyłączona, brak usterki",
+        "Aktywne polecenie 'Napęd' z ATO"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/hamulec.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Ostrzeżenie, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+        "Usterka, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
+        "Normalny stan hamulca"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/usterka-hamulec.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Hamulec służbowy jest załączony",
+        "Hamulec postojowy jest załączony",
+        "Hamulec postojowy jest zluzowany"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/postojowy.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "usterka sprężarki powietrza",
+        "usterka hamulca EP",
+        "odcięcie hamulca EP lub hamulca postojowego"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/hamulec-2.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Sprężarka powietrza jest wyłączona, brak usterek",
+        "Sprężarka powietrza jest załączona, brak usterek",
+        "Przetwornica jest załączona, brak usterek"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sprezarka.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Aktywne polecenie 'Odcięcie trakcji' z ATO",
+        "Aktywne polecenie 'Hamulec awaryjny' z ATO",
+        "Aktywne polecenie 'hamulec służbowy' z ATO"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/odciecie-trakcji.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Bład transmisji danych pomiedzy torem a pociągiem",
+        "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+        "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sop/brak-transmisji.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Bład transmisji danych pomiedzy torem a pociągiem",
+        "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+        "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sop/brak-adresowania.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Bład transmisji danych pomiedzy torem a pociągiem, ale nie przejechano jeszcze 25m",
+        "Całkowity brak transmisji danych pomiedzy torem a pociągiem",
+        "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sop/blad-transmisji.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Przełącznik warsztatowy jest uszkodzony",
+        "Przełącznik warsztatowy w pozycji 'Warsztat'",
+        "Przełącznik warsztatowy jest nie przełaczony"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/warsztat.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Trakcja gotowa do pracy z ostrzeżeniem",
+        "Aktywny autotest trakcji",
+        "Usterka trakcji"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/ikony-hmi-ddu/trakcja-usterka.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+        "Drzwi są odizolowane",
+        "Usterka drzwi"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/ikony-hmi-ddu/drzwi-otwarte-wajcha.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Drzwi wykryły przeszkodę",
+        "Drzwi są odizolowane",
+        "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/drzwi-odizolowane.png"
+    },
+    {
+      "question": "Opisz symbole",
+      "content": [
+        "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
+        "Drzwi są odizolowane",
+        "Drzwi wykryły przeszkodę"
+      ],
+      "correct": 2,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/drzwi-przeszkoda.png"
+    },
+    {
       "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
       "content": [
         "Nakazuje zmniejszyć predkość taboru menewrującego",
@@ -2522,6 +2871,19 @@
         "sygnalizacja"
       ],
       "image": "./images/docisnac.png"
+    },
+    {
+      "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
+      "content": [
+        "nalezy jechać w kierunku od dającego sygnał",
+        "miejsce, do którego należy doojechać manewrującym taborem",
+        "nie wolno ruszać taborem dopóki podawany jest ten sygnał"
+      ],
+      "correct": 0,
+      "category": [
+        "sygnalizacja"
+      ],
+      "image": "./images/od.png"
     },
     {
       "question": "Sygnał podawany na sygnalizatorze przedstawionym na rysunku",
@@ -2677,6 +3039,32 @@
         "inspiro"
       ],
       "image": "./images/sop/wsr-s2.png"
+    },
+    {
+      "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
+      "content": [
+        "załączone hamowanie awaryjne przez system SOP3",
+        "awarie hamulca elektrodynamicznego",
+        "klasyfikacje stanu pociągu (występuje nieznaczne ograniczenie w działaniu pojazdu, można dojechać do stacji końcowej z pasażerami)"
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sop/awaryjny-sop.png"
+    },
+    {
+      "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
+      "content": [
+        "urządzenia pokładowe SOP3 są wyłączone",
+        "AOP uszkodzone lub brak komunikacji z AOP",
+        "brak transmisji sygnałów aop"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ],
+      "image": "./images/sop/ato-uszkodzone.png"
     },
     {
       "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załączenie napędu przez maszynistę?",
@@ -3364,6 +3752,18 @@
       ]
     },
     {
+      "question": "Przełącznik Pożar na pulpicie w kabinie INSPIRO",
+      "content": [
+        "redukuje obciążenie baterii akumulatorów poprzez załączenie oświetlenia awaryjnego salonu pasażerskiego",
+        "wyłącza wentylację w przedziale pasażerskim, należy go używać podczas pożaru lub zadymienia w tunelu metra",
+        "uruchamia system gaszenia pozaru pociągu"
+      ],
+      "correct": 1,
+      "category": [
+        "inspiro"
+      ]
+    },
+    {
       "question": "W celu lokalizacji wywołania pasażerskiego należy przełączy COMET",
       "content": [
         "na ekran nr 4",
@@ -3594,6 +3994,18 @@
       ]
     },
     {
+      "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
+      "content": [
+        "gotowość pociągu do odjazdu",
+        "nie są spełnione warunki do odjazdu",
+        "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy "
+      ],
+      "correct": 0,
+      "category": [
+        "inspiro"
+      ]
+    },
+    {
       "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
       "content": [
         "- białe i niebieskie",
@@ -3611,6 +4023,18 @@
         "polecenie dyżurnego ruchu STP",
         "rozkaz szczególny „S” , wydany przez dyżurnego ruchu STP",
         "żadna z odpowiedzi nie jest prawidłowa"
+      ],
+      "correct": 1,
+      "category": [
+        "sygnalizacja"
+      ]
+    },
+    {
+      "question": "Co oznacza dźwiękowy sygnał Rp1 -  jeden długi ton",
+      "content": [
+        "pożar",
+        "baczność",
+        "alarm"
       ],
       "correct": 1,
       "category": [

@@ -1,25 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Bebas+Neue&display=swap');
+
+:root {
+  --bg-deep: #071423;
+  --bg-mid: #10243f;
+  --glass-border: rgba(255, 255, 255, 0.17);
+  --text-main: #edf6ff;
+  --text-soft: rgba(237, 246, 255, 0.72);
+}
 
 * {
-  font-family: 'Inter', 'Roboto', sans-serif;
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
   font-weight: 400;
+}
+
+body {
+  background: radial-gradient(circle at 15% 12%, #173b66 0%, transparent 48%), radial-gradient(circle at 82% 88%, #5a2d1b 0%, transparent 44%), linear-gradient(140deg, var(--bg-deep), var(--bg-mid) 45%, #1c2e46 100%);
+}
+
+.app-shell {
+  position: relative;
+  overflow: hidden;
+}
+
+.app-shell:before,
+.app-shell:after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  border-radius: 999px;
+  filter: blur(60px);
+  z-index: 0;
+  opacity: 0.42;
+}
+
+.app-shell:before {
+  width: 340px;
+  height: 340px;
+  top: -120px;
+  right: -90px;
+  background: radial-gradient(circle, #f97316 0%, rgba(249, 115, 22, 0) 70%);
+}
+
+.app-shell:after {
+  width: 360px;
+  height: 360px;
+  bottom: -160px;
+  left: -80px;
+  background: radial-gradient(circle, #2dd4bf 0%, rgba(45, 212, 191, 0) 70%);
 }
 
 /* ===== BACKGROUND ===== */
 .bg-container {
-  background-image: url(./images/bg.svg), url(./images/bg-top.svg), url(./images/overlay.svg), url(./images/stp.jpg);
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(180deg, rgba(6, 18, 33, 0.5), rgba(6, 18, 33, 0.82)), url(./images/bg.svg), url(./images/bg-top.svg), url(./images/overlay.svg), url(./images/stp.jpg);
   background-repeat: no-repeat;
-  background-size: contain, contain, cover, cover;
-  background-position: center bottom, top center, center, bottom center;
+  background-size: cover, contain, contain, cover, cover;
+  background-position: center, center bottom, top center, center, bottom center;
 }
 
 /* ===== GLASSMORPHISM CARD ===== */
 .glass-card {
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 20px;
+  position: relative;
+  background: linear-gradient(155deg, rgba(13, 32, 58, 0.82), rgba(25, 52, 86, 0.68));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--glass-border);
+  border-radius: 22px;
+  box-shadow: 0 20px 55px rgba(2, 8, 23, 0.48);
+}
+
+.glass-card:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  pointer-events: none;
+}
+
+.setup-panel {
+  animation: riseIn 0.6s ease-out both;
+}
+
+.top-controls {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  animation: riseIn 0.55s ease-out both;
+}
+
+.style-btn {
+  width: auto;
+  min-width: 148px;
+  padding: 0 12px;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 /* ===== START MODAL ===== */
@@ -109,10 +185,10 @@
   align-items: center;
   justify-content: flex-start;
   border-radius: 16px;
-  background: rgba(30, 64, 175, 0.7);
+  background: linear-gradient(130deg, rgba(20, 54, 93, 0.82), rgba(11, 33, 63, 0.78));
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   width: 100%;
   margin: 10px auto;
   padding: 0;
@@ -121,9 +197,9 @@
 }
 
 .answer-btn:hover:not(:disabled) {
-  background: rgba(37, 99, 235, 0.85);
+  background: linear-gradient(130deg, rgba(30, 77, 126, 0.96), rgba(17, 49, 83, 0.9));
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 11px 24px rgba(3, 10, 28, 0.38);
   border-color: rgba(255, 255, 255, 0.25);
 }
 
@@ -140,11 +216,11 @@
   min-width: 44px;
   border-radius: 12px;
   margin: 8px;
-  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  background: linear-gradient(135deg, #1d4ed8, #0f766e);
   color: white;
   font-weight: 700;
   font-size: 16px;
-  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 9px rgba(2, 8, 23, 0.32);
 }
 
 .answer-btn .answer-text {
@@ -155,23 +231,24 @@
 
 /* ===== QUESTION CARD ===== */
 .question-card {
-  background: rgba(30, 58, 138, 0.8); /* darker blue glass tint */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(145deg, rgba(11, 33, 59, 0.88), rgba(23, 58, 95, 0.75));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 20px;
   padding: 28px 24px;
   max-width: 640px;
   margin: 20px auto;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 20px 44px rgba(4, 10, 26, 0.45);
   animation: fadeSlideIn 0.4s ease-out;
 }
 
 .question-card h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 1.28rem;
+  font-weight: 600;
+  color: var(--text-main);
   line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 /* ===== CATEGORY PILLS ===== */
@@ -424,43 +501,91 @@
 /* ===== HEADER ===== */
 .app-header {
   text-align: center;
-  padding: 28px 20px 8px;
+  padding: 32px 20px 10px;
+  animation: riseIn 0.55s ease-out both;
 }
 
 .app-header h1 {
-  font-size: 1.8rem;
-  font-weight: 800;
-  background: linear-gradient(135deg, #ffffff, #93c5fd);
+  font-family: 'Bebas Neue', 'Space Grotesk', sans-serif;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 1;
+  background: linear-gradient(120deg, #f8fbff 10%, #8bd2ff 56%, #f9a46d 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-shadow: none;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.app-header-subtitle {
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .app-header h1 {
-    font-size: 2.4rem;
+    font-size: 2.9rem;
   }
 }
 
 /* ===== FOOTER ===== */
 .app-footer {
   text-align: center;
-  color: rgba(255, 255, 255, 0.35);
+  color: var(--text-soft);
   margin-top: 40px;
-  padding: 20px;
+  padding: 16px 20px 24px;
   font-size: 13px;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .app-footer a {
-  color: rgba(255, 255, 255, 0.45);
-  transition: color 0.2s;
+  color: rgba(237, 246, 255, 0.8);
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
 }
 
 .app-footer a:hover {
-  color: rgba(255, 255, 255, 0.7);
+  color: #ffffff;
+}
+
+.footer-note {
+  opacity: 0.82;
+}
+
+.footer-meta {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-copyright {
+  letter-spacing: 0.02em;
+}
+
+.footer-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-link-pill {
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(15, 30, 53, 0.55);
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.footer-link-pill:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  transform: translateY(-1px);
 }
 
 /* ===== CONTROL BUTTONS ===== */
@@ -485,11 +610,153 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+.visual-industrial {
+  --text-main: #e9f7ff;
+  --text-soft: rgba(210, 232, 244, 0.78);
+}
+
+.visual-industrial.bg-container {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(56, 189, 248, 0.08) 0 1px, transparent 1px 52px),
+    repeating-linear-gradient(0deg, rgba(56, 189, 248, 0.07) 0 1px, transparent 1px 52px),
+    linear-gradient(180deg, rgba(6, 15, 25, 0.78), rgba(8, 18, 30, 0.94)),
+    url(./images/overlay.svg),
+    url(./images/stp.jpg);
+  background-size: auto, auto, cover, cover, cover;
+  background-position: center, center, center, center, center bottom;
+}
+
+.visual-industrial.app-shell:before {
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.8) 0%, rgba(56, 189, 248, 0) 70%);
+  opacity: 0.3;
+}
+
+.visual-industrial.app-shell:after {
+  background: radial-gradient(circle, rgba(234, 179, 8, 0.75) 0%, rgba(234, 179, 8, 0) 70%);
+  opacity: 0.22;
+}
+
+.visual-industrial .question-card,
+.visual-industrial .glass-card {
+  background: linear-gradient(170deg, rgba(11, 23, 38, 0.92), rgba(18, 30, 46, 0.88));
+  border: 1px solid rgba(56, 189, 248, 0.48);
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 1px rgba(148, 163, 184, 0.12), 0 16px 32px rgba(2, 6, 23, 0.6);
+}
+
+.visual-industrial .answer-btn {
+  background: linear-gradient(135deg, rgba(15, 27, 42, 0.96), rgba(12, 22, 36, 0.9));
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  border-radius: 8px;
+}
+
+.visual-industrial .answer-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, rgba(17, 33, 52, 0.98), rgba(14, 27, 43, 0.95));
+  border-color: rgba(14, 165, 233, 0.74);
+  box-shadow: 0 10px 24px rgba(8, 47, 73, 0.42);
+}
+
+.visual-industrial .answer-btn .answer-number {
+  background: linear-gradient(135deg, #0891b2, #155e75);
+  border-radius: 6px;
+}
+
+.visual-industrial .category-pill {
+  border-radius: 8px;
+  border-color: rgba(148, 163, 184, 0.36);
+  background: rgba(15, 23, 42, 0.7);
+}
+
+.visual-industrial .category-pill.active {
+  background: linear-gradient(135deg, #0e7490, #0369a1);
+  border-color: rgba(125, 211, 252, 0.85);
+}
+
+.visual-industrial .app-header h1 {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background: linear-gradient(120deg, #e0f2fe 5%, #7dd3fc 58%, #facc15 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.visual-industrial .app-header-subtitle {
+  color: rgba(186, 230, 253, 0.8);
+}
+
+.visual-industrial .control-btn,
+.visual-industrial .footer-link-pill {
+  background: rgba(8, 20, 32, 0.8);
+  border-color: rgba(56, 189, 248, 0.45);
+}
+
+.visual-industrial .control-btn:hover,
+.visual-industrial .footer-link-pill:hover {
+  border-color: rgba(250, 204, 21, 0.7);
+}
+
+.visual-retro {
+  --text-main: #fff9eb;
+  --text-soft: rgba(255, 249, 235, 0.74);
+}
+
+.visual-retro.bg-container {
+  background-image: linear-gradient(180deg, rgba(40, 24, 18, 0.58), rgba(34, 16, 10, 0.82)), url(./images/bg.svg), url(./images/bg-top.svg), url(./images/overlay.svg), url(./images/stp.jpg);
+}
+
+.visual-retro .glass-card {
+  background: linear-gradient(160deg, rgba(74, 38, 26, 0.78), rgba(28, 16, 11, 0.75));
+  border-color: rgba(252, 211, 157, 0.35);
+}
+
+.visual-retro .question-card {
+  background: linear-gradient(145deg, rgba(96, 47, 27, 0.84), rgba(44, 25, 17, 0.76));
+  border-color: rgba(253, 186, 116, 0.34);
+}
+
+.visual-retro .answer-btn {
+  background: linear-gradient(130deg, rgba(91, 48, 30, 0.8), rgba(47, 27, 19, 0.77));
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.visual-retro .answer-btn:hover:not(:disabled) {
+  background: linear-gradient(130deg, rgba(112, 58, 37, 0.92), rgba(63, 35, 24, 0.88));
+}
+
+.visual-retro .answer-btn .answer-number {
+  background: linear-gradient(135deg, #c2410c, #a16207);
+}
+
+.visual-retro .app-header h1 {
+  background: linear-gradient(120deg, #fff8e1 8%, #fdba74 55%, #fb7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.visual-retro .footer-link-pill {
+  background: rgba(77, 36, 24, 0.52);
+  border-color: rgba(253, 186, 116, 0.4);
+}
+
 /* ===== ANIMATIONS ===== */
 @keyframes fadeSlideIn {
   from {
     opacity: 0;
     transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -574,9 +841,9 @@
 /* ========================================= */
 
 .bg-container.light-mode {
-  /* Retaining the original background images but blending with a light gradient overlay */
+  /* Light mode keeps structure but swaps atmosphere to warm daylight tones. */
   background-image: 
-    linear-gradient(rgba(224, 242, 254, 0.85), rgba(186, 230, 253, 0.95)),
+    linear-gradient(180deg, rgba(255, 247, 237, 0.88), rgba(219, 234, 254, 0.92)),
     url(./images/bg.svg), 
     url(./images/bg-top.svg), 
     url(./images/overlay.svg), 
@@ -592,14 +859,18 @@
 }
 
 .light-mode .app-header h1 {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(120deg, #0f172a, #1d4ed8 55%, #c2410c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
+.light-mode .app-header-subtitle {
+  color: rgba(15, 23, 42, 0.68);
+}
+
 .light-mode .glass-card {
-  background: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.58));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -607,7 +878,7 @@
 }
 
 .light-mode .question-card {
-  background: rgba(255, 255, 255, 0.6);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(241, 245, 249, 0.74));
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid rgba(255, 255, 255, 0.7);
@@ -619,7 +890,7 @@
 }
 
 .light-mode .answer-btn {
-  background: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(132deg, rgba(255, 255, 255, 0.92), rgba(241, 245, 249, 0.8));
   border: 1px solid rgba(203, 213, 225, 0.8);
   color: #1e293b;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
@@ -693,6 +964,15 @@
   color: #0f172a;
 }
 
+.light-mode .footer-link-pill {
+  border-color: rgba(100, 116, 139, 0.35);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.light-mode .footer-link-pill:hover {
+  border-color: #475569;
+}
+
 .light-mode .progress-label,
 .light-mode .stats-row {
   color: #0f172a;
@@ -725,4 +1005,34 @@
 .light-mode .wrong-answers-container li {
   background: rgba(255, 255, 255, 0.9);
   border-left-color: #ef4444; 
+}
+
+@media (max-width: 640px) {
+  .style-btn {
+    min-width: 122px;
+    font-size: 11px;
+  }
+
+  .app-header h1 {
+    font-size: 1.9rem;
+    letter-spacing: 0.025em;
+  }
+
+  .app-header-subtitle {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+  }
+
+  .glass-card,
+  .question-card {
+    border-radius: 18px;
+  }
+
+  .footer-links-row {
+    gap: 8px;
+  }
+
+  .footer-link-pill {
+    padding: 5px 10px;
+  }
 }
