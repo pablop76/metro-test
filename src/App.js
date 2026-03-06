@@ -366,25 +366,27 @@ function App() {
                 >
                   Spróbuj ponownie
                 </button>
-                <button
-                  className="results-btn mistakes"
-                  style={{
-                    padding: "10px 16px",
-                    background: "linear-gradient(135deg, #3b82f6, #2563eb)",
-                    border: "none",
-                    borderRadius: "12px",
-                    color: "white",
-                    fontWeight: 600,
-                    cursor: "pointer",
-                    whiteSpace: "nowrap"
-                  }}
-                  onClick={() => {
-                    setShowWrongAnswers(true);
-                    setEndTest(false);
-                  }}
-                >
-                  Pokaż błędy
-                </button>
+                {wrongAnswers.length > 0 && (
+                  <button
+                    className="results-btn mistakes"
+                    style={{
+                      padding: "10px 16px",
+                      background: "linear-gradient(135deg, #3b82f6, #2563eb)",
+                      border: "none",
+                      borderRadius: "12px",
+                      color: "white",
+                      fontWeight: 600,
+                      cursor: "pointer",
+                      whiteSpace: "nowrap"
+                    }}
+                    onClick={() => {
+                      setShowWrongAnswers(true);
+                      setEndTest(false);
+                    }}
+                  >
+                    Pokaż błędy
+                  </button>
+                )}
                 {wrongAnswers.length > 0 && (
                   <button
                     className="results-btn review-mistakes"
