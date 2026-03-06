@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import DangerAlert from "./components/alerts/DangerAlert";
 import EndTestAlert from "./components/alerts/EndTestAlert";
-import StartModal from "./components/alerts/StartModal";
 import SuccesAlert from "./components/alerts/SuccesAlert";
 import ChoiceTest from "./components/choiceTest/ChoiceTest";
 import Footer from "./components/footer/Footer";
@@ -11,6 +10,7 @@ import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
 import Quiz from "./components/quiz/Quiz.js";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
+import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
@@ -63,12 +63,27 @@ function App() {
   // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
-  const [modal, setModal] = useState("start");
   
   const [isManualLimit, setIsManualLimit] = useState(false);
   const [fullFilteredLength, setFullFilteredLength] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
+
+  // Dodanie stanu Theme i inicjalizacja z localStorage
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("app-theme") || "dark";
+  });
+
+  // Zapisywanie motywu przy jego zmianie i aktualizacja atrybutu w dokumencie dla globalnych stylów
+  useEffect(() => {
+    localStorage.setItem("app-theme", theme);
+    // Dodawanie/usuwanie klasy z elementu body pozwala na nadpisanie zmiennych globalnych w przyszłości, 
+    // ale główny switch robimy na samej nakładce (divie) w return.
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === "light" ? "dark" : "light");
+  };
 
   // ustawienie tematu testu (wielokrotny wybór)
   const handleTest = (e) => {
@@ -82,10 +97,6 @@ function App() {
       }
       return [...next, value];
     });
-  };
-
-  const handleModal = () => {
-    setModal("none");
   };
 
   const sound = useRef(typeof Audio !== "undefined" ? new Audio(oklaski) : null);
@@ -262,10 +273,10 @@ function App() {
   }, [test, allQuestions]);
 
   return (
-    <div className="bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50">
-      <StartModal handleModal={handleModal} open={modal} />
+    <div className={`bg-container container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === 'light' ? 'light-mode' : ''}`}>
       <Header />
-      <div className="flex justify-center">
+      <div className="flex justify-center items-center gap-2">
+        <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
         <Refresh refreshPage={refreshPage} />
       </div>
@@ -289,7 +300,8 @@ function App() {
       {showWrongAnswers ? (
         <WrongAnswers wrongAnswers={wrongAnswers} />
       ) : (
-        <Quiz
+        <>
+          <Quiz
           currentTest={currentTest}
           currentQuestion={currentQuestion}
           answerChange={answerChange}
@@ -348,6 +360,7 @@ function App() {
               </div>
             </EndTestAlert>
           )}
+          </Quiz>
 
           {/* Progress Bar & Stats */}
           {!endTest && maxQuestions > 0 && !showWrongAnswers && (
@@ -359,7 +372,7 @@ function App() {
                     style={{ width: `${((correctAnswers + inCorrectAnswers) / maxQuestions) * 100}%` }}
                   ></div>
                 </div>
-                <div className="flex justify-between items-center mt-2 text-sm text-gray-300 font-medium">
+                <div className="flex justify-between items-center mt-2 text-sm progress-label">
                   <span>Pytanie {Math.min(correctAnswers + inCorrectAnswers + 1, maxQuestions)} z {maxQuestions}</span>
                   <span>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</span>
                 </div>
@@ -373,12 +386,13 @@ function App() {
                 <div className="w-px h-8 bg-gray-500 opacity-50"></div>
                 <div className="donut-chart" style={{ width: '60px', height: '60px', margin: '0' }}>
                   <svg width="60" height="60" viewBox="0 0 60 60">
-                    <circle cx="30" cy="30" r="24" stroke="rgba(255,255,255,0.15)" strokeWidth="6" fill="none" />
+                    <circle cx="30" cy="30" r="24" stroke="rgba(255,255,255,0.15)" strokeWidth="6" fill="none" className="donut-bg-circle" />
                     <circle 
                       cx="30" cy="30" r="24" 
-                      stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : (correctAnswers > 0 ? "#f59e0b" : "transparent")} 
+                      stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : (correctAnswers > 0 ? "#ea580c" : "transparent")} 
                       strokeWidth="6" fill="none" strokeLinecap="round" 
                       strokeDasharray={`${(Math.round((correctAnswers / maxQuestions) * 100) / 100) * 150} 150`}
+                      className="donut-fill-circle"
                     />
                   </svg>
                   <div className="donut-label" style={{ fontSize: '14px' }}>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</div>
@@ -391,9 +405,8 @@ function App() {
               </div>
             </>
           )}
-        </Quiz>
+        </>
       )}
-      {/* Usunięto stare liczniki, zostały zastąpione przez Progress Bar wyżej */}
       <Footer />
     </div>
   );
