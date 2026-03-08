@@ -1,7 +1,7 @@
 import Confetti from 'react-confetti';
 
 const EndTestAlert = (props) => {
-  const { correctAnswers, inCorrectAnswers, maxQuestions, colorSend } = props;
+  const { correctAnswers, inCorrectAnswers, maxQuestions } = props;
   const percentage = Math.round((correctAnswers / maxQuestions) * 100);
   const passed = percentage >= 75;
 
