@@ -333,7 +333,7 @@ function App() {
       ) : (
         <>
           <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect}>
-            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} corectAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
+            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
               <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}>
