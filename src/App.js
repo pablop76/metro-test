@@ -71,6 +71,7 @@ function App() {
   const [fullFilteredLength, setFullFilteredLength] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
+  const [hasSygnalizacjaError, setHasSygnalizacjaError] = useState(false);
 
   // Dodanie stanu Theme i inicjalizacja z localStorage
   const [theme, setTheme] = useState(() => {
@@ -138,6 +139,12 @@ function App() {
         sound2.current.currentTime = 0;
         sound2.current.play();
       }
+      const currentCategories = Array.isArray(currentTest[currentQuestion]?.category)
+        ? currentTest[currentQuestion].category
+        : [currentTest[currentQuestion]?.category];
+      if (currentCategories.includes("sygnalizacja")) {
+        setHasSygnalizacjaError(true);
+      }
       setIsAnswerCorrect(false);
       setDangerAlert(true);
       if (inCorrectAnswers + correctAnswers < maxQuestions) {
@@ -203,6 +210,7 @@ function App() {
       setDangerAlert(false);
       setSuccesAlert(false);
       setIsDisabled(false);
+      setHasSygnalizacjaError(false);
       setWrongAnswers([]); // Reset wrong answers for the new "mistakes review" session
       setShowWrongAnswers(false);
     }
@@ -283,6 +291,7 @@ function App() {
       setDangerAlert(false);
       setSuccesAlert(false);
       setIsDisabled(false);
+      setHasSygnalizacjaError(false);
       setWrongAnswers([]);
       setShowWrongAnswers(false);
       return;
@@ -307,6 +316,7 @@ function App() {
       setDangerAlert(false);
       setSuccesAlert(false);
       setIsDisabled(false);
+      setHasSygnalizacjaError(false);
       setWrongAnswers([]);
       setShowWrongAnswers(false);
     }
@@ -336,7 +346,13 @@ function App() {
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
-              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} colorSend={colorSend}>
+              <EndTestAlert
+                correctAnswers={correctAnswers}
+                inCorrectAnswers={inCorrectAnswers}
+                maxQuestions={maxQuestions}
+                colorSend={colorSend}
+                hasSygnalizacjaError={hasSygnalizacjaError}
+              >
                 <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
                   <button
                     className="results-btn retry"

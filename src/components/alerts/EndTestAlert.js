@@ -1,9 +1,9 @@
 import Confetti from 'react-confetti';
 
 const EndTestAlert = (props) => {
-  const { correctAnswers, inCorrectAnswers, maxQuestions } = props;
+  const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false } = props;
   const percentage = Math.round((correctAnswers / maxQuestions) * 100);
-  const passed = percentage >= 75;
+  const passed = percentage >= 75 && !hasSygnalizacjaError;
 
   return (
     <div className="alert-overlay">
@@ -24,6 +24,12 @@ const EndTestAlert = (props) => {
         <h3 style={{ fontSize: '22px', fontWeight: 800, color: 'white', margin: '12px 0' }}>
           {passed ? "🎉 Zaliczone!" : "😔 Niestety, nie zdałeś"}
         </h3>
+
+        {hasSygnalizacjaError && (
+          <p style={{ color: '#fca5a5', fontSize: '14px', margin: '0 0 8px' }}>
+            Test niezaliczony: wystąpiła co najmniej jedna błędna odpowiedź w kategorii Sygnalizacja.
+          </p>
+        )}
 
         {/* Duży donut */}
         <div className="donut-container" style={{ margin: '16px auto' }}>
