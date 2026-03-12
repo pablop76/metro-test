@@ -213,7 +213,6 @@ function App() {
       setCurrentTest(combined);
       setMaxQuestions(EXAM_TOTAL_COUNT);
       setFullFilteredLength(EXAM_TOTAL_COUNT);
-      setTest(["all"]);
       resetQuizState();
       setExamMode(true);
     }
@@ -281,7 +280,7 @@ function App() {
       });
       resetQuizState();
     }
-  }, [test, allQuestions, examMode]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [test, allQuestions]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
@@ -318,7 +317,7 @@ function App() {
       <div className="flex justify-center flex-grow p-4">
         <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
-            <ChoiceTest handleTest={handleTest} test={test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
+            <ChoiceTest handleTest={handleTest} test={examMode ? ["all"] : test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
           </LimitOfquestions>
           {/* Przycisk trybu egzaminu */}
           {allQuestions.length > 0 && (
