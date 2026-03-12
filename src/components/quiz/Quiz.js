@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Quiz = (props) => {
-  const { currentTest, currentQuestion, isDisabled, answerChange } = props;
+  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange } = props;
   const [imageLoadError, setImageLoadError] = useState(false);
   // answerOrder[wyświetlanyIndex] = oryginalnyIndex — tasowanie odpowiedzi
   const [answerOrder, setAnswerOrder] = useState([0, 1, 2]);
@@ -15,6 +15,7 @@ const Quiz = (props) => {
       [order[i], order[j]] = [order[j], order[i]];
     }
     setAnswerOrder(order);
+    onAnswerOrderChange?.(order);
   }, [currentQuestion, currentTest]);
 
   const currentImage = currentTest[currentQuestion]?.image;

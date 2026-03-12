@@ -149,6 +149,7 @@ function App() {
   answerChangeRef.current = answerChange;
   const nextQuestionRef = useRef(nextQuestion);
   nextQuestionRef.current = nextQuestion;
+  const answerOrderRef = useRef([0, 1, 2]);
 
   // Skróty klawiszowe: 1/2/3 → wybór odpowiedzi, Enter → następne pytanie
   useEffect(() => {
@@ -156,9 +157,9 @@ function App() {
       if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
       if (endTest || showWrongAnswers) return;
       if (!isDisabled && currentTest[currentQuestion]) {
-        if (e.key === "1") answerChangeRef.current(0);
-        else if (e.key === "2") answerChangeRef.current(1);
-        else if (e.key === "3") answerChangeRef.current(2);
+        if (e.key === "1") answerChangeRef.current(answerOrderRef.current[0]);
+        else if (e.key === "2") answerChangeRef.current(answerOrderRef.current[1]);
+        else if (e.key === "3") answerChangeRef.current(answerOrderRef.current[2]);
       }
       if (isDisabled && (dangerAlert || succesAlert)) {
         if (e.key === "Enter") nextQuestionRef.current();
@@ -336,7 +337,7 @@ function App() {
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : (
         <>
-          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect}>
+          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }}>
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
