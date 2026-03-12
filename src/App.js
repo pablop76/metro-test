@@ -15,7 +15,7 @@ import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
-import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS } from "./constants";
+import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT } from "./constants";
 import { draw } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
@@ -41,6 +41,8 @@ function App() {
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
   const [hasSygnalizacjaError, setHasSygnalizacjaError] = useState(false);
+  const [examMode, setExamMode] = useState(false);
+  const [learningMode, setLearningMode] = useState(false);
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
   const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
@@ -59,6 +61,7 @@ function App() {
   };
 
   const handleTest = (e) => {
+    setExamMode(false);
     const value = e.target.value;
     setTest((prev) => {
       if (value === "all") return ["all"];
@@ -74,7 +77,7 @@ function App() {
   const sound = useRef(typeof Audio !== "undefined" ? new Audio(oklaski) : null);
   const sound2 = useRef(typeof Audio !== "undefined" ? new Audio(smiech) : null);
 
-  // Resetuje stan quizu do wartości początkowych (używane przy zmianie kategorii, powtórce błędów itp.)
+  // Resetuje stan quizu do wartości początkowych
   const resetQuizState = () => {
     setCorectAnswers(0);
     setInCorrectAnswers(0);
@@ -116,10 +119,13 @@ function App() {
       }
       setIsAnswerCorrect(false);
       setDangerAlert(true);
-      if (inCorrectAnswers + correctAnswers < maxQuestions) {
-        setInCorrectAnswers(inCorrectAnswers + 1);
+      // W trybie nauki błędy nie są liczone
+      if (!learningMode) {
+        if (inCorrectAnswers + correctAnswers < maxQuestions) {
+          setInCorrectAnswers(inCorrectAnswers + 1);
+        }
+        setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]]);
       }
-      setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]]);
     }
   };
 
@@ -137,6 +143,30 @@ function App() {
     setSuccesAlert(false);
     setIsDisabled(false);
   };
+
+  // Refy dla obsługi klawiatury (zawsze aktualna wersja funkcji)
+  const answerChangeRef = useRef(answerChange);
+  answerChangeRef.current = answerChange;
+  const nextQuestionRef = useRef(nextQuestion);
+  nextQuestionRef.current = nextQuestion;
+
+  // Skróty klawiszowe: 1/2/3 → wybór odpowiedzi, Enter → następne pytanie
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+      if (endTest || showWrongAnswers) return;
+      if (!isDisabled && currentTest[currentQuestion]) {
+        if (e.key === "1") answerChangeRef.current(0);
+        else if (e.key === "2") answerChangeRef.current(1);
+        else if (e.key === "3") answerChangeRef.current(2);
+      }
+      if (isDisabled && (dangerAlert || succesAlert)) {
+        if (e.key === "Enter") nextQuestionRef.current();
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [isDisabled, endTest, currentQuestion, currentTest, dangerAlert, succesAlert, showWrongAnswers]);
 
   const handleChangeLimit = (event) => {
     setIsManualLimit(true);
@@ -165,6 +195,29 @@ function App() {
     }
   };
 
+  // Tryb egzaminu: 40 pytań (10 z sygnalizacji + 30 pozostałe)
+  const startExamMode = () => {
+    const sygnalizacjaPool = allQuestions.filter(q =>
+      q.category.includes("sygnalizacja") && !q.category.includes("81")
+    );
+    const otherPool = allQuestions.filter(q =>
+      !q.category.includes("sygnalizacja") && !q.category.includes("81")
+    );
+    if (sygnalizacjaPool.length < EXAM_SYGNALIZACJA_COUNT || otherPool.length < EXAM_TOTAL_COUNT - EXAM_SYGNALIZACJA_COUNT) return;
+
+    const examSyg = draw(sygnalizacjaPool, EXAM_SYGNALIZACJA_COUNT);
+    const examOther = draw(otherPool, EXAM_TOTAL_COUNT - EXAM_SYGNALIZACJA_COUNT);
+    const combined = draw([...examSyg, ...examOther], EXAM_TOTAL_COUNT);
+
+    if (combined) {
+      setCurrentTest(combined);
+      setMaxQuestions(EXAM_TOTAL_COUNT);
+      setFullFilteredLength(EXAM_TOTAL_COUNT);
+      resetQuizState();
+      setExamMode(true);
+    }
+  };
+
   useEffect(() => {
     const getQuizData = async () => {
       try {
@@ -174,15 +227,12 @@ function App() {
         const questions = data.questions || [];
         if (questions.length === 0) return;
 
-        // Normalizuj kategorie: wszystkie klucze jako stringi
         const normalized = questions.map((q) => {
           const cats = Array.isArray(q.category) ? q.category : [q.category];
           return { ...q, category: cats.map((c) => String(c)) };
         });
         setAllQuestions(normalized);
 
-        // Oblicz limity dla każdej kategorii
-        // Pytania oznaczone kategorią '81' liczymy tylko w tej kategorii
         const limits = { all: 0 };
         normalized.forEach((q) => {
           const cats = q.category;
@@ -201,7 +251,6 @@ function App() {
     getQuizData();
   }, []);
 
-  // Filtrowanie i losowanie pytań przy zmianie kategorii lub załadowaniu danych
   useEffect(() => {
     if (allQuestions.length === 0) return;
 
@@ -239,15 +288,49 @@ function App() {
         <StyleToggle visualStyle={visualStyle} toggleVisualStyle={toggleVisualStyle} />
         <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
         <SoundOnOff handleClickAudio={handleClickAudio} audio={audio} />
+        <button
+          className={`control-btn learning-btn ${learningMode ? "active" : ""}`}
+          onClick={() => setLearningMode(l => !l)}
+          title={learningMode ? "Wyłącz tryb nauki" : "Włącz tryb nauki (błędy nie są liczone)"}
+        >
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </button>
         <Refresh refreshPage={refreshPage} />
       </div>
+
+      {/* Pasek trybu egzaminu */}
+      {examMode && (
+        <div className="exam-mode-banner">
+          TRYB EGZAMINU &nbsp;·&nbsp; {EXAM_TOTAL_COUNT} pytań &nbsp;·&nbsp; min. 75% + brak błędów z Sygnalizacji
+        </div>
+      )}
+      {/* Pasek trybu nauki */}
+      {learningMode && !examMode && (
+        <div className="learning-mode-banner">
+          TRYB NAUKI &nbsp;·&nbsp; błędy nie są liczone
+        </div>
+      )}
+
       <div className="flex justify-center flex-grow p-4">
         <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
-          <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength}>
-            <ChoiceTest handleTest={handleTest} test={test} categories={CATEGORIES} categoryLimits={categoryLimits} />
+          <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
+            <ChoiceTest handleTest={handleTest} test={test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
           </LimitOfquestions>
+          {/* Przycisk trybu egzaminu */}
+          {allQuestions.length > 0 && (
+            <div className="mt-4">
+              <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
+                {examMode
+                  ? "Zakończ egzamin"
+                  : `Tryb Egzaminu — ${EXAM_TOTAL_COUNT} pytań (${EXAM_SYGNALIZACJA_COUNT} z Sygnalizacji)`}
+              </button>
+            </div>
+          )}
         </div>
       </div>
+
       {showWrongAnswers ? (
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : (
@@ -256,16 +339,25 @@ function App() {
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
-              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError}>
+              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode}>
                 <ResultsButtons
                   onRetry={refreshPage}
                   onShowMistakes={() => { setShowWrongAnswers(true); setEndTest(false); }}
                   onReviewMistakes={startMistakesReview}
                   wrongAnswersCount={wrongAnswers.length}
+                  learningMode={learningMode}
                 />
               </EndTestAlert>
             )}
           </Quiz>
+
+          {/* Podpowiedź klawiatury */}
+          {!endTest && maxQuestions > 0 && !isDisabled && (
+            <div className="kbd-hint">klawisze: 1 · 2 · 3</div>
+          )}
+          {!endTest && maxQuestions > 0 && isDisabled && (dangerAlert || succesAlert) && (
+            <div className="kbd-hint">Enter → następne pytanie</div>
+          )}
 
           {!endTest && maxQuestions > 0 && (
             <ProgressStats correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} />
