@@ -1,16 +1,27 @@
 import Confetti from 'react-confetti';
 
 const EndTestAlert = (props) => {
-  const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false } = props;
+  const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false, examMode = false, learningMode = false } = props;
   const percentage = Math.round((correctAnswers / maxQuestions) * 100);
-  const passed = percentage >= 75 && !hasSygnalizacjaError;
+  const passed = !learningMode && percentage >= 75 && !hasSygnalizacjaError;
+
+  const title = learningMode
+    ? "Tryb nauki zakończony!"
+    : passed
+      ? "🎉 Zaliczone!"
+      : "😔 Niestety, nie zdałeś";
 
   return (
     <div className="alert-overlay">
       <div className="end-test-card">
-        {passed && <Confetti width={380} height={500} style={{ position: 'absolute', top: 0, left: 0 }} />}
+        {(passed || learningMode) && <Confetti width={380} height={500} style={{ position: 'absolute', top: 0, left: 0 }} />}
+
+        {examMode && (
+          <div className="exam-result-badge">EGZAMIN</div>
+        )}
+
         <div className="alert-icon animateBounce">
-          {passed ? (
+          {(passed || learningMode) ? (
             <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="#16a34a">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
             </svg>
@@ -22,12 +33,14 @@ const EndTestAlert = (props) => {
         </div>
 
         <h3 style={{ fontSize: '22px', fontWeight: 800, color: 'white', margin: '12px 0' }}>
-          {passed ? "🎉 Zaliczone!" : "😔 Niestety, nie zdałeś"}
+          {title}
         </h3>
 
-        {hasSygnalizacjaError && (
+        {!learningMode && hasSygnalizacjaError && (
           <p style={{ color: '#fca5a5', fontSize: '14px', margin: '0 0 8px' }}>
-            Test niezaliczony: wystąpiła co najmniej jedna błędna odpowiedź w kategorii Sygnalizacja.
+            {examMode
+              ? "Egzamin niezaliczony: błędna odpowiedź z kategorii Sygnalizacja dyskwalifikuje wynik."
+              : "Test niezaliczony: wystąpiła co najmniej jedna błędna odpowiedź w kategorii Sygnalizacja."}
           </p>
         )}
 
@@ -38,7 +51,7 @@ const EndTestAlert = (props) => {
               <circle cx="55" cy="55" r="45" stroke="rgba(255,255,255,0.1)" strokeWidth="10" fill="none" />
               <circle
                 cx="55" cy="55" r="45"
-                stroke={passed ? "#22c55e" : "#ef4444"}
+                stroke={passed ? "#22c55e" : learningMode ? "#3b82f6" : "#ef4444"}
                 strokeWidth="10"
                 fill="none"
                 strokeLinecap="round"
@@ -54,10 +67,14 @@ const EndTestAlert = (props) => {
           <span style={{ color: '#4ade80', fontSize: '20px', fontWeight: 700 }}>
             ✓ {correctAnswers}
           </span>
-          <span style={{ color: 'rgba(255,255,255,0.4)' }}>|</span>
-          <span style={{ color: '#f87171', fontSize: '20px', fontWeight: 700 }}>
-            ✗ {inCorrectAnswers}
-          </span>
+          {!learningMode && (
+            <>
+              <span style={{ color: 'rgba(255,255,255,0.4)' }}>|</span>
+              <span style={{ color: '#f87171', fontSize: '20px', fontWeight: 700 }}>
+                ✗ {inCorrectAnswers}
+              </span>
+            </>
+          )}
           <span style={{ color: 'rgba(255,255,255,0.4)' }}>|</span>
           <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: '20px', fontWeight: 600 }}>
             {correctAnswers + inCorrectAnswers}/{maxQuestions}

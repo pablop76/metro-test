@@ -19,3 +19,6 @@ export const STORAGE_KEYS = {
   theme: "app-theme",
   visualStyle: "app-visual-style",
 };
+
+export const EXAM_TOTAL_COUNT = 40;
+export const EXAM_SYGNALIZACJA_COUNT = 10;
