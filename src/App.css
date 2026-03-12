@@ -282,10 +282,10 @@ body {
 }
 
 .category-pill.active-bonus {
-  background: linear-gradient(135deg, #6b7280, #4b5563);
-  border-color: #6b7280;
-  color: #d1d5db;
-  box-shadow: 0 4px 15px rgba(107, 114, 128, 0.35);
+  background: linear-gradient(135deg, #d97706, #b45309);
+  border-color: #f59e0b;
+  color: white;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.45);
 }
 
 .category-pill .pill-count {
@@ -921,9 +921,9 @@ body {
 }
 
 .light-mode .category-pill.active-bonus {
-  background: linear-gradient(135deg, #475569, #334155);
+  background: linear-gradient(135deg, #d97706, #b45309);
   color: white;
-  border-color: #334155;
+  border-color: #f59e0b;
 }
 
 .light-mode .number-input {
