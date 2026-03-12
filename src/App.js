@@ -213,6 +213,7 @@ function App() {
       setCurrentTest(combined);
       setMaxQuestions(EXAM_TOTAL_COUNT);
       setFullFilteredLength(EXAM_TOTAL_COUNT);
+      setTest(["all"]);
       resetQuizState();
       setExamMode(true);
     }
