@@ -16,7 +16,7 @@ const Quiz = (props) => {
     }
     setAnswerOrder(order);
     onAnswerOrderChange?.(order);
-  }, [currentQuestion, currentTest]);
+  }, [currentQuestion, currentTest]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const currentImage = currentTest[currentQuestion]?.image;
   const imgPath = currentImage ? currentImage.replace(/^\.\//, "") : "";
