@@ -254,6 +254,7 @@ function App() {
 
   useEffect(() => {
     if (allQuestions.length === 0) return;
+    if (examMode) return; // tryb egzaminu sam ustawia currentTest
 
     const filtered = allQuestions.filter((q) => {
       const cats = q.category;
@@ -280,7 +281,7 @@ function App() {
       });
       resetQuizState();
     }
-  }, [test, allQuestions]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [test, allQuestions, examMode]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
