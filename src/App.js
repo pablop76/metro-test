@@ -8,48 +8,20 @@ import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
 import Quiz from "./components/quiz/Quiz.js";
+import ProgressStats from "./components/quiz/ProgressStats";
+import ResultsButtons from "./components/quiz/ResultsButtons";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
+import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS } from "./constants";
+import { draw } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
 
-// Losowanie pytań od 0 do długość tablicy
-const draw = (arr, counter) => {
-  const arr2 = [...arr];
-  const arr3 = [];
-  if (arr2.length >= counter) {
-    for (let i = 0; i < counter; i++) {
-      let index = Math.floor(Math.random() * arr2.length);
-      arr3.push(arr2[index]);
-      arr2.splice(index, 1);
-    }
-  } else {
-    alert("Nie ma tyle pytań w puli");
-    return;
-  }
-  return arr3;
-};
-
-// Definicja kategorii z etykietami do wyświetlenia
-const CATEGORIES = {
-  all: "Wszystko",
-  skoda: "Śkoda / Varsovia",
-  inspiro: "Inspiro",
-  sygnalizacja: "Sygnalizacja",
-  instrukcja: "Instrukcja",
-  metropolis: "Metropolis",
-  sop: "SOP",
-  linia2: "Linia nr 2",
-  81: "Bonus - seria 81",
-};
-
-const VISUAL_STYLES = ["default", "industrial", "retro"];
-
 function App() {
-  const [allQuestions, setAllQuestions] = useState([]); // pełna baza pytań
+  const [allQuestions, setAllQuestions] = useState([]);
   const [currentTest, setCurrentTest] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [maxQuestions, setMaxQuestions] = useState(0);
@@ -57,44 +29,26 @@ function App() {
   const [audio, setAudioOn] = useState(false);
   const [correctAnswers, setCorectAnswers] = useState(0);
   const [inCorrectAnswers, setInCorrectAnswers] = useState(0);
-  const [saveInCorrectAnswers, setSaveInCorrectAnswers] = useState([]);
   const [dangerAlert, setDangerAlert] = useState(false);
   const [succesAlert, setSuccesAlert] = useState(false);
   const [isDisabled, setIsDisabled] = useState(false);
   const [test, setTest] = useState(["all"]);
-  const [categoryLimits, setCategoryLimits] = useState({}); // { all: 335, skoda: 48, ... }
-  // zapisuje błedne odpowiedzi ale jeszcze nic z nimi nie robi
+  const [categoryLimits, setCategoryLimits] = useState({});
   const [wrongAnswers, setWrongAnswers] = useState([]);
   const [showWrongAnswers, setShowWrongAnswers] = useState(false);
-
   const [isManualLimit, setIsManualLimit] = useState(false);
   const [fullFilteredLength, setFullFilteredLength] = useState(0);
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null);
   const [isAnswerCorrect, setIsAnswerCorrect] = useState(null);
   const [hasSygnalizacjaError, setHasSygnalizacjaError] = useState(false);
 
-  // Dodanie stanu Theme i inicjalizacja z localStorage
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("app-theme") || "dark";
-  });
-  const [visualStyle, setVisualStyle] = useState(() => {
-    return localStorage.getItem("app-visual-style") || "default";
-  });
+  const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
+  const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
 
-  // Zapisywanie motywu przy jego zmianie i aktualizacja atrybutu w dokumencie dla globalnych stylów
-  useEffect(() => {
-    localStorage.setItem("app-theme", theme);
-    // Dodawanie/usuwanie klasy z elementu body pozwala na nadpisanie zmiennych globalnych w przyszłości,
-    // ale główny switch robimy na samej nakładce (divie) w return.
-  }, [theme]);
+  useEffect(() => { localStorage.setItem(STORAGE_KEYS.theme, theme); }, [theme]);
+  useEffect(() => { localStorage.setItem(STORAGE_KEYS.visualStyle, visualStyle); }, [visualStyle]);
 
-  useEffect(() => {
-    localStorage.setItem("app-visual-style", visualStyle);
-  }, [visualStyle]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
+  const toggleTheme = () => setTheme((prev) => (prev === "light" ? "dark" : "light"));
 
   const toggleVisualStyle = () => {
     setVisualStyle((prev) => {
@@ -104,7 +58,6 @@ function App() {
     });
   };
 
-  // ustawienie tematu testu (wielokrotny wybór)
   const handleTest = (e) => {
     const value = e.target.value;
     setTest((prev) => {
@@ -120,6 +73,22 @@ function App() {
 
   const sound = useRef(typeof Audio !== "undefined" ? new Audio(oklaski) : null);
   const sound2 = useRef(typeof Audio !== "undefined" ? new Audio(smiech) : null);
+
+  // Resetuje stan quizu do wartości początkowych (używane przy zmianie kategorii, powtórce błędów itp.)
+  const resetQuizState = () => {
+    setCorectAnswers(0);
+    setInCorrectAnswers(0);
+    setCurrentQuestion(0);
+    setEndTest(false);
+    setDangerAlert(false);
+    setSuccesAlert(false);
+    setIsDisabled(false);
+    setHasSygnalizacjaError(false);
+    setSelectedAnswerIndex(null);
+    setIsAnswerCorrect(null);
+    setWrongAnswers([]);
+    setShowWrongAnswers(false);
+  };
 
   const answerChange = (answerUser) => {
     if (currentQuestion >= maxQuestions + 1) return;
@@ -149,8 +118,6 @@ function App() {
       setDangerAlert(true);
       if (inCorrectAnswers + correctAnswers < maxQuestions) {
         setInCorrectAnswers(inCorrectAnswers + 1);
-        // zbieranie niepoprawnych odpowiedzi
-        setSaveInCorrectAnswers([...saveInCorrectAnswers, currentTest[currentQuestion]]);
       }
       setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]]);
     }
@@ -174,7 +141,6 @@ function App() {
   const handleChangeLimit = (event) => {
     setIsManualLimit(true);
     let { value, min, max } = event.target;
-    // max bazuje teraz poprawnie na limitach wewn. eventu (tzn. input limitowany do max poolSize w LimitOfquestions)
     value = Math.max(Number(min), Math.min(Number(max), Number(value)));
     if (value === 0) {
       setMaxQuestions("");
@@ -183,45 +149,21 @@ function App() {
     setMaxQuestions(value);
   };
 
-  const handleClickAudio = () => {
-    setAudioOn(!audio);
-  };
-  const refreshPage = () => {
-    window.location.reload(false);
-  };
+  const handleClickAudio = () => setAudioOn(!audio);
+  const refreshPage = () => window.location.reload(false);
 
   const startMistakesReview = () => {
     if (wrongAnswers.length === 0) return;
-
-    // Create a new pool from wrong answers
     const pool = [...wrongAnswers];
     const poolSize = pool.length;
-
-    setFullFilteredLength(poolSize);
-    const drawData = draw(pool, poolSize); // Or just use pool if we want to keep original order, but draw is safer/consistent
-
+    const drawData = draw(pool, poolSize);
     if (drawData) {
+      setFullFilteredLength(poolSize);
       setCurrentTest(drawData);
       setMaxQuestions(poolSize);
-      setCorectAnswers(0);
-      setInCorrectAnswers(0);
-      setCurrentQuestion(0);
-      setEndTest(false);
-      setDangerAlert(false);
-      setSuccesAlert(false);
-      setIsDisabled(false);
-      setHasSygnalizacjaError(false);
-      setWrongAnswers([]); // Reset wrong answers for the new "mistakes review" session
-      setShowWrongAnswers(false);
+      resetQuizState();
     }
   };
-
-  let colorSend = (() => {
-    if (Math.round((correctAnswers / maxQuestions) * 100) >= 75) {
-      return "bg-green-700";
-    }
-    return "bg-red-600";
-  })();
 
   useEffect(() => {
     const getQuizData = async () => {
@@ -237,22 +179,19 @@ function App() {
           const cats = Array.isArray(q.category) ? q.category : [q.category];
           return { ...q, category: cats.map((c) => String(c)) };
         });
-
         setAllQuestions(normalized);
 
         // Oblicz limity dla każdej kategorii
         // Pytania oznaczone kategorią '81' liczymy tylko w tej kategorii
         const limits = { all: 0 };
         normalized.forEach((q) => {
-          const cats = Array.isArray(q.category) ? q.category : [q.category];
+          const cats = q.category;
           if (cats.includes("81")) {
             limits["81"] = (limits["81"] || 0) + 1;
             return;
           }
-          limits.all = (limits.all || 0) + 1;
-          cats.forEach((cat) => {
-            limits[cat] = (limits[cat] || 0) + 1;
-          });
+          limits.all++;
+          cats.forEach((cat) => { limits[cat] = (limits[cat] || 0) + 1; });
         });
         setCategoryLimits(limits);
       } catch (err) {
@@ -267,60 +206,31 @@ function App() {
     if (allQuestions.length === 0) return;
 
     const filtered = allQuestions.filter((q) => {
-      const cats = Array.isArray(q.category) ? q.category : [q.category];
-      if (cats.includes("81")) {
-        return Array.isArray(test) ? test.includes("81") : test === "81";
-      }
-      if (Array.isArray(test) && test.includes("all")) return true;
-      if (!Array.isArray(test) && test === "all") return true;
-      if (Array.isArray(test)) {
-        return cats.some((c) => test.includes(c));
-      }
-      return cats.includes(test);
+      const cats = q.category;
+      if (cats.includes("81")) return test.includes("81");
+      if (test.includes("all")) return true;
+      return cats.some((c) => test.includes(c));
     });
 
     if (filtered.length === 0) {
-      // If no questions match the selected categories, clear the current test
-      // so we don't keep showing the previous question pool.
       setCurrentTest([]);
       setMaxQuestions(0);
-      setCorectAnswers(0);
-      setInCorrectAnswers(0);
-      setCurrentQuestion(0);
-      setEndTest(false);
-      setDangerAlert(false);
-      setSuccesAlert(false);
-      setIsDisabled(false);
-      setHasSygnalizacjaError(false);
-      setWrongAnswers([]);
-      setShowWrongAnswers(false);
+      resetQuizState();
       return;
     }
 
-    // Always reset to the full filtered pool when categories change.
     const poolSize = filtered.length;
     setFullFilteredLength(poolSize);
     const drawData = draw(filtered, poolSize);
     if (drawData) {
       setCurrentTest(drawData);
       setMaxQuestions((prev) => {
-        if (isManualLimit && prev !== "" && prev !== null) {
-          return Math.min(prev, poolSize);
-        }
+        if (isManualLimit && prev !== "" && prev !== null) return Math.min(prev, poolSize);
         return poolSize;
       });
-      setCorectAnswers(0);
-      setInCorrectAnswers(0);
-      setCurrentQuestion(0);
-      setEndTest(false);
-      setDangerAlert(false);
-      setSuccesAlert(false);
-      setIsDisabled(false);
-      setHasSygnalizacjaError(false);
-      setWrongAnswers([]);
-      setShowWrongAnswers(false);
+      resetQuizState();
     }
-  }, [test, allQuestions]);
+  }, [test, allQuestions]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
@@ -346,114 +256,19 @@ function App() {
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
-              <EndTestAlert
-                correctAnswers={correctAnswers}
-                inCorrectAnswers={inCorrectAnswers}
-                maxQuestions={maxQuestions}
-                colorSend={colorSend}
-                hasSygnalizacjaError={hasSygnalizacjaError}
-              >
-                <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "12px", marginTop: "16px" }}>
-                  <button
-                    className="results-btn retry"
-                    style={{
-                      padding: "10px 16px",
-                      background: "rgba(255,255,255,0.1)",
-                      border: "1px solid rgba(255,255,255,0.2)",
-                      borderRadius: "12px",
-                      color: "white",
-                      fontWeight: 600,
-                      cursor: "pointer",
-                    }}
-                    onClick={refreshPage}
-                  >
-                    Spróbuj ponownie
-                  </button>
-                  {wrongAnswers.length > 0 && (
-                    <button
-                      className="results-btn mistakes"
-                      style={{
-                        padding: "10px 16px",
-                        background: "linear-gradient(135deg, #3b82f6, #2563eb)",
-                        border: "none",
-                        borderRadius: "12px",
-                        color: "white",
-                        fontWeight: 600,
-                        cursor: "pointer",
-                        whiteSpace: "nowrap",
-                      }}
-                      onClick={() => {
-                        setShowWrongAnswers(true);
-                        setEndTest(false);
-                      }}
-                    >
-                      Pokaż błędy
-                    </button>
-                  )}
-                  {wrongAnswers.length > 0 && (
-                    <button
-                      className="results-btn review-mistakes"
-                      style={{
-                        padding: "10px 16px",
-                        background: "linear-gradient(135deg, #f59e0b, #d97706)",
-                        border: "none",
-                        borderRadius: "12px",
-                        color: "white",
-                        fontWeight: 600,
-                        cursor: "pointer",
-                        whiteSpace: "nowrap",
-                      }}
-                      onClick={startMistakesReview}
-                    >
-                      Powtórz tylko błędy
-                    </button>
-                  )}
-                </div>
+              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError}>
+                <ResultsButtons
+                  onRetry={refreshPage}
+                  onShowMistakes={() => { setShowWrongAnswers(true); setEndTest(false); }}
+                  onReviewMistakes={startMistakesReview}
+                  wrongAnswersCount={wrongAnswers.length}
+                />
               </EndTestAlert>
             )}
           </Quiz>
 
-          {/* Progress Bar & Stats */}
-          {!endTest && maxQuestions > 0 && !showWrongAnswers && (
-            <>
-              <div className="progress-container w-full max-w-md mx-auto px-4 mt-6">
-                <div className="progress-bar-bg">
-                  <div className="progress-bar-fill" style={{ width: `${((correctAnswers + inCorrectAnswers) / maxQuestions) * 100}%` }}></div>
-                </div>
-                <div className="flex justify-between items-center mt-2 text-sm progress-label">
-                  <span>
-                    Pytanie {Math.min(correctAnswers + inCorrectAnswers + 1, maxQuestions)} z {maxQuestions}
-                  </span>
-                  <span>{maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%</span>
-                </div>
-              </div>
-
-              <div className="stats-row text-white glass-card">
-                <div className="stat-item stat-correct" title="Poprawne">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7"></path>
-                  </svg>
-                  {correctAnswers}
-                </div>
-                <div className="w-px h-8 bg-gray-500 opacity-50"></div>
-                <div className="donut-chart" style={{ width: "60px", height: "60px", margin: "0" }}>
-                  <svg width="60" height="60" viewBox="0 0 60 60">
-                    <circle cx="30" cy="30" r="24" stroke="rgba(255,255,255,0.15)" strokeWidth="6" fill="none" className="donut-bg-circle" />
-                    <circle cx="30" cy="30" r="24" stroke={Math.round((correctAnswers / maxQuestions) * 100) >= 75 ? "#22c55e" : correctAnswers > 0 ? "#ea580c" : "transparent"} strokeWidth="6" fill="none" strokeLinecap="round" strokeDasharray={`${(Math.round((correctAnswers / maxQuestions) * 100) / 100) * 150} 150`} className="donut-fill-circle" />
-                  </svg>
-                  <div className="donut-label" style={{ fontSize: "14px" }}>
-                    {maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0}%
-                  </div>
-                </div>
-                <div className="w-px h-8 bg-gray-500 opacity-50"></div>
-                <div className="stat-item stat-incorrect" title="Błędne">
-                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12"></path>
-                  </svg>
-                  {inCorrectAnswers}
-                </div>
-              </div>
-            </>
+          {!endTest && maxQuestions > 0 && (
+            <ProgressStats correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} />
           )}
         </>
       )}
