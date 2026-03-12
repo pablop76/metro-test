@@ -1090,6 +1090,45 @@ body {
   background: rgba(96, 165, 250, 0.12);
 }
 
+/* ===== PRZYCISKI WYNIKÓW ===== */
+.results-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.results-btn {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.15s;
+}
+
+.results-btn:hover { opacity: 0.85; }
+
+.results-btn.retry {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border-color: rgba(59, 130, 246, 0.5);
+}
+
+.results-btn.mistakes {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.75);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.results-btn.review-mistakes {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  border-color: rgba(245, 158, 11, 0.5);
+}
+
 /* ===== PODPOWIEDŹ KLAWIATUROWA ===== */
 .kbd-hint {
   text-align: center;
