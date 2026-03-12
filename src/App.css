@@ -672,6 +672,13 @@ body {
   border-color: rgba(125, 211, 252, 0.85);
 }
 
+.visual-industrial .category-pill.active-bonus {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  border-color: #f59e0b;
+  color: white;
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.45);
+}
+
 .visual-industrial .app-header h1 {
   font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
   font-weight: 700;
