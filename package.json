@@ -17,8 +17,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "craco start",
-    "build": "craco build",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider craco start",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^9.8.8",
+    "cross-env": "^10.1.0",
     "gh-pages": "^3.2.3",
     "postcss": "^7.0.39",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
