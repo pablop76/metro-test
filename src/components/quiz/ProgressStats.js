@@ -1,5 +1,5 @@
-const ProgressStats = ({ correctAnswers, inCorrectAnswers, maxQuestions }) => {
-  const answeredCount = correctAnswers + inCorrectAnswers;
+const ProgressStats = ({ correctAnswers, inCorrectAnswers, maxQuestions, learningMode, totalAnswered }) => {
+  const answeredCount = learningMode ? totalAnswered : correctAnswers + inCorrectAnswers;
   const percentage = maxQuestions ? Math.round((correctAnswers / maxQuestions) * 100) : 0;
   const passedThreshold = percentage >= 75;
 
@@ -16,11 +16,11 @@ const ProgressStats = ({ correctAnswers, inCorrectAnswers, maxQuestions }) => {
           <span>
             Pytanie {Math.min(answeredCount + 1, maxQuestions)} z {maxQuestions}
           </span>
-          <span>{percentage}%</span>
+          {!learningMode && <span>{percentage}%</span>}
         </div>
       </div>
 
-      <div className="stats-row text-white glass-card">
+      {!learningMode && <div className="stats-row text-white glass-card">
         <div className="stat-item stat-correct" title="Poprawne">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
@@ -64,7 +64,7 @@ const ProgressStats = ({ correctAnswers, inCorrectAnswers, maxQuestions }) => {
           </svg>
           {inCorrectAnswers}
         </div>
-      </div>
+      </div>}
     </>
   );
 };

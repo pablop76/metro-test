@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Quiz = (props) => {
-  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange } = props;
+  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex } = props;
   const [imageLoadError, setImageLoadError] = useState(false);
   // answerOrder[wyświetlanyIndex] = oryginalnyIndex — tasowanie odpowiedzi
   const [answerOrder, setAnswerOrder] = useState([0, 1, 2]);
@@ -42,6 +42,9 @@ const Quiz = (props) => {
         {answerOrder.map((originalIndex, displayIndex) => {
           const answer = currentTest[currentQuestion]?.content[originalIndex];
           let btnClass = "answer-btn";
+          if (learningMode && originalIndex === correctAnswerIndex) {
+            btnClass += " learning-correct";
+          }
           if (isDisabled && props.selectedAnswerIndex === originalIndex) {
             btnClass += props.isAnswerCorrect ? " current" : " wrong";
           }

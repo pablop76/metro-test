@@ -178,6 +178,15 @@ body {
   transform: scale(1.02);
 }
 
+.learning-correct {
+  border-color: rgba(34, 197, 94, 0.55) !important;
+  box-shadow: 0 0 14px rgba(34, 197, 94, 0.22);
+}
+
+.learning-correct .answer-number {
+  background: linear-gradient(135deg, #16a34a, #15803d) !important;
+}
+
 /* ===== ANSWER BUTTON ===== */
 .answer-btn {
   display: flex;
