@@ -73,11 +73,13 @@ export const getQuestionStats = () => {
 
 export const updateQuestionStat = (questionText, isCorrect) => {
   const stats = getQuestionStats();
-  if (!stats[questionText]) stats[questionText] = { correct: 0, wrong: 0 };
+  if (!stats[questionText]) stats[questionText] = { correct: 0, wrong: 0, streak: 0 };
   if (isCorrect) {
     stats[questionText].correct++;
+    stats[questionText].streak = (stats[questionText].streak || 0) + 1;
   } else {
     stats[questionText].wrong++;
+    stats[questionText].streak = 0;
   }
   localStorage.setItem("question-stats", JSON.stringify(stats));
 };
@@ -87,9 +89,8 @@ export const getWeakestQuestions = (allQuestions) => {
   return allQuestions
     .filter((q) => {
       const s = stats[q.question];
-      if (!s || (s.correct + s.wrong) < 4) return false;
-      const rate = s.correct / (s.correct + s.wrong);
-      return rate < 0.75;
+      if (!s || s.wrong === 0) return false;
+      return (s.streak || 0) < 2;
     })
     .sort((a, b) => {
       const sa = stats[a.question];
