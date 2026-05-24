@@ -8,14 +8,19 @@ const ChoiceTest = (props) => {
           .sort(([aKey], [bKey]) => {
             if (aKey === "81") return 1;
             if (bKey === "81") return -1;
+            if (aKey === "starred") return 1;
+            if (bKey === "starred") return -1;
             return 0;
           })
           .map(([key, label]) => {
             const is81 = key === "81";
+            const isStarredCat = key === "starred";
             const isActive = Array.isArray(test) ? test.includes(key) : test === key;
             let pillClass = "category-pill";
             if (isActive) {
-              pillClass += is81 ? " active-bonus" : " active";
+              if (is81) pillClass += " active-bonus";
+              else if (isStarredCat) pillClass += " active-starred";
+              else pillClass += " active";
             }
             return (
               <label key={key} className={pillClass}>

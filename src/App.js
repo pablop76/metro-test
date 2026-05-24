@@ -10,13 +10,14 @@ import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
 import Quiz from "./components/quiz/Quiz.js";
 import ProgressStats from "./components/quiz/ProgressStats";
 import ResultsButtons from "./components/quiz/ResultsButtons";
+import SessionHistory from "./components/quiz/SessionHistory";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT } from "./constants";
-import { draw } from "./utils/quizUtils";
+import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
 
@@ -44,6 +45,9 @@ function App() {
   const [examMode, setExamMode] = useState(false);
   const [learningMode, setLearningMode] = useState(false);
   const [totalAnswered, setTotalAnswered] = useState(0);
+  const [starredIds, setStarredIds] = useState(() => getStarredIds());
+  const [showHistory, setShowHistory] = useState(false);
+  const [weakestMode, setWeakestMode] = useState(false);
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
   const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
@@ -93,6 +97,7 @@ function App() {
     setWrongAnswers([]);
     setShowWrongAnswers(false);
     setTotalAnswered(0);
+    setWeakestMode(false);
   };
 
   const answerChange = (answerUser) => {
@@ -106,6 +111,7 @@ function App() {
         sound.current.currentTime = 0;
         sound.current.play();
       }
+      updateQuestionStat(currentTest[currentQuestion].question, true);
       setCorectAnswers(correctAnswers + 1);
       setIsAnswerCorrect(true);
       setSuccesAlert(true);
@@ -120,6 +126,7 @@ function App() {
       if (currentCategories.includes("sygnalizacja")) {
         setHasSygnalizacjaError(true);
       }
+      updateQuestionStat(currentTest[currentQuestion].question, false);
       setIsAnswerCorrect(false);
       setDangerAlert(true);
       // W trybie nauki błędy nie są liczone
@@ -222,6 +229,42 @@ function App() {
     }
   };
 
+  const handleToggleStar = (questionText) => {
+    const newIds = toggleStarred(questionText);
+    setStarredIds(newIds);
+    setCategoryLimits((prev) => ({ ...prev, starred: newIds.size }));
+  };
+
+  // Zapis sesji po zakończeniu testu (nie w trybie nauki)
+  useEffect(() => {
+    if (!endTest || learningMode || maxQuestions === 0) return;
+    const percentage = Math.round((correctAnswers / maxQuestions) * 100);
+    saveSession({
+      date: new Date().toISOString(),
+      categories: [...test],
+      correct: correctAnswers,
+      total: maxQuestions,
+      percentage,
+      passed: percentage >= 75 && !hasSygnalizacjaError,
+      examMode,
+    });
+  }, [endTest]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const startWeakestMode = () => {
+    const weakest = getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81")));
+    if (weakest.length === 0) return;
+    const poolSize = Math.min(weakest.length, 30);
+    const drawData = draw(weakest, poolSize);
+    if (drawData) {
+      setCurrentTest(drawData);
+      setMaxQuestions(poolSize);
+      setFullFilteredLength(poolSize);
+      resetQuizState();
+      setWeakestMode(true);
+      setExamMode(false);
+    }
+  };
+
   useEffect(() => {
     const getQuizData = async () => {
       try {
@@ -237,7 +280,8 @@ function App() {
         });
         setAllQuestions(normalized);
 
-        const limits = { all: 0 };
+        const currentStarred = getStarredIds();
+        const limits = { all: 0, starred: 0 };
         normalized.forEach((q) => {
           const cats = q.category;
           if (cats.includes("81")) {
@@ -245,6 +289,7 @@ function App() {
             return;
           }
           limits.all++;
+          if (currentStarred.has(q.question)) limits.starred++;
           cats.forEach((cat) => { limits[cat] = (limits[cat] || 0) + 1; });
         });
         setCategoryLimits(limits);
@@ -257,11 +302,14 @@ function App() {
 
   useEffect(() => {
     if (allQuestions.length === 0) return;
-    if (examMode) return; // tryb egzaminu sam ustawia currentTest
+    if (examMode) return;
+    if (weakestMode) return;
 
+    const currentStarred = getStarredIds();
     const filtered = allQuestions.filter((q) => {
       const cats = q.category;
       if (cats.includes("81")) return test.includes("81");
+      if (test.includes("starred")) return currentStarred.has(q.question);
       if (test.includes("all")) return true;
       return cats.some((c) => test.includes(c));
     });
@@ -302,6 +350,15 @@ function App() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         </button>
+        <button
+          className={`control-btn ${showHistory ? "active" : ""}`}
+          onClick={() => setShowHistory(h => !h)}
+          title="Historia sesji"
+        >
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </button>
         <Refresh refreshPage={refreshPage} />
       </div>
 
@@ -309,6 +366,12 @@ function App() {
       {examMode && (
         <div className="exam-mode-banner">
           TRYB EGZAMINU &nbsp;·&nbsp; {EXAM_TOTAL_COUNT} pytań &nbsp;·&nbsp; min. 75% + brak błędów z Sygnalizacji
+        </div>
+      )}
+      {/* Pasek trybu najsłabszych pytań */}
+      {weakestMode && !examMode && (
+        <div className="weakest-mode-banner">
+          TRUDNE PYTANIA &nbsp;·&nbsp; ćwicz to, co sprawia Ci trudność
         </div>
       )}
       {/* Pasek trybu nauki */}
@@ -323,16 +386,28 @@ function App() {
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
             <ChoiceTest handleTest={handleTest} test={examMode ? ["all"] : test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
           </LimitOfquestions>
-          {/* Przycisk trybu egzaminu */}
+          {/* Przyciski trybów */}
           {allQuestions.length > 0 && (
-            <div className="mt-4">
+            <div className="mt-4 flex flex-col gap-2">
               <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
                 {examMode
                   ? "Zakończ egzamin"
                   : `Tryb Egzaminu — ${EXAM_TOTAL_COUNT} pytań (${EXAM_SYGNALIZACJA_COUNT} z Sygnalizacji)`}
               </button>
+              <button
+                className={`weakest-mode-btn ${weakestMode ? "active" : ""}`}
+                onClick={weakestMode ? refreshPage : startWeakestMode}
+                disabled={!weakestMode && getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length === 0}
+                title={getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length === 0 ? "Odpowiedz na min. 3 pytania, żeby odblokować trudne pytania" : ""}
+              >
+                {weakestMode
+                  ? "Zakończ tryb trudnych pytań"
+                  : `Trudne pytania${getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length > 0 ? ` (${getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length})` : " — brak danych"}`}
+              </button>
             </div>
           )}
+          {/* Historia sesji */}
+          {showHistory && <SessionHistory />}
         </div>
       </div>
 
@@ -340,7 +415,7 @@ function App() {
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : (
         <>
-          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct}>
+          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar}>
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (

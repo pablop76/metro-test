@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Quiz = (props) => {
-  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex } = props;
+  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex, starredIds, onToggleStar } = props;
   const [imageLoadError, setImageLoadError] = useState(false);
   // answerOrder[wyświetlanyIndex] = oryginalnyIndex — tasowanie odpowiedzi
   const [answerOrder, setAnswerOrder] = useState([0, 1, 2]);
@@ -18,14 +18,24 @@ const Quiz = (props) => {
     onAnswerOrderChange?.(order);
   }, [currentQuestion, currentTest]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const currentImage = currentTest[currentQuestion]?.image;
+  const question = currentTest[currentQuestion];
+  const isStarred = starredIds && question ? starredIds.has(question.question) : false;
+  const currentImage = question?.image;
   const imgPath = currentImage ? currentImage.replace(/^\.\//, "") : "";
   const imgSrc = imgPath ? `${process.env.PUBLIC_URL}/${imgPath}` : "";
 
   return (
     <>
       <div className="question-card" key={currentQuestion}>
-        <h2>{currentTest[currentQuestion]?.question}</h2>
+        <button
+          className={`star-btn ${isStarred ? "star-btn--active" : ""}`}
+          onClick={() => question && onToggleStar?.(question.question)}
+          title={isStarred ? "Usuń z oznaczonych" : "Oznacz jako trudne"}
+          aria-label="Oznacz pytanie"
+        >
+          {isStarred ? "★" : "☆"}
+        </button>
+        <h2>{question?.question}</h2>
         {currentImage && (
           <div className="my-4">
             {!imageLoadError && (
