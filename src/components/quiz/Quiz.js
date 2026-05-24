@@ -48,7 +48,7 @@ const Quiz = (props) => {
         )}
       </div>
       {props.children}
-      <div key={currentQuestion} className="answers-container container max-w-lg p-3 mx-auto">
+      <div className="answers-container container max-w-lg p-3 mx-auto">
         {answerOrder.map((originalIndex, displayIndex) => {
           const answer = currentTest[currentQuestion]?.content[originalIndex];
           let btnClass = "answer-btn";
@@ -59,7 +59,7 @@ const Quiz = (props) => {
             btnClass += props.isAnswerCorrect ? " current" : " wrong";
           }
           return (
-            <button key={originalIndex} className={btnClass} onClick={() => answerChange(originalIndex)} disabled={isDisabled}>
+            <button key={`${currentQuestion}-${originalIndex}`} className={btnClass} onClick={() => answerChange(originalIndex)} disabled={isDisabled}>
               <div className="answer-number">{displayIndex + 1}</div>
               <div className="answer-text">{answer}</div>
             </button>
