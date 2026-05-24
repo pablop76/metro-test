@@ -250,11 +250,19 @@ function App() {
     });
   }, [endTest]); // eslint-disable-line react-hooks/exhaustive-deps
 
+  const getDifficultPool = () => {
+    const base = allQuestions.filter(q => !q.category.includes("81"));
+    const statWeak = getWeakestQuestions(base);
+    const statWeakSet = new Set(statWeak.map(q => q.question));
+    const starredPool = base.filter(q => starredIds.has(q.question) && !statWeakSet.has(q.question));
+    return [...statWeak, ...starredPool];
+  };
+
   const startWeakestMode = () => {
-    const weakest = getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81")));
-    if (weakest.length === 0) return;
-    const poolSize = Math.min(weakest.length, 30);
-    const drawData = draw(weakest, poolSize);
+    const pool = getDifficultPool();
+    if (pool.length === 0) return;
+    const poolSize = Math.min(pool.length, 30);
+    const drawData = draw(pool, poolSize);
     if (drawData) {
       setCurrentTest(drawData);
       setMaxQuestions(poolSize);
@@ -394,16 +402,21 @@ function App() {
                   ? "Zakończ egzamin"
                   : `Tryb Egzaminu — ${EXAM_TOTAL_COUNT} pytań (${EXAM_SYGNALIZACJA_COUNT} z Sygnalizacji)`}
               </button>
-              <button
-                className={`weakest-mode-btn ${weakestMode ? "active" : ""}`}
-                onClick={weakestMode ? refreshPage : startWeakestMode}
-                disabled={!weakestMode && getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length === 0}
-                title={getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length === 0 ? "Odpowiedz na min. 3 pytania, żeby odblokować trudne pytania" : ""}
-              >
-                {weakestMode
-                  ? "Zakończ tryb trudnych pytań"
-                  : `Trudne pytania${getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length > 0 ? ` (${getWeakestQuestions(allQuestions.filter(q => !q.category.includes("81"))).length})` : " — brak danych"}`}
-              </button>
+              {(() => {
+                const difficultCount = weakestMode ? 0 : getDifficultPool().length;
+                return (
+                  <button
+                    className={`weakest-mode-btn ${weakestMode ? "active" : ""}`}
+                    onClick={weakestMode ? refreshPage : startWeakestMode}
+                    disabled={!weakestMode && difficultCount === 0}
+                    title={difficultCount === 0 ? "Oznacz pytania gwiazdką lub odpowiedz na kilka pytań" : ""}
+                  >
+                    {weakestMode
+                      ? "Zakończ tryb trudnych pytań"
+                      : `Trudne pytania${difficultCount > 0 ? ` (${difficultCount})` : " — brak danych"}`}
+                  </button>
+                );
+              })()}
             </div>
           )}
           {/* Historia sesji */}
