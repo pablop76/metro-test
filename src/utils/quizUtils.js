@@ -73,13 +73,18 @@ export const getQuestionStats = () => {
 
 export const updateQuestionStat = (questionText, isCorrect) => {
   const stats = getQuestionStats();
-  if (!stats[questionText]) stats[questionText] = { correct: 0, wrong: 0, streak: 0 };
+  if (!stats[questionText]) stats[questionText] = { correct: 0, wrong: 0, wrongStreak: 0, correctStreak: 0, difficult: false };
+  const s = stats[questionText];
   if (isCorrect) {
-    stats[questionText].correct++;
-    stats[questionText].streak = (stats[questionText].streak || 0) + 1;
+    s.correct++;
+    s.correctStreak = (s.correctStreak || 0) + 1;
+    s.wrongStreak = 0;
+    if (s.correctStreak >= 2) s.difficult = false;
   } else {
-    stats[questionText].wrong++;
-    stats[questionText].streak = 0;
+    s.wrong++;
+    s.wrongStreak = (s.wrongStreak || 0) + 1;
+    s.correctStreak = 0;
+    if (s.wrongStreak >= 2) s.difficult = true;
   }
   localStorage.setItem("question-stats", JSON.stringify(stats));
 };
@@ -87,11 +92,7 @@ export const updateQuestionStat = (questionText, isCorrect) => {
 export const getWeakestQuestions = (allQuestions) => {
   const stats = getQuestionStats();
   return allQuestions
-    .filter((q) => {
-      const s = stats[q.question];
-      if (!s || s.wrong === 0) return false;
-      return (s.streak || 0) < 2;
-    })
+    .filter((q) => stats[q.question]?.difficult === true)
     .sort((a, b) => {
       const sa = stats[a.question];
       const sb = stats[b.question];

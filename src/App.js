@@ -419,7 +419,7 @@ function App() {
               })()}
               {!weakestMode && (
                 <p className="difficult-hint">
-                  Pytanie trafia tu automatycznie po każdej błędnej odpowiedzi. Znika po 2 poprawnych z rzędu — błąd resetuje licznik.
+                  Pytanie trafia tu po 2 błędach z rzędu. Znika po 2 poprawnych z rzędu — każdy błąd resetuje licznik.
                 </p>
               )}
             </div>
