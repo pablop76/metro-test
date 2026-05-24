@@ -229,6 +229,17 @@ function App() {
     }
   };
 
+  const handleResetStats = () => {
+    if (!window.confirm("Usunąć całą historię sesji i statystyki pytań?\nGwiazdki (⭐) zostaną zachowane.")) return;
+    localStorage.removeItem("session-history");
+    localStorage.removeItem("question-stats");
+    setStarredIds((prev) => {
+      setCategoryLimits((limits) => ({ ...limits }));
+      return prev;
+    });
+    window.location.reload();
+  };
+
   const handleToggleStar = (questionText) => {
     const newIds = toggleStarred(questionText);
     setStarredIds(newIds);
@@ -425,7 +436,14 @@ function App() {
             </div>
           )}
           {/* Historia sesji */}
-          {showHistory && <SessionHistory />}
+          {showHistory && (
+            <>
+              <SessionHistory />
+              <button className="reset-stats-btn" onClick={handleResetStats}>
+                Resetuj statystyki
+              </button>
+            </>
+          )}
         </div>
       </div>
 
@@ -434,7 +452,7 @@ function App() {
       ) : (
         <>
           <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar}>
-            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} nextQuestion={nextQuestion} />}
+            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
               <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode}>

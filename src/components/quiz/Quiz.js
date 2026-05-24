@@ -48,7 +48,7 @@ const Quiz = (props) => {
         )}
       </div>
       {props.children}
-      <div className="container max-w-lg p-3 mx-auto">
+      <div key={currentQuestion} className="answers-container container max-w-lg p-3 mx-auto">
         {answerOrder.map((originalIndex, displayIndex) => {
           const answer = currentTest[currentQuestion]?.content[originalIndex];
           let btnClass = "answer-btn";
