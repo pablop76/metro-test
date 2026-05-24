@@ -347,7 +347,7 @@ function App() {
       setCurrentTest(drawData);
       setMaxQuestions((prev) => {
         if (isManualLimit && prev !== "" && prev !== null) return Math.min(prev, poolSize);
-        return Math.min(30, poolSize);
+        return poolSize;
       });
       resetQuizState();
     }
