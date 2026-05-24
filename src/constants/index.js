@@ -1,6 +1,6 @@
 // Kategorie pytań z etykietami do wyświetlenia
 export const CATEGORIES = {
-  all: "Wszystko",
+  all: "Pula pytań",
   skoda: "Śkoda / Varsovia",
   inspiro: "Inspiro",
   sygnalizacja: "Sygnalizacja",

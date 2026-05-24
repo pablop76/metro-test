@@ -1,7 +1,7 @@
 import { loadSessions } from "../../utils/quizUtils";
 
 const CATEGORY_LABELS = {
-  all: "Wszystko",
+  all: "Pula pytań",
   skoda: "Śkoda",
   inspiro: "Inspiro",
   sygnalizacja: "Sygnalizacja",
