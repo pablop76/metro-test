@@ -1214,6 +1214,18 @@ body {
   color: #fbbf24;
 }
 
+.difficult-hint {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.light-mode .difficult-hint {
+  color: rgba(0, 0, 0, 0.38);
+}
+
 .weakest-mode-banner {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;

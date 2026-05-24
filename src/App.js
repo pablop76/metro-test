@@ -417,6 +417,11 @@ function App() {
                   </button>
                 );
               })()}
+              {!weakestMode && (
+                <p className="difficult-hint">
+                  Przycisk aktywuje się automatycznie — po błędnej odpowiedzi na pytanie (min. 3 podejścia) trafia ono do puli trudnych.
+                </p>
+              )}
             </div>
           )}
           {/* Historia sesji */}
