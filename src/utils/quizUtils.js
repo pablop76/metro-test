@@ -87,7 +87,9 @@ export const getWeakestQuestions = (allQuestions) => {
   return allQuestions
     .filter((q) => {
       const s = stats[q.question];
-      return s && (s.correct + s.wrong) >= 3 && s.wrong > 0;
+      if (!s || (s.correct + s.wrong) < 3) return false;
+      const rate = s.correct / (s.correct + s.wrong);
+      return rate < 0.75;
     })
     .sort((a, b) => {
       const sa = stats[a.question];
