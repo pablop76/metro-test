@@ -1,9 +1,22 @@
+import { useState } from 'react';
 import Confetti from 'react-confetti';
 
 const EndTestAlert = (props) => {
   const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false, examMode = false, learningMode = false, savedToStats = true } = props;
   const percentage = Math.round((correctAnswers / maxQuestions) * 100);
   const passed = !learningMode && percentage >= 75 && !hasSygnalizacjaError;
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const date = new Date().toLocaleDateString('pl-PL', { day: '2-digit', month: '2-digit', year: 'numeric' });
+    const mode = examMode ? 'Egzamin' : 'Test';
+    const status = passed ? '✅' : '❌';
+    const text = `Metro Quiz: ${correctAnswers}/${maxQuestions} (${percentage}%) — ${mode} ${status} ${date}`;
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   const title = learningMode
     ? "Tryb nauki zakończony!"
@@ -85,6 +98,12 @@ const EndTestAlert = (props) => {
           <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '12px', margin: '12px 0 0' }}>
             Wynik nie zostanie zapisany w statystykach — minimalna liczba pytań to 20.
           </p>
+        )}
+
+        {!learningMode && (
+          <button className="share-btn" onClick={handleCopy}>
+            {copied ? '✓ Skopiowano!' : '📋 Kopiuj wynik'}
+          </button>
         )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '16px' }}>
