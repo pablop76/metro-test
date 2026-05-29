@@ -26,3 +26,4 @@ export const STORAGE_KEYS = {
 
 export const EXAM_TOTAL_COUNT = 40;
 export const EXAM_SYGNALIZACJA_COUNT = 10;
+export const MIN_QUESTIONS_FOR_STATS = 20;

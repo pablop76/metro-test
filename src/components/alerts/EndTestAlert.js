@@ -1,7 +1,7 @@
 import Confetti from 'react-confetti';
 
 const EndTestAlert = (props) => {
-  const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false, examMode = false, learningMode = false } = props;
+  const { correctAnswers, inCorrectAnswers, maxQuestions, hasSygnalizacjaError = false, examMode = false, learningMode = false, savedToStats = true } = props;
   const percentage = Math.round((correctAnswers / maxQuestions) * 100);
   const passed = !learningMode && percentage >= 75 && !hasSygnalizacjaError;
 
@@ -80,6 +80,12 @@ const EndTestAlert = (props) => {
             {correctAnswers + inCorrectAnswers}/{maxQuestions}
           </span>
         </div>
+
+        {!learningMode && !savedToStats && (
+          <p style={{ color: 'rgba(255,255,255,0.35)', fontSize: '12px', margin: '12px 0 0' }}>
+            Wynik nie zostanie zapisany w statystykach — minimalna liczba pytań to 20.
+          </p>
+        )}
 
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '16px' }}>
           {props.children}

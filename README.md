@@ -55,6 +55,17 @@ W repo znajduje się prosty skrypt `scripts/count_categories.js`, który wypisuj
 node scripts/count_categories.js
 ```
 
+## Statystyki sesji
+
+Aplikacja zapisuje historię zakończonych testów w `localStorage` (max 15 sesji). Sesja **nie** jest zapisywana gdy:
+
+- aktywny jest **tryb nauki** (poprawna odpowiedź oznaczona na bieżąco),
+- test to **powtórka błędnych odpowiedzi** (uruchamiana przyciskiem po zakończeniu testu),
+- aktywny jest **tryb trudnych pytań** (ćwiczenie słabych punktów),
+- test zawiera **mniej niż 20 pytań** (zbyt krótki, by był miarodajny).
+
+Do statystyk trafiają tylko pełnowartościowe testy: standardowy test (≥ 20 pytań) oraz tryb egzaminu (40 pytań).
+
 ## Uruchomienie lokalne
 
 ```bash

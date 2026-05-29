@@ -16,7 +16,7 @@ import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
-import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT } from "./constants";
+import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS } from "./constants";
 import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
@@ -48,6 +48,7 @@ function App() {
   const [starredIds, setStarredIds] = useState(() => getStarredIds());
   const [showHistory, setShowHistory] = useState(false);
   const [weakestMode, setWeakestMode] = useState(false);
+  const [isMistakesReview, setIsMistakesReview] = useState(false);
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
   const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
@@ -98,6 +99,7 @@ function App() {
     setShowWrongAnswers(false);
     setTotalAnswered(0);
     setWeakestMode(false);
+    setIsMistakesReview(false);
   };
 
   const answerChange = (answerUser) => {
@@ -203,6 +205,7 @@ function App() {
       setCurrentTest(drawData);
       setMaxQuestions(poolSize);
       resetQuizState();
+      setIsMistakesReview(true);
     }
   };
 
@@ -246,9 +249,11 @@ function App() {
     setCategoryLimits((prev) => ({ ...prev, starred: newIds.size }));
   };
 
-  // Zapis sesji po zakończeniu testu (nie w trybie nauki)
+  // Zapis sesji po zakończeniu testu (nie w trybie nauki, retry błędów, trybie trudnych pytań ani poniżej progu)
   useEffect(() => {
     if (!endTest || learningMode || maxQuestions === 0) return;
+    if (isMistakesReview || weakestMode) return;
+    if (maxQuestions < MIN_QUESTIONS_FOR_STATS) return;
     const percentage = Math.round((correctAnswers / maxQuestions) * 100);
     saveSession({
       date: new Date().toISOString(),
@@ -455,7 +460,7 @@ function App() {
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
-              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode}>
+              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode} savedToStats={!learningMode && !isMistakesReview && !weakestMode && maxQuestions >= MIN_QUESTIONS_FOR_STATS}>
                 <ResultsButtons
                   onRetry={refreshPage}
                   onShowMistakes={() => { setShowWrongAnswers(true); setEndTest(false); }}
