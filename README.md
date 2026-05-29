@@ -44,7 +44,7 @@ Wszystkie dostępne klucze kategorii (przykładowy opis):
 UWAGA: istnieje specjalna, bonusowa kategoria o kluczu `81` — `"Bonus - seria 81"`. Pytania oznaczone `81` są traktowane oddzielnie i domyślnie nie wchodzą do puli `all`.
 
 ## Multi-wybór kategorii
-Interfejs pozwala zaznaczać wiele kategorii jednocześnie (checkbox). Aplikacja przy wyborze wielu kategorii korzysta z unii pytań (unikalnych), aby uniknąć duplikatów — czyli wyświetlany licznik pokazuje liczbę unikalnych pytań dla zaznaczonych kategorii.
+Interfejs pozwala zaznaczać wiele kategorii jednocześnie (checkbox). Aplikacja przy wyborze wielu kategorii korzysta z puli pytań (unikalnych), aby uniknąć duplikatów — czyli wyświetlany licznik pokazuje liczbę unikalnych pytań dla zaznaczonych kategorii.
 
 Jeśli chcesz policzyć sumę limitów kategorii z duplikatami (np. zsumować wszystkie liczniki kategorii bez usuwania powtórzeń), użyj skryptu poniżej.
 
