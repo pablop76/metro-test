@@ -489,12 +489,19 @@ function App() {
 
           {/* Wznów przerwany test */}
           {pausedSession && totalAnswered === 0 && (
-            <button className="resume-btn" onClick={resumeSession}>
-              ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
-              <span className="resume-btn-time">
-                {new Date(pausedSession.savedAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" })}
-              </span>
-            </button>
+            <div className="resume-row">
+              <button className="resume-btn" onClick={resumeSession}>
+                ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
+                <span className="resume-btn-time">
+                  {new Date(pausedSession.savedAt).toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit" })} · {new Date(pausedSession.savedAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" })}
+                </span>
+              </button>
+              <button
+                className="resume-discard-btn"
+                onClick={() => { clearPausedSession(); setPausedSession(null); }}
+                title="Odrzuć i zacznij od początku"
+              >Zacznij od nowa</button>
+            </div>
           )}
 
           {/* Przyciski trybów */}

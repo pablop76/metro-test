@@ -1498,6 +1498,35 @@ body {
   color: rgba(94, 234, 212, 0.6);
 }
 
+.resume-row {
+  display: flex;
+  gap: 6px;
+  margin: 12px 0 4px;
+}
+
+.resume-row .resume-btn {
+  margin: 0;
+  flex: 1;
+}
+
+.resume-discard-btn {
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.resume-discard-btn:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
 /* ===== SHARE BUTTON ===== */
 .share-btn {
   margin: 14px auto 0;
