@@ -44,16 +44,7 @@ Wszystkie dostępne klucze kategorii (przykładowy opis):
 UWAGA: istnieje specjalna, bonusowa kategoria o kluczu `81` — `"Bonus - seria 81"`. Pytania oznaczone `81` są traktowane oddzielnie i domyślnie nie wchodzą do puli `all`.
 
 ## Multi-wybór kategorii
-Interfejs pozwala zaznaczać wiele kategorii jednocześnie (checkbox). Aplikacja przy wyborze wielu kategorii korzysta z puli pytań (unikalnych), aby uniknąć duplikatów — czyli wyświetlany licznik pokazuje liczbę unikalnych pytań dla zaznaczonych kategorii.
-
-Jeśli chcesz policzyć sumę limitów kategorii z duplikatami (np. zsumować wszystkie liczniki kategorii bez usuwania powtórzeń), użyj skryptu poniżej.
-
-## Narzędzie do liczenia kategorii
-W repo znajduje się prosty skrypt `scripts/count_categories.js`, który wypisuje liczniki dla każdej kategorii oraz sumy. Uruchom:
-
-```bash
-node scripts/count_categories.js
-```
+Interfejs pozwala zaznaczać wiele kategorii jednocześnie. Licznik przy każdej kategorii pokazuje liczbę unikalnych pytań — duplikaty (pytania należące do kilku kategorii) są liczone raz.
 
 ## Statystyki sesji
 
@@ -92,14 +83,3 @@ npm run deploy
 
 Bez tego opublikowana strona może mieć błędne odnośniki do plików CSS/JS i nie działać spod ścieżki `/metro-test/`.
 
-## Git — commit i push
-Po edycji `README.md` lub innych plików:
-
-```bash
-git add README.md
-git commit -m "Update README: usage, deploy, categories"
-git push origin main
-```
-
----
-Jeśli chcesz, dopiszę krótką sekcję z listą zmian (changelog) dotyczącą ostatnich modyfikacji: multi-wybór kategorii oraz obsługa kategorii bonusowej `81`.
