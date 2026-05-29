@@ -1,6 +1,6 @@
 # Aplikacja "Quiz" — Testy okresowe na stanowisku maszynisty metra
 
-Demo online: https://pablop76.github.io/metro-test/
+Aplikacja online: https://pablop76.github.io/metro-test/
 
 ![Ostatnia aktualizacja](./template.png)
 
