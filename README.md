@@ -48,7 +48,7 @@ Interfejs pozwala zaznaczać wiele kategorii jednocześnie. Licznik przy każdej
 
 ## Pauza i wznowienie testu
 
-Postęp testu jest automatycznie zapisywany po każdym pytaniu. Po zamknięciu przeglądarki i powrocie do aplikacji pojawia się przycisk **"▶ Wznów test"** z numerem pytania i godziną zapisu. Wznowienie przywraca dokładny stan — pytanie, wyniki, błędy i tryb.
+Postęp testu jest automatycznie zapisywany po każdym pytaniu. Po powrocie do aplikacji pojawia się przycisk **"▶ Wznów test"** z numerem pytania, datą i godziną zapisu. Wznowienie przywraca dokładny stan — pytanie, wyniki, błędy i tryb. Obok znajduje się przycisk **"Zacznij od nowa"** który odrzuca zapis i pozwala rozpocząć świeży test.
 
 Zapis jest kasowany gdy test zostanie ukończony lub użytkownik uruchomi tryb egzaminu / trudnych pytań.
 
