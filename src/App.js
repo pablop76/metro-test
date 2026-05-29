@@ -474,7 +474,7 @@ function App() {
 
       {showWrongAnswers ? (
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
-      ) : (
+      ) : currentTest.length === 0 ? null : (
         <>
           <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar}>
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
