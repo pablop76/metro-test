@@ -46,6 +46,12 @@ UWAGA: istnieje specjalna, bonusowa kategoria o kluczu `81` — `"Bonus - seria 
 ## Multi-wybór kategorii
 Interfejs pozwala zaznaczać wiele kategorii jednocześnie. Licznik przy każdej kategorii pokazuje liczbę unikalnych pytań — duplikaty (pytania należące do kilku kategorii) są liczone raz.
 
+## Pauza i wznowienie testu
+
+Postęp testu jest automatycznie zapisywany po każdym pytaniu. Po zamknięciu przeglądarki i powrocie do aplikacji pojawia się przycisk **"▶ Wznów test"** z numerem pytania i godziną zapisu. Wznowienie przywraca dokładny stan — pytanie, wyniki, błędy i tryb.
+
+Zapis jest kasowany gdy test zostanie ukończony lub użytkownik uruchomi tryb egzaminu / trudnych pytań.
+
 ## Statystyki sesji
 
 Aplikacja zapisuje historię zakończonych testów w `localStorage` (max 15 sesji). Sesja **nie** jest zapisywana gdy:
