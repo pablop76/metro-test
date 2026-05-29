@@ -16,6 +16,7 @@ import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
+import SearchBar from "./components/searchBar/SearchBar";
 import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS } from "./constants";
 import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
@@ -49,6 +50,7 @@ function App() {
   const [showHistory, setShowHistory] = useState(false);
   const [weakestMode, setWeakestMode] = useState(false);
   const [isMistakesReview, setIsMistakesReview] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
   const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
@@ -229,6 +231,7 @@ function App() {
       setFullFilteredLength(EXAM_TOTAL_COUNT);
       resetQuizState();
       setExamMode(true);
+      setSearchQuery("");
     }
   };
 
@@ -286,6 +289,7 @@ function App() {
       resetQuizState();
       setWeakestMode(true);
       setExamMode(false);
+      setSearchQuery("");
     }
   };
 
@@ -330,13 +334,22 @@ function App() {
     if (weakestMode) return;
 
     const currentStarred = getStarredIds();
-    const filtered = allQuestions.filter((q) => {
+    let filtered = allQuestions.filter((q) => {
       const cats = q.category;
       if (cats.includes("81")) return test.includes("81");
       if (test.includes("starred")) return currentStarred.has(q.question);
       if (test.includes("all")) return true;
       return cats.some((c) => test.includes(c));
     });
+
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase();
+      filtered = filtered.filter(
+        (item) =>
+          item.question.toLowerCase().includes(q) ||
+          item.content.some((a) => a.toLowerCase().includes(q))
+      );
+    }
 
     if (filtered.length === 0) {
       setCurrentTest([]);
@@ -356,7 +369,7 @@ function App() {
       });
       resetQuizState();
     }
-  }, [test, allQuestions]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [test, allQuestions, searchQuery]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
@@ -410,6 +423,13 @@ function App() {
           <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
             <ChoiceTest handleTest={handleTest} test={examMode ? ["all"] : test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
           </LimitOfquestions>
+          <SearchBar
+            value={searchQuery}
+            onChange={setSearchQuery}
+            disabled={examMode || weakestMode}
+            resultCount={fullFilteredLength}
+          />
+
           {/* Przyciski trybów */}
           {allQuestions.length > 0 && (
             <div className="mt-4 flex flex-col gap-2">
