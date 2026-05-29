@@ -488,7 +488,7 @@ function App() {
           />
 
           {/* Wznów przerwany test */}
-          {pausedSession && (
+          {pausedSession && totalAnswered === 0 && (
             <button className="resume-btn" onClick={resumeSession}>
               ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
               <span className="resume-btn-time">
