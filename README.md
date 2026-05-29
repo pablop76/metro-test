@@ -2,7 +2,7 @@
 
 Demo online: https://pablop76.github.io/metro-test/
 
-![Ostatnia aktualizacja (Glassmorphism)](./public/demo.png)
+![Ostatnia aktualizacja](./template.png)
 
 ## Krótko
 Projekt to aplikacja quizowa w React (Create React App + Craco). Ostatnia wersja wprowadza unikalny design typu **Glassmorphism**, wsparcie paska postępów gradientowych i w pełni dynamicznych odznak wyboru. Treść pytań bazuje na `public/questions.json`.
