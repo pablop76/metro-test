@@ -18,7 +18,7 @@ import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import SearchBar from "./components/searchBar/SearchBar";
 import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS } from "./constants";
-import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat } from "./utils/quizUtils";
+import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat, savePausedSession, loadPausedSession, clearPausedSession } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
 
@@ -51,6 +51,8 @@ function App() {
   const [weakestMode, setWeakestMode] = useState(false);
   const [isMistakesReview, setIsMistakesReview] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  const [pausedSession, setPausedSession] = useState(() => loadPausedSession());
+  const resumingRef = useRef(false);
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
   const [visualStyle, setVisualStyle] = useState(() => localStorage.getItem(STORAGE_KEYS.visualStyle) || "default");
@@ -145,11 +147,31 @@ function App() {
 
   const nextQuestion = () => {
     if (currentQuestion + 1 === maxQuestions) {
+      clearPausedSession();
+      setPausedSession(null);
       setDangerAlert(false);
       setSuccesAlert(false);
       setEndTest(true);
       return;
     }
+    const snapshot = {
+      currentTest,
+      currentQuestion: currentQuestion + 1,
+      correctAnswers,
+      inCorrectAnswers,
+      wrongAnswers,
+      test,
+      maxQuestions,
+      examMode,
+      weakestMode,
+      isMistakesReview,
+      learningMode,
+      totalAnswered,
+      hasSygnalizacjaError,
+      savedAt: new Date().toISOString(),
+    };
+    savePausedSession(snapshot);
+    setPausedSession(snapshot);
     setCurrentQuestion(currentQuestion + 1);
     setSelectedAnswerIndex(null);
     setIsAnswerCorrect(null);
@@ -208,6 +230,8 @@ function App() {
       setMaxQuestions(poolSize);
       resetQuizState();
       setIsMistakesReview(true);
+      clearPausedSession();
+      setPausedSession(null);
     }
   };
 
@@ -232,6 +256,8 @@ function App() {
       resetQuizState();
       setExamMode(true);
       setSearchQuery("");
+      clearPausedSession();
+      setPausedSession(null);
     }
   };
 
@@ -244,6 +270,34 @@ function App() {
       return prev;
     });
     window.location.reload();
+  };
+
+  const resumeSession = () => {
+    const s = pausedSession;
+    if (!s) return;
+    resumingRef.current = true;
+    setCurrentTest(s.currentTest);
+    setCurrentQuestion(s.currentQuestion);
+    setMaxQuestions(s.maxQuestions);
+    setFullFilteredLength(s.maxQuestions);
+    setCorectAnswers(s.correctAnswers);
+    setInCorrectAnswers(s.inCorrectAnswers);
+    setWrongAnswers(s.wrongAnswers || []);
+    setTest(s.test || ["all"]);
+    setExamMode(s.examMode || false);
+    setWeakestMode(s.weakestMode || false);
+    setIsMistakesReview(s.isMistakesReview || false);
+    setLearningMode(s.learningMode || false);
+    setTotalAnswered(s.totalAnswered || 0);
+    setHasSygnalizacjaError(s.hasSygnalizacjaError || false);
+    setEndTest(false);
+    setDangerAlert(false);
+    setSuccesAlert(false);
+    setIsDisabled(false);
+    setSelectedAnswerIndex(null);
+    setIsAnswerCorrect(null);
+    setShowWrongAnswers(false);
+    setSearchQuery("");
   };
 
   const handleToggleStar = (questionText) => {
@@ -290,6 +344,8 @@ function App() {
       setWeakestMode(true);
       setExamMode(false);
       setSearchQuery("");
+      clearPausedSession();
+      setPausedSession(null);
     }
   };
 
@@ -332,6 +388,7 @@ function App() {
     if (allQuestions.length === 0) return;
     if (examMode) return;
     if (weakestMode) return;
+    if (resumingRef.current) { resumingRef.current = false; return; }
 
     const currentStarred = getStarredIds();
     let filtered = allQuestions.filter((q) => {
@@ -429,6 +486,16 @@ function App() {
             disabled={examMode || weakestMode}
             resultCount={fullFilteredLength}
           />
+
+          {/* Wznów przerwany test */}
+          {pausedSession && (
+            <button className="resume-btn" onClick={resumeSession}>
+              ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
+              <span className="resume-btn-time">
+                {new Date(pausedSession.savedAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" })}
+              </span>
+            </button>
+          )}
 
           {/* Przyciski trybów */}
           {allQuestions.length > 0 && (

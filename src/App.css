@@ -1468,6 +1468,36 @@ body {
   }
 }
 
+/* ===== RESUME BUTTON ===== */
+.resume-btn {
+  width: 100%;
+  margin: 12px 0 4px;
+  padding: 10px 16px;
+  background: rgba(20, 184, 166, 0.15);
+  border: 1px solid rgba(20, 184, 166, 0.4);
+  border-radius: 10px;
+  color: #5eead4;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.resume-btn:hover {
+  background: rgba(20, 184, 166, 0.25);
+  border-color: rgba(20, 184, 166, 0.65);
+}
+
+.resume-btn-time {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(94, 234, 212, 0.6);
+}
+
 /* ===== SHARE BUTTON ===== */
 .share-btn {
   margin: 14px auto 0;

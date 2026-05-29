@@ -61,6 +61,26 @@ export const saveSession = (session) => {
   localStorage.setItem("session-history", JSON.stringify(sessions.slice(0, 15)));
 };
 
+// ===== PAUSED SESSION =====
+
+export const savePausedSession = (data) => {
+  try {
+    localStorage.setItem("quiz-paused-session", JSON.stringify(data));
+  } catch {}
+};
+
+export const loadPausedSession = () => {
+  try {
+    return JSON.parse(localStorage.getItem("quiz-paused-session") || "null");
+  } catch {
+    return null;
+  }
+};
+
+export const clearPausedSession = () => {
+  localStorage.removeItem("quiz-paused-session");
+};
+
 // ===== QUESTION STATS =====
 
 export const getQuestionStats = () => {

@@ -22,6 +22,7 @@ export const STORAGE_KEYS = {
   starredQuestions: "starred-questions",
   sessionHistory: "session-history",
   questionStats: "question-stats",
+  pausedSession: "quiz-paused-session",
 };
 
 export const EXAM_TOTAL_COUNT = 40;
