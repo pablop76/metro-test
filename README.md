@@ -4,8 +4,8 @@ Aplikacja online: https://pablop76.github.io/metro-test/
 
 ![Ostatnia aktualizacja](./template.png)
 
-## Krótko
-Projekt to aplikacja quizowa w React. Treść pytań bazuje na `public/questions.json`.
+## O projekcie
+Aplikacja do nauki i samodzielnego sprawdzania wiedzy przed egzaminem na stanowisko maszynisty metra. Treść pytań pochodzi z `public/questions.json`.
 
 ## Struktura danych
 Każde pytanie ma postać (przykład):
