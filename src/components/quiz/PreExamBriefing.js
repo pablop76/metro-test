@@ -79,10 +79,10 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
   // ===== ETYKIETA GOTOWOŚCI =====
   const readinessInfo = (() => {
     if (readiness === null) return null;
-    if (readiness >= 85) return { label: "Gotowy na komisję",       color: "#22c55e", bg: "rgba(34,197,94,0.1)",  border: "rgba(34,197,94,0.3)",  icon: "✓" };
+    if (readiness >= 85) return { label: "Gotowy na egzamin",       color: "#22c55e", bg: "rgba(34,197,94,0.1)",  border: "rgba(34,197,94,0.3)",  icon: "✓" };
     if (readiness >= 75) return { label: "Prawie gotowy",           color: "#4ade80", bg: "rgba(74,222,128,0.08)", border: "rgba(74,222,128,0.25)", icon: "✓" };
     if (readiness >= 55) return { label: "Wymaga więcej ćwiczeń",   color: "#f59e0b", bg: "rgba(245,158,11,0.1)",  border: "rgba(245,158,11,0.3)",  icon: "!" };
-    return                       { label: "Za wcześnie na komisję", color: "#ef4444", bg: "rgba(239,68,68,0.1)",   border: "rgba(239,68,68,0.3)",   icon: "✗" };
+    return                       { label: "Za wcześnie na egzamin", color: "#ef4444", bg: "rgba(239,68,68,0.1)",   border: "rgba(239,68,68,0.3)",   icon: "✗" };
   })();
 
   const scoreColor = (s) => {
@@ -99,7 +99,7 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
         <div className="briefing-no-data">
           <div className="briefing-no-data-icon">📋</div>
           <p className="briefing-no-data-title">Brak danych do analizy</p>
-          <p className="briefing-no-data-sub">Odpowiedz na kilka pytań w quizie — po pierwszej sesji zobaczysz tutaj swoją gotowość do komisji.</p>
+          <p className="briefing-no-data-sub">Odpowiedz na kilka pytań w quizie — po pierwszej sesji zobaczysz tutaj swoją gotowość do egzaminu.</p>
         </div>
       </div>
     );
@@ -111,7 +111,7 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
       {/* ===== NAGŁÓWEK ===== */}
       <div className="briefing-header">
         <div>
-          <div className="briefing-label">PRZED KOMISJĄ</div>
+          <div className="briefing-label">PRZED EGZAMINEM</div>
           <div className="briefing-sub">Analiza Twojej gotowości na podstawie {totalAttempts} odpowiedzi</div>
         </div>
         {recentAvg !== null && (

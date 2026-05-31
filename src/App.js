@@ -567,7 +567,7 @@ function App() {
                     className="briefing-mode-btn"
                     onClick={() => { setShowBriefing(true); setShowMap(false); setShowHistory(false); }}
                   >
-                    📋 Przed komisją — sprawdź gotowość
+                    📋 Przed egzaminem — sprawdź gotowość
                   </button>
                   <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
                     {examMode
