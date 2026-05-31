@@ -460,7 +460,7 @@ function App() {
         </button>
         <button
           className={`control-btn ${showHistory ? "active" : ""}`}
-          onClick={() => setShowHistory(h => !h)}
+          onClick={() => { setShowHistory(h => !h); setShowMap(false); }}
           title="Historia sesji"
         >
           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -469,7 +469,7 @@ function App() {
         </button>
         <button
           className={`control-btn ${showMap ? "active" : ""}`}
-          onClick={() => setShowMap(m => !m)}
+          onClick={() => { setShowMap(m => !m); setShowHistory(false); }}
           title="Mapa postępów"
         >
           <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -498,116 +498,121 @@ function App() {
         </div>
       )}
 
-      <div className="flex justify-center flex-grow p-4">
-        <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
-          <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
-            <ChoiceTest handleTest={handleTest} test={examMode ? ["all"] : test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
-          </LimitOfquestions>
-          <SearchBar
-            value={searchQuery}
-            onChange={setSearchQuery}
-            disabled={examMode || weakestMode}
-            resultCount={fullFilteredLength}
-          />
-
-          {/* Wznów przerwany test */}
-          {pausedSession && totalAnswered === 0 && (
-            <div className="resume-row">
-              <button className="resume-btn" onClick={resumeSession}>
-                ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
-                <span className="resume-btn-time">
-                  {new Date(pausedSession.savedAt).toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit" })} · {new Date(pausedSession.savedAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" })}
-                </span>
-              </button>
-              <button
-                className="resume-discard-btn"
-                onClick={() => { clearPausedSession(); setPausedSession(null); }}
-                title="Odrzuć i zacznij od początku"
-              >Zacznij od nowa</button>
-            </div>
-          )}
-
-          {/* Przyciski trybów */}
-          {allQuestions.length > 0 && (
-            <div className="mt-4 flex flex-col gap-2">
-              <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
-                {examMode
-                  ? "Zakończ egzamin"
-                  : `Tryb Egzaminu — ${EXAM_TOTAL_COUNT} pytań (${EXAM_SYGNALIZACJA_COUNT} z Sygnalizacji)`}
-              </button>
-              {(() => {
-                const difficultCount = weakestMode ? 0 : getDifficultPool().length;
-                return (
-                  <button
-                    className={`weakest-mode-btn ${weakestMode ? "active" : ""}`}
-                    onClick={weakestMode ? refreshPage : startWeakestMode}
-                    disabled={!weakestMode && difficultCount === 0}
-                    title={difficultCount === 0 ? "Oznacz pytania gwiazdką lub odpowiedz na kilka pytań" : ""}
-                  >
-                    {weakestMode
-                      ? "Zakończ tryb trudnych pytań"
-                      : `Trudne pytania${difficultCount > 0 ? ` (${difficultCount})` : " — brak danych"}`}
-                  </button>
-                );
-              })()}
-              {!weakestMode && (
-                <p className="difficult-hint">
-                  Pytanie trafia tu po 2 błędach z rzędu. Znika po 2 poprawnych z rzędu — każdy błąd resetuje licznik.
-                </p>
-              )}
-            </div>
-          )}
-          {/* Historia sesji */}
-          {showHistory && (
-            <>
-              <SessionHistory />
-              <button className="reset-stats-btn" onClick={handleResetStats}>
-                Resetuj statystyki
-              </button>
-            </>
-          )}
+      {showHistory && (
+        <div className="flex justify-center flex-grow p-4">
+          <div className="w-full max-w-2xl">
+            <SessionHistory />
+            <button className="reset-stats-btn" onClick={handleResetStats}>Resetuj statystyki</button>
+          </div>
         </div>
-      </div>
+      )}
 
-      {/* Mapa postępów */}
       {showMap && allQuestions.length > 0 && (
-        <div className="flex justify-center px-4 pb-2">
+        <div className="flex justify-center flex-grow px-4 pb-4 pt-2">
           <MetroMap allQuestions={allQuestions} />
         </div>
       )}
 
-      {showWrongAnswers ? (
-        <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
-      ) : currentTest.length === 0 ? null : (
+      {!showHistory && !showMap && (
         <>
-          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar} learningWrongClicks={learningWrongClicks}>
-            {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
-            {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
-            {endTest && (
-              <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode} savedToStats={!learningMode && !isMistakesReview && !weakestMode && maxQuestions >= MIN_QUESTIONS_FOR_STATS}>
-                <ResultsButtons
-                  onRetry={refreshPage}
-                  onShowMistakes={() => { setShowWrongAnswers(true); setEndTest(false); }}
-                  onReviewMistakes={startMistakesReview}
-                  wrongAnswersCount={wrongAnswers.length}
-                  learningMode={learningMode}
-                />
-              </EndTestAlert>
-            )}
-          </Quiz>
+          <div className="flex justify-center flex-grow p-4">
+            <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
+              <LimitOfquestions handleChangeLimit={handleChangeLimit} maxQuestions={examMode ? EXAM_TOTAL_COUNT : maxQuestions} currentTest={currentTest} poolSize={fullFilteredLength} disabled={examMode}>
+                <ChoiceTest handleTest={handleTest} test={examMode ? ["all"] : test} categories={CATEGORIES} categoryLimits={categoryLimits} disabled={examMode} />
+              </LimitOfquestions>
+              <SearchBar
+                value={searchQuery}
+                onChange={setSearchQuery}
+                disabled={examMode || weakestMode}
+                resultCount={fullFilteredLength}
+              />
 
-          {/* Podpowiedź klawiatury */}
-          {!endTest && maxQuestions > 0 && !isDisabled && (
-            <div className="kbd-hint">klawisze: 1 · 2 · 3</div>
-          )}
-          {!endTest && maxQuestions > 0 && isDisabled && (dangerAlert || succesAlert) && (
-            <div className="kbd-hint">Enter → następne pytanie</div>
-          )}
+              {/* Wznów przerwany test */}
+              {pausedSession && totalAnswered === 0 && (
+                <div className="resume-row">
+                  <button className="resume-btn" onClick={resumeSession}>
+                    ▶ Wznów test — pytanie {pausedSession.currentQuestion + 1}/{pausedSession.maxQuestions}
+                    <span className="resume-btn-time">
+                      {new Date(pausedSession.savedAt).toLocaleDateString("pl-PL", { day: "2-digit", month: "2-digit" })} · {new Date(pausedSession.savedAt).toLocaleTimeString("pl-PL", { hour: "2-digit", minute: "2-digit" })}
+                    </span>
+                  </button>
+                  <button
+                    className="resume-discard-btn"
+                    onClick={() => { clearPausedSession(); setPausedSession(null); }}
+                    title="Odrzuć i zacznij od początku"
+                  >Zacznij od nowa</button>
+                </div>
+              )}
 
-          {!endTest && maxQuestions > 0 && (
-            <ProgressStats correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} learningMode={learningMode} totalAnswered={totalAnswered} />
-          )}
+              {/* Przyciski trybów */}
+              {allQuestions.length > 0 && (
+                <div className="mt-4 flex flex-col gap-2">
+                  <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
+                    {examMode
+                      ? "Zakończ egzamin"
+                      : `Tryb Egzaminu — ${EXAM_TOTAL_COUNT} pytań (${EXAM_SYGNALIZACJA_COUNT} z Sygnalizacji)`}
+                  </button>
+                  {(() => {
+                    const difficultCount = weakestMode ? 0 : getDifficultPool().length;
+                    return (
+                      <button
+                        className={`weakest-mode-btn ${weakestMode ? "active" : ""}`}
+                        onClick={weakestMode ? refreshPage : startWeakestMode}
+                        disabled={!weakestMode && difficultCount === 0}
+                        title={difficultCount === 0 ? "Oznacz pytania gwiazdką lub odpowiedz na kilka pytań" : ""}
+                      >
+                        {weakestMode
+                          ? "Zakończ tryb trudnych pytań"
+                          : `Trudne pytania${difficultCount > 0 ? ` (${difficultCount})` : " — brak danych"}`}
+                      </button>
+                    );
+                  })()}
+                  {!weakestMode && (
+                    <p className="difficult-hint">
+                      Pytanie trafia tu po 2 błędach z rzędu. Znika po 2 poprawnych z rzędu — każdy błąd resetuje licznik.
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </>
+      )}
+
+      {!showHistory && !showMap && (
+        showWrongAnswers ? (
+          <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
+        ) : currentTest.length === 0 ? null : (
+          <>
+            <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar} learningWrongClicks={learningWrongClicks}>
+              {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
+              {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
+              {endTest && (
+                <EndTestAlert correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} hasSygnalizacjaError={hasSygnalizacjaError} examMode={examMode} learningMode={learningMode} savedToStats={!learningMode && !isMistakesReview && !weakestMode && maxQuestions >= MIN_QUESTIONS_FOR_STATS}>
+                  <ResultsButtons
+                    onRetry={refreshPage}
+                    onShowMistakes={() => { setShowWrongAnswers(true); setEndTest(false); }}
+                    onReviewMistakes={startMistakesReview}
+                    wrongAnswersCount={wrongAnswers.length}
+                    learningMode={learningMode}
+                  />
+                </EndTestAlert>
+              )}
+            </Quiz>
+
+            {/* Podpowiedź klawiatury */}
+            {!endTest && maxQuestions > 0 && !isDisabled && (
+              <div className="kbd-hint">klawisze: 1 · 2 · 3</div>
+            )}
+            {!endTest && maxQuestions > 0 && isDisabled && (dangerAlert || succesAlert) && (
+              <div className="kbd-hint">Enter → następne pytanie</div>
+            )}
+
+            {!endTest && maxQuestions > 0 && (
+              <ProgressStats correctAnswers={correctAnswers} inCorrectAnswers={inCorrectAnswers} maxQuestions={maxQuestions} learningMode={learningMode} totalAnswered={totalAnswered} />
+            )}
+          </>
+        )
       )}
       <Footer />
     </div>
