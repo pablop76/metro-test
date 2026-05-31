@@ -12,6 +12,7 @@ import ProgressStats from "./components/quiz/ProgressStats";
 import ResultsButtons from "./components/quiz/ResultsButtons";
 import SessionHistory from "./components/quiz/SessionHistory";
 import MetroMap from "./components/quiz/MetroMap";
+import PreExamBriefing from "./components/quiz/PreExamBriefing";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
@@ -50,6 +51,7 @@ function App() {
   const [starredIds, setStarredIds] = useState(() => getStarredIds());
   const [showHistory, setShowHistory] = useState(false);
   const [showMap, setShowMap] = useState(false);
+  const [showBriefing, setShowBriefing] = useState(false);
   const [weakestMode, setWeakestMode] = useState(false);
   const [isMistakesReview, setIsMistakesReview] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -507,13 +509,27 @@ function App() {
         </div>
       )}
 
+      {showBriefing && allQuestions.length > 0 && (
+        <div className="flex justify-center flex-grow px-4 pb-4 pt-2">
+          <div className="w-full max-w-3xl">
+            <button className="briefing-close-btn" onClick={() => setShowBriefing(false)}>← Wróć do quizu</button>
+            <PreExamBriefing
+              allQuestions={allQuestions}
+              weakCount={getDifficultPool().length}
+              onStartExam={() => { setShowBriefing(false); startExamMode(); }}
+              onStudyWeak={() => { setShowBriefing(false); startWeakestMode(); }}
+            />
+          </div>
+        </div>
+      )}
+
       {showMap && allQuestions.length > 0 && (
         <div className="flex justify-center flex-grow px-4 pb-4 pt-2">
           <MetroMap allQuestions={allQuestions} />
         </div>
       )}
 
-      {!showHistory && !showMap && (
+      {!showHistory && !showMap && !showBriefing && (
         <>
           <div className="flex justify-center flex-grow p-4">
             <div className="setup-panel glass-card w-full max-w-2xl p-6 text-center">
@@ -547,6 +563,12 @@ function App() {
               {/* Przyciski trybów */}
               {allQuestions.length > 0 && (
                 <div className="mt-4 flex flex-col gap-2">
+                  <button
+                    className="briefing-mode-btn"
+                    onClick={() => { setShowBriefing(true); setShowMap(false); setShowHistory(false); }}
+                  >
+                    📋 Przed komisją — sprawdź gotowość
+                  </button>
                   <button className={`exam-mode-btn ${examMode ? "active" : ""}`} onClick={examMode ? refreshPage : startExamMode}>
                     {examMode
                       ? "Zakończ egzamin"
@@ -579,7 +601,7 @@ function App() {
         </>
       )}
 
-      {!showHistory && !showMap && (
+      {!showHistory && !showMap && !showBriefing && (
         showWrongAnswers ? (
           <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
         ) : currentTest.length === 0 ? null : (
