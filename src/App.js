@@ -11,6 +11,7 @@ import Quiz from "./components/quiz/Quiz.js";
 import ProgressStats from "./components/quiz/ProgressStats";
 import ResultsButtons from "./components/quiz/ResultsButtons";
 import SessionHistory from "./components/quiz/SessionHistory";
+import MetroMap from "./components/quiz/MetroMap";
 import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
 import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
 import StyleToggle from "./components/styleToggle/StyleToggle.js";
@@ -48,6 +49,7 @@ function App() {
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [starredIds, setStarredIds] = useState(() => getStarredIds());
   const [showHistory, setShowHistory] = useState(false);
+  const [showMap, setShowMap] = useState(false);
   const [weakestMode, setWeakestMode] = useState(false);
   const [isMistakesReview, setIsMistakesReview] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -465,6 +467,15 @@ function App() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </button>
+        <button
+          className={`control-btn ${showMap ? "active" : ""}`}
+          onClick={() => setShowMap(m => !m)}
+          title="Mapa postępów"
+        >
+          <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+          </svg>
+        </button>
         <Refresh refreshPage={refreshPage} />
       </div>
 
@@ -557,6 +568,13 @@ function App() {
           )}
         </div>
       </div>
+
+      {/* Mapa postępów */}
+      {showMap && allQuestions.length > 0 && (
+        <div className="flex justify-center px-4 pb-2">
+          <MetroMap allQuestions={allQuestions} />
+        </div>
+      )}
 
       {showWrongAnswers ? (
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />

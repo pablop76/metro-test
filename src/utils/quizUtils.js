@@ -109,6 +109,23 @@ export const updateQuestionStat = (questionText, isCorrect) => {
   localStorage.setItem("question-stats", JSON.stringify(stats));
 };
 
+export const getCategoryStats = (allQuestions) => {
+  const stats = getQuestionStats();
+  const result = {};
+  allQuestions.forEach((q) => {
+    q.category.forEach((cat) => {
+      if (!result[cat]) result[cat] = { total: 0, correct: 0, wrong: 0 };
+      result[cat].total++;
+      const s = stats[q.question];
+      if (s) {
+        result[cat].correct += s.correct || 0;
+        result[cat].wrong += s.wrong || 0;
+      }
+    });
+  });
+  return result;
+};
+
 export const getWeakestQuestions = (allQuestions) => {
   const stats = getQuestionStats();
   return allQuestions

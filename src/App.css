@@ -1256,6 +1256,184 @@ body {
   background: rgba(239, 68, 68, 0.08);
 }
 
+/* ===== METRO MAP ===== */
+.metro-map-wrap {
+  background: linear-gradient(145deg, rgba(11,33,59,0.9), rgba(23,58,95,0.78));
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255,255,255,0.11);
+  border-radius: 20px;
+  padding: 24px 20px 20px;
+  width: 100%;
+  max-width: 860px;
+  animation: fadeSlideIn 0.3s ease-out both;
+}
+
+.metro-map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.metro-map-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 3px;
+}
+
+.metro-map-subtitle {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+}
+
+.metro-map-overall {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+  text-align: right;
+}
+
+.metro-map-overall span {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.35);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.metro-progress-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.metro-progress-bar-bg {
+  flex: 1;
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 99px;
+  position: relative;
+  overflow: visible;
+}
+
+.metro-progress-bar-fill {
+  height: 100%;
+  border-radius: 99px;
+  transition: width 0.6s ease;
+}
+
+.metro-progress-pass-line {
+  position: absolute;
+  left: 75%;
+  top: -4px;
+  bottom: -4px;
+  width: 2px;
+  background: rgba(251,191,36,0.5);
+  border-radius: 1px;
+}
+
+.metro-progress-label {
+  font-size: 10px;
+  color: rgba(251,191,36,0.6);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+}
+
+.metro-svg-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.metro-svg {
+  width: 100%;
+  min-width: 500px;
+  overflow: visible;
+  display: block;
+}
+
+.metro-detail-panel {
+  margin-top: 14px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 12px;
+  padding: 14px 18px;
+  animation: fadeSlideIn 0.2s ease-out both;
+}
+
+.metro-detail-name {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.metro-detail-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.metro-detail-score {
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.metro-detail-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.45);
+}
+
+.metro-legend {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.07);
+}
+
+.metro-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: rgba(255,255,255,0.45);
+}
+
+.metro-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.light-mode .metro-map-wrap {
+  background: linear-gradient(145deg, rgba(255,255,255,0.82), rgba(241,245,249,0.78));
+  border-color: rgba(255,255,255,0.7);
+}
+
+.light-mode .metro-map-title,
+.light-mode .metro-map-subtitle,
+.light-mode .metro-legend-item,
+.light-mode .metro-detail-sub {
+  color: rgba(15,23,42,0.55);
+}
+
+.light-mode .metro-detail-panel {
+  background: rgba(0,0,0,0.04);
+  border-color: rgba(0,0,0,0.08);
+}
+
 .weakest-mode-banner {
   text-align: center;
   font-family: 'Bebas Neue', sans-serif;
