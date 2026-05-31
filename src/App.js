@@ -120,7 +120,11 @@ function App() {
       updateQuestionStat(currentTest[currentQuestion].question, true);
       setCorectAnswers(correctAnswers + 1);
       setIsAnswerCorrect(true);
-      setSuccesAlert(true);
+      if (learningMode) {
+        setTimeout(() => nextQuestionRef.current(), 700);
+      } else {
+        setSuccesAlert(true);
+      }
     } else {
       if (audio && sound2.current) {
         sound2.current.currentTime = 0;
@@ -134,7 +138,11 @@ function App() {
       }
       updateQuestionStat(currentTest[currentQuestion].question, false);
       setIsAnswerCorrect(false);
-      setDangerAlert(true);
+      if (learningMode) {
+        setTimeout(() => nextQuestionRef.current(), 900);
+      } else {
+        setDangerAlert(true);
+      }
       // W trybie nauki błędy nie są liczone
       if (!learningMode) {
         if (inCorrectAnswers + correctAnswers < maxQuestions) {
