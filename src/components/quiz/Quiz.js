@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Quiz = (props) => {
-  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex, starredIds, onToggleStar } = props;
+  const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex, starredIds, onToggleStar, learningWrongClicks } = props;
   const [imageLoadError, setImageLoadError] = useState(false);
   // answerOrder[wyświetlanyIndex] = oryginalnyIndex — tasowanie odpowiedzi
   const [answerOrder, setAnswerOrder] = useState([0, 1, 2]);
@@ -51,6 +51,7 @@ const Quiz = (props) => {
       <div className="answers-container container max-w-lg p-3 mx-auto">
         {answerOrder.map((originalIndex, displayIndex) => {
           const answer = currentTest[currentQuestion]?.content[originalIndex];
+          const isLearningWrong = learningWrongClicks?.has(originalIndex);
           let btnClass = "answer-btn";
           if (learningMode && originalIndex === correctAnswerIndex) {
             btnClass += " learning-correct";
@@ -58,8 +59,11 @@ const Quiz = (props) => {
           if (isDisabled && props.selectedAnswerIndex === originalIndex) {
             btnClass += props.isAnswerCorrect ? " current" : " wrong";
           }
+          if (isLearningWrong) {
+            btnClass += " wrong";
+          }
           return (
-            <button key={`${currentQuestion}-${originalIndex}`} className={btnClass} onClick={() => answerChange(originalIndex)} disabled={isDisabled}>
+            <button key={`${currentQuestion}-${originalIndex}`} className={btnClass} onClick={() => answerChange(originalIndex)} disabled={isDisabled || isLearningWrong}>
               <div className="answer-number">{displayIndex + 1}</div>
               <div className="answer-text">{answer}</div>
             </button>

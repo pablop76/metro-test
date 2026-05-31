@@ -52,6 +52,7 @@ function App() {
   const [isMistakesReview, setIsMistakesReview] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [pausedSession, setPausedSession] = useState(() => loadPausedSession());
+  const [learningWrongClicks, setLearningWrongClicks] = useState(new Set());
   const resumingRef = useRef(false);
 
   const [theme, setTheme] = useState(() => localStorage.getItem(STORAGE_KEYS.theme) || "dark");
@@ -104,15 +105,16 @@ function App() {
     setTotalAnswered(0);
     setWeakestMode(false);
     setIsMistakesReview(false);
+    setLearningWrongClicks(new Set());
   };
 
   const answerChange = (answerUser) => {
     if (currentQuestion >= maxQuestions + 1) return;
-    setIsDisabled(true);
     setSelectedAnswerIndex(answerUser);
-    setTotalAnswered((prev) => prev + 1);
 
     if (answerUser === currentTest[currentQuestion].correct) {
+      setIsDisabled(true);
+      setTotalAnswered((prev) => prev + 1);
       if (audio && sound.current) {
         sound.current.currentTime = 0;
         sound.current.play();
@@ -126,25 +128,26 @@ function App() {
         setSuccesAlert(true);
       }
     } else {
-      if (audio && sound2.current) {
-        sound2.current.currentTime = 0;
-        sound2.current.play();
-      }
-      const currentCategories = Array.isArray(currentTest[currentQuestion]?.category)
-        ? currentTest[currentQuestion].category
-        : [currentTest[currentQuestion]?.category];
-      if (currentCategories.includes("sygnalizacja")) {
-        setHasSygnalizacjaError(true);
-      }
-      updateQuestionStat(currentTest[currentQuestion].question, false);
-      setIsAnswerCorrect(false);
       if (learningMode) {
-        setTimeout(() => nextQuestionRef.current(), 900);
+        // Blokujemy tylko kliknięty zły przycisk, użytkownik szuka poprawnej
+        setLearningWrongClicks((prev) => new Set([...prev, answerUser]));
+        updateQuestionStat(currentTest[currentQuestion].question, false);
       } else {
+        setIsDisabled(true);
+        setTotalAnswered((prev) => prev + 1);
+        if (audio && sound2.current) {
+          sound2.current.currentTime = 0;
+          sound2.current.play();
+        }
+        const currentCategories = Array.isArray(currentTest[currentQuestion]?.category)
+          ? currentTest[currentQuestion].category
+          : [currentTest[currentQuestion]?.category];
+        if (currentCategories.includes("sygnalizacja")) {
+          setHasSygnalizacjaError(true);
+        }
+        updateQuestionStat(currentTest[currentQuestion].question, false);
+        setIsAnswerCorrect(false);
         setDangerAlert(true);
-      }
-      // W trybie nauki błędy nie są liczone
-      if (!learningMode) {
         if (inCorrectAnswers + correctAnswers < maxQuestions) {
           setInCorrectAnswers(inCorrectAnswers + 1);
         }
@@ -186,6 +189,7 @@ function App() {
     setDangerAlert(false);
     setSuccesAlert(false);
     setIsDisabled(false);
+    setLearningWrongClicks(new Set());
   };
 
   // Refy dla obsługi klawiatury (zawsze aktualna wersja funkcji)
@@ -558,7 +562,7 @@ function App() {
         <WrongAnswers wrongAnswers={wrongAnswers} startMistakesReview={startMistakesReview} />
       ) : currentTest.length === 0 ? null : (
         <>
-          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar}>
+          <Quiz currentTest={currentTest} currentQuestion={currentQuestion} answerChange={answerChange} isDisabled={isDisabled} selectedAnswerIndex={selectedAnswerIndex} isAnswerCorrect={isAnswerCorrect} onAnswerOrderChange={(order) => { answerOrderRef.current = order; }} learningMode={learningMode} correctAnswerIndex={currentTest[currentQuestion]?.correct} starredIds={starredIds} onToggleStar={handleToggleStar} learningWrongClicks={learningWrongClicks}>
             {dangerAlert && <DangerAlert answers={currentTest[currentQuestion].content} correctAnswer={currentTest[currentQuestion].correct} correctDisplayIndex={answerOrderRef.current.indexOf(currentTest[currentQuestion].correct) + 1} nextQuestion={nextQuestion} />}
             {succesAlert && <SuccesAlert nextQuestion={nextQuestion} />}
             {endTest && (
