@@ -2153,8 +2153,7 @@
       ],
       "correct": 0,
       "category": [
-        "metropolis",
-        "sygnalizacja"
+        "metropolis"
       ]
     },
     {
@@ -3157,7 +3156,7 @@
       ]
     },
     {
-      "question": "W trakcie testu SOP-2W w tyrzecim kroku sprawdzane jest działanie",
+      "question": "W trakcie testu SOP-2W w trzecim kroku sprawdzane jest działanie",
       "content": [
         "hamowanie awaryjne",
         "hamowanie służbowe",
@@ -3947,7 +3946,7 @@
     {
       "question": "W pociągu METROPOLIS wysokie napięcie zasilajace",
       "content": [
-        "jest przekazywane miedzy wagonami M!, M2, M3, M4",
+        "jest przekazywane miedzy wagonami M1, M2, M3, M4",
         "nie jest przekazywane między wagonami",
         "jest przekazywane z wagonu M1 do Tc1 i M4 do Tc2"
       ],
@@ -3977,8 +3976,8 @@
       ],
       "correct": 1,
       "category": [
-        "inspiro",
-        "sygnalizacja"
+        "inspiro"
+      
       ]
     },
     {
