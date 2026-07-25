@@ -1,19 +1,38 @@
 /* eslint-disable no-restricted-globals */
 
-const SHELL_CACHE = 'metro-quiz-shell-v2';
-const STATIC_CACHE = 'metro-quiz-static-v2';
+// Numer wersji podbijamy przy KAZDEJ zmianie tego pliku lub tresci pytan —
+// przy aktywacji kasowane sa wszystkie cache spoza listy `keep`, wiec bump
+// wymusza pobranie swiezej bazy zamiast wyswietlania starej z pamieci.
+const SHELL_CACHE = 'metro-quiz-shell-v3';
+const STATIC_CACHE = 'metro-quiz-static-v3';
 const BASE = self.location.pathname.replace(/\/service-worker\.js$/, '');
+
+const QUESTIONS_URL = `${BASE}/questions.json`;
 
 const SHELL_URLS = [
   `${BASE}/`,
   `${BASE}/index.html`,
   `${BASE}/manifest.json`,
-  `${BASE}/questions.json`,
+  QUESTIONS_URL,
 ];
+
+// GitHub Pages oddaje questions.json z naglowkiem max-age=600, wiec zwykly
+// fetch() moglby przez 10 minut siegac do cache przegladarki i podawac baze
+// sprzed poprawki. Dla pliku z pytaniami zawsze omijamy ten cache — kopia
+// w cache service workera zostaje wylacznie jako zapas na tryb offline.
+const fetchFresh = (request) => fetch(new Request(request.url, { cache: 'no-store' }));
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(SHELL_CACHE).then((cache) => cache.addAll(SHELL_URLS))
+    caches.open(SHELL_CACHE).then((cache) =>
+      Promise.all(
+        SHELL_URLS.map((url) =>
+          fetch(new Request(url, { cache: 'no-store' }))
+            .then((res) => (res.ok ? cache.put(url, res) : null))
+            .catch(() => null)
+        )
+      )
+    )
   );
   self.skipWaiting();
 });
@@ -76,7 +95,10 @@ self.addEventListener('fetch', (event) => {
       fetch(request)
         .then((res) => {
           if (res.ok) {
-            caches.open(SHELL_CACHE).then((cache) => cache.put(request, res.clone()));
+            // Kopia robiona od razu — caches.open() jest asynchroniczne,
+            // a odpowiedz moze byc juz przeczytana, zanim callback wystartuje
+            const copy = res.clone();
+            caches.open(SHELL_CACHE).then((cache) => cache.put(request, copy));
           }
           return res;
         })
@@ -85,12 +107,15 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Network-first z cache fallback (questions.json i inne)
+  // Network-first z cache fallback (questions.json i inne).
+  // Baza pytan idzie zawsze prosto do sieci — patrz komentarz przy fetchFresh.
+  const isQuestions = url.pathname === QUESTIONS_URL;
   event.respondWith(
-    fetch(request)
+    (isQuestions ? fetchFresh(request) : fetch(request))
       .then((res) => {
         if (res.ok) {
-          caches.open(SHELL_CACHE).then((cache) => cache.put(request, res.clone()));
+          const copy = res.clone();
+          caches.open(SHELL_CACHE).then((cache) => cache.put(request, copy));
         }
         return res;
       })
