@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/metro-test/static/css/main.0f3f4116.chunk.css",
-    "main.js": "/metro-test/static/js/main.2fe9a81a.chunk.js",
-    "main.js.map": "/metro-test/static/js/main.2fe9a81a.chunk.js.map",
+    "main.js": "/metro-test/static/js/main.6592148c.chunk.js",
+    "main.js.map": "/metro-test/static/js/main.6592148c.chunk.js.map",
     "runtime-main.js": "/metro-test/static/js/runtime-main.49a0360c.js",
     "runtime-main.js.map": "/metro-test/static/js/runtime-main.49a0360c.js.map",
     "static/js/2.ccc80450.chunk.js": "/metro-test/static/js/2.ccc80450.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.49a0360c.js",
     "static/js/2.ccc80450.chunk.js",
     "static/css/main.0f3f4116.chunk.css",
-    "static/js/main.2fe9a81a.chunk.js"
+    "static/js/main.6592148c.chunk.js"
   ]
 }

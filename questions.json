@@ -1,6 +1,7 @@
 {
   "questions": [
     {
+      "id": "q001",
       "question": "Jaki tryb w pociągu ŚKODA na panelu SIP trzeba wybrać podczas przejazdu bez pasażerów w porze ruchu pasażerskiego?",
       "content": [
         "TRYB SIP JAZDY",
@@ -13,6 +14,7 @@
       ]
     },
     {
+      "id": "q002",
       "question": "Do czego służy 'Przełącznik trybów pracy PRP' w pociągu INSPIRO I VARSOVIA?",
       "content": [
         "przełącznik ten służy do wyboru określonych trybów pracy systemu SOP,",
@@ -27,6 +29,7 @@
       ]
     },
     {
+      "id": "q003",
       "question": "W przypadku użycia przycisku awaryjnego powiadomienia maszynisty przez pasażera, maszynista w pociągu ŚKODA musi:",
       "content": [
         "podnieść słuchawkę telefonu MCT a następnie nacisnąc górny przycisk na panelu,",
@@ -39,6 +42,7 @@
       ]
     },
     {
+      "id": "q004",
       "question": "Co się stanie jeżeli w pociągu ŚKODA na 1 linii, podczas jazdy będziemy przełączać przełącznikiem PRP pomiędzy trybami TR,TA,TB i TBN?",
       "content": [
         "załączy się hamulec służbowy",
@@ -52,6 +56,7 @@
       ]
     },
     {
+      "id": "q005",
       "question": "Czy dozwolone jest przełączanie pomiędzy trybami TR i TA w SOP-3 podczas jazdy pociągu na linii w pociągu INSPIRO i VARSOVIA?",
       "content": [
         "jest dozwolone",
@@ -67,6 +72,7 @@
       ]
     },
     {
+      "id": "q006",
       "question": "Ile jest czasu na wymiane karty w pociągu ŚKODA, aby test SOP zachował swoją ważność?",
       "content": [
         "do 20 sekund",
@@ -80,6 +86,7 @@
       ]
     },
     {
+      "id": "q007",
       "question": "Przestawienie ręczne zaworu B12 na salonie w szafie +89 w sytuacji, gdy jest załączony hamulec postojowy spowoduje w pociągu ŚKODA:",
       "content": [
         "odciecie hamulca postojowego",
@@ -92,6 +99,7 @@
       ]
     },
     {
+      "id": "q008",
       "question": "Podczas jazdy pociągiem ŚKODA na linii w pętli (np. KABATY - POLITECHNIKA - KABATY) na panelu SIP podczas trasy skróconej należy wybrać:",
       "content": [
         "TRASA",
@@ -104,6 +112,7 @@
       ]
     },
     {
+      "id": "q009",
       "question": "Podczas jednorazowego przejazdu pociągiem ŚKODA na linii (np. MŁOCINY - WILANOWSKA) na panelu SIP podczas wyboru trasy skróconej należy wybrać:",
       "content": [
         "TRASA",
@@ -116,6 +125,7 @@
       ]
     },
     {
+      "id": "q010",
       "question": "W przypadku awarii hamulca postojowego na jednym wagonie w pociągu ŚKODA należy:",
       "content": [
         "nie podejmowac żadnych czynności a po dokończeniu obiegu zjechać na STP",
@@ -128,6 +138,7 @@
       ]
     },
     {
+      "id": "q011",
       "question": "Zamknięcie zaworu B16 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
       "content": [
         "odciecie hamulca postojowego",
@@ -140,6 +151,7 @@
       ]
     },
     {
+      "id": "q012",
       "question": "Zamknięcie zaworu B18 na salonie w szafie +89 w pociągu ŚKODA spowoduje:",
       "content": [
         "odciecie hamulca postojowego",
@@ -152,6 +164,7 @@
       ]
     },
     {
+      "id": "q013",
       "question": "W celu sprawdzenia drzwi i pochylni podczas przyjęcia pociągu w torach odstawczych w pociągu ŚKODA należy:",
       "content": [
         "załączyć hamulec postojowy (w trybie TN lub TR) a następnie w testach nacisnąć przycisk 'DRZWI PLATWORMY'",
@@ -164,6 +177,7 @@
       ]
     },
     {
+      "id": "q014",
       "question": "Podaj pozycję 'ODCIĘCIA' pochylni w pociągu ŚKODA:",
       "content": [
         "0",
@@ -176,6 +190,7 @@
       ]
     },
     {
+      "id": "q015",
       "question": "Podaj pozycję 'ZASPRZĘGLENIA' pochylni w pociągu ŚKODA:",
       "content": [
         "0",
@@ -188,6 +203,7 @@
       ]
     },
     {
+      "id": "q016",
       "question": "Podaj pozycję 'PRACY' pochylni w pociągu ŚKODA:",
       "content": [
         "0",
@@ -200,6 +216,7 @@
       ]
     },
     {
+      "id": "q017",
       "question": "Minimalne napięcie na bateriach podczas przyjęcia pociągu ŚKODA powinno wynosić:",
       "content": [
         "70 V DC",
@@ -212,6 +229,7 @@
       ]
     },
     {
+      "id": "q018",
       "question": "W razie potrzeby naładowania akumulatorów w pociągu ŚKODA należy:",
       "content": [
         "nacisnąć zielony guzik S900 na tablicy za plecami maszynisty w sektorze +15 i dłuzej go przytrzymać",
@@ -224,6 +242,7 @@
       ]
     },
     {
+      "id": "q019",
       "question": "Podczas przyjęcia pociągu ŚKODA w Elektrowozowni (załączone napięcie na 5 wagonie) w sytuacji, gdy wartość cisnienia w magistarli zasilającej jest mniejsza niż 7,5 bar to:",
       "content": [
         "działa sprężarka tylko na wagonie 3",
@@ -236,6 +255,7 @@
       ]
     },
     {
+      "id": "q020",
       "question": "Podaj wszystkie sposoby uruchamiania kabiny maszynisty w pociągu ŚKODA:",
       "content": [
         "tylko przez kartę SKD",
@@ -248,6 +268,7 @@
       ]
     },
     {
+      "id": "q021",
       "question": "Po jakim czasie wyłączy sie pociąg, jeżeli w czytniku karty SKD nie będzie karty?:",
       "content": [
         "po 10 min",
@@ -260,6 +281,7 @@
       ]
     },
     {
+      "id": "q022",
       "question": "Spychanie uszkodzonego pociągu ŚKODA poprzez inny pociąg ŚKODY, odbywa się z ograniczeniem prędkości:",
       "content": [
         "do 60 km/h",
@@ -272,6 +294,7 @@
       ]
     },
     {
+      "id": "q023",
       "question": "W ramach kontroli stanu technicznego pociągu ŚKODA przeprowadzanej na STP Kabaty maszynista powinien miedzy innymi sprawdzić:",
       "content": [
         "wartość cisnienia w cylindrach hamulcowych sprawdzonych w 'TESTY SERWISOWE-OSPRZĘT PNEUMATYCZNY'",
@@ -284,6 +307,7 @@
       ]
     },
     {
+      "id": "q024",
       "question": "Czerwona lampka Jazda świecąca ciągłym światłem na pulpicie SOP 2W oznacza:",
       "content": [
         "zanik transmisji na danym odcinku aop",
@@ -291,12 +315,13 @@
         "załączone hamowanie służbowe os SOP 2W"
       ],
       "correct": 2,
+      "image": "./images/jazda-sop-2w.png",
       "category": [
         "sop"
-      ],
-      "image": "./images/jazda-sop-2w.png"
+      ]
     },
     {
+      "id": "q025",
       "question": "Przekaźnik blokowania kabiny na pociągu ŚKODA powoduje:",
       "content": [
         "zablokowanie w nieaktywnej kabinie urzdzeń sterujących na pulpicie maszynisty za wyjątkiem m.in.: dłoniowego przycisku hamulca awaryjnego",
@@ -309,6 +334,7 @@
       ]
     },
     {
+      "id": "q026",
       "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR > 5km/h):",
       "content": [
         "załączy się hamulec służbowy",
@@ -321,6 +347,7 @@
       ]
     },
     {
+      "id": "q027",
       "question": "Po utracie kontroli drzwi w pociągu ŚKODA podczas rozruchu (VR < 5km/h):",
       "content": [
         "załączy się hamulec służbowy",
@@ -333,6 +360,7 @@
       ]
     },
     {
+      "id": "q028",
       "question": "W trakcie przyjęcia na elektrowozowni składu typu ŚKODA, przełacznik zasilania na wagonie, na który podane jest WN powinien znajdowac się w pozycji:",
       "content": [
         "neutralne",
@@ -345,6 +373,7 @@
       ]
     },
     {
+      "id": "q029",
       "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu typu INSPIRO należy anulować",
       "content": [
         "przez ustawienie nastawnika jazdy w położenie hamowanie, wciśnięcie przycisku P-20 do mementu, aż ikona hamowania przestanie wskazywać stan hamulca    awaryjnego ATP",
@@ -358,6 +387,7 @@
       ]
     },
     {
+      "id": "q030",
       "question": "W przypadku gdy pociąg z pasażerami przejedzie wskaźnik Wm4 (miejsce zatrzymania czoła pociągu) i choćby tylko jedne drzwi znalazły się w części technologicznej peronu",
       "content": [
         "maszynista informuje pasażerów, nie otwira drzwi i kontynuuje jazdę do nastepnej stacji",
@@ -370,6 +400,7 @@
       ]
     },
     {
+      "id": "q031",
       "question": "Po wystąpieniu błędu krytycznego układu ATO (nie dotyczy usterki taborowej wpływającej na działanie urządzeń aop) możliwa jest jazda w trybach",
       "content": [
         "TA,TBN",
@@ -383,6 +414,7 @@
       ]
     },
     {
+      "id": "q032",
       "question": "Dzwiekowy sygnał 'Ode mnie' to",
       "content": [
         "jeden długi ton",
@@ -396,6 +428,7 @@
       ]
     },
     {
+      "id": "q033",
       "question": "Po wystapieniu błedu krytycznego układu ATP jazda z aktywnymi urządzeniami aop",
       "content": [
         "jazda możliwa tylko na linii metra M1",
@@ -409,6 +442,7 @@
       ]
     },
     {
+      "id": "q034",
       "question": "Po jakim czasie wyłączy się pociąg typu VARSOVIA jeżeli w czytniku karty nie będzie karty?",
       "content": [
         "po 10 min",
@@ -421,6 +455,7 @@
       ]
     },
     {
+      "id": "q035",
       "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
       "content": [
         "załączy się hamulec służbowy",
@@ -428,12 +463,13 @@
         "będzie jazda wybiegiem wraz z komunikatem diagnostycznym (zdjecie), po potwierdzeniu którego będzie możliwe dalsze rozpedzenie pociągu"
       ],
       "correct": 1,
+      "image": "./images/komunikat-diagnostyczny-d.png",
       "category": [
         "skoda"
-      ],
-      "image": "./images/komunikat-diagnostyczny-d.png"
+      ]
     },
     {
+      "id": "q036",
       "question": "Jeżeli w pociągu typu VARSOVIA tylko ostatni wagon będzie zasilony napięciem z trzeciej szyny to",
       "content": [
         "lampka od braku wysokiego napięcia w kabinie czołowej będzie się świeciła",
@@ -446,6 +482,7 @@
       ]
     },
     {
+      "id": "q037",
       "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych Jm, Km,Lm i Mm istnieje mozliwość wyświetlenia następujących sygnałów świetlnych",
       "content": [
         "światło białe i niebieskie",
@@ -459,6 +496,7 @@
       ]
     },
     {
+      "id": "q038",
       "question": "Wagon w pociągach typu INSPIRO i VARSOVIA posiada",
       "content": [
         "3 stopinie zawieszenia",
@@ -472,6 +510,7 @@
       ]
     },
     {
+      "id": "q039",
       "question": "Przestawienie plombowanego przełącznika sterowania odbirakami pradu S570 na pozycje II w pociągu typu VARSOVIA spowoduje",
       "content": [
         "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
@@ -484,6 +523,7 @@
       ]
     },
     {
+      "id": "q040",
       "question": "Anulowanie hamulca trzymającego na pociągu typu METROPOLIS nastapi po",
       "content": [
         "odcięciu kurka B22 na 6 wagonach",
@@ -496,6 +536,7 @@
       ]
     },
     {
+      "id": "q041",
       "question": "Wyjazd pociągu typu METROPOLIS, INSPIRO i VARSOVIA z toru 12 w elektrowozowni",
       "content": [
         "jest dozwolony w kierunku głowicy zachodniej",
@@ -511,6 +552,7 @@
       ]
     },
     {
+      "id": "q042",
       "question": "Zdezaktywowanie hamulca awaryjnego od 'AUTOSTOPU' w pociągu typu VARSOVIA odbywa się poprzez",
       "content": [
         "wcisnięcie zielonego przycisku S900 uruchamiajacego pociąg",
@@ -523,6 +565,7 @@
       ]
     },
     {
+      "id": "q043",
       "question": "Zamknięcie zaworu B18 w szafie +89 w pociągu typu VARSOVIA spowoduje",
       "content": [
         "odcięcie i odpowietrzenie hamulca postojowego",
@@ -535,6 +578,7 @@
       ]
     },
     {
+      "id": "q044",
       "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy awaryjnej w pociągu ŚKODA bocznikuje",
       "content": [
         "hamowanie awaryjne od grzybka",
@@ -547,6 +591,7 @@
       ]
     },
     {
+      "id": "q045",
       "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję I w pociągu ŚKODA spowoduje",
       "content": [
         "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
@@ -559,6 +604,7 @@
       ]
     },
     {
+      "id": "q046",
       "question": "Przestawienie plombowanego przełącznika sterowania odbierakami prądu S570 w szafie za plecami maszynisty +15 na pozycję II w pociągu ŚKODA spowoduje",
       "content": [
         "opuszczenie odbieraków prądu w 1 i 2 wagonie patrząc od kabiny aktywnej",
@@ -571,6 +617,7 @@
       ]
     },
     {
+      "id": "q047",
       "question": "Jeżeli podczas przyjęcia pociągu ŚKODA w elektrowozowni maszynista zauważy, że automat od trybu serwisowego jest załączony to należy",
       "content": [
         "skonsultować tę sytuację z Instruktorem Maszynistą i jak on wyrazi zgodę to można wyjechać takim pociągiem",
@@ -583,6 +630,7 @@
       ]
     },
     {
+      "id": "q048",
       "question": "Przechodząc na jazdę awaryjną w pociągu ŚKODA należy",
       "content": [
         "przełączyć przełącznik za plecami maszynisty S220 (jazda awaryjna) i kontynuować jazdę z nastawnika podstawowego",
@@ -595,6 +643,7 @@
       ]
     },
     {
+      "id": "q049",
       "question": "W jaki sposów w jeździe awaryjnej w pociągu ŚKODA otworzyć drzwi?",
       "content": [
         "wystarczy ustawić przełacznik strony drzwi S340 na odpowiednią stronę",
@@ -607,6 +656,7 @@
       ]
     },
     {
+      "id": "q050",
       "question": "Podaj jakie czujki pożarowe znajdują się w pociągu ŚKODA",
       "content": [
         "na całym składzie są tylko czujniki kombinowane temperatury i dymu",
@@ -619,6 +669,7 @@
       ]
     },
     {
+      "id": "q051",
       "question": "Którym zaworem z podtorza spuszcza się powietrze z poduszek powietrznych w pociągu ŚKODA?",
       "content": [
         "zawór A13",
@@ -631,6 +682,7 @@
       ]
     },
     {
+      "id": "q052",
       "question": "Czy wartość ciśnienia w poduszkach pneumatycznych ( w zależności od obciążenia wagonu) w pociągu ŚKODA ma znaczenie przy hamowaniu elektrodynamicznym i elektropneumatycznym",
       "content": [
         "nie, nie ma znaczenia",
@@ -643,6 +695,7 @@
       ]
     },
     {
+      "id": "q053",
       "question": "Wybierz prawidłową procedure zluzowania hamulca postojowego w pociągu ŚKODA",
       "content": [
         "w szafie +89 na końcu wagonu odciąć zawór B16",
@@ -655,6 +708,7 @@
       ]
     },
     {
+      "id": "q054",
       "question": "Co oznacza jeżeli na pulpicie maszynisty w pociągu ŚKODA czerwona lampka S505 od hamulca postojowego miga?",
       "content": [
         "system sam załączył hamulec postojowy",
@@ -667,6 +721,7 @@
       ]
     },
     {
+      "id": "q055",
       "question": "Wyświetlony na monitorze DDU piktogram (zdjęcie) w pociągu ŚKODA oznacza",
       "content": [
         "wskazanie stanu lub sytuacji eksploatacyjnej",
@@ -674,12 +729,13 @@
         "wskazanie, ze jest aktywny komunikat związany z bezpieczeństwem, maszynista powinien podjąć określone czynności w celu zapewnienia bezpieczeństwa pasażerom"
       ],
       "correct": 2,
+      "image": "./images/ddu-piktogram.png",
       "category": [
         "skoda"
-      ],
-      "image": "./images/ddu-piktogram.png"
+      ]
     },
     {
+      "id": "q056",
       "question": "Świecąca się kontrolka po lewej stronie monitora DDU (zdjecie) w pociągu ŚKODA oznacza",
       "content": [
         "poprawną pracę systemu SLP",
@@ -687,12 +743,13 @@
         "usterke czujnika wykrywania peronu"
       ],
       "correct": 1,
+      "image": "./images/brak-slp.png",
       "category": [
         "skoda"
-      ],
-      "image": "./images/brak-slp.png"
+      ]
     },
     {
+      "id": "q057",
       "question": "Po przekroczeniu prędkości restrykcyjnej (linia M2) system SOP-3 załączy",
       "content": [
         "hamowanie awaryjne od CCU",
@@ -706,6 +763,7 @@
       ]
     },
     {
+      "id": "q058",
       "question": "Po utracie kontroli drzwi w pociągu typu VARSOVIA (podczas rozruchu VR < 5 km/h)",
       "content": [
         "załączy się hamulec służbowy",
@@ -718,6 +776,7 @@
       ]
     },
     {
+      "id": "q059",
       "question": "Wyświetlenie na zewnątrz pociągu ŚKODA wskazania w okienku B42 odnosza sie do",
       "content": [
         "hamulca postojowego",
@@ -725,12 +784,13 @@
         "hamulca tylko służbowego"
       ],
       "correct": 0,
+      "image": "./images/hamulec-postojowy-skoda.png",
       "category": [
         "skoda"
-      ],
-      "image": "./images/hamulec-postojowy-skoda.png"
+      ]
     },
     {
+      "id": "q060",
       "question": "Bocznikowanie hamulca awaryjnego S520 podczas jazdy z nastawnika podstawowego w pociągu ŚKODA bocznikuje",
       "content": [
         "hamoanie awaryjne od grzybka",
@@ -743,6 +803,7 @@
       ]
     },
     {
+      "id": "q061",
       "question": "Ruchem pociągów na STP Kabaty kieruje:",
       "content": [
         "- z Centralnej Dyspozytorni w sytuacjach awaryjnych Dyspozytor Ruchu",
@@ -755,6 +816,7 @@
       ]
     },
     {
+      "id": "q062",
       "question": "Podczas wyjazdu składu z torów odstawczych maszynista przestrzega:",
       "content": [
         "- poleceń zawartych w rozkazie „O” przy braku możliwości podania sygnału",
@@ -767,6 +829,7 @@
       ]
     },
     {
+      "id": "q063",
       "question": "Na jakiej podstawie przy sterowaniu miejscowym, można przejechać obok semafora wskazującego sygnał 'stój'",
       "content": [
         "- rozkazu „S” wydanego przez dyspozytora ruchu lub dyżurnego ruchu danego okręgu nastawczego",
@@ -780,6 +843,7 @@
       ]
     },
     {
+      "id": "q064",
       "question": "Czy dyspozytor ruchu może przekazać sterowanie ruchem w okręgu nastawczym dyżurnemu ruchu:",
       "content": [
         "- tak na warunkach określonych regulaminem technicznym",
@@ -792,6 +856,7 @@
       ]
     },
     {
+      "id": "q065",
       "question": "Z jaką maksymalną prędkością może jechać pociąg w tunelu podczas przejazdu próbnego, po przerwie w ruchu pasażerskim:",
       "content": [
         "- wynikającą z konstrukcji pojazdu",
@@ -804,6 +869,7 @@
       ]
     },
     {
+      "id": "q066",
       "question": "W przypadku gdy pociąg z pasażerami przejedzie wskaźnik Wm4, i choćby tylko jedne drzwi znalazły się w części  technologicznej peronu:",
       "content": [
         "- maszynista  otwiera  drzwi",
@@ -816,6 +882,7 @@
       ]
     },
     {
+      "id": "q067",
       "question": "Czy pociąg z pasażerami może być podzielony:",
       "content": [
         "- tak, gdy zachodzi taka potrzeba, ale trzeba uzyskać zgodę Dyspozytora Ruchu",
@@ -828,6 +895,7 @@
       ]
     },
     {
+      "id": "q068",
       "question": "Dźwiękowy sygnał zatrzymania taboru „stój” podawany przez maszynistę z drugiego pociągu to:",
       "content": [
         "- 3 krótkie, szybko następujące po sobie tony , kilkakrotnie powtórzone",
@@ -840,6 +908,7 @@
       ]
     },
     {
+      "id": "q069",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
@@ -847,12 +916,13 @@
         "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością."
       ],
       "correct": 2,
+      "image": "./images/wskazniki/wskaznik.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik.png"
+      ]
     },
     {
+      "id": "q070",
       "question": "Pojedynczy, nie zajęty odcinek izolowany którego obwód torowy wykazuje zajętość, można przejechać na widoczność z prędkością nie przekraczającą:",
       "content": [
         "5 km/h,",
@@ -865,6 +935,7 @@
       ]
     },
     {
+      "id": "q071",
       "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu:",
       "content": [
         "- do 35km/h po torze prostym",
@@ -877,6 +948,7 @@
       ]
     },
     {
+      "id": "q072",
       "question": "W przypadku samoczynnego otwierania i zamykania drzwi (rytmiczne błyski lampek sygnalizacji drzwiowej ) należy",
       "content": [
         "- trzymać cały czas wciśnięty przycisk rezerwowego zamykania drzwi",
@@ -889,6 +961,7 @@
       ]
     },
     {
+      "id": "q073",
       "question": "Na jakiej podstawie i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania",
       "content": [
         "- na podstawie rozkazu 'O' z prędkością do 60 km/h jeżeli stacja jest zamknięta dla pasażerów, ale stacji nie opuścili ostatni pasażerowie",
@@ -901,6 +974,7 @@
       ]
     },
     {
+      "id": "q074",
       "question": "W przypadku gdy nie gaśnie biała lampka sygnalizacji hamulca pneumatycznego należy",
       "content": [
         "- kontynuować jazdę do końcowej stacji",
@@ -913,6 +987,7 @@
       ]
     },
     {
+      "id": "q075",
       "question": "Czy na STP Kabaty jest możliwe podanie sygnału zastępczego tzn. białe światło migające:",
       "content": [
         "- tylko na semaforach",
@@ -925,6 +1000,7 @@
       ]
     },
     {
+      "id": "q076",
       "question": "Wskaźnik W8 ( zmniejszyć prędkość jazdy) zobowiązuje maszynistę do",
       "content": [
         "- zmniejszenia prędkości na rozjeździe do 5 km/h, stosowany w przypadkach szczególnych",
@@ -937,6 +1013,7 @@
       ]
     },
     {
+      "id": "q077",
       "question": "Czy po wezwaniu pociągu pogotowia można ruszyć składem z miejsca ?",
       "content": [
         "- można dokonywać  prób ruszenia uszkodzonego pociągu do czasu przybycia pociągu pogotowia",
@@ -949,6 +1026,7 @@
       ]
     },
     {
+      "id": "q078",
       "question": "W przypadku uszkodzenia urządzeń nagłaśniających, które  uniemożliwiają nadawanie ostrzeżeń o zamykaniu drzwi maszynista",
       "content": [
         "- wysadza pasażerów na najbliższe stacji",
@@ -961,6 +1039,7 @@
       ]
     },
     {
+      "id": "q079",
       "question": "Podaj prawidłową kolejność zdejmowania uziemiacza:",
       "content": [
         "- z szyny prądowej, następnie z koła pociągu",
@@ -973,6 +1052,7 @@
       ]
     },
     {
+      "id": "q080",
       "question": "Dźwiękowy sygnał 'Do mnie' to:",
       "content": [
         "- jeden długi ton",
@@ -985,6 +1065,7 @@
       ]
     },
     {
+      "id": "q081",
       "question": "Wskaźnik  W17 (słupek biało-czerwony):",
       "content": [
         "- wyznacza miejsce w terenie otwartym i tunelu, do którego wolno jeden z torów zająć taborem, aby umożliwić przejazd taboru po drugim torze",
@@ -997,6 +1078,7 @@
       ]
     },
     {
+      "id": "q082",
       "question": "Wskaźnik Wm18 (pomarańczowa tablica z czarną i białą obwódką ):",
       "content": [
         "- ustawia się w tunelu, ale dotyczy tylko maszynistów pojazdów pomocniczych",
@@ -1004,12 +1086,13 @@
         "- ustawia się w tunelu w miejscu gdzie została przekroczona skrajni budowli"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wsk-Wm18.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Wm18.png"
+      ]
     },
     {
+      "id": "q083",
       "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  Em, Fm  i Gm  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
       "content": [
         "- białe i niebieskie",
@@ -1022,6 +1105,7 @@
       ]
     },
     {
+      "id": "q084",
       "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi:",
       "content": [
         "- 10,0 bara ± 10%",
@@ -1034,6 +1118,7 @@
       ]
     },
     {
+      "id": "q085",
       "question": "Spychanie uszkodzonego pociągu Metropolis odbywa się z ograniczeniem prędkości:",
       "content": [
         "- do 60 km/h",
@@ -1046,6 +1131,7 @@
       ]
     },
     {
+      "id": "q086",
       "question": "W skład wyposażenia pociągu typu Metropolis wchodzą",
       "content": [
         "- 4 tablice hamulca pneumatycznego",
@@ -1058,6 +1144,7 @@
       ]
     },
     {
+      "id": "q087",
       "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga stopki szyny nie może być większa niż",
       "content": [
         "- 35 km/h",
@@ -1070,6 +1157,7 @@
       ]
     },
     {
+      "id": "q088",
       "question": "Hamownie cierne w wagonie pociągu typu Metropolis jest zapewnione:",
       "content": [
         "- w wózku wagonu M  dzięki 2 tarczom hamulcowym zamocowanym na każdej osi a w wózku wagonu Tc 1 tarczy hamulcowej zamocowanej na każdej osi",
@@ -1082,6 +1170,7 @@
       ]
     },
     {
+      "id": "q089",
       "question": "W pociągach typu Metropolis zastosowano silnik trakcyjny",
       "content": [
         "- asynchroniczny, 3- fazowy, klatkowy",
@@ -1094,6 +1183,7 @@
       ]
     },
     {
+      "id": "q090",
       "question": "Obniżone ciśnienie w przewodzie zasilającym pociągu typu Metropolis poniżej 6,5 bara (załączone hamulce awaryjny i postojowy) może świadczy o",
       "content": [
         "- awarii jednej ze sprężarek",
@@ -1106,6 +1196,7 @@
       ]
     },
     {
+      "id": "q091",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- strzałka wskaźnikowa",
@@ -1113,12 +1204,13 @@
         "- wjazd na tor niewłaściwy"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wsk-W15.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-W15.png"
+      ]
     },
     {
+      "id": "q092",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- koniec odcinka, przez który należy przejeżdżać bez pobierania prądu z trzeciej szyny",
@@ -1126,12 +1218,13 @@
         "- wjazd na tor ze skrajnią PKP"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wskaznik-3.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-3.png"
+      ]
     },
     {
+      "id": "q093",
       "question": "Zawracanie pociągu w miejscach, gdzie nie ma możliwości podania sygnałów na semaforach, odbywa się",
       "content": [
         "- na ustne polecenie dyżurnego ruchu,",
@@ -1145,6 +1238,7 @@
       ]
     },
     {
+      "id": "q094",
       "question": "Czy wskaźnik W24 (wjazd na tor niewłaściwy) występuje  w tunelu",
       "content": [
         "- tak",
@@ -1157,6 +1251,7 @@
       ]
     },
     {
+      "id": "q095",
       "question": "Wjazd pociągu na tor częściowo zajęty jest dopuszczalny na podstawie rozkazu 'S' z zachowaniem  następujących ograniczeń prędkości",
       "content": [
         "- do 15 km/h, a podczas dojazdu do innego stojącego składu do 5 km/h",
@@ -1169,6 +1264,7 @@
       ]
     },
     {
+      "id": "q096",
       "question": "Podkreśl zasadnicze kierunki określone w regulaminie technicznym dla każdego z torów znajdujących się na szlaku granicznym",
       "content": [
         "- tor nr.2  STP – Ky ; Ky – STP ; tor dwukierunkowy",
@@ -1181,6 +1277,7 @@
       ]
     },
     {
+      "id": "q097",
       "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 7,5 bara oznacza",
       "content": [
         "- próg hamowania awaryjnego",
@@ -1193,6 +1290,7 @@
       ]
     },
     {
+      "id": "q098",
       "question": "Na jakiej podstawie i z jaką prędkością odbywa się przejazd pociągu przez stację bez zatrzymania, gdy na peronie znajdują się pasażerowie ?",
       "content": [
         "- na podstawie rozkazu 'O' z prędkością do 60 km/h",
@@ -1205,6 +1303,7 @@
       ]
     },
     {
+      "id": "q099",
       "question": "Przedstawiony poniżej wskaźnik zobowiązuje maszynistę do",
       "content": [
         "- zmniejszenia prędkości na rozjeździe do 3 km/h, stosowany w przypadkach szczególnych",
@@ -1212,12 +1311,13 @@
         "- zmniejszenia prędkości jazdy do 30 km/h na oznaczonym odcinku"
       ],
       "correct": 2,
+      "image": "./images/wskazniki/wskaznik-4.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-4.png"
+      ]
     },
     {
+      "id": "q100",
       "question": "Dźwiękowy sygnał 'Ode mnie' to",
       "content": [
         "- jeden długi ton",
@@ -1230,6 +1330,7 @@
       ]
     },
     {
+      "id": "q101",
       "question": "Podaj prawidłową kolejność zakładania uziemiacza",
       "content": [
         "- koło pociągu, następnie szyna prądowa",
@@ -1242,6 +1343,7 @@
       ]
     },
     {
+      "id": "q102",
       "question": "Anulowanie hamulca trzymającego na pociągu Metropolis nastąpi po",
       "content": [
         "- odcięciu kurka B22 na 6 wagonach",
@@ -1254,6 +1356,7 @@
       ]
     },
     {
+      "id": "q103",
       "question": "Dopuszczalna prędkość jazdy na zalanym odcinku gdy poziom wody sięga do połowy szyjki szyny nie może być większa niż",
       "content": [
         "- 35 km/h",
@@ -1266,6 +1369,7 @@
       ]
     },
     {
+      "id": "q104",
       "question": "Wagon pociągu typu Metropolis posiada",
       "content": [
         "- 3 stopnie zawieszenia",
@@ -1278,6 +1382,7 @@
       ]
     },
     {
+      "id": "q105",
       "question": "Wskaźnik  Wm 17 (biało-czerwona belka):",
       "content": [
         "- wyznacza miejsce w terenie otwartym i tunelu do którego wolno zając jeden z torów, aby umożliwić przejazd po drugim torze",
@@ -1290,6 +1395,7 @@
       ]
     },
     {
+      "id": "q106",
       "question": "W pociągu typu Metropolis pomiędzy wagonami pośrednimi zastosowano sprzęg:",
       "content": [
         "- automatyczny",
@@ -1302,6 +1408,7 @@
       ]
     },
     {
+      "id": "q107",
       "question": "Jaka prędkość obowiązuje podczas jazdy po torze niewłaściwym",
       "content": [
         "- do 35 km/h",
@@ -1314,6 +1421,7 @@
       ]
     },
     {
+      "id": "q108",
       "question": "Przedstawiony poniżej wskaźnik oznacza: ",
       "content": [
         "- strzałka wskaźnikowa",
@@ -1321,12 +1429,13 @@
         "- wjazd na tor niewłaściwy"
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wskaznik-5.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-5.png"
+      ]
     },
     {
+      "id": "q109",
       "question": "W celu lokalizacji wezwania pasażer – maszynista, należy w przełączyć Comet w położenie ",
       "content": [
         "- 4 ekran",
@@ -1339,6 +1448,7 @@
       ]
     },
     {
+      "id": "q110",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- granica przetaczania",
@@ -1346,12 +1456,13 @@
         "- zakaz wjazdu taboru PKP"
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wsk-W5.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-W5.png"
+      ]
     },
     {
+      "id": "q111",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
@@ -1359,12 +1470,13 @@
         "- koniec odcinka, przez który należy przejeżdżać ze zmniejszoną prędkością"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wskaznik-7.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-7.png"
+      ]
     },
     {
+      "id": "q112",
       "question": "Sygnał D1 (Stój – tarcza zatrzymania) w tunelu ustawia się",
       "content": [
         "- po prawej stronie toru",
@@ -1377,6 +1489,7 @@
       ]
     },
     {
+      "id": "q113",
       "question": "Przedstawiony poniżej wskaźnik to:",
       "content": [
         "- zmniejszyć prędkość jazdy",
@@ -1384,12 +1497,13 @@
         "- obowiązująca, największa prędkość dozwolona"
       ],
       "correct": 2,
+      "image": "./images/wskazniki/wskaznik-8.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-8.png"
+      ]
     },
     {
+      "id": "q114",
       "question": "Przedstawiony poniżej wskaźnik oznacza:",
       "content": [
         "- początek odcinka, przez który należy przejeżdżać z wyłączonymi silnikami trakcyjnymi",
@@ -1397,12 +1511,13 @@
         "- zakaz jazdy elektrycznych pojazdów trakcyjnych"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wskaznik-9.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-9.png"
+      ]
     },
     {
+      "id": "q115",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "- nakazuje podać sygnał baczność",
@@ -1410,12 +1525,13 @@
         "- oznacza miejsce na torze, poza które jazda manewrowa jest niedozwolona"
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wskaznik-10.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-10.png"
+      ]
     },
     {
+      "id": "q116",
       "question": "Zawieszenie pierwszego stopnia w wagonach Metropolis realizowane jest ?",
       "content": [
         "- za pomocą dwóch 'sprężyn gumowych', zamocowanych na każdej maźnicy",
@@ -1428,6 +1544,7 @@
       ]
     },
     {
+      "id": "q117",
       "question": "Silnik trakcyjny pociągu Metropolis zasilany jest ?",
       "content": [
         "- napięciem sinusoidalnym o stałej wartości i stałej częstotliwości",
@@ -1440,6 +1557,7 @@
       ]
     },
     {
+      "id": "q118",
       "question": "Hamowanie cierne na każdym wózku tocznym wagonu Metropolis realizowane jest za pomocą ?",
       "content": [
         "- tarcz hamulcowych (po jednej tarczy na każdą oś)",
@@ -1452,6 +1570,7 @@
       ]
     },
     {
+      "id": "q119",
       "question": "Próg bezpieczeństwa, to znaczy ciśnienie przy którym w pociągu Metropolis uruchomi się zawór bezpieczeństwa wynosi",
       "content": [
         "- 10 ± 0,2 bara",
@@ -1464,6 +1583,7 @@
       ]
     },
     {
+      "id": "q120",
       "question": "W celu lokalizacji Komunikaty specjalne, Comet należy w przełączyć w położenie ?",
       "content": [
         "- 2 ekran",
@@ -1476,6 +1596,7 @@
       ]
     },
     {
+      "id": "q121",
       "question": "Do hamowania awaryjnego na pociągu Metropolis wykorzystywane jest ?",
       "content": [
         "- hamowanie mieszane",
@@ -1488,6 +1609,7 @@
       ]
     },
     {
+      "id": "q122",
       "question": "Na pociągu Metropolis wysokie napięcie zasilające ?",
       "content": [
         "- jest przekazywane z wagonu M1 do Tc1 i M4 do Tc4 w celu zasilenia przekształtników trakcyjnych",
@@ -1500,6 +1622,7 @@
       ]
     },
     {
+      "id": "q123",
       "question": "W trakcie przyjęcia na elektrowozowni składu typu Metropolis, przełącznik zasilania na wagonie na który podane jest WN powinien znajdować się w pozycji ?:",
       "content": [
         "- neutralne",
@@ -1512,6 +1635,7 @@
       ]
     },
     {
+      "id": "q124",
       "question": "Przy działających urządzeniach SOP, jeżeli aktualna prędkość pociągu jest większa niż dopuszczalna+2km/h, system samoczynnego ograniczenia prędkości",
       "content": [
         "- powoduje wyłączenie napędu (pojazd jest na wybiegu)",
@@ -1524,6 +1648,7 @@
       ]
     },
     {
+      "id": "q125",
       "question": "Na pociągu Metropolis kurek odcinający z odpowietrzeniem (poduszki powietrzne) oznaczony jest symbolem",
       "content": [
         "- B22",
@@ -1536,6 +1661,7 @@
       ]
     },
     {
+      "id": "q126",
       "question": "Jeżeli w pociągu INSPIRO jadącym z prędkością 60km/h zostanie użyta dzwignia awaryjnego otwierania drzwi to",
       "content": [
         "drzwi otworzą się automatycznie",
@@ -1548,6 +1674,7 @@
       ]
     },
     {
+      "id": "q127",
       "question": "W celu sprawdzenia stanu hamulców w pociągu METROPOLIS należy przełaczyc COMET na",
       "content": [
         "ekran 4",
@@ -1560,6 +1687,7 @@
       ]
     },
     {
+      "id": "q128",
       "question": "Jakim napięciem zasilany jest system wentylacji salonu pasażerskiego",
       "content": [
         "110 V DC lub 80 V DC w zależności od typu pociągu",
@@ -1572,6 +1700,7 @@
       ]
     },
     {
+      "id": "q129",
       "question": "Przełącznik pożar na pulpicie w kabinie INSPIRO",
       "content": [
         "uruchamia system gaszenia",
@@ -1584,6 +1713,7 @@
       ]
     },
     {
+      "id": "q130",
       "question": "Na zamkniętym torze szlakowym obowiązuje",
       "content": [
         "ruch dwukierunkowy",
@@ -1596,6 +1726,7 @@
       ]
     },
     {
+      "id": "q131",
       "question": "Zasadniczym kierunkiem toru nr. 3 znajdującym się na szlaku granicznym jest",
       "content": [
         "tor dwukierunkowy",
@@ -1608,6 +1739,7 @@
       ]
     },
     {
+      "id": "q132",
       "question": "W obwodzie wytwarzania sprężonego powietrza pociągu Metropolis, cisnienie 7,5 bara oznacza",
       "content": [
         "próg hamowania awaryjnego",
@@ -1620,6 +1752,7 @@
       ]
     },
     {
+      "id": "q133",
       "question": "W stanie błedu krytycznego ATO, nie jest możliwa jazda w trybach",
       "content": [
         "TA, TBN, DJA",
@@ -1633,6 +1766,7 @@
       ]
     },
     {
+      "id": "q134",
       "question": "W stanie błędu krytycznego ATP, jazda z aktywnym SOP-3",
       "content": [
         "jest możliwa tylko w trybie TA",
@@ -1646,6 +1780,7 @@
       ]
     },
     {
+      "id": "q135",
       "question": "Po przekroczeniu prędkości restrykcyjnej system pociągu załączy",
       "content": [
         "hamowanie awaryjne od CCU",
@@ -1658,6 +1793,7 @@
       ]
     },
     {
+      "id": "q136",
       "question": "Po upływie jakiego czasu konieczne jest ponowne przeprowadzenie testu pokładowych urzadzeń SOP3",
       "content": [
         "po upływie 3 min",
@@ -1671,6 +1807,7 @@
       ]
     },
     {
+      "id": "q137",
       "question": "Stopień „0n”  (zero  nieprzełamywalne ) jest kodowany",
       "content": [
         "między innymi za semaforem i na końcach torów odstawczych , nie można go przejechać po wciśnięciu P-20",
@@ -1683,6 +1820,7 @@
       ]
     },
     {
+      "id": "q138",
       "question": "Kto decyduje o prędkości pociągu w przypadku kolejnego przejazdu na torze prób?",
       "content": [
         "kierownik pociągu",
@@ -1695,6 +1833,7 @@
       ]
     },
     {
+      "id": "q139",
       "question": "Z jaką maksymalną prędkością można jeździć na torze prób?",
       "content": [
         "Maksymalnie do 85 km/h",
@@ -1707,6 +1846,7 @@
       ]
     },
     {
+      "id": "q140",
       "question": "W przypadku zaniku kontroli drzwi podczas jazdy w ruchu pasażerskim prowadzący pociąg",
       "content": [
         "każdorazowo zatrzymuje pociąg w tunelu i zarządza ewakuację pasażerów",
@@ -1719,6 +1859,7 @@
       ]
     },
     {
+      "id": "q141",
       "question": "Pominięcie semafora Km na 'stój', (umieszczonego na STP) podczas wjazdu do tunelu, możliwe jest na",
       "content": [
         "polecenie dyżurnego ruchu STP",
@@ -1732,6 +1873,7 @@
       ]
     },
     {
+      "id": "q142",
       "question": "Pominięcie semafora Mm na „stój” umieszczonego na STP w celu wykonania manewrów jest możliwe",
       "content": [
         "na polecenie dyżurnego ruchu STP",
@@ -1745,6 +1887,7 @@
       ]
     },
     {
+      "id": "q143",
       "question": "Co oznacza migająca czerwona lampka Jazda na pulpicie SOP",
       "content": [
         "- zanik transmisji na danym odcinku",
@@ -1757,6 +1900,7 @@
       ]
     },
     {
+      "id": "q144",
       "question": "W przedziale pasażerskim wagonu tocznego pociągu Inspiro",
       "content": [
         "- znajduje się zabezpieczenie termiczne silnika sprężarki",
@@ -1769,6 +1913,7 @@
       ]
     },
     {
+      "id": "q145",
       "question": "Zabrania  się odblokowywania PA w przypadku",
       "content": [
         "- Po dwukrotnym zadziałaniu PA, następujacym po sobie",
@@ -1781,6 +1926,7 @@
       ]
     },
     {
+      "id": "q146",
       "question": "W przypadku braku sygnalizacji kontroli zamknięcia drzwi należy",
       "content": [
         "- sprawdzić  położenie WA-13 i WA-16",
@@ -1793,6 +1939,7 @@
       ]
     },
     {
+      "id": "q147",
       "question": "Podczas przejazdu próbnego",
       "content": [
         "- pociąg nie może przewozić pasażerów i pracowników metra",
@@ -1805,6 +1952,7 @@
       ]
     },
     {
+      "id": "q148",
       "question": "Przed przedstawionym poniżej wskaźnikiem należy ustawić",
       "content": [
         "- w odległości drogi hamowania wskaźnik W27 (obowiązująca, największa prędkość dozwolona)",
@@ -1812,12 +1960,13 @@
         "- w odległości drogi hamowania sygnał DO"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wskaznik-7.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-7.png"
+      ]
     },
     {
+      "id": "q149",
       "question": "W przypadku uszkodzenia sprężarek na pociągu Metropolis",
       "content": [
         "- należy połączyć magistrale zasilające, tylko gdy pociągiem pogotowia jest pociąg Metropolis",
@@ -1830,6 +1979,7 @@
       ]
     },
     {
+      "id": "q150",
       "question": "W przypadku zaklinowania się zestawu kołowego należy ograniczyć prędkość pociągu",
       "content": [
         "do 5km/h na zwrotnicach",
@@ -1842,6 +1992,7 @@
       ]
     },
     {
+      "id": "q151",
       "question": "W obwodzie wytwarzania sprężonego powietrza pociągu typu Metropolis, ciśnienie 10 bar oznacza:",
       "content": [
         "- poziom wyłączenia",
@@ -1854,6 +2005,7 @@
       ]
     },
     {
+      "id": "q152",
       "question": "Ruch pociągów powinien być wstrzymany jeżeli widoczność sygnalizatorów i wskaźników na odcinku toru nie przekracza",
       "content": [
         "- 15 metrów",
@@ -1866,6 +2018,7 @@
       ]
     },
     {
+      "id": "q153",
       "question": "W przypadku awarii urządzeń łączności prowadzący pociąg",
       "content": [
         "- wysadza pasażerów na najbliższe stacji",
@@ -1878,6 +2031,7 @@
       ]
     },
     {
+      "id": "q154",
       "question": "Ile wynosi dopuszczalna odchyłka dla odjazdu pociągu względem rozkładu jazdy w okresie obowiązywania następstwa czasowego równego 15 minut, np :  jazdy nocne",
       "content": [
         "przyśpieszenie o 3 minuty , opóźnienie o 3 minuty",
@@ -1890,6 +2044,7 @@
       ]
     },
     {
+      "id": "q155",
       "question": "Na rysunku tablicy hamulcowej zaznaczono zawory odcinające B14, B22, L1, B2 i B18, dopasuj do nich właściwy opis",
       "content": [
         "B22 - zwolnienie zablokowanego hamulca postojowego. B14 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne",
@@ -1897,12 +2052,13 @@
         "B14 - zwolnienie zablokowanego hamulca postojowego. B22 - zwolnienie zablokowanego hamulca służbowego, trzymajacego i awaryjnego. L1 - kurek odcinający poduszki powietrzne"
       ],
       "correct": 0,
+      "image": "./images/tablica-pneumatyczna-metropolis.png",
       "category": [
         "metropolis"
-      ],
-      "image": "./images/tablica-pneumatyczna-metropolis.png"
+      ]
     },
     {
+      "id": "q156",
       "question": "Czy wskaźnik W24 wjazd na tor niewłaściwy występuje w tunelu",
       "content": [
         "tak",
@@ -1915,6 +2071,7 @@
       ]
     },
     {
+      "id": "q157",
       "question": "Dźwiękowy sygnał „Zwolnić” to",
       "content": [
         "jeden długi ton",
@@ -1927,6 +2084,7 @@
       ]
     },
     {
+      "id": "q158",
       "question": "Burtowe lampki hamulca pneumatycznego zapalą się, gdy ciśnienie w cylindrach hamulcowych przekroczy",
       "content": [
         "0,05 MPa",
@@ -1939,6 +2097,7 @@
       ]
     },
     {
+      "id": "q159",
       "question": "Na rękawicach dielektrycznych (sprzęt ochronny zasadniczy) powinna być umieszczona",
       "content": [
         "data ostatniego badania",
@@ -1951,6 +2110,7 @@
       ]
     },
     {
+      "id": "q160",
       "question": "W skład wyposażenia pociągu typu Metropolis wchodzi",
       "content": [
         "4 tablice hamulca pneumatycznego",
@@ -1963,6 +2123,7 @@
       ]
     },
     {
+      "id": "q161",
       "question": "Dopuszczalna prędkość jazdy przy poziomie wody powyżej główki szyny nie może być większa niż",
       "content": [
         "35 km/h",
@@ -1975,6 +2136,7 @@
       ]
     },
     {
+      "id": "q162",
       "question": "Hamownie cierne na wagonie tocznym pociągu typu Metropolis jest zapewnione",
       "content": [
         "dzięki 2 tarczom hamulcowym zamocowanym na każdej osi",
@@ -1987,6 +2149,7 @@
       ]
     },
     {
+      "id": "q163",
       "question": "Przy nastawniku maszynisty ustawionym w poz. „0” obwód główny",
       "content": [
         "jest całkowicie wyłączony",
@@ -1999,6 +2162,7 @@
       ]
     },
     {
+      "id": "q164",
       "question": "Przedstawiony poniżej wskaźnik oznacza",
       "content": [
         "wjazd na tor ślepy",
@@ -2006,12 +2170,13 @@
         "wjazd na tor ze skrajnią PKP"
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wskaznik-11.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wskaznik-11.png"
+      ]
     },
     {
+      "id": "q165",
       "question": "Oznaczenie pociągu technicznego w rozkazie szczególnym jest",
       "content": [
         "d",
@@ -2024,6 +2189,7 @@
       ]
     },
     {
+      "id": "q166",
       "question": "Oznaczenie pociągu doświadczalnego w rozkazie szczególnym",
       "content": [
         "D",
@@ -2036,6 +2202,7 @@
       ]
     },
     {
+      "id": "q167",
       "question": "Czerwona migająca  kontrolka „jazda” na pulpicie SOP-2W oznacza",
       "content": [
         "załączony hamulec służbowy od ATP",
@@ -2048,6 +2215,7 @@
       ]
     },
     {
+      "id": "q168",
       "question": "Czerwona kontrolka „jazda” na panelu  SOP świecąca światłem ciągłym oznacza",
       "content": [
         "załączenie hamulca awaryjnego przez system",
@@ -2060,6 +2228,7 @@
       ]
     },
     {
+      "id": "q169",
       "question": "W tunelach szlakowych umieszczono telefony tunelowe umożliwiające bezpośrednią łączność z CD w odległości",
       "content": [
         "nie przekraczającej 150m",
@@ -2072,6 +2241,7 @@
       ]
     },
     {
+      "id": "q170",
       "question": "Podczas rozmowy pasażera z prowadzącym pociąg METROPOLIS przez system PECU, zainicjowanie zamknięcia drzwi pasażerskich spowoduje",
       "content": [
         "brak sygnału zamknięcia drzwi",
@@ -2084,6 +2254,7 @@
       ]
     },
     {
+      "id": "q171",
       "question": "Jeżeli w wagonie METROPOLIS jeden odbierak jest zasilony z szyny prądowej to",
       "content": [
         "napięcie będzie tylko na odbieraku zasilonym",
@@ -2096,6 +2267,7 @@
       ]
     },
     {
+      "id": "q172",
       "question": "W pociągu METROPOLIS przycisk ACU (wywołanie druga kabina) zainicjowany w kabinie maszynisty można z dezaktywować(!?)",
       "content": [
         "tylko w kabinie której został zainicjowany",
@@ -2108,6 +2280,7 @@
       ]
     },
     {
+      "id": "q173",
       "question": "W pociągu METROPOLIS podczas użycia rozgłoszenia pasażerskiego w trakcie zamykania drzwi pasażerskich",
       "content": [
         "nie będzie słyszalny sygnał zamknięcia drzwi pasażerskich",
@@ -2120,6 +2293,7 @@
       ]
     },
     {
+      "id": "q174",
       "question": "W pociągu INSPIRO sygnał zamknięcia drzwi i rozgłoszenie pasażerskie są",
       "content": [
         "niezależne",
@@ -2133,6 +2307,7 @@
       ]
     },
     {
+      "id": "q175",
       "question": "Przełącznik „bocznikowanie hamulca awaryjnego”  w pociągu METROPOLIS bocznikuje między innymi(!?)",
       "content": [
         "załączony grzybek w kabinie aktywnej i nieaktywnej",
@@ -2145,6 +2320,7 @@
       ]
     },
     {
+      "id": "q176",
       "question": "Jeżeli sygnał akustyczny w pociągu METROPOLIS nie wyłącza się (uszkodzony elektrozawór syreny) należy",
       "content": [
         "na najbliższej stacji zamknąć zawór syreny pod wagonem i po dojechaniu do stacji końcowej, zjechać na STP",
@@ -2157,6 +2333,7 @@
       ]
     },
     {
+      "id": "q177",
       "question": "Zaznacz prawidłową odpowiedź",
       "content": [
         "w pociągu INSPIRO po zadziałaniu autostopu w kabinie nieaktywnej, załączy się hamulec awaryjny od ATP",
@@ -2169,6 +2346,7 @@
       ]
     },
     {
+      "id": "q178",
       "question": "Jakim napięciem jest zasilany układ sterowania wentylacji pasażerskiej w pociągu INSPIRO",
       "content": [
         "110 V DC",
@@ -2181,6 +2359,7 @@
       ]
     },
     {
+      "id": "q179",
       "question": "Jakim napięciem  jest zasilone oświetlenie przestrzeni pasażerskiej w pociągu INSPIRO",
       "content": [
         "110 V DC",
@@ -2193,6 +2372,7 @@
       ]
     },
     {
+      "id": "q180",
       "question": "Jakim napięciem są zasilone wentylatory kontenerów trakcyjnych w pociągach INSPIRO I METROPOLIS",
       "content": [
         "110 V DC",
@@ -2206,6 +2386,7 @@
       ]
     },
     {
+      "id": "q181",
       "question": "Jakim napięciem zasilona jest sprężarka w pociągu INSPIRO I METROPOLIS",
       "content": [
         "3x400 V AC",
@@ -2219,6 +2400,7 @@
       ]
     },
     {
+      "id": "q182",
       "question": "Jakim napięciem zasilona jest ładowarka akumulatorów w pociągach INSPIRO i METROPOLIS",
       "content": [
         "110 V DC",
@@ -2232,6 +2414,7 @@
       ]
     },
     {
+      "id": "q183",
       "question": "Jakim napięciem zasilona jest przetwornica w pociągu INSPIRO I METROPOLIS",
       "content": [
         "3x400 V AC",
@@ -2245,6 +2428,7 @@
       ]
     },
     {
+      "id": "q184",
       "question": "Jakim napięciem zasilone są falowniki trakcyjne w pociągu INSPIRO i METROPOLIS",
       "content": [
         "750 V DC",
@@ -2258,6 +2442,7 @@
       ]
     },
     {
+      "id": "q185",
       "question": "Przetwornice 24 V DC/DC zamontowane w każdym wagonie w pociągu INSPIRO, służą między innymi do zasilenia",
       "content": [
         "części oświetlenia kabiny, systemu wykrywania pożaru i radia",
@@ -2270,6 +2455,7 @@
       ]
     },
     {
+      "id": "q186",
       "question": "Załączenie hamowania służbowego od ATP po najechaniu na odcinek ze zmniejszoną prędkością , w momencie , kiedy  nastawnik jest w pozycji jazda, spowoduje",
       "content": [
         "wyhamowanie pociągu do zatrzymania",
@@ -2282,6 +2468,7 @@
       ]
     },
     {
+      "id": "q187",
       "question": "Zadziałanie funkcji rozłączenie napędu od ATP spowoduje że",
       "content": [
         "system nie zezwoli na ponowne załączenie napędu, gdy nastawnik nie jest w pozycji „zero”",
@@ -2289,12 +2476,13 @@
         "w przypadku, gdy nastawnik pozostanie w pozycji „jazda”, po pięciu sekundach załączy się hamowanie awaryjne od ATP"
       ],
       "correct": 0,
+      "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png",
       "category": [
         "sop"
-      ],
-      "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png"
+      ]
     },
     {
+      "id": "q188",
       "question": "W którym kroku autotestu w pociągu INSPIRO testowane są drzwi?",
       "content": [
         "4",
@@ -2307,6 +2495,7 @@
       ]
     },
     {
+      "id": "q189",
       "question": "Jakie funkcje są testowane w trakcie testu SOP w kroku trzecim w pociągu METROPOLIS?",
       "content": [
         "hamowanie awaryjne",
@@ -2320,6 +2509,7 @@
       ]
     },
     {
+      "id": "q190",
       "question": "Czy podczas jazdy w trybie TA można przełączyć wybierak w tryb TR ?",
       "content": [
         "nie można",
@@ -2332,6 +2522,7 @@
       ]
     },
     {
+      "id": "q191",
       "question": "W jaki sposób napędzany jest mechanizm drzwi pasażerskich w pociągu INSPIRO?",
       "content": [
         "pneumatycznie",
@@ -2344,6 +2535,7 @@
       ]
     },
     {
+      "id": "q192",
       "question": "Jak wygląda procedura wyluzowania składu po zadziałaniu hamulca awaryjnego od czuwaka w pociągu INSPIRO ?",
       "content": [
         "przez naciśnięcie przycisku luzowania hamulca awaryjnego na pulpicie w kabinie maszynisty",
@@ -2356,6 +2548,7 @@
       ]
     },
     {
+      "id": "q193",
       "question": "Jak przebiega wyluzowanie hamulca awaryjnego na tablicy hamulcowej w pociągu MATROPOLIS?",
       "content": [
         "przekręcenie zaworu B-22 i odciągnięciu sprężyn linkami w cylindrach hamulcowych",
@@ -2368,6 +2561,7 @@
       ]
     },
     {
+      "id": "q194",
       "question": "Jak przebiega odcięcie i wyluzowanie hamulca postojowego na tablicy pneumatycznej pociągu METROPOLIS?",
       "content": [
         "przekręcenie zaworu B-22 i odciągnięciu sprężyn linkami w cylindrach hamulcowych",
@@ -2380,6 +2574,7 @@
       ]
     },
     {
+      "id": "q195",
       "question": "Co oznacza wolno migająca na zielono kontrolka „transmisja” w systemie SOP-2W?",
       "content": [
         "włączenie SOP w torach niewyposażonych w pętle transmisyjne",
@@ -2392,6 +2587,7 @@
       ]
     },
     {
+      "id": "q196",
       "question": "Co stanie się, jeżeli po przełączeniu wyłącznika „bocznikowanie SOP” w pociągu METROPOLIS, przycisk „odjazd” zbyt długo będzie wciśnięty, przy sprawnym systemie SOP?",
       "content": [
         "po przełączeniu przełącznika „bocznikowanie”, a przycisk „odjazd” nie zastanie zwolniony do 6s, załączy się hamulec awaryjny i system przejdzie do błędu krytycznego",
@@ -2405,6 +2601,7 @@
       ]
     },
     {
+      "id": "q197",
       "question": "Jak należy postąpić w przypadku stwierdzenia braku oznaczenia końca pociągu na linii?",
       "content": [
         "zgłosić dyspozytorowi ruchu, wysadzić pasażerów na najbliższej stacji, następnie pociąg musi wyjechać awaryjnie na STP",
@@ -2417,6 +2614,7 @@
       ]
     },
     {
+      "id": "q198",
       "question": "Jak należy postąpić w przypadku braku oświetlenia czołowego pociągu na linii?",
       "content": [
         "zgłosić dyspozytorowi ruchu i przy załączonym oświetleniu tunelowym, kontynuuje jazdę bez pasażerów, następnie pociąg musi wyjechać awaryjnie ",
@@ -2429,6 +2627,7 @@
       ]
     },
     {
+      "id": "q199",
       "question": "Z jaką prędkością odbywa się jazda na widoczność?",
       "content": [
         "do 20 km/h",
@@ -2441,6 +2640,7 @@
       ]
     },
     {
+      "id": "q200",
       "question": "Jak wygląda unieważniony semafor?",
       "content": [
         "zasłonięty jest pokrowcem",
@@ -2453,6 +2653,7 @@
       ]
     },
     {
+      "id": "q201",
       "question": "Co oznacza migająca na czerwono dioda „AUX ” w radiu pociągowym INSPIRO?",
       "content": [
         "awarię radia",
@@ -2460,12 +2661,13 @@
         "alarmowe powiadomienie dyspozytora"
       ],
       "correct": 1,
+      "image": "./images/radio.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/radio.png"
+      ]
     },
     {
+      "id": "q202",
       "question": "Co jest podstawą do prowadzenia ruchu w tunelu przy załączonych semaforach?",
       "content": [
         "wskazania sygnalizatorów przytorowych",
@@ -2478,6 +2680,7 @@
       ]
     },
     {
+      "id": "q203",
       "question": "Gdzie na panelu SOP-2w sygnalizowane są poszczególne kroki testu?",
       "content": [
         "na wyświetlaczu WSR",
@@ -2490,6 +2693,7 @@
       ]
     },
     {
+      "id": "q204",
       "question": "Co oznacza dźwiękowy sygnał Rp1 - jeden długi ton",
       "content": [
         "pożar",
@@ -2502,6 +2706,7 @@
       ]
     },
     {
+      "id": "q205",
       "question": "Sygnał S3 – jedno światło pomarańczowe oznacza",
       "content": [
         "Sygnał S3, który zezwala na jazdę pociągu z prędkością nie większą niż 40 km/h, następny semafor nie może być ciemny",
@@ -2514,6 +2719,7 @@
       ]
     },
     {
+      "id": "q206",
       "question": "Co to jest ruch zorganizowany?",
       "content": [
         "ruch po torach, których urządzenia srp nie obsługują",
@@ -2526,6 +2732,7 @@
       ]
     },
     {
+      "id": "q207",
       "question": "Co oznacza wolno migająca lampka „autostart” w trybie TA?",
       "content": [
         "gotowość pociągu do odjazdu",
@@ -2538,6 +2745,7 @@
       ]
     },
     {
+      "id": "q208",
       "question": "Co oznacza szybko migająca lampka „autostart” w trybie  TA?",
       "content": [
         "należy zwolnić przycisk „odjazd”(przycisk znajdujący się na dźwigni czuwaka) podczas jazdy ",
@@ -2550,6 +2758,7 @@
       ]
     },
     {
+      "id": "q209",
       "question": "Co oznacza wygaszona lampka „autostart” w trybie TA?",
       "content": [
         "nie są spełnione warunki do odjazdu pociągu",
@@ -2562,6 +2771,7 @@
       ]
     },
     {
+      "id": "q210",
       "question": "Jaka informacja będzie na HMI, gdy dyspozytor zablokuje odjazd pociągu(tryb TA)?",
       "content": [
         "załączy się funkcja hamulca awaryjnego od ATP",
@@ -2574,6 +2784,7 @@
       ]
     },
     {
+      "id": "q211",
       "question": "Jaką funkcją jest hamowanie docelowe w pociągu INSPIRO na I linii?",
       "content": [
         "funkcją ATP",
@@ -2586,6 +2797,7 @@
       ]
     },
     {
+      "id": "q212",
       "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
       "content": [
         "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
@@ -2593,12 +2805,13 @@
         "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
       ],
       "correct": 0,
+      "image": "./images/ikony-hmi-ddu/awaria-A.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/awaria-A.png"
+      ]
     },
     {
+      "id": "q213",
       "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
       "content": [
         "Pasażerowie muszą opóścić pociąg na nastepnej stacji. Pojazd jest niesprawny i musi niezwłocznie zjechać do STP celem naprawy",
@@ -2606,12 +2819,13 @@
         "Pasażerowie muszą opóścić pociąg na stacji końcowej. Pojazd jest niesprawny i musi niezwłocznie zostać zresetowany"
       ],
       "correct": 1,
+      "image": "./images/ikony-hmi-ddu/awaria-B.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/awaria-B.png"
+      ]
     },
     {
+      "id": "q214",
       "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
       "content": [
         "Usterka typu C, nie ma poważnych konsekwencji w zakresie działania pojazdu, można jeździć do zakończenia dnia roboczego",
@@ -2619,12 +2833,13 @@
         "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
       ],
       "correct": 2,
+      "image": "./images/ikony-hmi-ddu/usterka-C.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/usterka-C.png"
+      ]
     },
     {
+      "id": "q215",
       "question": "Opisz zakresową klasyfikację błedów pociągi Inspiro",
       "content": [
         "Pojazd może kontynuować jazdę z pasażerami bez żadnych ograniczeń. Usterka powinna być usunięta podczas najbliższego poziomu utrzymania",
@@ -2632,12 +2847,13 @@
         "Usterka nie ma poważnych konsekwencji w zakresie działania pojazdu (np. brak funkcji służących komfortowi jazdy, jak komunikat o następnej stacji). Pojazd należy naprawić po zakończeniu zmianu lub na pod koniec dnia roboczego"
       ],
       "correct": 0,
+      "image": "./images/ikony-hmi-ddu/info-D.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/info-D.png"
+      ]
     },
     {
+      "id": "q216",
       "question": "Opisz symbole",
       "content": [
         "Zasilanie pomocnicze prądem AC/DC jest sprawne i włączone",
@@ -2645,12 +2861,13 @@
         "Ruch po petli torowej jest dozwolony"
       ],
       "correct": 0,
+      "image": "./images/zasilanie-pomocnicze.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/zasilanie-pomocnicze.png"
+      ]
     },
     {
+      "id": "q217",
       "question": "Opisz symbole",
       "content": [
         "Drzwi są otwarte przez ATO po lewej stronie",
@@ -2658,12 +2875,13 @@
         "Drzwi są otwarte awaryjnie po prawej stronie"
       ],
       "correct": 0,
+      "image": "./images/drzwi.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/drzwi.png"
+      ]
     },
     {
+      "id": "q218",
       "question": "Opisz symbole",
       "content": [
         "Aktywne polecenie 'Hamulec służbowy' z ATO",
@@ -2671,12 +2889,13 @@
         "Aktywne polecenie 'Napęd' z ATO"
       ],
       "correct": 2,
+      "image": "./images/naped.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/naped.png"
+      ]
     },
     {
+      "id": "q219",
       "question": "Opisz symbole",
       "content": [
         "Aktywne polecenie 'Hamulec służbowy' z ATO",
@@ -2684,12 +2903,13 @@
         "Aktywne polecenie 'Napęd' z ATO"
       ],
       "correct": 0,
+      "image": "./images/hamulec.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/hamulec.png"
+      ]
     },
     {
+      "id": "q220",
       "question": "Opisz symbole",
       "content": [
         "Ostrzeżenie, przynajmniej jeden hamulec EP jest uszkodzony, lub jedna sprężarka powietrza",
@@ -2697,12 +2917,13 @@
         "Normalny stan hamulca"
       ],
       "correct": 1,
+      "image": "./images/usterka-hamulec.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/usterka-hamulec.png"
+      ]
     },
     {
+      "id": "q221",
       "question": "Opisz symbole",
       "content": [
         "Hamulec służbowy jest załączony",
@@ -2710,12 +2931,13 @@
         "Hamulec postojowy jest zluzowany"
       ],
       "correct": 1,
+      "image": "./images/postojowy.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/postojowy.png"
+      ]
     },
     {
+      "id": "q222",
       "question": "Opisz symbole",
       "content": [
         "usterka sprężarki powietrza",
@@ -2723,12 +2945,13 @@
         "odcięcie hamulca EP lub hamulca postojowego"
       ],
       "correct": 2,
+      "image": "./images/hamulec-2.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/hamulec-2.png"
+      ]
     },
     {
+      "id": "q223",
       "question": "Opisz symbole",
       "content": [
         "Sprężarka powietrza jest wyłączona, brak usterek",
@@ -2736,12 +2959,13 @@
         "Przetwornica jest załączona, brak usterek"
       ],
       "correct": 1,
+      "image": "./images/sprezarka.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sprezarka.png"
+      ]
     },
     {
+      "id": "q224",
       "question": "Opisz symbole",
       "content": [
         "Aktywne polecenie 'Odcięcie trakcji' z ATO",
@@ -2749,12 +2973,13 @@
         "Aktywne polecenie 'hamulec służbowy' z ATO"
       ],
       "correct": 0,
+      "image": "./images/odciecie-trakcji.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/odciecie-trakcji.png"
+      ]
     },
     {
+      "id": "q225",
       "question": "Opisz symbole",
       "content": [
         "Bład transmisji danych pomiedzy torem a pociągiem",
@@ -2762,12 +2987,13 @@
         "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
       ],
       "correct": 1,
+      "image": "./images/sop/brak-transmisji.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/brak-transmisji.png"
+      ]
     },
     {
+      "id": "q226",
       "question": "Opisz symbole",
       "content": [
         "Bład transmisji danych pomiedzy torem a pociągiem",
@@ -2775,12 +3001,13 @@
         "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
       ],
       "correct": 2,
+      "image": "./images/sop/brak-adresowania.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/brak-adresowania.png"
+      ]
     },
     {
+      "id": "q227",
       "question": "Opisz symbole",
       "content": [
         "Bład transmisji danych pomiedzy torem a pociągiem, ale nie przejechano jeszcze 25m",
@@ -2788,12 +3015,13 @@
         "Błąd adresowania transmisji danych pomiedzy torem a pociągiem"
       ],
       "correct": 0,
+      "image": "./images/sop/blad-transmisji.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/blad-transmisji.png"
+      ]
     },
     {
+      "id": "q228",
       "question": "Opisz symbole",
       "content": [
         "Przełącznik warsztatowy jest uszkodzony",
@@ -2801,12 +3029,13 @@
         "Przełącznik warsztatowy jest nie przełaczony"
       ],
       "correct": 1,
+      "image": "./images/warsztat.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/warsztat.png"
+      ]
     },
     {
+      "id": "q229",
       "question": "Opisz symbole",
       "content": [
         "Trakcja gotowa do pracy z ostrzeżeniem",
@@ -2814,12 +3043,13 @@
         "Usterka trakcji"
       ],
       "correct": 2,
+      "image": "./images/ikony-hmi-ddu/trakcja-usterka.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/trakcja-usterka.png"
+      ]
     },
     {
+      "id": "q230",
       "question": "Opisz symbole",
       "content": [
         "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
@@ -2827,12 +3057,13 @@
         "Usterka drzwi"
       ],
       "correct": 0,
+      "image": "./images/ikony-hmi-ddu/drzwi-otwarte-wajcha.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/ikony-hmi-ddu/drzwi-otwarte-wajcha.png"
+      ]
     },
     {
+      "id": "q231",
       "question": "Opisz symbole",
       "content": [
         "Drzwi wykryły przeszkodę",
@@ -2840,12 +3071,13 @@
         "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD"
       ],
       "correct": 1,
+      "image": "./images/drzwi-odizolowane.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/drzwi-odizolowane.png"
+      ]
     },
     {
+      "id": "q232",
       "question": "Opisz symbole",
       "content": [
         "Drzwi są otwarte w sposób awaryjny, czyli za pomocą EED lub EAD",
@@ -2853,12 +3085,13 @@
         "Drzwi wykryły przeszkodę"
       ],
       "correct": 2,
+      "image": "./images/drzwi-przeszkoda.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/drzwi-przeszkoda.png"
+      ]
     },
     {
+      "id": "q233",
       "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
       "content": [
         "Nakazuje zmniejszyć predkość taboru menewrującego",
@@ -2866,12 +3099,13 @@
         "miejsce, do którego należy doojechać manewrującym taborem"
       ],
       "correct": 1,
+      "image": "./images/docisnac.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/docisnac.png"
+      ]
     },
     {
+      "id": "q234",
       "question": "Nadawany przez sygnalistę sygnał ręczny oznacza",
       "content": [
         "nalezy jechać w kierunku od dającego sygnał",
@@ -2879,12 +3113,13 @@
         "nie wolno ruszać taborem dopóki podawany jest ten sygnał"
       ],
       "correct": 0,
+      "image": "./images/od.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/od.png"
+      ]
     },
     {
+      "id": "q235",
       "question": "Sygnał podawany na sygnalizatorze przedstawionym na rysunku",
       "content": [
         "manewrujący tabor może przejechać poza semafor wskazujące sygnał S1 'stój' którego oznaczenie zawiera mała literę 'm' jeżeli pozwolenie na minięcie sygnału S1 'Stój' zostanie przekazane przez pracownika obsługującego ten semafor za pomocą sygnału Rm1 'Do mnie' lub Rm2 'Ode mnie' albo przez radiotelefon",
@@ -2892,12 +3127,13 @@
         "sygnał S1 'Stój' nie dotyczy przejazdu pociągu z elektrowozowni do tunelu"
       ],
       "correct": 0,
+      "image": "./images/semafor-c.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/semafor-c.png"
+      ]
     },
     {
+      "id": "q236",
       "question": "Wyświetlony piktogram (pomarańczowy) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
       "content": [
         "prędkość kontrolowana przez SOP3 w pętli jest równa 0km/h (tylko przed segmentem czrwonym)",
@@ -2905,12 +3141,13 @@
         "oznacza, że na danym odcinku aop prędkość kontrolowana przez system wynosi 35km/h"
       ],
       "correct": 0,
+      "image": "./images/sop/wsr-s3.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/wsr-s3.png"
+      ]
     },
     {
+      "id": "q237",
       "question": "Wyświetlony piktogram (czerwony) na monitorze HMI pociągu INSPIRO (wyświetlacz WSR) oznacza",
       "content": [
         "ocinek zajęty przez poprzedząjący pociąg lub osłonięty przez semafor zabraniający jazdy (następne pola napewno również są wyświetlane na czerwono)",
@@ -2918,12 +3155,13 @@
         "całkowity brak transmisji sygnałów aop"
       ],
       "correct": 0,
+      "image": "./images/sop/wsr-s1.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/wsr-s1.png"
+      ]
     },
     {
+      "id": "q238",
       "question": "W przypadku wystąpienia błędu krytycznego ATP należy:",
       "content": [
         "kontynuować jazdę bez pasażerów z wyłączonym SOP3 na podstawie wskazań semaforów, oraz rozkazu szczególnego",
@@ -2936,6 +3174,7 @@
       ]
     },
     {
+      "id": "q239",
       "question": "Wskazanie na wyświetlaczu (dwie kreski) 'prędkości kontrolowanej' pulpitu SOP-2W wystepuje między innymi",
       "content": [
         "uszkodzenie jednego z torów prędkości",
@@ -2943,12 +3182,13 @@
         "wystąpienie błędu krytycznego"
       ],
       "correct": 1,
+      "image": "./images/sop/brak-transmisji-sop2.png",
       "category": [
         "sop"
-      ],
-      "image": "./images/sop/brak-transmisji-sop2.png"
+      ]
     },
     {
+      "id": "q240",
       "question": "Rozłączenie napędu od ATP (system SOP-3) powoduje, że",
       "content": [
         "w przypadku, gdy nastawnik pozostanie w pozycji 'jazda' po pięciu sekundach załączy się hamowanie awaryjne od ATO",
@@ -2956,13 +3196,14 @@
         "system nie zezwoli na ponowne załączenie napędu dopóki nastawnik nie zostanie przestawiony do pozycji 'zero'"
       ],
       "correct": 2,
+      "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png",
       "category": [
         "linia2",
         "sop"
-      ],
-      "image": "./images/ikony-hmi-ddu/trakcja-odciecie.png"
+      ]
     },
     {
+      "id": "q241",
       "question": "Czym skutkuje nie nacisnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
       "content": [
         "po 10 sekundach załączy się hamowanie awaryjne od ATO",
@@ -2975,6 +3216,7 @@
       ]
     },
     {
+      "id": "q242",
       "question": "Wskazania na wyświetlaczu 'prędkości kontrolowanej' pulpitu SOP 2W występuje w przypadku",
       "content": [
         "brak transmisji na danym odcinku",
@@ -2982,12 +3224,13 @@
         "wystąpienia błedu krytycznego"
       ],
       "correct": 2,
+      "image": "./images/sop/blad-krytyczny.png",
       "category": [
         "sop"
-      ],
-      "image": "./images/sop/blad-krytyczny.png"
+      ]
     },
     {
+      "id": "q243",
       "question": "Przedstawiony poniżej sygnał nadawany przez sygnalistę",
       "content": [
         "nakazuje zatrzymac pociąg",
@@ -2995,12 +3238,13 @@
         "nakazuje zmniejszyc prędkość taboru manewrującego"
       ],
       "correct": 2,
+      "image": "./images/zmiejszyc-predkosc.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/zmiejszyc-predkosc.png"
+      ]
     },
     {
+      "id": "q244",
       "question": "Przedstawiony wskaźnik Wm18",
       "content": [
         "ustawia się w tunelu ale dotyczy tylko maszynistów pojazdów pomocniczych",
@@ -3008,12 +3252,13 @@
         "ustawia się w tunelu, informuje maszyniste, że za wskaxnikiem w odległości drogi hamowania znajduje sie sygnalizator przytorowy"
       ],
       "correct": 2,
+      "image": "./images/wm-18.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wm-18.png"
+      ]
     },
     {
+      "id": "q245",
       "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
       "content": [
         "ATP uszkodzone lub brak komunikacji z ATP",
@@ -3021,12 +3266,13 @@
         "brak transmisji sygnałów aop"
       ],
       "correct": 0,
+      "image": "./images/sop/atp-uszkodzone.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/atp-uszkodzone.png"
+      ]
     },
     {
+      "id": "q246",
       "question": "Wyświetlony piktogram na monitorze HMI pociągu INSPIRO (wyświetlacz wsr) oznacza",
       "content": [
         "oznacza, że najbliższy w kierunku jazdy sygnalizator przytorowy wskazuje Sygnał S2 'wolna droga'",
@@ -3034,12 +3280,13 @@
         "prędkość dozwolona przez SOP-3 w pętli wynosi 90 km/h"
       ],
       "correct": 1,
+      "image": "./images/sop/wsr-s2.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/wsr-s2.png"
+      ]
     },
     {
+      "id": "q247",
       "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
       "content": [
         "załączone hamowanie awaryjne przez system SOP3",
@@ -3047,12 +3294,13 @@
         "klasyfikacje stanu pociągu (występuje nieznaczne ograniczenie w działaniu pojazdu, można dojechać do stacji końcowej z pasażerami)"
       ],
       "correct": 0,
+      "image": "./images/sop/awaryjny-sop.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/awaryjny-sop.png"
+      ]
     },
     {
+      "id": "q248",
       "question": "Wyświetlany piktogram na monitorze HMI pociągu INSPIRO oznacza",
       "content": [
         "urządzenia pokładowe SOP3 są wyłączone",
@@ -3060,12 +3308,13 @@
         "brak transmisji sygnałów aop"
       ],
       "correct": 1,
+      "image": "./images/sop/ato-uszkodzone.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/sop/ato-uszkodzone.png"
+      ]
     },
     {
+      "id": "q249",
       "question": "Czy przy aktywnym poleceniu 'rozłączenie napedu' od układu ATP w pociągi INSPIRO, możliwe jest ponowne załączenie napędu przez maszynistę?",
       "content": [
         "nie jest możliwe",
@@ -3079,6 +3328,7 @@
       ]
     },
     {
+      "id": "q250",
       "question": "System SOP-2W oddziałuje na pociąg za pomocą sygnałów umożliwiających",
       "content": [
         "załączenie hamowania awaryjnego",
@@ -3092,6 +3342,7 @@
       ]
     },
     {
+      "id": "q251",
       "question": "Który z wymienionych trybów pracy nie występuje w systemie SOP-2W?",
       "content": [
         "tryb aktywny - w tym trybie SOP-2W przekazuje informacje maszyniście i steruje pociągiem",
@@ -3104,6 +3355,7 @@
       ]
     },
     {
+      "id": "q252",
       "question": "Która z podanych prędkości nie jest kodowana jako prędkość kontrolowana (stopnie prędkości wyświetlane na wskaźniku Vk) na lini metra M1?",
       "content": [
         "80 km/h",
@@ -3116,6 +3368,7 @@
       ]
     },
     {
+      "id": "q253",
       "question": "Jaki warunek musi być spełniony na M2, żeby SOP-3 zezwolił dojechać do semafora wskazującego sygnał 'S1-stój' za którym znajduje się rozjazd, z prędkością Vk > 0?",
       "content": [
         "droga przebiegu za semaforem ułożona w tor do zmiany kierunku",
@@ -3130,6 +3383,7 @@
       ]
     },
     {
+      "id": "q254",
       "question": "Po załączeniu hamowania awaryjnego przez układ ATP (SOP-3) w pociągu INSPIRO należy",
       "content": [
         "przestawić przełacznik PRP w tryb TN, ponownie w tryb TR i wykonać test urządzeń SOP",
@@ -3144,6 +3398,7 @@
       ]
     },
     {
+      "id": "q255",
       "question": "Tryb TB (linia metra M2) służy do",
       "content": [
         "wykonania bezobsługowego nawrotu",
@@ -3156,6 +3411,7 @@
       ]
     },
     {
+      "id": "q256",
       "question": "W trakcie testu SOP-2W w trzecim kroku sprawdzane jest działanie",
       "content": [
         "hamowanie awaryjne",
@@ -3168,6 +3424,7 @@
       ]
     },
     {
+      "id": "q257",
       "question": "Po wystąpieniu błędu krytycznego układu ATO, możliwa jest jazda",
       "content": [
         "w trybie TA",
@@ -3180,6 +3437,7 @@
       ]
     },
     {
+      "id": "q258",
       "question": "Przełączenie podczas jazdy pociągu z trybu TA do trybu TR na lini M2",
       "content": [
         "spowoduje załączenie hamowania awaryjnego",
@@ -3192,6 +3450,7 @@
       ]
     },
     {
+      "id": "q259",
       "question": "Po upływie jakiego czasu konieczne jest ponowne przeprowadzenie testu pokładowych urządzeń SOP-3?",
       "content": [
         "po 12 godzinach jazdy z aktywnym systemem SOP-3",
@@ -3205,6 +3464,7 @@
       ]
     },
     {
+      "id": "q260",
       "question": "Hamowanie awaryjne załączone przez układ ATP systemu SOP-3 w pociągu INSPIRO anulujemy",
       "content": [
         "przez ustawienie nastawnika jazdy w położenie hamowanie, naciśnięcie przycisku P-20 i trzymania, az ikona hamowanie przestanie wskazywać stan hamulca awaryjnego ATP",
@@ -3219,6 +3479,7 @@
       ]
     },
     {
+      "id": "q261",
       "question": "Co oznacza wolno migająca na zielono kontrolka 'transmisja' w systemie SOP-2W?",
       "content": [
         "włączenie SOP w torach wyposażonych w pętle transmisyjne",
@@ -3231,6 +3492,7 @@
       ]
     },
     {
+      "id": "q262",
       "question": "Załączenie hamowana służbowego od ATP po przekroczeniu prędkości kontrolowanej z jednoczesnym pozostawieniem nastawnika w pozycji jazda, spowoduje",
       "content": [
         "wyhamowanie pociągu do zatrzymania",
@@ -3244,6 +3506,7 @@
       ]
     },
     {
+      "id": "q263",
       "question": "Kropka przy wyświetlanej prędkości rzeczywistej na panelu SOP-2W, oznacza",
       "content": [
         "awarie jednego z tachometrów (pomiar prędkości)",
@@ -3256,6 +3519,7 @@
       ]
     },
     {
+      "id": "q264",
       "question": "Czym skutkuje nie naciśnięcie przycisku P-20 w pociągu INSPIRO po przełaczeniu w tryb TB?",
       "content": [
         "Po upływie 5 sekund system załączy hamulec awaryjny",
@@ -3268,6 +3532,7 @@
       ]
     },
     {
+      "id": "q265",
       "question": "Jakie są wskazania na ekranie HMI gdy system ATO jest niezorientowany",
       "content": [
         "brak prędkości kontrolowanej Vk",
@@ -3280,6 +3545,7 @@
       ]
     },
     {
+      "id": "q266",
       "question": "Czerwona migajaca lampka 'Jazda' na pulpicie SOP-2W oznacza",
       "content": [
         "załączenie hamowania awaryjnego od aop",
@@ -3292,6 +3558,7 @@
       ]
     },
     {
+      "id": "q267",
       "question": "Czerwona lampka 'Jazda świecąca ciągłym światłem na pulpicie SOP-2W oznacza",
       "content": [
         "załączone hamowanie służbowe od aop",
@@ -3304,6 +3571,7 @@
       ]
     },
     {
+      "id": "q268",
       "question": "Stopień 'On' ('zero nieprzełamywalne') na linii M2 jest kodowany",
       "content": [
         "między innymi za semaforem wskazującum sygnał 'Stój' i na końcach torów odstawczych",
@@ -3316,6 +3584,7 @@
       ]
     },
     {
+      "id": "q269",
       "question": "Przejazd pociągu przez stacje bez zatrzymania bez roskazu szczególnego 'O' może odbywac się",
       "content": [
         "zawsze, bez wyjątku odbywa się na podstawie rozkazu szczególnego 'O'",
@@ -3328,6 +3597,7 @@
       ]
     },
     {
+      "id": "q270",
       "question": "Podstawowo dla prowadzenia ruchu pociągów pasażerskich stosuje się urzadzenia aop lub app",
       "content": [
         "przy wyłączonych semaforach na obu liniach metra",
@@ -3340,6 +3610,7 @@
       ]
     },
     {
+      "id": "q271",
       "question": "Z jaką predkością odbywa sie 'jazda na widoczność'",
       "content": [
         "do 20 km/h umożliwiającą zatrzymanie pojazdu przed przeszkodą",
@@ -3352,6 +3623,7 @@
       ]
     },
     {
+      "id": "q272",
       "question": "Jazda po torze prób dwoma pociągami",
       "content": [
         "nie jest dozwolona",
@@ -3364,6 +3636,7 @@
       ]
     },
     {
+      "id": "q273",
       "question": "Maksymalna prędkość z jaką może poruszac się pociąg po torze prób",
       "content": [
         "40 km/h bez czynnych urządzeń aop",
@@ -3376,6 +3649,7 @@
       ]
     },
     {
+      "id": "q274",
       "question": "W jakiej odległości w tunelach szlakowych umieszczono przewodowe telefony tunelowe umożliwiające bezpośrednią łaczność z Dyspozytorem?",
       "content": [
         "około 150m",
@@ -3388,6 +3662,7 @@
       ]
     },
     {
+      "id": "q275",
       "question": "Po otrzymaniu przez maszynistę informacji o bagażu pozostawionym w wagonie, bez opieki właściciela maszynista powinien",
       "content": [
         "na najbliższej stacji nakazuje pasażerom opuścić pociąg i po otrzymaniu rozkazu szczególnego zjeżdża bez zatrzymania na stacjach w najbliższe tory odtawcze",
@@ -3400,6 +3675,7 @@
       ]
     },
     {
+      "id": "q276",
       "question": "Ograniczenie prędkości podczas jazdy doświadczalnej po torze prób obowiązuje",
       "content": [
         "podczas pierwszego przejazdu w obu kierunkach do 20 km/h",
@@ -3412,6 +3688,7 @@
       ]
     },
     {
+      "id": "q277",
       "question": "W przypadku wystąpienia błędu krytycznego ATO należy",
       "content": [
         "kontynuowac jazde z pasażerami z wyłączonym SOP3 na podstawie wskazań semaforów",
@@ -3424,6 +3701,7 @@
       ]
     },
     {
+      "id": "q278",
       "question": "Wyjazd z STP na szlak graniczny jest dozwolony",
       "content": [
         "na podstawie sygnału S3 (pomarańczowe światło na semaforze Jm, Km, Lm, Mm",
@@ -3436,6 +3714,7 @@
       ]
     },
     {
+      "id": "q279",
       "question": "Wjazd pociągu na szlak graniczny odbywa się",
       "content": [
         "na podstawie sygnału zezwalającego na semaforze, urzadzenia aop w pociągu załączone",
@@ -3448,6 +3727,7 @@
       ]
     },
     {
+      "id": "q280",
       "question": "Co powinno być między innymi zawarte w rozkazie szczególnym 'S' przy prowadzeniu ruchu dwukierunkowego",
       "content": [
         "nazwa semafora, lub semaforów wskazujacych sygnał 'STÓJ' w drodze przebiegu i na jakiej podstawie nastapi wyjazd z odcinka o ruchu dwukierunkowym na odcinek o ruchu jednokierunkowym",
@@ -3460,6 +3740,7 @@
       ]
     },
     {
+      "id": "q281",
       "question": "Czy pociąg pasażerski zatrzymany na szlaku może być cofany?",
       "content": [
         "tak, tylko na polecenie osoby prowadzącej ruch w tym obszrze",
@@ -3472,6 +3753,7 @@
       ]
     },
     {
+      "id": "q282",
       "question": "Do jakiego okregu nastawczego (której stacji) należą tory miedzy I a II linia metra?",
       "content": [
         "stacji C-10 Rondo ONZ",
@@ -3484,6 +3766,7 @@
       ]
     },
     {
+      "id": "q283",
       "question": "Podczs przejazdu próbnego (pierwszy przejazd po przerwie w ruchu pasażerskim)",
       "content": [
         "pociągiem nie wolno przewozic pracowników metra",
@@ -3496,6 +3779,7 @@
       ]
     },
     {
+      "id": "q284",
       "question": "Jaki kierunek zasadniczy obowiązuje na zamkniętym torze szlakowym?",
       "content": [
         "kierunek ruchu określony w rozkazie szczególnym '0'",
@@ -3508,6 +3792,7 @@
       ]
     },
     {
+      "id": "q285",
       "question": "Czy pociągiem pogotowia może być pociąg z pasażerami?",
       "content": [
         "tak, tylko w przypadku pożaru",
@@ -3520,6 +3805,7 @@
       ]
     },
     {
+      "id": "q286",
       "question": "W przypadku zaklinowania się zestawu kołowego, należy zjechać w tory odstawcze z zachowaniem następującej prędkości",
       "content": [
         "do 35 km/h po torze prostym",
@@ -3532,6 +3818,7 @@
       ]
     },
     {
+      "id": "q287",
       "question": "Wyjazd z toru stacyjnego nieposiadającego semafora mozliwy jest na podstawie",
       "content": [
         "rozkazu szczególnego 'O'",
@@ -3544,6 +3831,7 @@
       ]
     },
     {
+      "id": "q288",
       "question": "W przypadku wystąpienia awarii uniemożliwiającej kontynuowanie jazdy, maszynista zgłasza potrzebę wezwania pociągu pogotowia",
       "content": [
         "rano i wieczorem przy czasie następstwa powyżej 8 minut po upływie 20 minut",
@@ -3556,6 +3844,7 @@
       ]
     },
     {
+      "id": "q289",
       "question": "W przypadku awarii urządzeń łaczności w pociągu",
       "content": [
         "należy zgłosić awarię urządzeń po dojechaniu do stacji końcowej",
@@ -3568,6 +3857,7 @@
       ]
     },
     {
+      "id": "q290",
       "question": "Po jakim czasie Dyspozytor Ruchu może uruchomić pociąg pogotowia kiedy inny skład zatrzymał się nieplanowo i nie można nawiązać z nim łączniści",
       "content": [
         "rano i wieczorem przy czasie nastepstwa powyżej 7 minut, po upływie 10 minut",
@@ -3580,6 +3870,7 @@
       ]
     },
     {
+      "id": "q291",
       "question": "Z powodu awarii urządzeń aop w pociągu dyspozytor może załączyć semafory dla przejazdu pociągu z wyłączonymi urządzeniami aop, informując o tym prowadzącego pociąg za pomocą",
       "content": [
         "rozkazu szczególnego 'O'",
@@ -3592,6 +3883,7 @@
       ]
     },
     {
+      "id": "q292",
       "question": "Wskaźnik Wm30 'wjazd do strefy oddziaływania stacjonarnych urządzeń systemu aop'",
       "content": [
         "oznacza miejsce, od którego ruch pociągów może odbywać się pod kontrolą systemu automatycznego ograniczenia prędkości, według wskazań sygnalizatora kabinowego",
@@ -3599,12 +3891,13 @@
         "oznacza miejsce, od którego ruch pociągów odbywa się tylko na podstawie urządzeń aop"
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wsk-Wm30.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Wm30.png"
+      ]
     },
     {
+      "id": "q293",
       "question": "jaki sygnał lub wskazanie semafora uznajemy za sygnał wątpliwy?",
       "content": [
         "jeżeli obraz odebranego sygnału lub wskazanie sygnalizatora nie odpowiada ściśle ustalonej formie to taki sygnał lub wskazanie jest ssygnałem wątpliwym",
@@ -3617,6 +3910,7 @@
       ]
     },
     {
+      "id": "q294",
       "question": "Który z wymienionych sygnałów podawanych na sygnalizatorze przytorowym nie jest sygnałem wątpliwym?",
       "content": [
         "migające światło koloru białego na tarczy manewrowej",
@@ -3629,6 +3923,7 @@
       ]
     },
     {
+      "id": "q295",
       "question": "Jaka prędkość obowiązuje podczas jazdy w kierunku niewłaściwym na linii M1?",
       "content": [
         "do 20 km/h",
@@ -3641,6 +3936,7 @@
       ]
     },
     {
+      "id": "q296",
       "question": "Podczas wyjazdu składu z torów odstawczych maszynista przestrzega",
       "content": [
         "tylko wskazań na sygnalizatorz kabinowym przy czynnych urządzeniach aop",
@@ -3653,6 +3949,7 @@
       ]
     },
     {
+      "id": "q297",
       "question": "Pominięcie semafora Gm wskazującego sygnał 'stój' (umieszczonego na stp) podczas przejazdu po głowicy STP, dozwolone jest na podstawie",
       "content": [
         "polecenia wydanego przez Dyżurnego Ruchu STP",
@@ -3665,6 +3962,7 @@
       ]
     },
     {
+      "id": "q298",
       "question": "Za pomoca rozkazu szczególnego 'S' wydaje sie prowadzącemu pojazd",
       "content": [
         "zezwolenie na pominięcie sygnału 'stój' podanego na tarczy manewrowej",
@@ -3677,6 +3975,7 @@
       ]
     },
     {
+      "id": "q299",
       "question": "jak należy postapić w przypadku braku oświetlenia czołowego pociągu na linii?",
       "content": [
         "zgłosić Dyspozytorowi Ruchu i przy załączonym oświetleniu tunelowym, kontynuje jazdę bez pasażerów, następnie pociąg musi wyjechać awaryjnie",
@@ -3689,6 +3988,7 @@
       ]
     },
     {
+      "id": "q300",
       "question": "Postępowanie w przypadku awarii systemu lokazlizacji peronu (SLP)",
       "content": [
         "otworzyć drzwi za pomocą dzwigni awaryjnego otwierania i zjechać awaryjnie na STP",
@@ -3701,6 +4001,7 @@
       ]
     },
     {
+      "id": "q301",
       "question": "Wyjazd z elektrowozowni pociągów typu INSPIRO i typu METROPOLIS z toru 14",
       "content": [
         "jest zabroniony ze względu na umiejscowienie przełącznika warsztatowego",
@@ -3714,6 +4015,7 @@
       ]
     },
     {
+      "id": "q302",
       "question": "wyjazd pociągu typu INSPIRO oraz METROPOLIS z 12ego toru w elektrowozowni jest dozwolony",
       "content": [
         "w kazdym przypadku",
@@ -3727,6 +4029,7 @@
       ]
     },
     {
+      "id": "q303",
       "question": "Zasilenie wysokim napieciem motorowego wagonu konieczny jest kontakt z szyną prądową",
       "content": [
         "wszystkich odbieraków prądu w wagonie",
@@ -3739,6 +4042,7 @@
       ]
     },
     {
+      "id": "q304",
       "question": "przełącznik 'bocznikowanie hamulca awaryjnego' w pociągu METROPOLIS bocznikuje między innymi",
       "content": [
         "hamowanie awaryjne załączone w wyniku spadku ciśnienia powietrza w magistrali",
@@ -3751,6 +4055,7 @@
       ]
     },
     {
+      "id": "q305",
       "question": "Przełącznik Pożar na pulpicie w kabinie INSPIRO",
       "content": [
         "redukuje obciążenie baterii akumulatorów poprzez załączenie oświetlenia awaryjnego salonu pasażerskiego",
@@ -3763,6 +4068,7 @@
       ]
     },
     {
+      "id": "q306",
       "question": "W celu lokalizacji wywołania pasażerskiego należy przełączy COMET",
       "content": [
         "na ekran nr 4",
@@ -3775,6 +4081,7 @@
       ]
     },
     {
+      "id": "q307",
       "question": "W celu lokalizacji usterki, należy przełączyć COMET",
       "content": [
         "na ekran nr 2",
@@ -3787,6 +4094,7 @@
       ]
     },
     {
+      "id": "q308",
       "question": "Informację o statusie hamulca awaryjnego w pociągu METROPOLIS odczytamy",
       "content": [
         "na ekranie 5.2 wyświetlacza COMET",
@@ -3799,6 +4107,7 @@
       ]
     },
     {
+      "id": "q309",
       "question": "Jakim napięciem zasilany jest system wentylacji salonu pasażerskiego w pociągach metra",
       "content": [
         "110 V DC lub 80 V DC w zależności od typu pociągu",
@@ -3811,6 +4120,7 @@
       ]
     },
     {
+      "id": "q310",
       "question": "Jakie jest prawidłowe postępowanie w przypadku awarii systemu dostępu maszynisty do kabiny maszynisty?",
       "content": [
         "zgłosić awarię Dyspozytorowi Ruchu, wyłączyc system bezpiecznikiem i zjechać awaryjnie bez pasażerów na STP",
@@ -3823,6 +4133,7 @@
       ]
     },
     {
+      "id": "q311",
       "question": "Znajdujący się na tablicy hamulcowej wagonu INSPIRO zawór S01",
       "content": [
         "służy do odcięcia i wyluzowania hamulca elektro-pneumatycznego w wagonie",
@@ -3835,6 +4146,7 @@
       ]
     },
     {
+      "id": "q312",
       "question": "Hamowanie oporowe na pociągu METROPOLIS",
       "content": [
         "nie jest stosowane",
@@ -3847,6 +4159,7 @@
       ]
     },
     {
+      "id": "q313",
       "question": "W pociągu INSPIRO w trybie jazdy JM1 moment napedowy zostanie samoczynnie odłączony przy prędkości",
       "content": [
         "<=10 km/h",
@@ -3859,6 +4172,7 @@
       ]
     },
     {
+      "id": "q314",
       "question": "Hamowanie elektropneumatyczne zaworem 2",
       "content": [
         "nie powoduje spadku ciśnienia w wprzewodzie hamulcowym (głównym)",
@@ -3871,6 +4185,7 @@
       ]
     },
     {
+      "id": "q315",
       "question": "Migająca, czerwona dioda AUX na konsoli radia w pociągu INSPIRO oznacza",
       "content": [
         "pracę nadmiarową (z włączoną redundancją)",
@@ -3878,12 +4193,13 @@
         "że kanał radiowy zajęty jest przez innego użytkownika"
       ],
       "correct": 0,
+      "image": "./images/radio-aux-mig.png",
       "category": [
         "inspiro"
-      ],
-      "image": "./images/radio-aux-mig.png"
+      ]
     },
     {
+      "id": "q316",
       "question": "Świecąca, czerwona dioda AUX na konsoli radia pociągu INSPIRO oznacza",
       "content": [
         "wezwanie awaryjne przez Dyspozytora Ruchu",
@@ -3896,6 +4212,7 @@
       ]
     },
     {
+      "id": "q317",
       "question": "Autostop w pociągu METROPOLIS jest aktywny",
       "content": [
         "w obu kabinach czołowych",
@@ -3908,6 +4225,7 @@
       ]
     },
     {
+      "id": "q318",
       "question": "Załączenie w pociągu typu INSPIRO, za pomocą ustawień na monitorze HMI, trybu JM2 spowoduje",
       "content": [
         "na wyświetlaczu HMI pojawi sie informacja TRYB AWARYJNY i zostanie wprowadzone ograniczenie prędkości jazdy do 40 km/h",
@@ -3920,6 +4238,7 @@
       ]
     },
     {
+      "id": "q319",
       "question": "Przełącznik trybów pracy PRP w pociągu",
       "content": [
         "jest to przełącznik, który służy do włączania trybu awaryjnego",
@@ -3932,6 +4251,7 @@
       ]
     },
     {
+      "id": "q320",
       "question": "Podczas rozmowy pasażera przez system PECU z prowadzącym pociąg typu METROPOLIS",
       "content": [
         "wystąpi brak sygnału ostrzegającego o zamykaniu drzwi",
@@ -3944,6 +4264,7 @@
       ]
     },
     {
+      "id": "q321",
       "question": "W pociągu METROPOLIS wysokie napięcie zasilajace",
       "content": [
         "jest przekazywane miedzy wagonami M1, M2, M3, M4",
@@ -3956,6 +4277,7 @@
       ]
     },
     {
+      "id": "q322",
       "question": "Na pociągu iNSPIRO każdy odbierak prądu",
       "content": [
         "posiada bezpiecznik zabezpiecząjący przed zwarciami występującymi pomiędzy włącznikiem szybkim a adbierakiem",
@@ -3968,6 +4290,7 @@
       ]
     },
     {
+      "id": "q323",
       "question": "W pociągu INSPIRO sygnał zamknięcia drzwi i rozgłoszenie pasażerskie",
       "content": [
         "aktywne rozgłoszenie spowoduje brak sygnału zamknięcia drzwi",
@@ -3977,10 +4300,10 @@
       "correct": 1,
       "category": [
         "inspiro"
-      
       ]
     },
     {
+      "id": "q324",
       "question": "Czy przy aktywnej 'blokadzie napędu' w pociągu INSPIRO, jest możliwe wyluzowanie pociągu do holowania po wdrożeniu odpowiedniej procedury na HMI?",
       "content": [
         "nie jest możliwe",
@@ -3993,6 +4316,7 @@
       ]
     },
     {
+      "id": "q325",
       "question": "Co oznacza wolno migająca lampka  „autostart” w trybie TA?",
       "content": [
         "gotowość pociągu do odjazdu",
@@ -4005,6 +4329,7 @@
       ]
     },
     {
+      "id": "q326",
       "question": "Na sygnalizatorach występujących na STP Kabaty oznaczonych  E m, F m  i G m  istnieje możliwość wyświetlenia następujących sygnałów świetlnych:",
       "content": [
         "- białe i niebieskie",
@@ -4017,6 +4342,7 @@
       ]
     },
     {
+      "id": "q327",
       "question": "Pominięcie semafora Km na 'stój' ,(umieszczonego na STP) podczas wjazdu do tunelu , możliwe   jest na",
       "content": [
         "polecenie dyżurnego ruchu STP",
@@ -4029,6 +4355,7 @@
       ]
     },
     {
+      "id": "q328",
       "question": "Co oznacza dźwiękowy sygnał Rp1 -  jeden długi ton",
       "content": [
         "pożar",
@@ -4041,6 +4368,7 @@
       ]
     },
     {
+      "id": "q329",
       "question": "Sygnał Z1wk oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
       "content": [
         "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do wykolejnicy.",
@@ -4048,12 +4376,13 @@
         "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wsk-Z1wk.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Z1wk.png"
+      ]
     },
     {
+      "id": "q330",
       "question": "Sygnał Z2wk oznacza (czarna pionowa linia na tle białej okrągłej tarczy)",
       "content": [
         "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do wykolejnicy.",
@@ -4061,12 +4390,13 @@
         "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
       ],
       "correct": 1,
+      "image": "./images/wskazniki/wsk-Z2wk.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Z2wk.png"
+      ]
     },
     {
+      "id": "q331",
       "question": "Sygnał Z1 oznacza (czarna pozioma linia na tle białej okrągłej tarczy)",
       "content": [
         "Stój - koniec toru, stosowany jest wyłącznie na terenie otwartym, poza tunelem i stacjami metra",
@@ -4074,12 +4404,13 @@
         "Wykolejnica na torze, oznacza, że jazda i manewry po torze, na którym znajduje sie wykolejnica są dozwolone tylko do rozjazdu za wykolejnicą."
       ],
       "correct": 0,
+      "image": "./images/wskazniki/wsk-Z1wk.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Z1wk.png"
+      ]
     },
     {
+      "id": "q332",
       "question": "Sygnał nadawany przez sygnalistę (zataczanie okręgów dostepnym przyborem sygnalizacyjnym)",
       "content": [
         "Sygnał D2 Stój podaje się w przypadku nagłej konieczności zatrzymania pociągu lub jadącego taboru wobec zagrożenia bezpieczeństwa ruchu",
@@ -4087,12 +4418,13 @@
         "Sygnał Rm1 Do mnie oznacza, że należy jechać do dajacego sygnał"
       ],
       "correct": 0,
+      "image": "./images/stoj-recznie.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/stoj-recznie.png"
+      ]
     },
     {
+      "id": "q333",
       "question": "Wskaźnik Wm5 Miejsce zatrzymania czoła pociągu",
       "content": [
         "Oznacza miejsce, od którego należy rozpocząć hamowanie pociągo zatrzymującego sie w peronie.",
@@ -4100,12 +4432,13 @@
         "Służy do oznaczania miejsca, do którego ma dojechać czoło zatrzymującego się pociągu."
       ],
       "correct": 2,
+      "image": "./images/wskazniki/wsk-Wm5.png",
       "category": [
         "sygnalizacja"
-      ],
-      "image": "./images/wskazniki/wsk-Wm5.png"
+      ]
     },
     {
+      "id": "q334",
       "question": "Pierwszy przejazd po torze prób powinien:",
       "content": [
         "Odbywac się z predkością do 10 km/h w jednym kierunku",
@@ -4118,6 +4451,7 @@
       ]
     },
     {
+      "id": "q335",
       "question": "Tory szlaku granicznego pomiedzy linią metra a STP Kabaty należą do okregu nastawczego stacji:",
       "content": [
         "STP",
@@ -4130,6 +4464,7 @@
       ]
     },
     {
+      "id": "q336",
       "question": "Pociąg pogotowia jest to pociag uruchamiany:",
       "content": [
         "W celu realizacji potrzeb poszczególnych pionów eksploatacyjnych",
@@ -4142,6 +4477,7 @@
       ]
     },
     {
+      "id": "q337",
       "question": "W przypadku powstania pożaru w jadącym pociągu prowadzący pociąg powinien:",
       "content": [
         "Zatrzymać się i jak najszybciej prosić o wyłączenie wysokiego napięcia a po otrzymaniu potwierdzenia oraz po zdalnym uszynieniu powiadomić pasażerów o kierunku ewakuacji",
@@ -4154,6 +4490,7 @@
       ]
     },
     {
+      "id": "q338",
       "question": "W przypadku braku sygnałów końca pociągu:",
       "content": [
         "należy kontynować jazdę i po zakończeni  dnia roboczegozjechać na stp w celu naprawy",
@@ -4166,6 +4503,7 @@
       ]
     },
     {
+      "id": "q339",
       "question": "Poniższe wskazania na panelu HMI lub DDU oznaczają:",
       "content": [
         "Prędkości restrykcyjne, po przekroczeniu których załączy sie hamulec służbowy od systemu ATO",
@@ -4173,13 +4511,14 @@
         "Prędkości restrykcyjne, po przekroczeniu których załączy sie hamulec awaryjny od systemu ATP"
       ],
       "correct": 2,
+      "image": "./images/predkosc-restrykcyjna.png",
       "category": [
         "instrukcja",
         "sop"
-      ],
-      "image": "./images/predkosc-restrykcyjna.png"
+      ]
     },
     {
+      "id": "q340",
       "question": "Rozkaz szczególny 'S' jest wydawany gdy pociag:",
       "content": [
         "Wykonuje pracę pociagu doświadczalnego",
@@ -4193,6 +4532,7 @@
       ]
     },
     {
+      "id": "q341",
       "question": "Przejazd pociągów bez zatrzymania przy peronie bez konieczności powiadamiania prowadzących pociągi metra rozkazem szczególnym 'O' jest mozliwe:",
       "content": [
         "Na polecenie ustne wydane przez dyżurnego stacji na której nie zatrzymuje się pociąg",
@@ -4205,6 +4545,7 @@
       ]
     },
     {
+      "id": "q342",
       "question": "W przypadku pozyskania informacji o próbie wtargnięcia lub wtargnięciu osoby nieuprawnionej do kabiny pociągu, gdy pociag znajduje się w ruchu na szlaku należy:",
       "content": [
         "powiadomić dyspozytora ruchu o zdarzeniu i kontynuować jazdę do najbliższej stacji. Następnie sprawdzić kabine i uzgodnić z dyspozytorem ruchu dalsze postepowanie",
@@ -4217,6 +4558,7 @@
       ]
     },
     {
+      "id": "q343",
       "question": "Dopuszczalna prędkość jazdy na zalanym odcinku powinna być określona przez prowadzącego pociąg i nie może byc większa niż:",
       "content": [
         "15 km/h - gdy poziom wody sięga stopki szyny",
