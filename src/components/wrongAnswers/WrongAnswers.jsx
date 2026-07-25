@@ -1,3 +1,5 @@
+import { assetUrl } from "../../utils/assetUrl";
+
 const WrongAnswers = (props) => {
   const { wrongAnswers } = props;
 
@@ -7,7 +9,7 @@ const WrongAnswers = (props) => {
         <h3 style={{ fontSize: '16px', fontWeight: 600, marginBottom: '6px' }}>{el.question}</h3>
         {el.image && (
           <img
-            src={`${process.env.PUBLIC_URL}/${el.image.replace(/^\.\//, "")}`}
+            src={assetUrl(el.image)}
             alt=""
             className="mx-auto"
             style={{ maxHeight: '150px', borderRadius: '8px', margin: '8px 0' }}

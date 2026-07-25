@@ -29,3 +29,7 @@ CLAUDE.md
 # kopie zapasowe bazy pytan (trzymac poza public/ — build je publikuje)
 public/questions*.bak*
 public/questions-backup.json
+
+# Vite
+dist
+.vite

@@ -1,10 +1,9 @@
-module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: false, // or 'media' or 'class'
+/** @type {import('tailwindcss').Config} */
+export default {
+  // W Tailwind 3 "purge" nazywa sie "content"
+  content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  darkMode: "class",
   theme: {
-    extend: {},
-  },
-  variants: {
     extend: {},
   },
   plugins: [],

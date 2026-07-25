@@ -93,18 +93,40 @@ Sesja trafia do historii tylko gdy:
 
 ---
 
+## Stack
+
+React 18 + Vite 6, Tailwind 3, testy na Vitest.
+
 ## Uruchomienie lokalne
 
 ```bash
 npm install
-npm start
+npm start          # → http://localhost:3000/metro-test/
+```
+
+> Adres kończy się na `/metro-test/` — to ścieżka bazowa aplikacji, ta sama co na
+> GitHub Pages. Samo `localhost:3000` zwróci 404.
+
+```bash
+npm test           # testy jednostkowe (Vitest)
+npm run test:watch # testy w trybie ciągłym
+npm run build      # build produkcyjny → /build
+npm run preview    # podgląd zbudowanej wersji → http://localhost:4173/metro-test/
 ```
 
 ## Deploy na GitHub Pages
 
 ```bash
-npm run build
-npm run deploy
+npm run deploy     # buduje i publikuje katalog build/ na branch gh-pages
 ```
 
-> **WAŻNE:** `package.json` musi zawierać `"homepage": "https://pablop76.github.io/metro-test"` — bez tego ścieżki do CSS/JS nie działają po wdrożeniu.
+> **WAŻNE:** ścieżkę bazową ustawia pole `base` w `vite.config.js`. Bez niej
+> odwołania do CSS, JS i grafik nie działają spod `/metro-test/`.
+
+> **Zanim zdeployujesz:** sprawdź, czy na `gh-pages` nie ma poprawek, których nie
+> ma w źródle — deploy nadpisuje ten branch w całości i takie zmiany przepadają.
+
+```bash
+git fetch origin
+git diff origin/main:public/questions.json origin/gh-pages:questions.json
+```

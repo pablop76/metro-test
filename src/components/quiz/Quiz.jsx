@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getQuestionId } from "../../utils/quizUtils";
+import { assetUrl } from "../../utils/assetUrl";
 
 const Quiz = (props) => {
   const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex, starredIds, onToggleStar, learningWrongClicks } = props;
@@ -22,8 +23,7 @@ const Quiz = (props) => {
   const question = currentTest[currentQuestion];
   const isStarred = starredIds && question ? starredIds.has(getQuestionId(question)) : false;
   const currentImage = question?.image;
-  const imgPath = currentImage ? currentImage.replace(/^\.\//, "") : "";
-  const imgSrc = imgPath ? `${process.env.PUBLIC_URL}/${imgPath}` : "";
+  const imgSrc = currentImage ? assetUrl(currentImage) : "";
 
   return (
     <>

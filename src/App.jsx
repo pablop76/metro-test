@@ -7,20 +7,21 @@ import ChoiceTest from "./components/choiceTest/ChoiceTest";
 import Footer from "./components/footer/Footer";
 import Header from "./components/header/Header";
 import LimitOfquestions from "./components/limitOfquestions/LimitOfquestions";
-import Quiz from "./components/quiz/Quiz.js";
+import Quiz from "./components/quiz/Quiz";
 import ProgressStats from "./components/quiz/ProgressStats";
 import ResultsButtons from "./components/quiz/ResultsButtons";
 import SessionHistory from "./components/quiz/SessionHistory";
 import MetroMap from "./components/quiz/MetroMap";
 import PreExamBriefing from "./components/quiz/PreExamBriefing";
-import Refresh from "./components/refreshQuiz/RefreshQuiz.js";
-import SoundOnOff from "./components/soundOnOff/SoundOnOff.js";
-import StyleToggle from "./components/styleToggle/StyleToggle.js";
-import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
+import Refresh from "./components/refreshQuiz/RefreshQuiz";
+import SoundOnOff from "./components/soundOnOff/SoundOnOff";
+import StyleToggle from "./components/styleToggle/StyleToggle";
+import ThemeToggle from "./components/themeToggle/ThemeToggle";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import SearchBar from "./components/searchBar/SearchBar";
 import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS, SEARCH_DEBOUNCE_MS } from "./constants";
 import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat, savePausedSession, loadPausedSession, clearPausedSession, getQuestionId, migrateStorageToIds, remapPausedSession } from "./utils/quizUtils";
+import { assetUrl } from "./utils/assetUrl";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
 
@@ -381,7 +382,7 @@ function App() {
   useEffect(() => {
     const getQuizData = async () => {
       try {
-        const response = await fetch(process.env.PUBLIC_URL + "/questions.json");
+        const response = await fetch(assetUrl("questions.json"));
         if (!response.ok) return;
         const data = await response.json();
         const questions = data.questions || [];
