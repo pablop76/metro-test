@@ -33,3 +33,6 @@ export const SCHEMA_VERSION = 2;
 export const EXAM_TOTAL_COUNT = 40;
 export const EXAM_SYGNALIZACJA_COUNT = 10;
 export const MIN_QUESTIONS_FOR_STATS = 20;
+
+// Ile milisekund czekamy po ostatnim znaku, zanim przefiltrujemy pulę pytań
+export const SEARCH_DEBOUNCE_MS = 250;

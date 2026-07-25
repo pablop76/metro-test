@@ -19,7 +19,7 @@ import StyleToggle from "./components/styleToggle/StyleToggle.js";
 import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import SearchBar from "./components/searchBar/SearchBar";
-import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS } from "./constants";
+import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS, SEARCH_DEBOUNCE_MS } from "./constants";
 import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat, savePausedSession, loadPausedSession, clearPausedSession, getQuestionId, migrateStorageToIds, remapPausedSession } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
@@ -55,6 +55,9 @@ function App() {
   const [weakestMode, setWeakestMode] = useState(false);
   const [isMistakesReview, setIsMistakesReview] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
+  // Filtrowanie i losowanie idzie po całej puli (343 pytania), więc nie odpalamy
+  // go na każde naciśnięcie klawisza — dopiero gdy pisanie ucichnie.
+  const [debouncedSearch, setDebouncedSearch] = useState("");
   const [pausedSession, setPausedSession] = useState(() => loadPausedSession());
   const [learningWrongClicks, setLearningWrongClicks] = useState(new Set());
   const resumingRef = useRef(false);
@@ -64,6 +67,18 @@ function App() {
 
   useEffect(() => { localStorage.setItem(STORAGE_KEYS.theme, theme); }, [theme]);
   useEffect(() => { localStorage.setItem(STORAGE_KEYS.visualStyle, visualStyle); }, [visualStyle]);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setDebouncedSearch(searchQuery), SEARCH_DEBOUNCE_MS);
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  // Czyszczenie obu stanów naraz — inaczej opóźniona wartość dogoniłaby nas już po
+  // starcie trybu egzaminu czy wznowieniu sesji i przelosowała gotowy zestaw pytań.
+  const clearSearch = () => {
+    setSearchQuery("");
+    setDebouncedSearch("");
+  };
 
   const toggleTheme = () => setTheme((prev) => (prev === "light" ? "dark" : "light"));
 
@@ -269,7 +284,7 @@ function App() {
       setFullFilteredLength(EXAM_TOTAL_COUNT);
       resetQuizState();
       setExamMode(true);
-      setSearchQuery("");
+      clearSearch();
       clearPausedSession();
       setPausedSession(null);
     }
@@ -311,7 +326,7 @@ function App() {
     setSelectedAnswerIndex(null);
     setIsAnswerCorrect(null);
     setShowWrongAnswers(false);
-    setSearchQuery("");
+    clearSearch();
   };
 
   const handleToggleStar = (question) => {
@@ -357,7 +372,7 @@ function App() {
       resetQuizState();
       setWeakestMode(true);
       setExamMode(false);
-      setSearchQuery("");
+      clearSearch();
       clearPausedSession();
       setPausedSession(null);
     }
@@ -423,8 +438,8 @@ function App() {
       return cats.some((c) => test.includes(c));
     });
 
-    if (searchQuery.trim()) {
-      const q = searchQuery.toLowerCase();
+    if (debouncedSearch.trim()) {
+      const q = debouncedSearch.toLowerCase();
       filtered = filtered.filter(
         (item) =>
           item.question.toLowerCase().includes(q) ||
@@ -435,6 +450,7 @@ function App() {
     if (filtered.length === 0) {
       setCurrentTest([]);
       setMaxQuestions(0);
+      setFullFilteredLength(0);
       resetQuizState();
       return;
     }
@@ -450,7 +466,7 @@ function App() {
       });
       resetQuizState();
     }
-  }, [test, allQuestions, searchQuery]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [test, allQuestions, debouncedSearch]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className={`app-shell bg-container visual-${visualStyle} container mx-auto min-h-screen pb-5 flex flex-col content-center justify-center text-blue-50 transition-colors duration-500 ease-in-out ${theme === "light" ? "light-mode" : ""}`}>
