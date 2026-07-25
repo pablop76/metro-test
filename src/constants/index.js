@@ -23,7 +23,12 @@ export const STORAGE_KEYS = {
   sessionHistory: "session-history",
   questionStats: "question-stats",
   pausedSession: "quiz-paused-session",
+  schemaVersion: "quiz-schema-version",
 };
+
+// Wersja schematu danych w localStorage.
+// 2 — statystyki i gwiazdki kluczowane po `id` pytania zamiast po jego treści.
+export const SCHEMA_VERSION = 2;
 
 export const EXAM_TOTAL_COUNT = 40;
 export const EXAM_SYGNALIZACJA_COUNT = 10;

@@ -45,6 +45,7 @@ Aplikacja do nauki i sprawdzania wiedzy przed egzaminem na stanowisko maszynisty
 
 ```json
 {
+  "id": "q001",
   "question": "Treść pytania",
   "content": ["Odpowiedź A", "Odpowiedź B", "Odpowiedź C"],
   "correct": 0,
@@ -55,11 +56,17 @@ Aplikacja do nauki i sprawdzania wiedzy przed egzaminem na stanowisko maszynisty
 
 | Pole | Typ | Opis |
 |------|-----|------|
+| `id` | string | Trwały identyfikator (`q001`…). Klucz statystyk, gwiazdek i trudnych pytań |
 | `question` | string | Treść pytania |
 | `content` | string[] | Tablica 3 odpowiedzi |
 | `correct` | 0\|1\|2 | Indeks poprawnej odpowiedzi |
 | `image` | string? | Opcjonalna ścieżka do grafiki |
 | `category` | string[] | Klucze kategorii (pytanie może mieć kilka) |
+
+> **Dodajesz pytanie?** Nie wymyślaj `id` ręcznie — dopisz pytanie bez tego pola
+> i uruchom `node scripts/assign_ids.js`. Skrypt nada kolejny wolny numer i nigdy
+> nie rusza już istniejących. **Nigdy nie zmieniaj ani nie przenumerowuj istniejących
+> `id`** — użytkownicy mają pod nimi zapisany postęp w `localStorage`.
 
 ### Kategorie
 

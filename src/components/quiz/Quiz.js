@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { getQuestionId } from "../../utils/quizUtils";
 
 const Quiz = (props) => {
   const { currentTest, currentQuestion, isDisabled, answerChange, onAnswerOrderChange, learningMode, correctAnswerIndex, starredIds, onToggleStar, learningWrongClicks } = props;
@@ -19,7 +20,7 @@ const Quiz = (props) => {
   }, [currentQuestion, currentTest]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const question = currentTest[currentQuestion];
-  const isStarred = starredIds && question ? starredIds.has(question.question) : false;
+  const isStarred = starredIds && question ? starredIds.has(getQuestionId(question)) : false;
   const currentImage = question?.image;
   const imgPath = currentImage ? currentImage.replace(/^\.\//, "") : "";
   const imgSrc = imgPath ? `${process.env.PUBLIC_URL}/${imgPath}` : "";
@@ -29,7 +30,7 @@ const Quiz = (props) => {
       <div className="question-card" key={currentQuestion}>
         <button
           className={`star-btn ${isStarred ? "star-btn--active" : ""}`}
-          onClick={() => question && onToggleStar?.(question.question)}
+          onClick={() => question && onToggleStar?.(question)}
           title={isStarred ? "Usuń z oznaczonych" : "Oznacz jako trudne"}
           aria-label="Oznacz pytanie"
         >

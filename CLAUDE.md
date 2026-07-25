@@ -56,6 +56,7 @@ Struktura każdego pytania:
 
 ```json
 {
+  "id": "q001",
   "question": "Treść pytania",
   "content": ["Odpowiedź A", "Odpowiedź B", "Odpowiedź C"],
   "correct": 0,
@@ -64,9 +65,21 @@ Struktura każdego pytania:
 }
 ```
 
+- `id` — trwały identyfikator pytania (`q001`…`q343`), nadawany przez `node scripts/assign_ids.js`
 - `correct` — indeks poprawnej odpowiedzi (0, 1 lub 2)
 - `image` — opcjonalne, może nie być
 - `category` — tablica, pytanie może należeć do wielu kategorii
+
+### Identyfikatory pytań — nie ruszać
+
+`id` jest kluczem statystyk, gwiazdek i trybu trudnych pytań w `localStorage`.
+**Zmiana lub przenumerowanie istniejącego `id` kasuje użytkownikom postęp.**
+Nowe pytania dopisuj bez pola `id` i uruchom `node scripts/assign_ids.js` — skrypt
+jest idempotentny i nada tylko brakujące numery.
+
+Kluczowanie po treści pytania jest **zabronione**: 35 pytań w 6 grupach brzmi
+identycznie (np. „Opisz symbole" × 17) i różni je wyłącznie obrazek oraz poprawna
+odpowiedź. W kodzie zawsze `getQuestionId(pytanie)` z `src/utils/quizUtils.js`.
 
 ### Kategorie
 

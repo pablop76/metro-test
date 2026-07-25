@@ -20,7 +20,7 @@ import ThemeToggle from "./components/themeToggle/ThemeToggle.js";
 import WrongAnswers from "./components/wrongAnswers/WrongAnswers";
 import SearchBar from "./components/searchBar/SearchBar";
 import { CATEGORIES, VISUAL_STYLES, STORAGE_KEYS, EXAM_TOTAL_COUNT, EXAM_SYGNALIZACJA_COUNT, MIN_QUESTIONS_FOR_STATS } from "./constants";
-import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat, savePausedSession, loadPausedSession, clearPausedSession } from "./utils/quizUtils";
+import { draw, getStarredIds, toggleStarred, saveSession, getWeakestQuestions, updateQuestionStat, savePausedSession, loadPausedSession, clearPausedSession, getQuestionId, migrateStorageToIds, remapPausedSession } from "./utils/quizUtils";
 import oklaski from "./sound/oklaski.mp3";
 import smiech from "./sound/smiech.mp3";
 
@@ -123,7 +123,7 @@ function App() {
         sound.current.currentTime = 0;
         sound.current.play();
       }
-      updateQuestionStat(currentTest[currentQuestion].question, true);
+      updateQuestionStat(currentTest[currentQuestion], true);
       setCorectAnswers(correctAnswers + 1);
       setIsAnswerCorrect(true);
       if (learningMode) {
@@ -135,7 +135,7 @@ function App() {
       if (learningMode) {
         // Blokujemy tylko kliknięty zły przycisk, użytkownik szuka poprawnej
         setLearningWrongClicks((prev) => new Set([...prev, answerUser]));
-        updateQuestionStat(currentTest[currentQuestion].question, false);
+        updateQuestionStat(currentTest[currentQuestion], false);
       } else {
         setIsDisabled(true);
         setTotalAnswered((prev) => prev + 1);
@@ -149,7 +149,7 @@ function App() {
         if (currentCategories.includes("sygnalizacja")) {
           setHasSygnalizacjaError(true);
         }
-        updateQuestionStat(currentTest[currentQuestion].question, false);
+        updateQuestionStat(currentTest[currentQuestion], false);
         setIsAnswerCorrect(false);
         setDangerAlert(true);
         if (inCorrectAnswers + correctAnswers < maxQuestions) {
@@ -279,8 +279,8 @@ function App() {
 
   const handleResetStats = () => {
     if (!window.confirm("Usunąć całą historię sesji i statystyki pytań?\nGwiazdki (⭐) zostaną zachowane.")) return;
-    localStorage.removeItem("session-history");
-    localStorage.removeItem("question-stats");
+    localStorage.removeItem(STORAGE_KEYS.sessionHistory);
+    localStorage.removeItem(STORAGE_KEYS.questionStats);
     setStarredIds((prev) => {
       setCategoryLimits((limits) => ({ ...limits }));
       return prev;
@@ -316,8 +316,8 @@ function App() {
     setSearchQuery("");
   };
 
-  const handleToggleStar = (questionText) => {
-    const newIds = toggleStarred(questionText);
+  const handleToggleStar = (question) => {
+    const newIds = toggleStarred(question);
     setStarredIds(newIds);
     setCategoryLimits((prev) => ({ ...prev, starred: newIds.size }));
   };
@@ -342,8 +342,8 @@ function App() {
   const getDifficultPool = () => {
     const base = allQuestions.filter(q => !q.category.includes("81"));
     const statWeak = getWeakestQuestions(base);
-    const statWeakSet = new Set(statWeak.map(q => q.question));
-    const starredPool = base.filter(q => starredIds.has(q.question) && !statWeakSet.has(q.question));
+    const statWeakSet = new Set(statWeak.map(q => getQuestionId(q)));
+    const starredPool = base.filter(q => starredIds.has(getQuestionId(q)) && !statWeakSet.has(getQuestionId(q)));
     return [...statWeak, ...starredPool];
   };
 
@@ -380,7 +380,17 @@ function App() {
         });
         setAllQuestions(normalized);
 
+        // Przepięcie zapisanych statystyk i gwiazdek z treści pytania na `id`.
+        // Musi pójść przed odczytem gwiazdek — stan startowy wczytał stare klucze.
+        const migration = migrateStorageToIds(normalized);
+        if (migration) {
+          console.info("Migracja danych do identyfikatorów pytań:", migration);
+        }
+        // Pauza zapisana starszą wersją nie ma `id` — podmieniamy na aktualne pytania
+        setPausedSession((prev) => (prev ? remapPausedSession(prev, normalized) : prev));
+
         const currentStarred = getStarredIds();
+        setStarredIds(currentStarred);
         const limits = { all: 0, starred: 0 };
         normalized.forEach((q) => {
           const cats = q.category;
@@ -389,7 +399,7 @@ function App() {
             return;
           }
           limits.all++;
-          if (currentStarred.has(q.question)) limits.starred++;
+          if (currentStarred.has(getQuestionId(q))) limits.starred++;
           cats.forEach((cat) => { limits[cat] = (limits[cat] || 0) + 1; });
         });
         setCategoryLimits(limits);
@@ -410,7 +420,7 @@ function App() {
     let filtered = allQuestions.filter((q) => {
       const cats = q.category;
       if (cats.includes("81")) return test.includes("81");
-      if (test.includes("starred")) return currentStarred.has(q.question);
+      if (test.includes("starred")) return currentStarred.has(getQuestionId(q));
       if (test.includes("all")) return true;
       return cats.some((c) => test.includes(c));
     });

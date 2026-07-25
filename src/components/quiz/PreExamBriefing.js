@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { getCategoryStats, loadSessions, getQuestionStats } from "../../utils/quizUtils";
+import { getCategoryStats, loadSessions, getQuestionStats, getQuestionId } from "../../utils/quizUtils";
 
 const EXAM_CATS = [
   { key: "inspiro",      label: "Inspiro" },
@@ -44,8 +44,7 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
 
   // ===== SYGNALIZACJA (dyskwalifikuje egzamin przy błędzie) =====
   const sygCat  = catScores.find(c => c.key === "sygnalizacja");
-  const sygOk   = sygCat?.score !== null && sygCat.score >= 75;
-  const sygWarn = sygCat?.score !== null && sygCat.score < 75;
+  const sygOk   = sygCat?.score != null && sygCat.score >= 75;
 
   // ===== SŁABE KATEGORIE =====
   const weakCats = catScores
@@ -55,15 +54,33 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
   const goodCats = catScores.filter(c => c.score !== null && c.score >= 75);
 
   // ===== NAJTRUDNIEJSZE PYTANIA =====
+  // Kilkadziesiąt pytań brzmi identycznie (np. "Opisz symbole") i różni je tylko
+  // obrazek — numerujemy je w obrębie grupy, żeby wiersze dało się rozróżnić.
+  const textOccurrences = useMemo(() => {
+    const groups = new Map();
+    allQuestions.forEach(q => {
+      const list = groups.get(q.question) || [];
+      list.push(getQuestionId(q));
+      groups.set(q.question, list);
+    });
+    return groups;
+  }, [allQuestions]);
+
+  const labelFor = (q) => {
+    const group = textOccurrences.get(q.question);
+    if (!group || group.length < 2) return q.question;
+    return `${q.question} (${group.indexOf(getQuestionId(q)) + 1}/${group.length})`;
+  };
+
   const hardQuestions = allQuestions
     .filter(q => {
-      const s = qStats[q.question];
+      const s = qStats[getQuestionId(q)];
       return s && s.difficult === true;
     })
     .map(q => {
-      const s = qStats[q.question];
+      const s = qStats[getQuestionId(q)];
       const tot = s.correct + s.wrong;
-      return { text: q.question, rate: tot > 0 ? Math.round((s.correct / tot) * 100) : 0, wrong: s.wrong };
+      return { text: labelFor(q), rate: tot > 0 ? Math.round((s.correct / tot) * 100) : 0, wrong: s.wrong };
     })
     .sort((a, b) => a.rate - b.rate)
     .slice(0, 5);
@@ -145,7 +162,7 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
       )}
 
       {/* ===== SYGNALIZACJA ALERT ===== */}
-      {sygCat?.score !== null && (
+      {sygCat?.score != null && (
         <div className={`briefing-syg-alert ${sygOk ? "briefing-syg-ok" : "briefing-syg-warn"}`}>
           <span className="briefing-syg-icon">{sygOk ? "✓" : "⚠"}</span>
           <span>
