@@ -1,5 +1,5 @@
 const ChoiceTest = (props) => {
-  const { handleTest, test, categories, categoryLimits } = props;
+  const { handleTest, test, categories, categoryLimits, disabled = false } = props;
   return (
     <div className="mt-5">
       <p className="text-yellow-400 text-lg font-semibold mb-3">Wybór zakresu pytań:</p>
@@ -22,9 +22,14 @@ const ChoiceTest = (props) => {
               else if (isStarredCat) pillClass += " active-starred";
               else pillClass += " active";
             }
+            if (disabled) pillClass += " category-pill--disabled";
             return (
-              <label key={key} className={pillClass}>
-                <input type="checkbox" name="choiceTest" value={key} checked={isActive} onChange={handleTest} />
+              <label
+                key={key}
+                className={pillClass}
+                title={disabled ? "Zakres pytań jest ustalony przez tryb egzaminu" : undefined}
+              >
+                <input type="checkbox" name="choiceTest" value={key} checked={isActive} onChange={handleTest} disabled={disabled} />
                 {label}
                 <span className="pill-count">{categoryLimits[key] || 0}</span>
               </label>

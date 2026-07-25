@@ -124,7 +124,7 @@ function App() {
         sound.current.play();
       }
       updateQuestionStat(currentTest[currentQuestion], true);
-      setCorectAnswers(correctAnswers + 1);
+      setCorectAnswers((prev) => prev + 1);
       setIsAnswerCorrect(true);
       if (learningMode) {
         setTimeout(() => nextQuestionRef.current(), 700);
@@ -152,10 +152,8 @@ function App() {
         updateQuestionStat(currentTest[currentQuestion], false);
         setIsAnswerCorrect(false);
         setDangerAlert(true);
-        if (inCorrectAnswers + correctAnswers < maxQuestions) {
-          setInCorrectAnswers(inCorrectAnswers + 1);
-        }
-        setWrongAnswers([...wrongAnswers, currentTest[currentQuestion]]);
+        setInCorrectAnswers((prev) => (prev + correctAnswers < maxQuestions ? prev + 1 : prev));
+        setWrongAnswers((prev) => [...prev, currentTest[currentQuestion]]);
       }
     }
   };
