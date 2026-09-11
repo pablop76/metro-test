@@ -1658,7 +1658,8 @@ body {
   color: #0f172a;
 }
 
-.light-mode .session-stat-label {
+.light-mode .session-stat-label,
+.light-mode .session-history-empty {
   color: #475569;
 }
 
