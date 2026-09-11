@@ -9,13 +9,13 @@ const DangerAlert = (props) => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" />
           </svg>
         </div>
-        <p style={{ color: '#f87171', fontSize: '16px', fontWeight: 600, margin: '4px 0' }}>
+        <p style={{ color: 'var(--score-bad-soft)', fontSize: '16px', fontWeight: 600, margin: '4px 0' }}>
           Błędna odpowiedź
         </p>
         <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '14px', margin: '8px 0 4px' }}>
           Prawidłowa odpowiedź nr {correctDisplayIndex ?? correctAnswer + 1}:
         </p>
-        <p style={{ color: '#4ade80', fontSize: '16px', fontWeight: 700, margin: '4px 0 8px', lineHeight: 1.4 }}>
+        <p style={{ color: 'var(--score-ok-soft)', fontSize: '16px', fontWeight: 700, margin: '4px 0 8px', lineHeight: 1.4 }}>
           {answers[correctAnswer]}
         </p>
         <button onClick={nextQuestion} className="alert-btn alert-btn-danger">

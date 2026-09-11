@@ -19,7 +19,7 @@ const WrongAnswers = (props) => {
             }}
           />
         )}
-        <p style={{ color: '#4ade80', fontWeight: 700, marginTop: '4px' }}>
+        <p style={{ color: 'var(--score-ok-soft)', fontWeight: 700, marginTop: '4px' }}>
           ✓ {el.content[el.correct]}
         </p>
       </li>
@@ -30,11 +30,11 @@ const WrongAnswers = (props) => {
     <div className="wrong-answers-container">
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '10px' }}>
         {wrongAnswers.length ? (
-          <h2 style={{ fontSize: '22px', color: '#f87171', fontWeight: 700, margin: 0 }}>
+          <h2 style={{ fontSize: '22px', color: 'var(--score-bad-soft)', fontWeight: 700, margin: 0 }}>
             ✗ Błędne odpowiedzi
           </h2>
         ) : (
-          <h2 style={{ fontSize: '22px', color: '#4ade80', fontWeight: 700, margin: 0 }}>
+          <h2 style={{ fontSize: '22px', color: 'var(--score-ok-soft)', fontWeight: 700, margin: 0 }}>
             ✓ Wszystkie odpowiedzi prawidłowe
           </h2>
         )}

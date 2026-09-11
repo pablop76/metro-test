@@ -44,7 +44,7 @@ const ProgressStats = ({ correctAnswers, inCorrectAnswers, maxQuestions, learnin
               cy="30"
               r="24"
               stroke={
-                passedThreshold ? "#22c55e" : correctAnswers > 0 ? "#ea580c" : "transparent"
+                passedThreshold ? "var(--score-ok)" : correctAnswers > 0 ? "#ea580c" : "transparent"
               }
               strokeWidth="6"
               fill="none"

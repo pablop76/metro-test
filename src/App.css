@@ -6,6 +6,25 @@
   --glass-border: rgba(255, 255, 255, 0.17);
   --text-main: #edf6ff;
   --text-soft: rgba(237, 246, 255, 0.72);
+
+  /* Paleta semaforowa wyników. Komponenty podają te zmienne w stylach inline,
+     bo motyw jasny potrzebuje ciemniejszych odcieni tych samych barw —
+     zobacz nadpisania w .light-mode. */
+  --score-ok: #22c55e;
+  --score-ok-soft: #4ade80;
+  --score-warn: #f59e0b;
+  --score-bad: #ef4444;
+  --score-bad-soft: #f87171;
+  --score-info: #3b82f6;
+  --score-info-soft: #93c5fd;
+  --score-muted: rgba(255, 255, 255, 0.5);
+  --score-none: #94a3b8;
+
+  /* Mapa linii — kolory wnętrza SVG, którego atrybutów nie da się ostylować selektorem */
+  --map-title: rgba(255, 255, 255, 0.9);
+  --map-label: rgba(255, 255, 255, 0.7);
+  --map-hint: rgba(255, 255, 255, 0.5);
+  --map-station-core: #071423;
 }
 
 * {
@@ -1443,7 +1462,23 @@ body {
 .light-mode .metro-map-subtitle,
 .light-mode .metro-legend-item,
 .light-mode .metro-detail-sub {
-  color: rgba(15,23,42,0.55);
+  color: #475569;
+}
+
+.light-mode .metro-map-overall span {
+  color: #64748b;
+}
+
+.light-mode .metro-progress-label {
+  color: #92400e;
+}
+
+.light-mode .metro-progress-bar-bg {
+  background: rgba(15, 23, 42, 0.12);
+}
+
+.light-mode .metro-progress-pass-line {
+  background: #b45309;
 }
 
 .light-mode .metro-detail-panel {
@@ -1594,12 +1629,12 @@ body {
 }
 
 .score-pass {
-  color: #4ade80;
+  color: var(--score-ok-soft);
   font-weight: 700;
 }
 
 .score-fail {
-  color: #f87171;
+  color: var(--score-bad-soft);
   font-weight: 700;
 }
 
@@ -1616,7 +1651,15 @@ body {
 .light-mode .session-date,
 .light-mode .session-history-title,
 .light-mode .trend-chart-label {
-  color: rgba(0, 0, 0, 0.45);
+  color: #475569;
+}
+
+.light-mode .session-stat-val {
+  color: #0f172a;
+}
+
+.light-mode .session-stat-label {
+  color: #475569;
 }
 
 .light-mode .session-summary {
@@ -1629,7 +1672,7 @@ body {
 }
 
 .light-mode .score-detail {
-  color: rgba(0, 0, 0, 0.38);
+  color: #475569;
 }
 
 /* Kategoria starred — złoty pill */
@@ -2100,4 +2143,290 @@ body {
   max-width: 340px;
   margin: 0 auto;
   line-height: 1.6;
+}
+
+/* ============================================================= */
+/* ===== LIGHT MODE — KONTRAST (dopełnienie sekcji z L880) ===== */
+/* Motyw ciemny buduje hierarchię na jasnych akcentach i białych */
+/* półprzezroczystych warstwach. Na jasnym tle jedno i drugie    */
+/* schodzi poniżej progu WCAG AA, więc poniżej komplet zamian na */
+/* ciemne odpowiedniki tych samych barw.                          */
+/* ============================================================= */
+
+/* --- Paleta semaforowa: te same barwy, ciemniejsze odcienie --- */
+.light-mode {
+  --score-ok: #15803d;
+  --score-ok-soft: #15803d;
+  --score-warn: #b45309;
+  --score-bad: #b91c1c;
+  --score-bad-soft: #b91c1c;
+  --score-info: #1d4ed8;
+  --score-info-soft: #1d4ed8;
+  --score-muted: #64748b;
+  --score-none: #64748b;
+
+  --map-title: #0f172a;
+  --map-label: #334155;
+  --map-hint: #64748b;
+  --map-station-core: #ffffff;
+}
+
+/* --- Nagłówki sekcji (utility Tailwinda w JSX) --- */
+.light-mode .text-yellow-400 {
+  color: #a16207;
+}
+
+/* --- Akcent bursztynowy: egzamin, briefing, gwiazdki --- */
+.light-mode .exam-mode-btn,
+.light-mode .briefing-mode-btn,
+.light-mode .exam-result-badge,
+.light-mode .exam-mode-banner,
+.light-mode .briefing-label,
+.light-mode .briefing-readiness-score {
+  color: #92400e;
+}
+
+.light-mode .exam-mode-btn,
+.light-mode .briefing-mode-btn {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.22), rgba(217, 119, 6, 0.16));
+  border-color: rgba(180, 83, 9, 0.45);
+}
+
+.light-mode .exam-mode-btn:hover,
+.light-mode .briefing-mode-btn:hover {
+  background: linear-gradient(135deg, rgba(251, 191, 36, 0.38), rgba(217, 119, 6, 0.28));
+  border-color: rgba(146, 64, 14, 0.7);
+}
+
+.light-mode .exam-mode-banner,
+.light-mode .exam-result-badge {
+  background: rgba(251, 191, 36, 0.18);
+  border-color: rgba(180, 83, 9, 0.4);
+}
+
+.light-mode .exam-mode-btn.active {
+  color: #b91c1c;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.16), rgba(220, 38, 38, 0.22));
+  border-color: rgba(185, 28, 28, 0.5);
+}
+
+.light-mode .star-btn {
+  color: #64748b;
+}
+
+.light-mode .star-btn:hover,
+.light-mode .star-btn--active {
+  color: #b45309;
+}
+
+/* --- Akcent niebieski: tryb nauki --- */
+.light-mode .learning-mode-banner,
+.light-mode .learning-btn.active {
+  color: #1d4ed8;
+  background: rgba(59, 130, 246, 0.12);
+  border-color: rgba(29, 78, 216, 0.4);
+}
+
+/* --- Akcent turkusowy: wznowienie sesji --- */
+.light-mode .resume-btn {
+  background: rgba(20, 184, 166, 0.16);
+  border-color: rgba(15, 118, 110, 0.45);
+  color: #0f766e;
+}
+
+.light-mode .resume-btn:hover {
+  background: rgba(20, 184, 166, 0.28);
+  border-color: rgba(15, 118, 110, 0.75);
+}
+
+.light-mode .resume-btn-time {
+  color: #115e59;
+}
+
+/* --- Wynik: zielony / czerwony --- */
+.light-mode .stat-correct {
+  color: #15803d;
+}
+
+.light-mode .stat-incorrect,
+.light-mode .weakest-mode-btn,
+.light-mode .results-btn.mistakes.danger {
+  color: #b91c1c;
+}
+
+.light-mode .briefing-syg-ok {
+  color: #14532d;
+  background: rgba(34, 197, 94, 0.14);
+  border-color: rgba(21, 128, 61, 0.35);
+}
+
+.light-mode .briefing-syg-warn {
+  color: #b91c1c;
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(185, 28, 28, 0.35);
+}
+
+/* --- Tekst drugoplanowy: białe alfy → slate --- */
+.light-mode .kbd-hint,
+.light-mode .search-results-info,
+.light-mode .briefing-sub,
+.light-mode .briefing-trend-label,
+.light-mode .briefing-readiness-counts,
+.light-mode .briefing-q-more,
+.light-mode .briefing-all-cat-nodata,
+.light-mode .briefing-no-data-sub,
+.light-mode .briefing-card-hint {
+  color: #64748b;
+}
+
+.light-mode .difficult-hint {
+  color: #475569;
+}
+
+.light-mode .briefing-cat-name,
+.light-mode .briefing-all-cat-name,
+.light-mode .briefing-q-text,
+.light-mode .briefing-card-title,
+.light-mode .briefing-readiness-label {
+  color: #334155;
+}
+
+/* --- Przyciski na białej warstwie: potrzebują własnego tła --- */
+.light-mode .resume-discard-btn,
+.light-mode .share-btn,
+.light-mode .results-btn.mistakes,
+.light-mode .reset-stats-btn {
+  background: rgba(15, 23, 42, 0.06);
+  border-color: rgba(100, 116, 139, 0.35);
+  color: #475569;
+}
+
+.light-mode .resume-discard-btn:hover,
+.light-mode .share-btn:hover,
+.light-mode .results-btn.mistakes:hover,
+.light-mode .reset-stats-btn:hover {
+  background: rgba(15, 23, 42, 0.12);
+  color: #0f172a;
+}
+
+/* Odnośnik powrotu — bez tła, sam kolor */
+.light-mode .briefing-close-btn {
+  color: #475569;
+}
+
+.light-mode .briefing-close-btn:hover {
+  color: #0f172a;
+}
+
+.light-mode .resume-discard-btn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(185, 28, 28, 0.45);
+  color: #b91c1c;
+}
+
+/* --- Wyszukiwarka --- */
+.light-mode .search-input {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(148, 163, 184, 0.55);
+  color: #0f172a;
+}
+
+.light-mode .search-input::placeholder {
+  color: #64748b;
+}
+
+.light-mode .search-input:focus {
+  background: #ffffff;
+  border-color: #b45309;
+}
+
+.light-mode .search-icon,
+.light-mode .search-clear {
+  color: #64748b;
+}
+
+.light-mode .search-clear:hover {
+  color: #0f172a;
+}
+
+/* --- Karty i paski briefingu --- */
+.light-mode .briefing-wrap {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(241, 245, 249, 0.72));
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #1e293b;
+}
+
+.light-mode .briefing-no-data-title {
+  color: #0f172a;
+}
+
+.light-mode .briefing-card,
+.light-mode .briefing-q-row,
+.light-mode .briefing-readiness {
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.light-mode .briefing-bar-bg,
+.light-mode .briefing-cat-bar-bg,
+.light-mode .briefing-all-cat-bar-bg {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+.light-mode .briefing-bar-pass-line,
+.light-mode .briefing-cat-pass-line {
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.light-mode .briefing-q-num {
+  color: #64748b;
+}
+
+.light-mode .briefing-btn-weak {
+  color: #b91c1c;
+  border-color: rgba(185, 28, 28, 0.4);
+}
+
+.light-mode .briefing-btn-exam {
+  color: #1d4ed8;
+  border-color: rgba(29, 78, 216, 0.45);
+}
+
+/* --- Modale --- */
+/* Karty alertów i wyniku zostają granatowe niezależnie od motywu, więc
+   wewnątrz nich obowiązuje paleta ciemna — inaczej ciemny tekst trafiłby
+   na ciemne tło. */
+.light-mode .alert-card,
+.light-mode .end-test-card {
+  --score-ok: #22c55e;
+  --score-ok-soft: #4ade80;
+  --score-warn: #f59e0b;
+  --score-bad: #ef4444;
+  --score-bad-soft: #f87171;
+  --score-info: #3b82f6;
+  --score-info-soft: #93c5fd;
+  --score-none: #94a3b8;
+}
+
+.light-mode .end-test-card .exam-result-badge {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border-color: rgba(251, 191, 36, 0.35);
+}
+
+.light-mode .end-test-card .share-btn,
+.light-mode .end-test-card .results-btn.mistakes {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.light-mode .end-test-card .share-btn:hover,
+.light-mode .end-test-card .results-btn.mistakes:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #fff;
+}
+
+.light-mode .end-test-card .donut-label {
+  color: #fff;
 }

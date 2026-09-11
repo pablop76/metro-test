@@ -49,7 +49,7 @@ const TrendChart = ({ sessions }) => {
           const barH = Math.max(3, (s.percentage / 100) * CHART_HEIGHT);
           const x = i * (BAR_WIDTH + 6) + 4;
           const y = CHART_HEIGHT - barH;
-          const color = s.passed ? "#22c55e" : s.percentage >= 50 ? "#f59e0b" : "#ef4444";
+          const color = s.passed ? "var(--score-ok)" : s.percentage >= 50 ? "var(--score-warn)" : "var(--score-bad)";
 
           return (
             <g key={i}>
@@ -97,11 +97,11 @@ const SessionHistory = () => {
           <span className="session-stat-label">sesji</span>
         </div>
         <div className="session-stat-pill">
-          <span className="session-stat-val" style={{ color: "#4ade80" }}>{passedCount}</span>
+          <span className="session-stat-val" style={{ color: "var(--score-ok-soft)" }}>{passedCount}</span>
           <span className="session-stat-label">zaliczonych</span>
         </div>
         <div className="session-stat-pill">
-          <span className="session-stat-val" style={{ color: avgScore >= 75 ? "#4ade80" : "#f87171" }}>{avgScore}%</span>
+          <span className="session-stat-val" style={{ color: avgScore >= 75 ? "var(--score-ok-soft)" : "var(--score-bad-soft)" }}>{avgScore}%</span>
           <span className="session-stat-label">śr. wynik</span>
         </div>
       </div>

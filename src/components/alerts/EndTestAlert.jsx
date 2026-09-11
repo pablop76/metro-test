@@ -50,7 +50,7 @@ const EndTestAlert = (props) => {
         </h3>
 
         {!learningMode && hasSygnalizacjaError && (
-          <p style={{ color: '#fca5a5', fontSize: '14px', margin: '0 0 8px' }}>
+          <p style={{ color: 'var(--score-bad-soft)', fontSize: '14px', margin: '0 0 8px' }}>
             {examMode
               ? "Egzamin niezaliczony: błędna odpowiedź z kategorii Sygnalizacja dyskwalifikuje wynik."
               : "Test niezaliczony: wystąpiła co najmniej jedna błędna odpowiedź w kategorii Sygnalizacja."}
@@ -64,7 +64,7 @@ const EndTestAlert = (props) => {
               <circle cx="55" cy="55" r="45" stroke="rgba(255,255,255,0.1)" strokeWidth="10" fill="none" />
               <circle
                 cx="55" cy="55" r="45"
-                stroke={passed ? "#22c55e" : learningMode ? "#3b82f6" : "#ef4444"}
+                stroke={passed ? "var(--score-ok)" : learningMode ? "var(--score-info)" : "var(--score-bad)"}
                 strokeWidth="10"
                 fill="none"
                 strokeLinecap="round"
@@ -77,13 +77,13 @@ const EndTestAlert = (props) => {
 
         {/* Statystyki */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', margin: '12px 0' }}>
-          <span style={{ color: '#4ade80', fontSize: '20px', fontWeight: 700 }}>
+          <span style={{ color: 'var(--score-ok-soft)', fontSize: '20px', fontWeight: 700 }}>
             ✓ {correctAnswers}
           </span>
           {!learningMode && (
             <>
               <span style={{ color: 'rgba(255,255,255,0.4)' }}>|</span>
-              <span style={{ color: '#f87171', fontSize: '20px', fontWeight: 700 }}>
+              <span style={{ color: 'var(--score-bad-soft)', fontSize: '20px', fontWeight: 700 }}>
                 ✗ {inCorrectAnswers}
               </span>
             </>

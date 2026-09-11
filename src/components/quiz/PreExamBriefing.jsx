@@ -96,17 +96,17 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
   // ===== ETYKIETA GOTOWOŚCI =====
   const readinessInfo = (() => {
     if (readiness === null) return null;
-    if (readiness >= 85) return { label: "Gotowy na egzamin",       color: "#22c55e", bg: "rgba(34,197,94,0.1)",  border: "rgba(34,197,94,0.3)",  icon: "✓" };
-    if (readiness >= 75) return { label: "Prawie gotowy",           color: "#4ade80", bg: "rgba(74,222,128,0.08)", border: "rgba(74,222,128,0.25)", icon: "✓" };
-    if (readiness >= 55) return { label: "Wymaga więcej ćwiczeń",   color: "#f59e0b", bg: "rgba(245,158,11,0.1)",  border: "rgba(245,158,11,0.3)",  icon: "!" };
-    return                       { label: "Za wcześnie na egzamin", color: "#ef4444", bg: "rgba(239,68,68,0.1)",   border: "rgba(239,68,68,0.3)",   icon: "✗" };
+    if (readiness >= 85) return { label: "Gotowy na egzamin",       color: "var(--score-ok)",      bg: "rgba(34,197,94,0.1)",   border: "rgba(34,197,94,0.3)",   icon: "✓" };
+    if (readiness >= 75) return { label: "Prawie gotowy",           color: "var(--score-ok-soft)", bg: "rgba(74,222,128,0.08)", border: "rgba(74,222,128,0.25)", icon: "✓" };
+    if (readiness >= 55) return { label: "Wymaga więcej ćwiczeń",   color: "var(--score-warn)",    bg: "rgba(245,158,11,0.1)",  border: "rgba(245,158,11,0.3)",  icon: "!" };
+    return                       { label: "Za wcześnie na egzamin", color: "var(--score-bad)",     bg: "rgba(239,68,68,0.1)",   border: "rgba(239,68,68,0.3)",   icon: "✗" };
   })();
 
   const scoreColor = (s) => {
-    if (s === null) return "#4b5563";
-    if (s >= 75) return "#22c55e";
-    if (s >= 50) return "#f59e0b";
-    return "#ef4444";
+    if (s === null) return "var(--score-none)";
+    if (s >= 75) return "var(--score-ok)";
+    if (s >= 50) return "var(--score-warn)";
+    return "var(--score-bad)";
   };
 
   // ===== BRAK DANYCH =====
@@ -133,7 +133,7 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
         </div>
         {recentAvg !== null && (
           <div className="briefing-trend">
-            <span style={{ color: trendUp ? "#4ade80" : trendDown ? "#f87171" : "rgba(255,255,255,0.5)" }}>
+            <span style={{ color: trendUp ? "var(--score-ok-soft)" : trendDown ? "var(--score-bad-soft)" : "var(--score-muted)" }}>
               {trendUp ? "↑" : trendDown ? "↓" : "→"}
             </span>
             <span>{recentAvg}%</span>
@@ -154,8 +154,8 @@ const PreExamBriefing = ({ allQuestions, onStartExam, onStudyWeak, weakCount }) 
             </div>
             <ScoreBar score={readiness} color={readinessInfo.color} />
             <div className="briefing-readiness-counts">
-              <span style={{ color: "#4ade80" }}>{goodCats.length} kat. opanowanych</span>
-              {weakCats.length > 0 && <span style={{ color: "#f87171" }}>{weakCats.length} do nadrobienia</span>}
+              <span style={{ color: "var(--score-ok-soft)" }}>{goodCats.length} kat. opanowanych</span>
+              {weakCats.length > 0 && <span style={{ color: "var(--score-bad-soft)" }}>{weakCats.length} do nadrobienia</span>}
             </div>
           </div>
         </div>

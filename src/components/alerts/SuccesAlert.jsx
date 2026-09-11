@@ -12,7 +12,7 @@ const AcceptAlert = (props) => {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <p style={{ color: '#4ade80', fontSize: '18px', fontWeight: 700, margin: '8px 0' }}>
+        <p style={{ color: 'var(--score-ok-soft)', fontSize: '18px', fontWeight: 700, margin: '8px 0' }}>
           Prawidłowa odpowiedź!
         </p>
         <button onClick={nextQuestion} className="alert-btn alert-btn-success">
